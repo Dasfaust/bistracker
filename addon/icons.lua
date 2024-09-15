@@ -1,5 +1,9 @@
 local addonName, context = ...
 
+context.icons = {
+    personalBisSlotIds = {}
+}
+
 local function UpdateTextOverlay(button, text, r, g, b)
     if not button.characterPanelOverlay then
         local overlay = button:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
@@ -45,12 +49,18 @@ local function UpdateCharacterFrameButton(button, unit)
                         end
                     end
                 end
+                context.icons.personalBisSlotIds[slotId] = 1
+            else
+                context.icons.personalBisSlotIds[slotId] = nil
             end
         elseif context.data.IsTrackedGear(itemName) then
             local entries = context.data.GetPlayerSpecEntriesForGear(itemName, context.player.specNames)
             if next(entries) then
                 local color = ITEM_QUALITY_COLORS[5]
                 UpdateTextOverlay(button, "BiS", color.r, color.g, color.b)
+                context.icons.personalBisSlotIds[slotId] = 1
+            else
+                context.icons.personalBisSlotIds[slotId] = nil
             end
         else
             UpdateTextOverlay(button, "?", 1, 1, 1)

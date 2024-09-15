@@ -67,6 +67,9 @@
         "ARENA_3V3",
         "BATTLEGROUND_10V10",
         "ARENA",
-        "BATTLEGROUNDS"
+        "BATTLEGROUNDS",
+        "CharacterFrame",
+        "PaperDollFrame",
+        "CharacterModelScene"
     ]
 }

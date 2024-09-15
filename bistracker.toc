@@ -11,3 +11,4 @@ addon/player.lua
 addon/commands.lua
 addon/icons.lua
 addon/tooltips.lua
+addon/characterpanel.lua
