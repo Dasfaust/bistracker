@@ -18,6 +18,8 @@
         "message",
         "SlashCmdList",
         "TooltipDataProcessor",
-        "ITEM_QUALITY_COLORS"
+        "ITEM_QUALITY_COLORS",
+        "require",
+        "class"
     ]
 }

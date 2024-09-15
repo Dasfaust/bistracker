@@ -4,4 +4,10 @@
 ## Author: Dasfaust
 ## Version: 0.0.1
 
-addon/bistracker.lua
+addon/utils.lua
+addon/data.lua
+addon/events.lua
+addon/player.lua
+addon/commands.lua
+addon/tooltips.lua
+addon/icons.lua
