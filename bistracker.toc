@@ -1,0 +1,7 @@
+## Interface: 110002
+## Title: BiSTracker
+## Notes: Easily track your best-in-slot items
+## Author: Dasfaust
+## Version: 0.0.1
+
+addon/bistracker.lua
