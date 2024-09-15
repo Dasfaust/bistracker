@@ -9,5 +9,5 @@ addon/data.lua
 addon/events.lua
 addon/player.lua
 addon/commands.lua
-addon/tooltips.lua
 addon/icons.lua
+addon/tooltips.lua

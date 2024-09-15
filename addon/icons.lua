@@ -1,19 +1,23 @@
 local addonName, context = ...
 
-local function UpdateOverlay(button, text, r, g, b)
-    if not button.bistracker then
+local function UpdateTextOverlay(button, text, r, g, b)
+    if not button.characterPanelOverlay then
         local overlay = button:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
         overlay:SetPoint("BOTTOMRIGHT", button, "BOTTOMRIGHT", -2, 2)
         overlay:SetTextColor(r, g, b)
         overlay:SetFont("Fonts\\FRIZQT__.TTF", 12, "OUTLINE")
-        button.bistracker = overlay
+        button.characterPanelOverlay = overlay
     end
 
-    button.bistracker:SetText(text)
+    button.characterPanelOverlay:SetText(text)
 end
 
 local function UpdateCharacterFrameButton(button, unit)
     local slotId = button:GetID()
+    if slotId == INVSLOT_BODY or slotId == INVSLOT_TABARD then
+        return
+    end
+
     local item
     if unit == "player" then
         item = Item:CreateFromEquipmentSlot(slotId)
@@ -26,8 +30,8 @@ local function UpdateCharacterFrameButton(button, unit)
     end
 
     local itemName = item:GetItemName()
-    if context.data.IsTrackedTrinket(itemName) then
-        if unit == "player" then
+    if unit == "player" then
+        if context.data.IsTrackedTrinket(itemName) then
             local entries = context.data.GetPlayerSpecEntriesForTrinket(itemName, context.player.specNames)
             if next(entries) then
                 local specIndex = GetSpecialization()
@@ -36,15 +40,21 @@ local function UpdateCharacterFrameButton(button, unit)
                         if specName == context.player.specNames[specIndex] then
                             local sanatized = string.gsub(string.sub(tier, 1, 2), "%s+", "")
                             local color = ITEM_QUALITY_COLORS[context.data.trinketTierRarities[sanatized]]
-                            UpdateOverlay(button, sanatized, color.r, color.g, color.b)
+                            UpdateTextOverlay(button, sanatized, color.r, color.g, color.b)
                             break
                         end
                     end
                 end
             end
+        elseif context.data.IsTrackedGear(itemName) then
+            local entries = context.data.GetPlayerSpecEntriesForGear(itemName, context.player.specNames)
+            if next(entries) then
+                local color = ITEM_QUALITY_COLORS[5]
+                UpdateTextOverlay(button, "BiS", color.r, color.g, color.b)
+            end
+        else
+            UpdateTextOverlay(button, "?", 1, 1, 1)
         end
-    else
-        UpdateOverlay(button, "?", 1, 1, 1)
     end
 end
 

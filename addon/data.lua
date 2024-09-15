@@ -5,8 +5,51 @@ context.data = {
     trinkets = {
         ["WoWHead"] = { ["Ara-Kara Sacbrood"] = { ["Shaman/Elemental"] = "S Tier", ["Shaman/Enhancement"] = "S Tier" } },
         ["Archon"] = { ["Ara-Kara Sacbrood"] = { ["Shaman/Elemental"] = "S Tier", ["Shaman/Enhancement"] = "S Tier", ["Shaman/Restoration"] = "C Tier" } }
+    },
+    gear = {
+        ["WoWHead"] = { ["Covenant of the Forgotten Reservoir"] = { ["Shaman/Elemental"] = 1, ["Shaman/Enhancement"] = 1, ["Shaman/Restoration"] = 1 } }
     }
 }
+
+function context.data.IsItemIdGearPiece(itemId)
+    if itemId == nil then
+        return false
+    end
+    local _, _, _, _, _, itemClass, _ = C_Item.GetItemInfoInstant(itemId)
+    return itemClass == Enum.ItemClass.Weapon or itemClass == Enum.ItemClass.Armor
+end
+
+function context.data.IsItemLinkGearPiece(itemLink)
+    return context.data.IsItemIdGearPiece(GetItemInfoFromHyperlink(itemLink))
+end
+
+function context.data.IsTrackedGear(itemName)
+    for _, source in pairs(context.data.gear) do
+        if source[itemName] ~= nil then
+            return true
+        end
+    end
+    return false
+end
+
+function context.data.GetPlayerSpecEntriesForGear(itemName, specNames)
+    local entries = {}
+
+    for _, specName in ipairs(specNames) do
+        for sourceName, source in pairs(context.data.gear) do
+            local flag = source[itemName][specName]
+            if flag ~= nil then
+                if entries[specName] == nil then
+                    entries[specName] = { sourceName }
+                else
+                    table.insert(entries[specName], sourceName)
+                end
+            end
+        end
+    end
+
+    return entries
+end
 
 function context.data.IsTrackedTrinket(itemName)
     for _, source in pairs(context.data.trinkets) do
@@ -53,4 +96,8 @@ end
 function context.data.ApplyTrinketTierColor(tier)
     local sanatized = string.sub(tier, 1, 1)
     return format("%s%s|r", ITEM_QUALITY_COLORS[context.data.trinketTierRarities[sanatized]].hex, tier)
+end
+
+function context.data.ApplyTierColor(text, tier)
+    return format("%s%s|r", ITEM_QUALITY_COLORS[tier].hex, text)
 end
