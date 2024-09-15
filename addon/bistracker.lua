@@ -1,6 +1,9 @@
 -- Data
 local trinketTierRarities = { ["S"] = 5, ["A"] = 4, ["B"] = 3, ["C"] = 2, ["D"] = 1 }
-local bisTrinkets = { ["Ara-Kara Sacbrood"] = { ["Shaman/Elemental"] = "S tier", ["Shaman/Enhancement"] = "S tier", ["Shaman/Restoration"] = "C tier" } }
+local bisTrinkets = {
+    ["WoWHead"] = { ["Ara-Kara Sacbrood"] = { ["Shaman/Elemental"] = "S Tier", ["Shaman/Enhancement"] = "S Tier" } },
+    ["Archon"] = { ["Ara-Kara Sacbrood"] = { ["Shaman/Elemental"] = "S Tier", ["Shaman/Enhancement"] = "S Tier", ["Shaman/Restoration"] = "C Tier" } }
+}
 
 -- Events
 local eventOnPlayerLogin = {}
@@ -60,19 +63,40 @@ AddEventCallback(eventOnPlayerLogin, SetPlayerSpecs)
 
 -- Tooltips
 local function IsTrackedTrinket(itemName)
-    return bisTrinkets[itemName] ~= nil
+    for _, source in pairs(bisTrinkets) do
+        if source[itemName] ~= nil then
+            return true
+        end
+    end
+    return false
 end
 
 local function GetPlayerSpecEntriesForTrinket(itemName)
     local entries = {}
 
     for _, specName in ipairs(playerSpecNames) do
-        local tier = bisTrinkets[itemName][specName]
-        if tier ~= nil then
-            if entries[tier] == nil then
-                entries[tier] = { specName }
-            else
-                table.insert(entries[tier], specName)
+        for sourceName, source in pairs(bisTrinkets) do
+            local tier = source[itemName][specName]
+            if tier ~= nil then
+                if entries[tier] == nil then
+                    entries[tier] = { [specName] = { sourceName } }
+                else
+                    if entries[tier][specName] ~= nil then
+                        local found = false
+                        for _, src in ipairs(entries[tier][specName]) do
+                            if src == sourceName then
+                                found = true
+                                break
+                            end
+                        end
+
+                        if not found then
+                            table.insert(entries[tier][specName], sourceName)
+                        end
+                    else
+                        entries[tier][specName] = { sourceName }
+                    end
+                end
             end
         end
     end
@@ -92,11 +116,17 @@ local function AddItemTooltipText()
             local entries = GetPlayerSpecEntriesForTrinket(itemName)
             if next(entries) then
                 GameTooltip:AddLine(" ")
-                GameTooltip:AddLine("BiSTracker (WoWHead):")
                 for tier, specList in pairs(entries) do
                     local specString = ""
-                    for i = 1, #specList do
-                        specString = specString .. (i > 1 and ", " or "") .. string.sub(specList[i], (#className) + 2)
+                    local i = 1
+                    for specName, sources in pairs(specList) do
+                        specString = specString .. (i > 1 and ", " or "") .. string.sub(specName, (#className) + 2) .. " "
+                        local j = 1
+                        for _, sourceName in ipairs(sources) do
+                            specString = specString .. (j > 1 and " " or "") .. "|TInterface\\AddOns\\bistracker\\media\\" .. sourceName .. ":16:16:0:0|t"
+                            j = j + 1
+                        end
+                        i = i + 1
                     end
                     GameTooltip:AddLine(ApplyTrinketTierColor(tier) .. " for " .. specString, 1, 1, 1)
                 end
@@ -142,9 +172,9 @@ local function UpdateCharacterFrameButton(button, unit)
             if next(entries) then
                 local specIndex = GetSpecialization()
                 for tier, specList in pairs(entries) do
-                    for _, specName in ipairs(specList) do
+                    for specName, _ in pairs(specList) do
                         if specName == playerSpecNames[specIndex] then
-                            local sanatized = string.sub(tier, 1, 1)
+                            local sanatized = string.gsub(string.sub(tier, 1, 2), "%s+", "")
                             local color = ITEM_QUALITY_COLORS[trinketTierRarities[sanatized]]
                             UpdateOverlay(button, sanatized, color.r, color.g, color.b)
                             break
@@ -156,6 +186,8 @@ local function UpdateCharacterFrameButton(button, unit)
     end
 end
 
-hooksecurefunc("PaperDollItemSlotButton_Update", function(button)
-    UpdateCharacterFrameButton(button, "player")
+AddEventCallback(eventOnAddonLoaded, function()
+    hooksecurefunc("PaperDollItemSlotButton_Update", function(button)
+        UpdateCharacterFrameButton(button, "player")
+    end)
 end)
