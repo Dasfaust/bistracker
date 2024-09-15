@@ -22,7 +22,7 @@ local function ApplyBisCountColor(count)
         return context.data.ApplyTierColor(count, 3)
     elseif  prog > 64 and prog <= 80 then
         return context.data.ApplyTierColor(count, 4)
-    elseif  (prog > 80 and prog <= 96) or prog > 96 then
+    elseif  prog > 80 then
         return context.data.ApplyTierColor(count, 5)
     end
 end
