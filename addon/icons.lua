@@ -98,6 +98,7 @@ local function UpdateCharacterFrameButton(button, unit)
             end
         else
             UpdateBisSlotCount(slotId, unit, 0)
+            UpdateTextOverlay(button, unit, slotId, "?", 1, 1, 1)
         end
     else
         UpdateBisSlotCount(slotId, unit, 0)
