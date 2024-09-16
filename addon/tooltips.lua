@@ -29,6 +29,10 @@ local function AddItemTooltipText()
                         local specString = ""
                         local i = 1
                         for specName, sources in pairs(specList) do
+                            if specName == context.player.GetCurrentSpecName(unit) and string.sub(tier, 1, 1) == "S" then
+                                isBis = true
+                            end
+
                             specString = specString .. (i > 1 and ", " or "") .. string.sub(specName, (unit == "player" and #context.player.localClassName or #context.player.unitClassName) + 2) .. " "
                             local j = 1
                             for _, sourceName in ipairs(sources) do
@@ -39,7 +43,6 @@ local function AddItemTooltipText()
                         end
                         GameTooltip:AddLine(context.data.ApplyTrinketTierColor(tier) .. " for " .. specString, 1, 1, 1)
                     end
-                    isBis = true
                 end
             elseif context.data.IsTrackedGear(itemName) then
                 local entries = context.data.GetPlayerSpecEntriesForGear(itemName, specNames)
@@ -48,6 +51,10 @@ local function AddItemTooltipText()
                     local specString = ""
                     local i = 1
                     for specName, sourceList in pairs(entries) do
+                        if specName == context.player.GetCurrentSpecName(unit) then
+                            isBis = true
+                        end
+
                         specString = specString .. (i > 1 and ", " or "") .. string.sub(specName, (unit == "player" and #context.player.localClassName or #context.player.unitClassName) + 2) .. " "
                         local j = 1
                         for _, sourceName in ipairs(sourceList) do
@@ -57,15 +64,58 @@ local function AddItemTooltipText()
                         i = i + 1
                     end
                     GameTooltip:AddLine(context.data.ApplyTierColor("BiS", 5) .. " for " .. specString, 1, 1, 1)
-                    isBis = true
                 end
             end
             
             if not isBis then
-                -- TODO: list actual BiS and source here
-                local grammer = unit == "player" and "your" or "their"
-                GameTooltip:AddLine(" ")
-                GameTooltip:AddLine("This item is not BiS for any of " .. grammer .. " specializations", 1, 1, 1)
+                local specName = context.player.GetCurrentSpecName(unit)
+                local bisFound = false
+                local slotId = context.data.GetItemEquipLocationFromLink(itemLink)
+                if slotId ~= 0 then
+                    if slotId == 13 then
+                        local entries = context.data.GetBestInSlotTrinkets(specName)
+                        if next(entries) then
+                            GameTooltip:AddLine(" ")
+                            local i = 1
+                            for itemName, itemInfo in pairs(entries) do
+                                local sourceString = ""
+                                local j = 1
+                                for _, sourceName in ipairs(itemInfo.sources) do
+                                    sourceString = sourceString .. (j > 1 and " " or "") .. "|TInterface\\AddOns\\bistracker\\media\\" .. sourceName .. ":16:16:0:0|t"
+                                    j = j + 1
+                                end
+                                GameTooltip:AddLine(context.data.ApplyTierColor("[" .. itemName .. "]", 4) .. " is " .. context.data.ApplyTrinketTierColor(itemInfo.tier) .. " " .. sourceString .. " from " .. itemInfo.location, 1, 1, 1)
+                                i = i + 1
+                            end
+                            bisFound = true
+                        end
+                    else
+                        local entries = context.data.GetBestInSlotGear(specName, slotId)
+                        if next(entries) then
+                            GameTooltip:AddLine(" ")
+                            local i = 1
+                            for itemName, itemInfo in pairs(entries) do
+                                local sourceString = ""
+                                local j = 1
+                                for _, sourceName in ipairs(itemInfo.sources) do
+                                    sourceString = sourceString .. (j > 1 and " " or "") .. "|TInterface\\AddOns\\bistracker\\media\\" .. sourceName .. ":16:16:0:0|t"
+                                    j = j + 1
+                                end
+                                local spec = string.sub(specName, (unit == "player" and #context.player.localClassName or #context.player.unitClassName) + 2)
+                                local prefix = i > 1 and "or" or spec .. "'s BiS is"
+                                GameTooltip:AddLine(prefix .. " " .. context.data.ApplyTierColor("[" .. itemName .. "]", 4) .. " " .. sourceString .. " from " .. itemInfo.location, 1, 1, 1)
+                                i = i + 1
+                            end
+                            bisFound = true
+                        end
+                    end
+                end
+
+                if not bisFound then
+                    local spec = string.sub(specName, (unit == "player" and #context.player.localClassName or #context.player.unitClassName) + 2)
+                    GameTooltip:AddLine(" ")
+                    GameTooltip:AddLine("Could not find a BiS item with this slot for " .. spec, 1, 1, 1)
+                end
             end
         end
     end

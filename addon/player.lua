@@ -33,4 +33,9 @@ function context.player.GetPlayerSpecsForUnit(unit)
     return specNames
 end
 
+function context.player.GetCurrentSpecName(unit)
+    local specIndex = unit == "player" and GetSpecialization() or GetInspectSpecialization(unit)
+    return unit == "player" and context.player.localSpecNames[specIndex] or context.player.unitSpecNames[specIndex]
+end
+
 context.events.AddEventCallback(context.events.onPlayerLogin, SetPlayerSpecs)

@@ -71,6 +71,8 @@
         "CharacterFrame",
         "PaperDollFrame",
         "CharacterModelScene",
-        "InspectFrame"
+        "InspectFrame",
+        "Raid",
+        "INVTYPE_FINGER"
     ]
 }

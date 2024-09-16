@@ -13,7 +13,7 @@ local function UpdateBisSlotCount(slotId, unit, count)
     end
 end
 
-local function UpdateTextOverlay(button, unit, text, r, g, b)
+local function UpdateTextOverlay(button, unit, slotId, text, r, g, b)
     if not button.characterPanelOverlay then
         local overlay = button:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
         overlay:SetPoint("BOTTOMRIGHT", button, "BOTTOMRIGHT", -2, 2)
@@ -21,6 +21,7 @@ local function UpdateTextOverlay(button, unit, text, r, g, b)
         button.characterPanelOverlay = overlay
     end
 
+    button.characterPanelOverlay.slotId = slotId
     button.characterPanelOverlay:SetTextColor(r, g, b)
     button.characterPanelOverlay:SetText(text)
     button.characterPanelOverlay.unit = unit
@@ -57,10 +58,9 @@ local function UpdateCharacterFrameButton(button, unit)
     if context.data.IsTrackedTrinket(itemName) then
         local entries = context.data.GetPlayerSpecEntriesForTrinket(itemName, specNames)
         if next(entries) then
-            local specIndex = unit == "player" and GetSpecialization() or GetInspectSpecialization(unit)
             for tier, specList in pairs(entries) do
                 for specName, _ in pairs(specList) do
-                    if specName == context.player.localSpecNames[specIndex] or specName == context.player.unitSpecNames[specIndex] then
+                    if specName == context.player.GetCurrentSpecName(unit) then
                         local sanatized = string.gsub(string.sub(tier, 1, 2), "%s+", "")
 
                         if sanatized == "S" then
@@ -70,10 +70,8 @@ local function UpdateCharacterFrameButton(button, unit)
                         end
 
                         local color = ITEM_QUALITY_COLORS[context.data.trinketTierRarities[sanatized]]
-                        UpdateTextOverlay(button, unit, sanatized, color.r, color.g, color.b)
+                        UpdateTextOverlay(button, unit, slotId, sanatized, color.r, color.g, color.b)
                         break
-                    else
-                        UpdateTextOverlay(button, unit, "?", 1, 1, 1)
                     end
                 end
             end
@@ -83,16 +81,27 @@ local function UpdateCharacterFrameButton(button, unit)
     elseif context.data.IsTrackedGear(itemName) then
         local entries = context.data.GetPlayerSpecEntriesForGear(itemName, specNames)
         if next(entries) then
-            local color = ITEM_QUALITY_COLORS[5]
-            UpdateTextOverlay(button, unit, "BiS", color.r, color.g, color.b)
+            local isBisForCurrentSpec = false
+            for specName, entry in pairs(entries) do
+                if specName == context.player.GetCurrentSpecName(unit) then
+                    local color = ITEM_QUALITY_COLORS[5]
+                    UpdateTextOverlay(button, unit, slotId, "BiS", color.r, color.g, color.b)
+                    UpdateBisSlotCount(slotId, unit, 1)
+                    isBisForCurrentSpec = true
+                    break
+                end
+            end
 
-            UpdateBisSlotCount(slotId, unit, 1)
+            if not isBisForCurrentSpec then
+                UpdateBisSlotCount(slotId, unit, 0)
+                UpdateTextOverlay(button, unit, slotId, "?", 1, 1, 1)
+            end
         else
             UpdateBisSlotCount(slotId, unit, 0)
         end
     else
         UpdateBisSlotCount(slotId, unit, 0)
-        UpdateTextOverlay(button, unit, "?", 1, 1, 1)
+        UpdateTextOverlay(button, unit, slotId, "?", 1, 1, 1)
     end
 end
 
