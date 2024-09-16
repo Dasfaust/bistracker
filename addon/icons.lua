@@ -5,6 +5,14 @@ context.icons = {
     unitBisSlotIds = {}
 }
 
+local function UpdateBisSlotCount(slotId, unit, count)
+    if unit == "player" then
+        context.icons.localBisSlotIds[slotId] = count
+    else
+        context.icons.unitBisSlotIds[slotId] = count
+    end
+end
+
 local function UpdateTextOverlay(button, unit, text, r, g, b)
     if not button.characterPanelOverlay then
         local overlay = button:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
@@ -63,17 +71,9 @@ local function UpdateCharacterFrameButton(button, unit)
                 end
             end
 
-            if unit == "player" then
-                context.icons.localBisSlotIds[slotId] = 1
-            else
-                context.icons.unitBisSlotIds[slotId] = 1
-            end
+            UpdateBisSlotCount(slotId, unit, 1)
         else
-            if unit == "player" then
-                context.icons.localBisSlotIds[slotId] = 0
-            else
-                context.icons.unitBisSlotIds[slotId] = 0
-            end
+            UpdateBisSlotCount(slotId, unit, 0)
         end
     elseif context.data.IsTrackedGear(itemName) then
         local entries = context.data.GetPlayerSpecEntriesForGear(itemName, specNames)
@@ -81,25 +81,12 @@ local function UpdateCharacterFrameButton(button, unit)
             local color = ITEM_QUALITY_COLORS[5]
             UpdateTextOverlay(button, unit, "BiS", color.r, color.g, color.b)
 
-            if unit == "player" then
-                context.icons.localBisSlotIds[slotId] = 1
-            else
-                context.icons.unitBisSlotIds[slotId] = 1
-            end
+            UpdateBisSlotCount(slotId, unit, 1)
         else
-            if unit == "player" then
-                context.icons.localBisSlotIds[slotId] = 0
-            else
-                context.icons.unitBisSlotIds[slotId] = 0
-            end
+            UpdateBisSlotCount(slotId, unit, 0)
         end
     else
-        if unit == "player" then
-            context.icons.localBisSlotIds[slotId] = 0
-        else
-            context.icons.unitBisSlotIds[slotId] = 0
-        end
-
+        UpdateBisSlotCount(slotId, unit, 0)
         UpdateTextOverlay(button, unit, "?", 1, 1, 1)
     end
 end
