@@ -10,7 +10,7 @@ context.player = {
 local function SetPlayerSpecs()
     local numSpecs = GetNumSpecializations()
     local class = select(2, UnitClass("player"))
-    context.player.localClassName = class:lower():gsub("^%l", string.upper)
+    context.player.localClassName = class:lower():gsub("(%l)(%w*)", function(a, b) return string.upper(a) .. b end)
 
     for i = 1, numSpecs do
         local _, specName, _, _ = GetSpecializationInfo(i)
@@ -20,7 +20,7 @@ end
 
 function context.player.GetPlayerSpecsForUnit(unit)
     local className, _, classId = UnitClass(unit)
-    context.player.unitClassName = className:lower():gsub("^%l", string.upper)
+    context.player.unitClassName = className:lower():gsub("(%l)(%w*)", function(a, b) return string.upper(a) .. b end)
     local numSpecs = GetNumSpecializationsForClassID(classId)
 
     local specNames = {}

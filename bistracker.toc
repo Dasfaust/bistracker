@@ -4,6 +4,7 @@
 ## Author: Dasfaust
 ## Version: 0.0.1
 
+db/database.lua
 addon/utils.lua
 addon/data.lua
 addon/events.lua

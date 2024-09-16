@@ -1,28 +1,12 @@
 local addonName, context = ...
 
 context.data = {
-    trinketTierRarities = { ["S"] = 5, ["A"] = 4, ["B"] = 3, ["C"] = 2, ["D"] = 1 },
-    equipLocationIds = { ["INVTYPE_HEAD"] = 1, ["INVTYPE_NECK"] = 2, ["INVTYPE_SHOULDER"] = 3, ["INVTYPE_CHEST"] = 5, ["INVTYPE_WAIST"] = 6, ["INVTYPE_LEGS"] = 7, ["INVTYPE_FEET"] = 8, ["INVTYPE_WRIST"] = 9, ["INVTYPE_HAND"] = 10, ["INVTYPE_FINGER"] = 11, ["INVTYPE_TRINKET"] = 13, ["INVTYPE_WEAPON"] = 16, ["INVTYPE_SHIELD"] = 17, ["INVTYPE_RANGED"] = 16, ["INVTYPE_CLOAK"] = 15 },
-    trinkets = {
-        ["WoWHead"] = { ["Ara-Kara Sacbrood"] = { ["Shaman/Elemental"] = "S", ["Shaman/Enhancement"] = "S" } },
-        ["Archon"] = { ["Everburning Lantern"] = { ["Shaman/Elemental"] = "C", ["Shaman/Enhancement"] = "C", ["Shaman/Restoration"] = "C" } }
-    },
-    gear = {
-        ["WoWHead"] = { ["Covenant of the Forgotten Reservoir"] = { ["Shaman/Elemental"] = 1, ["Shaman/Enhancement"] = 1, ["Shaman/Restoration"] = 1 } },
-        ["Archon"] = { ["Covenant of the Forgotten Reservoir"] = { ["Shaman/Elemental"] = 1, ["Shaman/Enhancement"] = 1, ["Shaman/Restoration"] = 1 } }
-    },
-    gearSources = {
-        ["WoWHead"] = { [1] = { ["Shaman/Elemental"] = { ["Final Meal's Horns"] = { ["location"] = "Some Raid Boss", ["itemId"] = "212428" } } } },
-        ["Archon"] = { [1] = { ["Shaman/Enhancement"] = { ["Some Other Item"] = { ["location"] = "Some Raid Boss", ["itemId"] = "212428" } } } }
-    },
-    trinketSources = {
-        ["WoWHead"] = { ["Shaman/Enhancement"] = { ["Spymaster's Web"] = { ["tier"] = "S", ["location"] = "Some Raid Boss", ["itemId"] = "220202" } } }
-    }
+    trinketTierRarities = { ["S"] = 5, ["A"] = 4, ["B"] = 3, ["C"] = 2, ["D"] = 1 }
 }
 
 function context.data.GetBestInSlotGear(specName, slot)
     local entries = {}
-    for sourceName, source in pairs(context.data.gearSources) do
+    for sourceName, source in pairs(context.database.gearSources) do
         if source[slot] ~= nil then
             if source[slot][specName] ~= nil then
                 for itemName, entry in pairs(source[slot][specName]) do
@@ -42,7 +26,7 @@ end
 
 function context.data.GetBestInSlotTrinkets(specName)
     local entries = {}
-    for sourceName, source in pairs(context.data.trinketSources) do
+    for sourceName, source in pairs(context.database.trinketSources) do
         if source[specName] ~= nil then
             for itemName, entry in pairs(source[specName]) do
                 if entries[itemName] ~= nil then
@@ -75,8 +59,7 @@ function context.data.GetItemEquipLocation(itemId)
         return 0
     end
     local _, _, _, equipLocation, _, _, _ = C_Item.GetItemInfoInstant(itemId)
-    local slotId = context.data.equipLocationIds[equipLocation]
-    return slotId ~= nil and slotId or 0
+    return equipLocation
 end
 
 function context.data.GetItemEquipLocationFromLink(itemLink)
@@ -84,7 +67,7 @@ function context.data.GetItemEquipLocationFromLink(itemLink)
 end
 
 function context.data.IsTrackedGear(itemName)
-    for _, source in pairs(context.data.gear) do
+    for _, source in pairs(context.database.gear) do
         if source[itemName] ~= nil then
             return true
         end
@@ -96,7 +79,7 @@ function context.data.GetPlayerSpecEntriesForGear(itemName, specNames)
     local entries = {}
 
     for _, specName in ipairs(specNames) do
-        for sourceName, source in pairs(context.data.gear) do
+        for sourceName, source in pairs(context.database.gear) do
             if source[itemName] ~= nil then
                 local flag = source[itemName][specName]
                 if flag ~= nil then
@@ -114,7 +97,7 @@ function context.data.GetPlayerSpecEntriesForGear(itemName, specNames)
 end
 
 function context.data.IsTrackedTrinket(itemName)
-    for _, source in pairs(context.data.trinkets) do
+    for _, source in pairs(context.database.trinkets) do
         if source[itemName] ~= nil then
             return true
         end
@@ -126,7 +109,7 @@ function context.data.GetPlayerSpecEntriesForTrinket(itemName, specNames)
     local entries = {}
 
     for _, specName in ipairs(specNames) do
-        for sourceName, source in pairs(context.data.trinkets) do
+        for sourceName, source in pairs(context.database.trinkets) do
             if source[itemName] ~= nil then
                 local tier = source[itemName][specName]
                 if tier ~= nil then
