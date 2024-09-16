@@ -62,6 +62,13 @@ local function UpdateCharacterFrameButton(button, unit)
                 for specName, _ in pairs(specList) do
                     if specName == context.player.localSpecNames[specIndex] or specName == context.player.unitSpecNames[specIndex] then
                         local sanatized = string.gsub(string.sub(tier, 1, 2), "%s+", "")
+
+                        if sanatized == "S" then
+                            UpdateBisSlotCount(slotId, unit, 1)
+                        else
+                            UpdateBisSlotCount(slotId, unit, 0)
+                        end
+
                         local color = ITEM_QUALITY_COLORS[context.data.trinketTierRarities[sanatized]]
                         UpdateTextOverlay(button, unit, sanatized, color.r, color.g, color.b)
                         break
@@ -70,8 +77,6 @@ local function UpdateCharacterFrameButton(button, unit)
                     end
                 end
             end
-
-            UpdateBisSlotCount(slotId, unit, 1)
         else
             UpdateBisSlotCount(slotId, unit, 0)
         end
