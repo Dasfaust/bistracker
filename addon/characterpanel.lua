@@ -1,10 +1,12 @@
 local addonName, context = ...
 
-context.characterpanel = {}
+context.characterpanel = {
+    overlays = {}
+}
 
-local function CountBis()
+local function CountBis(isLocal)
     local count = 0
-    for _, _ in pairs(context.icons.personalBisSlotIds) do
+    for _, _ in pairs(isLocal and context.icons.localBisSlotIds or context.icons.unitBisSlotIds) do
         count = count + 1
     end
     return count
@@ -28,19 +30,22 @@ local function ApplyBisCountColor(count)
 end
 
 local function CreateCharacterPanelOverlay(scene, unit)
-    if context.characterpanel.overlay == nil then
-        context.characterpanel.overlay = scene:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-        context.characterpanel.overlay:SetPoint("TOP", scene, "TOP", 0, 0)
-        context.characterpanel.overlay:SetTextColor(1, 1, 1)
-        context.characterpanel.overlay:SetFont("Fonts\\FRIZQT__.TTF", 12, "OUTLINE")
+    if scene.characterPanelOverlay == nil then
+        local overlay = scene:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+        overlay:SetPoint("TOP", scene, "TOP", 0, -2)
+        overlay:SetTextColor(1, 1, 1)
+        overlay:SetFont("Fonts\\FRIZQT__.TTF", 12, "OUTLINE")
+        overlay.isLocal = unit == "player"
+        scene.characterPanelOverlay = overlay
+        context.characterpanel.overlays[overlay] = 1
     end
 
-    context.characterpanel.overlay:SetText("Best in Slot: " .. ApplyBisCountColor(CountBis()) .. " / " .. context.data.ApplyTierColor("16", 5))
+    scene.characterPanelOverlay:SetText("Best in Slot: " .. ApplyBisCountColor(CountBis(scene.characterPanelOverlay.isLocal)) .. " / " .. context.data.ApplyTierColor("16", 5))
 end
 
 local function UpdateCharacterPanelOverlay()
-    if context.characterpanel.overlay ~= nil then
-        context.characterpanel.overlay:SetText("Best in Slot: " .. ApplyBisCountColor(CountBis()) .. " / " .. context.data.ApplyTierColor("16", 5))
+    for overlay, _ in pairs(context.characterpanel.overlays) do
+        overlay:SetText("Best in Slot: " .. ApplyBisCountColor(CountBis(overlay.isLocal)) .. " / " .. context.data.ApplyTierColor("16", 5))
     end
 end
 
@@ -52,6 +57,12 @@ end)
 
 context.events.AddEventCallback(context.events.onAddonLoaded, function()
     hooksecurefunc("PaperDollItemSlotButton_Update", function(button)
+        UpdateCharacterPanelOverlay()
+    end)
+end)
+
+context.events.AddOtherAddonLoadedEventCallback("Blizzard_InspectUI", function()
+    hooksecurefunc("InspectPaperDollItemSlotButton_Update", function(button)
         UpdateCharacterPanelOverlay()
     end)
 end)

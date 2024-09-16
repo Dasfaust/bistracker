@@ -1,19 +1,21 @@
 local addonName, context = ...
 
 context.icons = {
-    personalBisSlotIds = {}
+    localBisSlotIds = {},
+    unitBisSlotIds = {}
 }
 
-local function UpdateTextOverlay(button, text, r, g, b)
+local function UpdateTextOverlay(button, unit, text, r, g, b)
     if not button.characterPanelOverlay then
         local overlay = button:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
         overlay:SetPoint("BOTTOMRIGHT", button, "BOTTOMRIGHT", -2, 2)
-        overlay:SetTextColor(r, g, b)
         overlay:SetFont("Fonts\\FRIZQT__.TTF", 12, "OUTLINE")
         button.characterPanelOverlay = overlay
     end
 
+    button.characterPanelOverlay:SetTextColor(r, g, b)
     button.characterPanelOverlay:SetText(text)
+    button.characterPanelOverlay.unit = unit
 end
 
 local function UpdateCharacterFrameButton(button, unit)
@@ -32,44 +34,78 @@ local function UpdateCharacterFrameButton(button, unit)
             item = itemLink and Item:CreateFromItemLink(itemLink) or Item:CreateFromItemID(itemId)
         end
     end
+    if not item then
+        return
+    end
 
     local itemName = item:GetItemName()
+    local specNames
     if unit == "player" then
-        if context.data.IsTrackedTrinket(itemName) then
-            local entries = context.data.GetPlayerSpecEntriesForTrinket(itemName, context.player.specNames)
-            if next(entries) then
-                local specIndex = GetSpecialization()
-                for tier, specList in pairs(entries) do
-                    for specName, _ in pairs(specList) do
-                        if specName == context.player.specNames[specIndex] then
-                            local sanatized = string.gsub(string.sub(tier, 1, 2), "%s+", "")
-                            local color = ITEM_QUALITY_COLORS[context.data.trinketTierRarities[sanatized]]
-                            UpdateTextOverlay(button, sanatized, color.r, color.g, color.b)
-                            break
-                        end
+        specNames = context.player.localSpecNames
+    else
+        specNames = context.player.GetPlayerSpecsForUnit(unit)
+    end
+
+    if context.data.IsTrackedTrinket(itemName) then
+        local entries = context.data.GetPlayerSpecEntriesForTrinket(itemName, specNames)
+        if next(entries) then
+            local specIndex = unit == "player" and GetSpecialization() or GetInspectSpecialization(unit)
+            for tier, specList in pairs(entries) do
+                for specName, _ in pairs(specList) do
+                    if specName == context.player.localSpecNames[specIndex] or specName == context.player.unitSpecNames[specIndex] then
+                        local sanatized = string.gsub(string.sub(tier, 1, 2), "%s+", "")
+                        local color = ITEM_QUALITY_COLORS[context.data.trinketTierRarities[sanatized]]
+                        UpdateTextOverlay(button, unit, sanatized, color.r, color.g, color.b)
+                        break
+                    else
+                        UpdateTextOverlay(button, unit, "?", 1, 1, 1)
                     end
                 end
-                context.icons.personalBisSlotIds[slotId] = 1
-            else
-                context.icons.personalBisSlotIds[slotId] = nil
             end
-        elseif context.data.IsTrackedGear(itemName) then
-            local entries = context.data.GetPlayerSpecEntriesForGear(itemName, context.player.specNames)
-            if next(entries) then
-                local color = ITEM_QUALITY_COLORS[5]
-                UpdateTextOverlay(button, "BiS", color.r, color.g, color.b)
-                context.icons.personalBisSlotIds[slotId] = 1
+
+            if unit == "player" then
+                context.icons.localBisSlotIds[slotId] = 1
             else
-                context.icons.personalBisSlotIds[slotId] = nil
+                context.icons.unitBisSlotIds[slotId] = 1
             end
         else
-            UpdateTextOverlay(button, "?", 1, 1, 1)
+            if unit == "player" then
+                context.icons.localBisSlotIds[slotId] = nil
+            else
+                context.icons.unitBisSlotIds[slotId] = nil
+            end
         end
+    elseif context.data.IsTrackedGear(itemName) then
+        local entries = context.data.GetPlayerSpecEntriesForGear(itemName, specNames)
+        if next(entries) then
+            local color = ITEM_QUALITY_COLORS[5]
+            UpdateTextOverlay(button, unit, "BiS", color.r, color.g, color.b)
+
+            if unit == "player" then
+                context.icons.localBisSlotIds[slotId] = 1
+            else
+                context.icons.unitBisSlotIds[slotId] = 1
+            end
+        else
+            if unit == "player" then
+                context.icons.localBisSlotIds[slotId] = nil
+            else
+                context.icons.unitBisSlotIds[slotId] = nil
+            end
+        end
+    else
+        UpdateTextOverlay(button, unit, "?", 1, 1, 1)
     end
 end
 
 context.events.AddEventCallback(context.events.onAddonLoaded, function()
     hooksecurefunc("PaperDollItemSlotButton_Update", function(button)
         UpdateCharacterFrameButton(button, "player")
+    end)
+end)
+
+context.events.AddOtherAddonLoadedEventCallback("Blizzard_InspectUI", function()
+    hooksecurefunc("InspectPaperDollItemSlotButton_Update", function(button)
+        UpdateCharacterFrameButton(button, InspectFrame.unit or "target")
     end)
 end)

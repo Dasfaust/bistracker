@@ -70,6 +70,7 @@
         "BATTLEGROUNDS",
         "CharacterFrame",
         "PaperDollFrame",
-        "CharacterModelScene"
+        "CharacterModelScene",
+        "InspectFrame"
     ]
 }
