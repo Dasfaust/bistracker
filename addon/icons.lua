@@ -70,9 +70,9 @@ local function UpdateCharacterFrameButton(button, unit)
             end
         else
             if unit == "player" then
-                context.icons.localBisSlotIds[slotId] = nil
+                context.icons.localBisSlotIds[slotId] = 0
             else
-                context.icons.unitBisSlotIds[slotId] = nil
+                context.icons.unitBisSlotIds[slotId] = 0
             end
         end
     elseif context.data.IsTrackedGear(itemName) then
@@ -88,12 +88,18 @@ local function UpdateCharacterFrameButton(button, unit)
             end
         else
             if unit == "player" then
-                context.icons.localBisSlotIds[slotId] = nil
+                context.icons.localBisSlotIds[slotId] = 0
             else
-                context.icons.unitBisSlotIds[slotId] = nil
+                context.icons.unitBisSlotIds[slotId] = 0
             end
         end
     else
+        if unit == "player" then
+            context.icons.localBisSlotIds[slotId] = 0
+        else
+            context.icons.unitBisSlotIds[slotId] = 0
+        end
+
         UpdateTextOverlay(button, unit, "?", 1, 1, 1)
     end
 end

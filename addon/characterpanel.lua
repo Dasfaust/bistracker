@@ -6,8 +6,8 @@ context.characterpanel = {
 
 local function CountBis(isLocal)
     local count = 0
-    for _, _ in pairs(isLocal and context.icons.localBisSlotIds or context.icons.unitBisSlotIds) do
-        count = count + 1
+    for slotId, isBis in pairs(isLocal and context.icons.localBisSlotIds or context.icons.unitBisSlotIds) do
+        count = count + isBis
     end
     return count
 end
