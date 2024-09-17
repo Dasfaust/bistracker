@@ -67,10 +67,10 @@ local function UpdateChracterPanelItemButton(button, unit)
         specNames = context.player.GetPlayerSpecsForUnit(unit)
     end
 
+    local itemFound = false
     if context.data.IsTrackedTrinket(itemName) then
         local entries = context.data.GetPlayerSpecEntriesForTrinket(itemName, specNames)
         if next(entries) then
-            local isBisForCurrentSpec = false
             for tier, specList in pairs(entries) do
                 for specName, _ in pairs(specList) do
                     if specName == context.player.GetCurrentSpecName(unit) then
@@ -78,49 +78,34 @@ local function UpdateChracterPanelItemButton(button, unit)
 
                         if sanatized == "S" then
                             UpdateBisSlotCount(slotId, unit, 1)
-                            isBisForCurrentSpec = true
                         else
                             UpdateBisSlotCount(slotId, unit, 0)
                         end
 
                         local color = ITEM_QUALITY_COLORS[context.data.trinketTierRarities[sanatized]]
                         UpdateTextOverlay(button, unit, sanatized, color.r, color.g, color.b)
+                        itemFound = true
                         break
                     end
                 end
             end
-
-            if not isBisForCurrentSpec then
-                UpdateBisSlotCount(slotId, unit, 0)
-                UpdateTextOverlay(button, unit, "?", 1, 1, 1)
-            end
-        else
-            UpdateBisSlotCount(slotId, unit, 0)
-            UpdateTextOverlay(button, unit, "?", 1, 1, 1)
         end
     elseif context.data.IsTrackedGear(itemName) then
         local entries = context.data.GetPlayerSpecEntriesForGear(itemName, specNames)
         if next(entries) then
-            local isBisForCurrentSpec = false
             for specName, entry in pairs(entries) do
                 if specName == context.player.GetCurrentSpecName(unit) then
                     local color = ITEM_QUALITY_COLORS[5]
                     UpdateTextOverlay(button, unit, "BiS", color.r, color.g, color.b)
                     UpdateBisSlotCount(slotId, unit, 1)
-                    isBisForCurrentSpec = true
+                    itemFound = true
                     break
                 end
             end
-
-            if not isBisForCurrentSpec then
-                UpdateBisSlotCount(slotId, unit, 0)
-                UpdateTextOverlay(button, unit, "?", 1, 1, 1)
-            end
-        else
-            UpdateBisSlotCount(slotId, unit, 0)
-            UpdateTextOverlay(button, unit, "?", 1, 1, 1)
         end
-    else
+    end
+
+    if not itemFound then
         UpdateBisSlotCount(slotId, unit, 0)
         UpdateTextOverlay(button, unit, "?", 1, 1, 1)
     end
@@ -185,6 +170,7 @@ end
 
 context.events.AddEventCallback(context.events.onAddonLoaded, function()
     hooksecurefunc(ContainerFrameCombinedBags, "UpdateItems", InventoryFrameUpdate)
+---@diagnostic disable-next-line: undefined-field
     for _, frame in ipairs((ContainerFrameContainer or UIParent).ContainerFrames) do
         hooksecurefunc(frame, "UpdateItems", InventoryFrameUpdate)
     end

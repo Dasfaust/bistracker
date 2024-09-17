@@ -13,28 +13,27 @@ local function AddItemTooltipText()
 
     local itemName, itemLink = GameTooltip:GetItem()
     if itemLink ~= nil then
-
-        local slotId = context.data.GetItemEquipLocationFromLink(itemLink)
-        if slotId == "INVTYPE_BODY" or slotId == "INVTYPE_TABARD" then
-            return
-        end
-
-        local unit = "player"
-        local owner = GameTooltip:GetOwner()
-        if owner ~= nil then
-            if owner.iconOverlay ~= nil then
-                unit = owner.iconOverlay.unit
-            end
-        end
-
-        local specNames
-        if unit == "player" then
-            specNames = context.player.localSpecNames
-        else
-            specNames = context.player.GetPlayerSpecsForUnit(unit)
-        end
-
         if context.data.IsItemLinkGearPiece(itemLink) then
+            local slotId = context.data.GetItemEquipLocationFromLink(itemLink)
+            if slotId == "INVTYPE_BODY" or slotId == "INVTYPE_TABARD" then
+                return
+            end
+
+            local unit = "player"
+            local owner = GameTooltip:GetOwner()
+            if owner ~= nil then
+                if owner.iconOverlay ~= nil then
+                    unit = owner.iconOverlay.unit
+                end
+            end
+
+            local specNames
+            if unit == "player" then
+                specNames = context.player.localSpecNames
+            else
+                specNames = context.player.GetPlayerSpecsForUnit(unit)
+            end
+
             local isBis = false
             if context.data.IsTrackedTrinket(itemName) then
                 local entries = context.data.GetPlayerSpecEntriesForTrinket(itemName, specNames)
