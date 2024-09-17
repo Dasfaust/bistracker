@@ -181,7 +181,7 @@ end)
 
 local InventoryFrameUpdate = function(frame)
     for _, itemButton in frame:EnumerateValidItems() do
-        UpdateItemButton(itemButton, "player")
+        UpdateItemButton(itemButton)
     end
 end
 

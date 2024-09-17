@@ -3,6 +3,7 @@ local addonName, context = ...
 local function AddItemTooltipText()
     local itemName, itemLink = GameTooltip:GetItem()
     if itemLink ~= nil then
+
         local slotId = context.data.GetItemEquipLocationFromLink(itemLink)
         if slotId == "INVTYPE_BODY" or slotId == "INVTYPE_TABARD" then
             return
@@ -45,7 +46,7 @@ local function AddItemTooltipText()
                             end
                             i = i + 1
                         end
-                        GameTooltip:AddLine(context.data.ApplyTrinketTierColor(tier) .. " for " .. specString, 1, 1, 1)
+                        GameTooltip:AddLine(context.data.ApplyTrinketTierColor(tier) .. " for " .. specString, 1, 1, 1, true)
                     end
                 end
             elseif context.data.IsTrackedGear(itemName) then
@@ -67,7 +68,7 @@ local function AddItemTooltipText()
                         end
                         i = i + 1
                     end
-                    GameTooltip:AddLine(context.data.ApplyTierColor("BiS", 5) .. " for " .. specString, 1, 1, 1)
+                    GameTooltip:AddLine(context.data.ApplyTierColor("BiS", 5) .. " for " .. specString, 1, 1, 1, true)
                 end
             end
             
@@ -86,7 +87,7 @@ local function AddItemTooltipText()
                                 sourceString = sourceString .. (j > 1 and " " or "") .. "|TInterface\\AddOns\\bistracker\\media\\" .. sourceName .. ":16:16:0:0|t"
                                 j = j + 1
                             end
-                            GameTooltip:AddLine(context.data.ApplyTierColor("[" .. itemName .. "]", 4) .. " is " .. context.data.ApplyTrinketTierColor(itemInfo.tier) .. " " .. sourceString .. " from " .. itemInfo.location, 1, 1, 1)
+                            GameTooltip:AddLine(context.data.ApplyTierColor("[" .. itemName .. "]", 4) .. " is " .. context.data.ApplyTrinketTierColor(itemInfo.tier) .. " " .. sourceString .. " from " .. itemInfo.location, 1, 1, 1, true)
                             i = i + 1
                         end
                         bisFound = true
@@ -105,7 +106,7 @@ local function AddItemTooltipText()
                             end
                             local spec = string.sub(specName, (unit == "player" and #context.player.localClassName or #context.player.unitClassName) + 2)
                             local prefix = i > 1 and "or" or spec .. "'s BiS is"
-                            GameTooltip:AddLine(prefix .. " " .. context.data.ApplyTierColor("[" .. itemName .. "]", 4) .. " " .. sourceString .. " from " .. itemInfo.location, 1, 1, 1)
+                            GameTooltip:AddLine(prefix .. " " .. context.data.ApplyTierColor("[" .. itemName .. "]", 4) .. " " .. sourceString .. " from " .. itemInfo.location, 1, 1, 1, true)
                             i = i + 1
                         end
                         bisFound = true
@@ -115,7 +116,7 @@ local function AddItemTooltipText()
                 if not bisFound then
                     local spec = string.sub(specName, (unit == "player" and #context.player.localClassName or #context.player.unitClassName) + 2)
                     GameTooltip:AddLine(" ")
-                    GameTooltip:AddLine("Could not find a BiS item with this slot for " .. spec, 1, 1, 1)
+                    GameTooltip:AddLine("Could not find a BiS item with this slot for " .. spec, 1, 1, 1, true)
                 end
             end
         end
