@@ -1,6 +1,16 @@
 local addonName, context = ...
 
+local currentLine = ""
+
 local function AddItemTooltipText()
+    -- if it's dumb, but it works, is it dumb? yes, but it works
+    for i = 1, GameTooltip:NumLines() do
+        local leftText = _G["GameTooltipTextLeft" .. i]
+        if leftText ~= nil and leftText:GetText() == currentLine then
+            return
+        end
+    end
+
     local itemName, itemLink = GameTooltip:GetItem()
     if itemLink ~= nil then
 
@@ -46,7 +56,8 @@ local function AddItemTooltipText()
                             end
                             i = i + 1
                         end
-                        GameTooltip:AddLine(context.data.ApplyTrinketTierColor(tier) .. " for " .. specString, 1, 1, 1, true)
+                        currentLine = context.data.ApplyTrinketTierColor(tier) .. " for " .. specString
+                        GameTooltip:AddLine(currentLine, 1, 1, 1, true)
                     end
                 end
             elseif context.data.IsTrackedGear(itemName) then
@@ -68,7 +79,8 @@ local function AddItemTooltipText()
                         end
                         i = i + 1
                     end
-                    GameTooltip:AddLine(context.data.ApplyTierColor("BiS", 5) .. " for " .. specString, 1, 1, 1, true)
+                    currentLine = context.data.ApplyTierColor("BiS", 5) .. " for " .. specString
+                    GameTooltip:AddLine(currentLine, 1, 1, 1, true)
                 end
             end
             
@@ -87,7 +99,8 @@ local function AddItemTooltipText()
                                 sourceString = sourceString .. (j > 1 and " " or "") .. "|TInterface\\AddOns\\bistracker\\media\\" .. sourceName .. ":16:16:0:0|t"
                                 j = j + 1
                             end
-                            GameTooltip:AddLine(context.data.ApplyTierColor("[" .. itemName .. "]", 4) .. " is " .. context.data.ApplyTrinketTierColor(itemInfo.tier) .. " " .. sourceString .. " from " .. itemInfo.location, 1, 1, 1, true)
+                            currentLine = context.data.ApplyTierColor("[" .. itemName .. "]", 4) .. " is " .. context.data.ApplyTrinketTierColor(itemInfo.tier) .. " " .. sourceString .. " from " .. itemInfo.location
+                            GameTooltip:AddLine(currentLine, 1, 1, 1, true)
                             i = i + 1
                         end
                         bisFound = true
@@ -106,7 +119,8 @@ local function AddItemTooltipText()
                             end
                             local spec = string.sub(specName, (unit == "player" and #context.player.localClassName or #context.player.unitClassName) + 2)
                             local prefix = i > 1 and "or" or spec .. "'s BiS is"
-                            GameTooltip:AddLine(prefix .. " " .. context.data.ApplyTierColor("[" .. itemName .. "]", 4) .. " " .. sourceString .. " from " .. itemInfo.location, 1, 1, 1, true)
+                            currentLine = prefix .. " " .. context.data.ApplyTierColor("[" .. itemName .. "]", 4) .. " " .. sourceString .. " from " .. itemInfo.location
+                            GameTooltip:AddLine(currentLine, 1, 1, 1, true)
                             i = i + 1
                         end
                         bisFound = true
@@ -116,7 +130,8 @@ local function AddItemTooltipText()
                 if not bisFound then
                     local spec = string.sub(specName, (unit == "player" and #context.player.localClassName or #context.player.unitClassName) + 2)
                     GameTooltip:AddLine(" ")
-                    GameTooltip:AddLine("Could not find a BiS item with this slot for " .. spec, 1, 1, 1, true)
+                    currentLine = "Could not find a BiS item with this slot for " .. spec
+                    GameTooltip:AddLine(currentLine, 1, 1, 1, true)
                 end
             end
         end
