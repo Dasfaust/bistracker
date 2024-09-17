@@ -161,8 +161,6 @@ local function UpdateItemButton(button)
                     end
                 end
             end
-        else
-            UpdateTextOverlay(button, "player", "?", 1, 1, 1)
         end
     end
 end
