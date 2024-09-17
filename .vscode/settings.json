@@ -75,6 +75,10 @@
         "Raid",
         "INVTYPE_FINGER",
         "ContainerFrameCombinedBags",
-        "ContainerFrameContainer"
+        "ContainerFrameContainer",
+        "WeeklyRewardsFrame",
+        "WeeklyRewardConfirmSelectionMixin",
+        "WeeklyRewardsActivityMixin",
+        "WeeklyRewardsMixin"
     ]
 }

@@ -52,10 +52,12 @@ local function UpdateChracterPanelItemButton(button, unit)
         end
     end
     if not item then
+        UpdateBisSlotCount(slotId, unit, 0)
         return
     end
 
     if not context.data.IsItemIdGearPiece(item:GetItemID()) then
+        UpdateBisSlotCount(slotId, unit, 0)
         return
     end
 
@@ -150,18 +152,52 @@ local function UpdateItemButton(button)
     end
 end
 
+local function UpdateVaultButton(icon, itemName, itemLink)
+    HideOverlay(icon)
+
+    if context.data.IsTrackedTrinket(itemName) then
+        local entries = context.data.GetPlayerSpecEntriesForTrinket(itemName, context.player.localSpecNames)
+        if next(entries) then
+            for tier, specList in pairs(entries) do
+                for specName, _ in pairs(specList) do
+                    if specName == context.player.GetCurrentSpecName("player") then
+                        local sanatized = string.gsub(string.sub(tier, 1, 2), "%s+", "")
+                        local color = ITEM_QUALITY_COLORS[context.data.trinketTierRarities[sanatized]]
+                        UpdateTextOverlay(icon, "player", sanatized, color.r, color.g, color.b)
+                        break
+                    end
+                end
+            end
+        end
+    elseif context.data.IsTrackedGear(itemName) then
+        local entries = context.data.GetPlayerSpecEntriesForGear(itemName, context.player.localSpecNames)
+        if next(entries) then
+            for specName, entry in pairs(entries) do
+                if specName == context.player.GetCurrentSpecName("player") then
+                    local color = ITEM_QUALITY_COLORS[5]
+                    UpdateTextOverlay(icon, "player", "BiS", color.r, color.g, color.b)
+                    break
+                end
+            end
+        end
+    end
+end
+
+-- Character frame
 context.events.AddEventCallback(context.events.onAddonLoaded, function()
     hooksecurefunc("PaperDollItemSlotButton_Update", function(button)
         UpdateChracterPanelItemButton(button, "player")
     end)
 end)
 
+-- Inspect frame
 context.events.AddOtherAddonLoadedEventCallback("Blizzard_InspectUI", function()
     hooksecurefunc("InspectPaperDollItemSlotButton_Update", function(button)
         UpdateChracterPanelItemButton(button, InspectFrame.unit or "target")
     end)
 end)
 
+-- Inventory frames
 local InventoryFrameUpdate = function(frame)
     for _, itemButton in frame:EnumerateValidItems() do
         UpdateItemButton(itemButton)
@@ -173,5 +209,26 @@ context.events.AddEventCallback(context.events.onAddonLoaded, function()
 ---@diagnostic disable-next-line: undefined-field
     for _, frame in ipairs((ContainerFrameContainer or UIParent).ContainerFrames) do
         hooksecurefunc(frame, "UpdateItems", InventoryFrameUpdate)
+    end
+end)
+
+-- Weekly vault
+context.events.AddOtherAddonLoadedEventCallback("Blizzard_WeeklyRewards", function()
+    if WeeklyRewardsFrame then
+        for _, child in pairs({WeeklyRewardsFrame:GetChildren()}) do
+            if child["ItemFrame"] ~= nil then
+                hooksecurefunc(child["ItemFrame"], "SetRewards", function(frame, itemInfos)
+                    if frame and itemInfos then
+                        for _, itemInfo in ipairs(itemInfos) do
+                            local itemHyperlink = C_WeeklyRewards.GetItemHyperlink(itemInfo["itemDBID"])
+                            local itemName, _, _, _, _, _, _, _, _, _, _, itemClass = C_Item.GetItemInfo(itemHyperlink);
+                            if itemClass == Enum.ItemClass.Weapon or itemClass == Enum.ItemClass.Armor then
+                                UpdateVaultButton(frame, itemName, itemHyperlink)
+                            end
+                        end
+                    end
+                end)
+            end
+        end
     end
 end)
