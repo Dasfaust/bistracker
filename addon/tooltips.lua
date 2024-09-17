@@ -11,8 +11,8 @@ local function AddItemTooltipText()
         local unit = "player"
         local owner = GameTooltip:GetOwner()
         if owner ~= nil then
-            if owner.characterPanelOverlay ~= nil then
-                unit = owner.characterPanelOverlay.unit
+            if owner.iconOverlay ~= nil then
+                unit = owner.iconOverlay.unit
             end
         end
 

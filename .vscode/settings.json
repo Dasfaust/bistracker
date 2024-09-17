@@ -73,6 +73,8 @@
         "CharacterModelScene",
         "InspectFrame",
         "Raid",
-        "INVTYPE_FINGER"
+        "INVTYPE_FINGER",
+        "ContainerFrameCombinedBags",
+        "ContainerFrameContainer"
     ]
 }

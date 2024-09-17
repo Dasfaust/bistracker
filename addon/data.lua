@@ -1,7 +1,7 @@
 local addonName, context = ...
 
 context.data = {
-    trinketTierRarities = { ["S"] = 5, ["A"] = 4, ["B"] = 3, ["C"] = 2, ["D"] = 1 }
+    trinketTierRarities = { ["S"] = 5, ["A"] = 4, ["B"] = 3, ["C"] = 2, ["D"] = 1, ["F"] = 0 }
 }
 
 function context.data.GetBestInSlotGear(specName, slot)
