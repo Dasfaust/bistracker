@@ -29,12 +29,14 @@ function context.data.GetBestInSlotTrinkets(specName)
     for sourceName, source in pairs(context.database.trinketSources) do
         if source[specName] ~= nil then
             for itemName, entry in pairs(source[specName]) do
-                if entries[itemName] ~= nil then
-                    table.insert(entries[itemName]["sources"], sourceName)
-                else
-                    local result = entry
-                    result["sources"] = { sourceName }
-                    entries[itemName] = result
+                if string.sub(entry.tier, 1, 1) == "S" then
+                    if entries[itemName] ~= nil then
+                        table.insert(entries[itemName]["sources"], sourceName)
+                    else
+                        local result = entry
+                        result["sources"] = { sourceName }
+                        entries[itemName] = result
+                    end
                 end
             end
         end
