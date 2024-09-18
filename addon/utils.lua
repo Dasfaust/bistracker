@@ -14,3 +14,16 @@ function context.utils.dump(o)
        return tostring(o)
     end
  end
+
+ function context.utils.SplitString(input, sep)
+    if sep == nil then
+      sep = "%s"
+    end
+    
+    local ret = {}
+    for str in string.gmatch(input, "([^" .. sep .. "]+)") do
+      table.insert(ret, str)
+    end
+
+    return ret
+  end

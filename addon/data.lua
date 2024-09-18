@@ -153,6 +153,15 @@ function context.data.ApplyTrinketTierColor(tier)
     return format("%s%s tier|r", ITEM_QUALITY_COLORS[context.data.trinketTierRarities[sanatized]].hex, tier)
 end
 
+function context.data.GetTrinketTierColor(tier)
+    local sanatized = string.sub(tier, 1, 1)
+    return string.sub(ITEM_QUALITY_COLORS[context.data.trinketTierRarities[sanatized]].hex, 3)
+end
+
 function context.data.ApplyTierColor(text, tier)
     return format("%s%s|r", ITEM_QUALITY_COLORS[tier].hex, text)
+end
+
+function context.data.ApplyColor(text, hex)
+    return format("|c%s%s|r", hex, text)
 end

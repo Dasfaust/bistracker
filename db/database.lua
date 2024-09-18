@@ -478,13 +478,13 @@ context.database = {
 		wowhead = {
 			["212065"] = {
 				["Demon Hunter/Havoc"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["178707"] = {
 				["Demon Hunter/Havoc"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Hunter/Beast Mastery"] = {
@@ -494,22 +494,22 @@ context.database = {
 					"from M+",
 				},
 				["Evoker/Augmentation"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Death Knight/Frost"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Hunter/Survival"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Hunter/Marksmanship"] = {
 					"from M+",
 				},
 				["Priest/Holy"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Rogue/Subtlety"] = {
@@ -521,136 +521,136 @@ context.database = {
 			},
 			["212063"] = {
 				["Demon Hunter/Havoc"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Demon Hunter/Vengeance"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["225574"] = {
 				["Demon Hunter/Havoc"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Hunter/Beast Mastery"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Death Knight/Blood"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Demon Hunter/Vengeance"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Evoker/Devastation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Death Knight/Unholy"] = {
 					"from raid",
 				},
 				["Death Knight/Frost"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Paladin/Holy"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Hunter/Marksmanship"] = {
 					"from raid",
 				},
 				["Monk/Brewmaster"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Mage/Fire"] = {
 					"from raid",
 				},
 				["Paladin/Protection"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Priest/Discipline"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Rogue/Outlaw"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Rogue/Assassination"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Priest/Shadow"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Shaman/Restoration"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Rogue/Subtlety"] = {
 					"from raid",
 				},
 				["Warlock/Demonology"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warrior/Protection"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warlock/Affliction"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warrior/Arms"] = {
 					"from raid",
 				},
 				["Warlock/Destruction"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["212068"] = {
 				["Demon Hunter/Havoc"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Demon Hunter/Vengeance"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["212438"] = {
 				["Demon Hunter/Havoc"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Druid/Balance"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["219333"] = {
 				["Demon Hunter/Havoc"] = {
-					"Overall",
+					"overall",
 				},
 				["Monk/Brewmaster"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["221134"] = {
 				["Demon Hunter/Havoc"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Druid/Balance"] = {
@@ -662,22 +662,22 @@ context.database = {
 			},
 			["212064"] = {
 				["Demon Hunter/Havoc"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Demon Hunter/Vengeance"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["221169"] = {
 				["Demon Hunter/Havoc"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Druid/Balance"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Rogue/Assassination"] = {
@@ -686,70 +686,70 @@ context.database = {
 			},
 			["225578"] = {
 				["Demon Hunter/Havoc"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Hunter/Beast Mastery"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Death Knight/Blood"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Demon Hunter/Vengeance"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Evoker/Preservation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Druid/Balance"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Evoker/Augmentation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Evoker/Devastation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Death Knight/Frost"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Mage/Frost"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Hunter/Survival"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Hunter/Marksmanship"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Monk/Brewmaster"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Mage/Arcane"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Mage/Fire"] = {
-					"Overall",
+					"overall",
 				},
 				["Paladin/Retribution"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Paladin/Protection"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Priest/Discipline"] = {
@@ -759,52 +759,52 @@ context.database = {
 					"from raid",
 				},
 				["Rogue/Assassination"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Priest/Shadow"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Shaman/Restoration"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Priest/Holy"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Rogue/Subtlety"] = {
 					"from raid",
 				},
 				["Warlock/Demonology"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warrior/Protection"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warlock/Affliction"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warrior/Arms"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warrior/Fury"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warlock/Destruction"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["162542"] = {
 				["Demon Hunter/Havoc"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Hunter/Beast Mastery"] = {
@@ -817,35 +817,35 @@ context.database = {
 					"from M+",
 				},
 				["Hunter/Marksmanship"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Rogue/Assassination"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
 			["219877"] = {
 				["Demon Hunter/Havoc"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Demon Hunter/Vengeance"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Monk/Brewmaster"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Rogue/Outlaw"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["222441"] = {
 				["Demon Hunter/Havoc"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["212448"] = {
@@ -853,14 +853,14 @@ context.database = {
 					"from raid",
 				},
 				["Demon Hunter/Vengeance"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Evoker/Augmentation"] = {
 					"from raid",
 				},
 				["Evoker/Devastation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Death Knight/Frost"] = {
@@ -870,14 +870,14 @@ context.database = {
 					"from raid",
 				},
 				["Hunter/Marksmanship"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Rogue/Outlaw"] = {
 					"from raid",
 				},
 				["Shaman/Restoration"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Shaman/Elemental"] = {
@@ -920,7 +920,7 @@ context.database = {
 					"from raid",
 				},
 				["Rogue/Assassination"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["212447"] = {
@@ -928,7 +928,7 @@ context.database = {
 					"from raid",
 				},
 				["Hunter/Beast Mastery"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Demon Hunter/Vengeance"] = {
@@ -938,7 +938,7 @@ context.database = {
 					"from raid",
 				},
 				["Death Knight/Unholy"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Mage/Frost"] = {
@@ -951,29 +951,29 @@ context.database = {
 					"from raid",
 				},
 				["Mage/Fire"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Paladin/Protection"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Priest/Discipline"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Rogue/Outlaw"] = {
 					"from raid",
 				},
 				["Priest/Shadow"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Shaman/Elemental"] = {
 					"from raid",
 				},
 				["Warlock/Demonology"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warrior/Protection"] = {
@@ -999,11 +999,11 @@ context.database = {
 					"from M+",
 				},
 				["Druid/Balance"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Rogue/Subtlety"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
@@ -1081,7 +1081,7 @@ context.database = {
 					"from M+",
 				},
 				["Evoker/Devastation"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Death Knight/Frost"] = {
@@ -1100,21 +1100,21 @@ context.database = {
 					"from M+",
 				},
 				["Shaman/Restoration"] = {
-					"Overall",
+					"overall",
 				},
 				["Warlock/Demonology"] = {
 					"from M+",
 				},
 				["Warrior/Protection"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Warlock/Affliction"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Warlock/Destruction"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
@@ -1130,12 +1130,12 @@ context.database = {
 			},
 			["212020"] = {
 				["Hunter/Beast Mastery"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Hunter/Survival"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
@@ -1145,99 +1145,99 @@ context.database = {
 			},
 			["225577"] = {
 				["Hunter/Beast Mastery"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Evoker/Preservation"] = {
 					"from raid",
 				},
 				["Druid/Balance"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Death Knight/Unholy"] = {
 					"from raid",
 				},
 				["Mage/Frost"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Paladin/Holy"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Mage/Arcane"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Mage/Fire"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Paladin/Retribution"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Paladin/Protection"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Priest/Discipline"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Rogue/Assassination"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Priest/Shadow"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warlock/Demonology"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warrior/Protection"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warlock/Affliction"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warrior/Arms"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warrior/Fury"] = {
 					"from raid",
 				},
 				["Warlock/Destruction"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["212018"] = {
 				["Hunter/Beast Mastery"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Hunter/Survival"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Hunter/Marksmanship"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["212023"] = {
 				["Hunter/Beast Mastery"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
@@ -1245,55 +1245,55 @@ context.database = {
 					"from M+",
 				},
 				["Hunter/Marksmanship"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["219342"] = {
 				["Hunter/Beast Mastery"] = {
-					"Overall",
+					"overall",
 				},
 				["Hunter/Marksmanship"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["219341"] = {
 				["Hunter/Beast Mastery"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["212017"] = {
 				["Hunter/Beast Mastery"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["212019"] = {
 				["Hunter/Beast Mastery"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Hunter/Survival"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Hunter/Marksmanship"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
 			["212022"] = {
 				["Hunter/Beast Mastery"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["212400"] = {
 				["Hunter/Beast Mastery"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
@@ -1308,11 +1308,11 @@ context.database = {
 					"from raid",
 				},
 				["Shaman/Restoration"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Shaman/Elemental"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
@@ -1321,7 +1321,7 @@ context.database = {
 					"from raid",
 				},
 				["Evoker/Preservation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
@@ -1338,11 +1338,11 @@ context.database = {
 					"from M+",
 				},
 				["Evoker/Augmentation"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Evoker/Devastation"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Hunter/Survival"] = {
@@ -1379,7 +1379,7 @@ context.database = {
 					"from M+",
 				},
 				["Evoker/Augmentation"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
@@ -1390,117 +1390,117 @@ context.database = {
 			},
 			["221146"] = {
 				["Death Knight/Blood"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
 			["225575"] = {
 				["Death Knight/Blood"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Evoker/Preservation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Monk/Brewmaster"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Priest/Holy"] = {
 					"from raid",
 				},
 				["Rogue/Subtlety"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["212000"] = {
 				["Death Knight/Blood"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Death Knight/Unholy"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Death Knight/Frost"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["212005"] = {
 				["Death Knight/Blood"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Death Knight/Unholy"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Death Knight/Frost"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["222435"] = {
 				["Death Knight/Blood"] = {
-					"Overall",
+					"overall",
 				},
 				["Death Knight/Frost"] = {
-					"Overall",
+					"overall",
 				},
 				["Paladin/Retribution"] = {
-					"Overall",
+					"overall",
 				},
 				["Warrior/Arms"] = {
-					"Overall",
+					"overall",
 				},
 				["Warrior/Fury"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["212003"] = {
 				["Death Knight/Blood"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Death Knight/Unholy"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Death Knight/Frost"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["222431"] = {
 				["Death Knight/Blood"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["212001"] = {
 				["Death Knight/Blood"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Death Knight/Unholy"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Death Knight/Frost"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["212443"] = {
 				["Death Knight/Blood"] = {
-					"Overall",
+					"overall",
 				},
 				["Warrior/Protection"] = {
 					"from raid",
@@ -1508,20 +1508,20 @@ context.database = {
 			},
 			["178781"] = {
 				["Death Knight/Blood"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Hunter/Survival"] = {
 					"from M+",
 				},
 				["Monk/Brewmaster"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
 			["212407"] = {
 				["Death Knight/Blood"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Paladin/Retribution"] = {
@@ -1569,11 +1569,11 @@ context.database = {
 					"from raid",
 				},
 				["Evoker/Preservation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Druid/Balance"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Evoker/Augmentation"] = {
@@ -1586,7 +1586,7 @@ context.database = {
 					"from raid",
 				},
 				["Hunter/Survival"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Paladin/Holy"] = {
@@ -1599,13 +1599,13 @@ context.database = {
 					"from raid",
 				},
 				["Mage/Arcane"] = {
-					"Overall",
+					"overall",
 				},
 				["Mage/Fire"] = {
 					"from raid",
 				},
 				["Paladin/Retribution"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Rogue/Assassination"] = {
@@ -1624,7 +1624,7 @@ context.database = {
 					"from raid",
 				},
 				["Warrior/Fury"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
@@ -1666,7 +1666,7 @@ context.database = {
 					"from M+",
 				},
 				["Death Knight/Unholy"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Death Knight/Frost"] = {
@@ -1676,7 +1676,7 @@ context.database = {
 					"from M+",
 				},
 				["Paladin/Protection"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
@@ -1698,7 +1698,7 @@ context.database = {
 					"from M+",
 				},
 				["Paladin/Retribution"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
@@ -1721,14 +1721,14 @@ context.database = {
 					"from M+",
 				},
 				["Death Knight/Frost"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Paladin/Retribution"] = {
 					"from M+",
 				},
 				["Priest/Holy"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
@@ -1739,13 +1739,13 @@ context.database = {
 			},
 			["221081"] = {
 				["Demon Hunter/Vengeance"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
 			["221142"] = {
 				["Demon Hunter/Vengeance"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Rogue/Outlaw"] = {
@@ -1754,22 +1754,22 @@ context.database = {
 			},
 			["212066"] = {
 				["Demon Hunter/Vengeance"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["219502"] = {
 				["Demon Hunter/Vengeance"] = {
-					"Overall",
+					"overall",
 				},
 				["Monk/Brewmaster"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["159320"] = {
 				["Demon Hunter/Vengeance"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Monk/Brewmaster"] = {
@@ -1781,7 +1781,7 @@ context.database = {
 			},
 			["159461"] = {
 				["Demon Hunter/Vengeance"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Evoker/Preservation"] = {
@@ -1791,33 +1791,33 @@ context.database = {
 					"from M+",
 				},
 				["Paladin/Holy"] = {
-					"Overall",
+					"overall",
 				},
 				["Paladin/Protection"] = {
 					"from M+",
 				},
 				["Priest/Discipline"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Shaman/Restoration"] = {
 					"from M+",
 				},
 				["Shaman/Elemental"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Warrior/Protection"] = {
 					"from M+",
 				},
 				["Warrior/Arms"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
 			["222440"] = {
 				["Demon Hunter/Vengeance"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["212417"] = {
@@ -1836,7 +1836,7 @@ context.database = {
 					"from raid",
 				},
 				["Monk/Brewmaster"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Rogue/Outlaw"] = {
@@ -1868,7 +1868,7 @@ context.database = {
 					"from M+",
 				},
 				["Rogue/Outlaw"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Shaman/Restoration"] = {
@@ -1880,7 +1880,7 @@ context.database = {
 					"from M+",
 				},
 				["Rogue/Subtlety"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
@@ -1901,46 +1901,46 @@ context.database = {
 			},
 			["212029"] = {
 				["Evoker/Preservation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Evoker/Devastation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["212027"] = {
 				["Evoker/Preservation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Evoker/Augmentation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Evoker/Devastation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["212446"] = {
 				["Evoker/Preservation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Druid/Balance"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Evoker/Augmentation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Mage/Frost"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Hunter/Survival"] = {
@@ -1950,11 +1950,11 @@ context.database = {
 					"from raid",
 				},
 				["Paladin/Retribution"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Priest/Holy"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warrior/Fury"] = {
@@ -1963,23 +1963,23 @@ context.database = {
 			},
 			["212032"] = {
 				["Evoker/Preservation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Evoker/Augmentation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Evoker/Devastation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["212415"] = {
 				["Evoker/Preservation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Evoker/Augmentation"] = {
@@ -1991,7 +1991,7 @@ context.database = {
 			},
 			["221168"] = {
 				["Evoker/Preservation"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Evoker/Devastation"] = {
@@ -2000,33 +2000,33 @@ context.database = {
 			},
 			["212028"] = {
 				["Evoker/Preservation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Evoker/Augmentation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["225586"] = {
 				["Evoker/Preservation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Evoker/Augmentation"] = {
 					"from raid",
 				},
 				["Evoker/Devastation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Hunter/Survival"] = {
 					"from raid",
 				},
 				["Hunter/Marksmanship"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Shaman/Restoration"] = {
@@ -2038,11 +2038,11 @@ context.database = {
 			},
 			["212405"] = {
 				["Evoker/Preservation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Evoker/Augmentation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Paladin/Holy"] = {
@@ -2051,7 +2051,7 @@ context.database = {
 			},
 			["212387"] = {
 				["Evoker/Preservation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Evoker/Augmentation"] = {
@@ -2078,19 +2078,19 @@ context.database = {
 					"from raid",
 				},
 				["Evoker/Devastation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Hunter/Survival"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Hunter/Marksmanship"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Shaman/Restoration"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
@@ -2099,14 +2099,14 @@ context.database = {
 					"from raid",
 				},
 				["Druid/Balance"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Evoker/Augmentation"] = {
 					"from raid",
 				},
 				["Evoker/Devastation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Mage/Frost"] = {
@@ -2116,14 +2116,14 @@ context.database = {
 					"from raid",
 				},
 				["Mage/Fire"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Priest/Discipline"] = {
 					"from raid",
 				},
 				["Priest/Shadow"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Shaman/Restoration"] = {
@@ -2133,15 +2133,15 @@ context.database = {
 					"from raid",
 				},
 				["Warlock/Demonology"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warlock/Affliction"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warlock/Destruction"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
@@ -2153,7 +2153,7 @@ context.database = {
 					"from M+",
 				},
 				["Death Knight/Unholy"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Mage/Frost"] = {
@@ -2193,7 +2193,7 @@ context.database = {
 					"from M+",
 				},
 				["Warrior/Fury"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Warlock/Destruction"] = {
@@ -2217,7 +2217,7 @@ context.database = {
 					"from M+",
 				},
 				["Mage/Fire"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Paladin/Retribution"] = {
@@ -2248,7 +2248,7 @@ context.database = {
 					"from M+",
 				},
 				["Warrior/Fury"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Warlock/Destruction"] = {
@@ -2271,7 +2271,7 @@ context.database = {
 					"from M+",
 				},
 				["Shaman/Restoration"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Shaman/Elemental"] = {
@@ -2280,41 +2280,41 @@ context.database = {
 			},
 			["212054"] = {
 				["Druid/Balance"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["212059"] = {
 				["Druid/Balance"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["212057"] = {
 				["Druid/Balance"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["212425"] = {
 				["Druid/Balance"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Monk/Brewmaster"] = {
 					"from raid",
 				},
 				["Rogue/Subtlety"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["212055"] = {
 				["Druid/Balance"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
@@ -2338,7 +2338,7 @@ context.database = {
 					"from M+",
 				},
 				["Death Knight/Unholy"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Mage/Fire"] = {
@@ -2385,51 +2385,51 @@ context.database = {
 			},
 			["178738"] = {
 				["Evoker/Augmentation"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Hunter/Marksmanship"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
 			["212030"] = {
 				["Evoker/Augmentation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Evoker/Devastation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["219339"] = {
 				["Evoker/Augmentation"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["215133"] = {
 				["Evoker/Augmentation"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["133303"] = {
 				["Evoker/Augmentation"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
 			["221172"] = {
 				["Evoker/Augmentation"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Mage/Frost"] = {
 					"from M+",
 				},
 				["Priest/Discipline"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
@@ -2438,7 +2438,7 @@ context.database = {
 					"from raid",
 				},
 				["Shaman/Elemental"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
@@ -2447,7 +2447,7 @@ context.database = {
 					"from raid",
 				},
 				["Shaman/Elemental"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
@@ -2458,79 +2458,79 @@ context.database = {
 			},
 			["212435"] = {
 				["Evoker/Devastation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Hunter/Marksmanship"] = {
 					"from raid",
 				},
 				["Shaman/Restoration"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["212394"] = {
 				["Evoker/Devastation"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Mage/Frost"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Mage/Arcane"] = {
-					"Overall",
+					"overall",
 				},
 				["Mage/Fire"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Priest/Discipline"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Shaman/Restoration"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Priest/Holy"] = {
 					"from raid",
 				},
 				["Shaman/Elemental"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warlock/Demonology"] = {
-					"Overall",
+					"overall",
 				},
 				["Warlock/Affliction"] = {
-					"Overall",
+					"overall",
 				},
 				["Warlock/Destruction"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["222566"] = {
 				["Evoker/Devastation"] = {
-					"Overall",
+					"overall",
 				},
 				["Mage/Frost"] = {
-					"Overall",
+					"overall",
 				},
 				["Mage/Arcane"] = {
-					"Overall",
+					"overall",
 				},
 				["Mage/Fire"] = {
-					"Overall",
+					"overall",
 				},
 				["Warlock/Demonology"] = {
-					"Overall",
+					"overall",
 				},
 				["Warlock/Affliction"] = {
-					"Overall",
+					"overall",
 				},
 				["Warlock/Destruction"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["221156"] = {
@@ -2566,15 +2566,15 @@ context.database = {
 			},
 			["178694"] = {
 				["Death Knight/Unholy"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Death Knight/Frost"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Paladin/Protection"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Warrior/Arms"] = {
@@ -2583,37 +2583,37 @@ context.database = {
 			},
 			["221667"] = {
 				["Death Knight/Unholy"] = {
-					"Overall",
+					"overall",
 				},
 				["Shaman/Elemental"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["221133"] = {
 				["Death Knight/Unholy"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Paladin/Retribution"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Paladin/Protection"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Warrior/Protection"] = {
 					"from M+",
 				},
 				["Warrior/Fury"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
 			["225590"] = {
 				["Death Knight/Unholy"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Death Knight/Frost"] = {
@@ -2623,28 +2623,28 @@ context.database = {
 					"from raid",
 				},
 				["Paladin/Retribution"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Paladin/Protection"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warrior/Arms"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warrior/Fury"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["222447"] = {
 				["Death Knight/Unholy"] = {
-					"Overall",
+					"overall",
 				},
 				["Warrior/Fury"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["212002"] = {
@@ -2660,7 +2660,7 @@ context.database = {
 					"from raid",
 				},
 				["Paladin/Holy"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Paladin/Retribution"] = {
@@ -2689,11 +2689,11 @@ context.database = {
 					"from M+",
 				},
 				["Death Knight/Frost"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Paladin/Holy"] = {
-					"Overall",
+					"overall",
 				},
 				["Paladin/Retribution"] = {
 					"from M+",
@@ -2713,21 +2713,21 @@ context.database = {
 					"from M+",
 				},
 				["Paladin/Holy"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Priest/Discipline"] = {
 					"from M+",
 				},
 				["Rogue/Outlaw"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Shaman/Restoration"] = {
 					"from M+",
 				},
 				["Shaman/Elemental"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
@@ -2738,22 +2738,22 @@ context.database = {
 			},
 			["221079"] = {
 				["Death Knight/Frost"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Warrior/Arms"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["212401"] = {
 				["Death Knight/Frost"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["222451"] = {
 				["Death Knight/Frost"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["221185"] = {
@@ -2761,7 +2761,7 @@ context.database = {
 					"from M+",
 				},
 				["Paladin/Holy"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Warrior/Arms"] = {
@@ -2788,91 +2788,91 @@ context.database = {
 			},
 			["212092"] = {
 				["Mage/Frost"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["212090"] = {
 				["Mage/Frost"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Mage/Arcane"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Mage/Fire"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["212095"] = {
 				["Mage/Frost"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Mage/Arcane"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Mage/Fire"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["225584"] = {
 				["Mage/Frost"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Mage/Arcane"] = {
 					"from raid",
 				},
 				["Mage/Fire"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Priest/Discipline"] = {
 					"from raid",
 				},
 				["Priest/Shadow"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warlock/Demonology"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warlock/Affliction"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warlock/Destruction"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["212093"] = {
 				["Mage/Frost"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Mage/Arcane"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Mage/Fire"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["225585"] = {
 				["Mage/Frost"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Mage/Arcane"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Mage/Fire"] = {
@@ -2882,49 +2882,49 @@ context.database = {
 					"from raid",
 				},
 				["Priest/Shadow"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Priest/Holy"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warlock/Demonology"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warlock/Affliction"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warlock/Destruction"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["212434"] = {
 				["Mage/Frost"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["222814"] = {
 				["Mage/Frost"] = {
-					"Overall",
+					"overall",
 				},
 				["Warlock/Demonology"] = {
-					"Overall",
+					"overall",
 				},
 				["Warlock/Affliction"] = {
-					"Overall",
+					"overall",
 				},
 				["Warlock/Destruction"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["221189"] = {
 				["Mage/Frost"] = {
-					"Overall",
+					"overall",
 				},
 				["Paladin/Holy"] = {
 					"from M+",
@@ -2936,13 +2936,13 @@ context.database = {
 					"from M+",
 				},
 				["Rogue/Outlaw"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
 			["222568"] = {
 				["Mage/Frost"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["225582"] = {
@@ -2959,7 +2959,7 @@ context.database = {
 					"from raid",
 				},
 				["Priest/Shadow"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
@@ -3004,7 +3004,7 @@ context.database = {
 					"from M+",
 				},
 				["Priest/Discipline"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
@@ -3027,7 +3027,7 @@ context.database = {
 					"from M+",
 				},
 				["Priest/Discipline"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Priest/Shadow"] = {
@@ -3056,7 +3056,7 @@ context.database = {
 					"from M+",
 				},
 				["Priest/Holy"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Warlock/Demonology"] = {
@@ -3077,7 +3077,7 @@ context.database = {
 					"from M+",
 				},
 				["Priest/Discipline"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
@@ -3091,46 +3091,46 @@ context.database = {
 			},
 			["222817"] = {
 				["Hunter/Survival"] = {
-					"Overall",
+					"overall",
 				},
 				["Hunter/Marksmanship"] = {
-					"Overall",
+					"overall",
 				},
 				["Warrior/Arms"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["212421"] = {
 				["Hunter/Survival"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["212016"] = {
 				["Hunter/Survival"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["212021"] = {
 				["Hunter/Survival"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Hunter/Marksmanship"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["221202"] = {
 				["Hunter/Survival"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["222448"] = {
 				["Hunter/Survival"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["212389"] = {
@@ -3149,7 +3149,7 @@ context.database = {
 					"from M+",
 				},
 				["Shaman/Elemental"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
@@ -3158,42 +3158,42 @@ context.database = {
 					"from M+",
 				},
 				["Monk/Brewmaster"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
 			["211993"] = {
 				["Paladin/Holy"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Paladin/Retribution"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["211996"] = {
 				["Paladin/Holy"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Paladin/Retribution"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Paladin/Protection"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["221167"] = {
 				["Paladin/Holy"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Warrior/Protection"] = {
@@ -3208,23 +3208,23 @@ context.database = {
 			},
 			["211994"] = {
 				["Paladin/Holy"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Paladin/Retribution"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Paladin/Protection"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["211992"] = {
 				["Paladin/Holy"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
@@ -3232,35 +3232,35 @@ context.database = {
 					"from raid",
 				},
 				["Paladin/Protection"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["178737"] = {
 				["Paladin/Holy"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
 			["225579"] = {
 				["Paladin/Holy"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Paladin/Protection"] = {
 					"from raid",
 				},
 				["Shaman/Restoration"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Shaman/Elemental"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warrior/Protection"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
@@ -3287,7 +3287,7 @@ context.database = {
 			},
 			["212399"] = {
 				["Hunter/Marksmanship"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
@@ -3309,48 +3309,48 @@ context.database = {
 			},
 			["212047"] = {
 				["Monk/Brewmaster"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["212045"] = {
 				["Monk/Brewmaster"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["212050"] = {
 				["Monk/Brewmaster"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["212046"] = {
 				["Monk/Brewmaster"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["225591"] = {
 				["Monk/Brewmaster"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Rogue/Assassination"] = {
 					"from raid",
 				},
 				["Rogue/Subtlety"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["221144"] = {
 				["Monk/Brewmaster"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Rogue/Outlaw"] = {
@@ -3387,32 +3387,32 @@ context.database = {
 			},
 			["178693"] = {
 				["Mage/Arcane"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["212087"] = {
 				["Mage/Arcane"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["222815"] = {
 				["Mage/Arcane"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["212091"] = {
 				["Mage/Arcane"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Mage/Fire"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["212094"] = {
 				["Mage/Arcane"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["212440"] = {
@@ -3420,15 +3420,15 @@ context.database = {
 					"from raid",
 				},
 				["Mage/Fire"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Priest/Discipline"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warlock/Demonology"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warlock/Destruction"] = {
@@ -3453,17 +3453,17 @@ context.database = {
 					"from M+",
 				},
 				["Mage/Fire"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Priest/Discipline"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
 			["221666"] = {
 				["Mage/Fire"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["178740"] = {
@@ -3473,19 +3473,19 @@ context.database = {
 			},
 			["211991"] = {
 				["Paladin/Retribution"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Paladin/Protection"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["222443"] = {
 				["Paladin/Retribution"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["212418"] = {
@@ -3493,7 +3493,7 @@ context.database = {
 					"from raid",
 				},
 				["Warrior/Arms"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
@@ -3502,19 +3502,19 @@ context.database = {
 					"from M+",
 				},
 				["Warrior/Fury"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
 			["178730"] = {
 				["Paladin/Protection"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
 			["178712"] = {
 				["Paladin/Protection"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Warrior/Protection"] = {
@@ -3540,64 +3540,64 @@ context.database = {
 					"from raid",
 				},
 				["Warrior/Protection"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["212081"] = {
 				["Priest/Discipline"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Priest/Shadow"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Priest/Holy"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["212086"] = {
 				["Priest/Discipline"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Priest/Shadow"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["212084"] = {
 				["Priest/Discipline"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Priest/Holy"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["212082"] = {
 				["Priest/Discipline"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Priest/Shadow"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Priest/Holy"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
@@ -3623,103 +3623,103 @@ context.database = {
 			},
 			["212038"] = {
 				["Rogue/Outlaw"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Rogue/Assassination"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["212036"] = {
 				["Rogue/Outlaw"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Rogue/Assassination"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Rogue/Subtlety"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["212041"] = {
 				["Rogue/Outlaw"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Rogue/Assassination"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Rogue/Subtlety"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["219334"] = {
 				["Rogue/Outlaw"] = {
-					"Overall",
+					"overall",
 				},
 				["Rogue/Assassination"] = {
-					"Overall",
+					"overall",
 				},
 				["Rogue/Subtlety"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["212039"] = {
 				["Rogue/Outlaw"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Rogue/Assassination"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Rogue/Subtlety"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["178699"] = {
 				["Rogue/Outlaw"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
 			["219332"] = {
 				["Rogue/Outlaw"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["178731"] = {
 				["Rogue/Outlaw"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
 			["212395"] = {
 				["Rogue/Outlaw"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Rogue/Assassination"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Rogue/Subtlety"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
@@ -3743,23 +3743,23 @@ context.database = {
 			},
 			["219331"] = {
 				["Rogue/Assassination"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["212037"] = {
 				["Rogue/Assassination"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Rogue/Subtlety"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["225636"] = {
 				["Rogue/Assassination"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
@@ -3786,19 +3786,19 @@ context.database = {
 			},
 			["212083"] = {
 				["Priest/Shadow"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Priest/Holy"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["178748"] = {
 				["Priest/Shadow"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
@@ -3823,47 +3823,47 @@ context.database = {
 			},
 			["212011"] = {
 				["Shaman/Restoration"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["212009"] = {
 				["Shaman/Restoration"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Shaman/Elemental"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["212014"] = {
 				["Shaman/Restoration"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Shaman/Elemental"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["212012"] = {
 				["Shaman/Restoration"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Shaman/Elemental"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["178745"] = {
 				["Shaman/Restoration"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
@@ -3882,31 +3882,31 @@ context.database = {
 			},
 			["212419"] = {
 				["Priest/Holy"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["178782"] = {
 				["Priest/Holy"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
 			["56137"] = {
 				["Priest/Holy"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
 			["178709"] = {
 				["Priest/Holy"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
 			["221132"] = {
 				["Priest/Holy"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
@@ -3941,12 +3941,12 @@ context.database = {
 			},
 			["215135"] = {
 				["Rogue/Subtlety"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["221141"] = {
 				["Rogue/Subtlety"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 				["Warrior/Fury"] = {
@@ -3955,7 +3955,7 @@ context.database = {
 			},
 			["178743"] = {
 				["Rogue/Subtlety"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
@@ -3981,12 +3981,12 @@ context.database = {
 			},
 			["215136"] = {
 				["Shaman/Elemental"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["212010"] = {
 				["Shaman/Elemental"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
@@ -4007,80 +4007,80 @@ context.database = {
 			},
 			["212072"] = {
 				["Warlock/Demonology"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Warlock/Affliction"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Warlock/Destruction"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["212077"] = {
 				["Warlock/Demonology"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Warlock/Affliction"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Warlock/Destruction"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["212075"] = {
 				["Warlock/Demonology"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Warlock/Affliction"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Warlock/Destruction"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["212073"] = {
 				["Warlock/Demonology"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Warlock/Affliction"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Warlock/Destruction"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
 			["211984"] = {
 				["Warrior/Protection"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Warrior/Arms"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warrior/Fury"] = {
@@ -4089,64 +4089,64 @@ context.database = {
 			},
 			["178749"] = {
 				["Warrior/Protection"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
 			["211987"] = {
 				["Warrior/Protection"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Warrior/Arms"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warrior/Fury"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["217848"] = {
 				["Warrior/Protection"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["211985"] = {
 				["Warrior/Protection"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Warrior/Fury"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["217849"] = {
 				["Warrior/Protection"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["211983"] = {
 				["Warrior/Protection"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Warrior/Arms"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warrior/Fury"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["211986"] = {
 				["Warrior/Protection"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["211982"] = {
@@ -4154,27 +4154,27 @@ context.database = {
 					"from raid",
 				},
 				["Warrior/Arms"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 				["Warrior/Fury"] = {
-					"Overall",
+					"overall",
 					"from raid",
 				},
 			},
 			["212074"] = {
 				["Warlock/Affliction"] = {
-					"Overall",
+					"overall",
 					"from raid",
 					"from M+",
 				},
 				["Warlock/Destruction"] = {
-					"Overall",
+					"overall",
 				},
 			},
 			["221184"] = {
 				["Warrior/Arms"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
@@ -4196,7 +4196,7 @@ context.database = {
 			},
 			["178777"] = {
 				["Warrior/Fury"] = {
-					"Overall",
+					"overall",
 					"from M+",
 				},
 			},
@@ -5674,7 +5674,7 @@ context.database = {
 				["Demon Hunter/Havoc"] = {
 					["212065"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -5689,7 +5689,7 @@ context.database = {
 				["Hunter/Beast Mastery"] = {
 					["212020"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -5699,7 +5699,7 @@ context.database = {
 				["Death Knight/Blood"] = {
 					["221146"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
@@ -5714,7 +5714,7 @@ context.database = {
 				["Demon Hunter/Vengeance"] = {
 					["221081"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Skarmorak/The Stonevault",
@@ -5729,7 +5729,7 @@ context.database = {
 				["Evoker/Preservation"] = {
 					["212029"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -5739,7 +5739,7 @@ context.database = {
 				["Druid/Balance"] = {
 					["221163"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
@@ -5754,7 +5754,7 @@ context.database = {
 				["Evoker/Augmentation"] = {
 					["178738"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Amarth/The Necrotic Wake",
@@ -5769,7 +5769,7 @@ context.database = {
 				["Evoker/Devastation"] = {
 					["212029"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -5784,7 +5784,7 @@ context.database = {
 				["Death Knight/Unholy"] = {
 					["178694"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
@@ -5799,7 +5799,7 @@ context.database = {
 				["Death Knight/Frost"] = {
 					["178694"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
@@ -5814,7 +5814,7 @@ context.database = {
 				["Mage/Frost"] = {
 					["212092"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -5829,7 +5829,7 @@ context.database = {
 				["Hunter/Survival"] = {
 					["212020"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -5839,7 +5839,7 @@ context.database = {
 				["Paladin/Holy"] = {
 					["211993"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -5849,7 +5849,7 @@ context.database = {
 				["Hunter/Marksmanship"] = {
 					["178738"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Amarth/The Necrotic Wake",
@@ -5864,7 +5864,7 @@ context.database = {
 				["Monk/Brewmaster"] = {
 					["212047"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -5874,7 +5874,7 @@ context.database = {
 				["Mage/Arcane"] = {
 					["178693"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Dungeon/Tred'ova/Mists of Tirna Scithe",
 					},
@@ -5894,7 +5894,7 @@ context.database = {
 				["Mage/Fire"] = {
 					["212440"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -5909,7 +5909,7 @@ context.database = {
 				["Paladin/Retribution"] = {
 					["211993"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -5919,7 +5919,7 @@ context.database = {
 				["Paladin/Protection"] = {
 					["178694"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
@@ -5934,7 +5934,7 @@ context.database = {
 				["Priest/Discipline"] = {
 					["212440"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -5949,7 +5949,7 @@ context.database = {
 				["Rogue/Outlaw"] = {
 					["212038"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -5959,7 +5959,7 @@ context.database = {
 				["Rogue/Assassination"] = {
 					["212038"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -5969,7 +5969,7 @@ context.database = {
 				["Priest/Shadow"] = {
 					["212083"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -5979,7 +5979,7 @@ context.database = {
 				["Shaman/Restoration"] = {
 					["212011"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -5989,7 +5989,7 @@ context.database = {
 				["Priest/Holy"] = {
 					["212083"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -5999,7 +5999,7 @@ context.database = {
 				["Rogue/Subtlety"] = {
 					["221163"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
@@ -6014,7 +6014,7 @@ context.database = {
 				["Shaman/Elemental"] = {
 					["212428"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
@@ -6029,7 +6029,7 @@ context.database = {
 				["Warlock/Demonology"] = {
 					["212440"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -6044,7 +6044,7 @@ context.database = {
 				["Warrior/Protection"] = {
 					["211984"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -6054,7 +6054,7 @@ context.database = {
 				["Warlock/Affliction"] = {
 					["212074"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -6064,7 +6064,7 @@ context.database = {
 				["Warrior/Arms"] = {
 					["211984"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -6079,7 +6079,7 @@ context.database = {
 				["Warrior/Fury"] = {
 					["178777"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Nalthor the Rimebinder/The Necrotic Wake",
@@ -6094,7 +6094,7 @@ context.database = {
 				["Warlock/Destruction"] = {
 					["212074"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
 					},
@@ -6116,7 +6116,7 @@ context.database = {
 				["Demon Hunter/Havoc"] = {
 					["178707"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
@@ -6131,7 +6131,7 @@ context.database = {
 				["Hunter/Beast Mastery"] = {
 					["225577"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Sikran/Nerub-ar Palace",
@@ -6146,7 +6146,7 @@ context.database = {
 				["Death Knight/Blood"] = {
 					["225575"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Anub'arash/Nerub-ar Palace",
@@ -6161,7 +6161,7 @@ context.database = {
 				["Demon Hunter/Vengeance"] = {
 					["212448"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -6176,7 +6176,7 @@ context.database = {
 				["Evoker/Preservation"] = {
 					["225575"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Anub'arash/Nerub-ar Palace",
@@ -6197,7 +6197,7 @@ context.database = {
 				["Druid/Balance"] = {
 					["225577"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Sikran/Nerub-ar Palace",
@@ -6212,7 +6212,7 @@ context.database = {
 				["Evoker/Augmentation"] = {
 					["178707"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
@@ -6227,7 +6227,7 @@ context.database = {
 				["Evoker/Devastation"] = {
 					["212448"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -6242,7 +6242,7 @@ context.database = {
 				["Death Knight/Unholy"] = {
 					["221077"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/E.D.N.A/The Stonevault",
@@ -6257,7 +6257,7 @@ context.database = {
 				["Death Knight/Frost"] = {
 					["178707"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
@@ -6272,7 +6272,7 @@ context.database = {
 				["Mage/Frost"] = {
 					["225577"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Sikran/Nerub-ar Palace",
@@ -6287,7 +6287,7 @@ context.database = {
 				["Hunter/Survival"] = {
 					["178707"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
@@ -6302,7 +6302,7 @@ context.database = {
 				["Paladin/Holy"] = {
 					["225577"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Sikran/Nerub-ar Palace",
@@ -6317,7 +6317,7 @@ context.database = {
 				["Hunter/Marksmanship"] = {
 					["212448"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -6332,7 +6332,7 @@ context.database = {
 				["Monk/Brewmaster"] = {
 					["225575"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Anub'arash/Nerub-ar Palace",
@@ -6347,7 +6347,7 @@ context.database = {
 				["Mage/Arcane"] = {
 					["225577"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Sikran/Nerub-ar Palace",
@@ -6362,7 +6362,7 @@ context.database = {
 				["Mage/Fire"] = {
 					["225577"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Sikran/Nerub-ar Palace",
@@ -6377,7 +6377,7 @@ context.database = {
 				["Paladin/Retribution"] = {
 					["225577"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Sikran/Nerub-ar Palace",
@@ -6392,7 +6392,7 @@ context.database = {
 				["Paladin/Protection"] = {
 					["225577"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Sikran/Nerub-ar Palace",
@@ -6407,7 +6407,7 @@ context.database = {
 				["Priest/Discipline"] = {
 					["225577"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Sikran/Nerub-ar Palace",
@@ -6422,7 +6422,7 @@ context.database = {
 				["Rogue/Outlaw"] = {
 					["221181"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/The Coaglamation/City of Threads",
@@ -6437,7 +6437,7 @@ context.database = {
 				["Rogue/Assassination"] = {
 					["225577"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Sikran/Nerub-ar Palace",
@@ -6452,7 +6452,7 @@ context.database = {
 				["Priest/Shadow"] = {
 					["225577"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Sikran/Nerub-ar Palace",
@@ -6467,7 +6467,7 @@ context.database = {
 				["Shaman/Restoration"] = {
 					["212448"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -6482,7 +6482,7 @@ context.database = {
 				["Priest/Holy"] = {
 					["178707"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
@@ -6497,7 +6497,7 @@ context.database = {
 				["Rogue/Subtlety"] = {
 					["225575"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Anub'arash/Nerub-ar Palace",
@@ -6512,7 +6512,7 @@ context.database = {
 				["Shaman/Elemental"] = {
 					["215136"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -6532,7 +6532,7 @@ context.database = {
 				["Warlock/Demonology"] = {
 					["225577"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Sikran/Nerub-ar Palace",
@@ -6547,7 +6547,7 @@ context.database = {
 				["Warrior/Protection"] = {
 					["225577"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Sikran/Nerub-ar Palace",
@@ -6562,7 +6562,7 @@ context.database = {
 				["Warlock/Affliction"] = {
 					["225577"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Sikran/Nerub-ar Palace",
@@ -6577,7 +6577,7 @@ context.database = {
 				["Warrior/Arms"] = {
 					["225577"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Sikran/Nerub-ar Palace",
@@ -6592,7 +6592,7 @@ context.database = {
 				["Warrior/Fury"] = {
 					["221077"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/E.D.N.A/The Stonevault",
@@ -6607,7 +6607,7 @@ context.database = {
 				["Warlock/Destruction"] = {
 					["225577"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Sikran/Nerub-ar Palace",
@@ -6624,7 +6624,7 @@ context.database = {
 				["Demon Hunter/Havoc"] = {
 					["212063"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -6639,7 +6639,7 @@ context.database = {
 				["Hunter/Beast Mastery"] = {
 					["212018"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -6649,7 +6649,7 @@ context.database = {
 				["Death Knight/Blood"] = {
 					["212000"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -6664,7 +6664,7 @@ context.database = {
 				["Demon Hunter/Vengeance"] = {
 					["212063"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -6674,7 +6674,7 @@ context.database = {
 				["Evoker/Preservation"] = {
 					["212027"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -6684,7 +6684,7 @@ context.database = {
 				["Druid/Balance"] = {
 					["212054"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -6694,7 +6694,7 @@ context.database = {
 				["Evoker/Augmentation"] = {
 					["212027"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -6704,7 +6704,7 @@ context.database = {
 				["Evoker/Devastation"] = {
 					["212027"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -6719,7 +6719,7 @@ context.database = {
 				["Death Knight/Unholy"] = {
 					["212000"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -6729,7 +6729,7 @@ context.database = {
 				["Death Knight/Frost"] = {
 					["212000"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -6744,7 +6744,7 @@ context.database = {
 				["Mage/Frost"] = {
 					["212090"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -6759,7 +6759,7 @@ context.database = {
 				["Hunter/Survival"] = {
 					["212018"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -6769,7 +6769,7 @@ context.database = {
 				["Paladin/Holy"] = {
 					["221185"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
@@ -6784,7 +6784,7 @@ context.database = {
 				["Hunter/Marksmanship"] = {
 					["212018"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -6794,7 +6794,7 @@ context.database = {
 				["Monk/Brewmaster"] = {
 					["212045"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -6804,7 +6804,7 @@ context.database = {
 				["Mage/Arcane"] = {
 					["212090"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -6819,7 +6819,7 @@ context.database = {
 				["Mage/Fire"] = {
 					["212090"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -6834,7 +6834,7 @@ context.database = {
 				["Paladin/Retribution"] = {
 					["211991"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -6844,7 +6844,7 @@ context.database = {
 				["Paladin/Protection"] = {
 					["211991"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -6854,7 +6854,7 @@ context.database = {
 				["Priest/Discipline"] = {
 					["212081"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -6864,7 +6864,7 @@ context.database = {
 				["Rogue/Outlaw"] = {
 					["212036"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -6874,7 +6874,7 @@ context.database = {
 				["Rogue/Assassination"] = {
 					["212036"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -6884,7 +6884,7 @@ context.database = {
 				["Priest/Shadow"] = {
 					["212081"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -6894,7 +6894,7 @@ context.database = {
 				["Shaman/Restoration"] = {
 					["212009"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -6904,7 +6904,7 @@ context.database = {
 				["Priest/Holy"] = {
 					["212081"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -6914,7 +6914,7 @@ context.database = {
 				["Rogue/Subtlety"] = {
 					["212036"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -6929,7 +6929,7 @@ context.database = {
 				["Shaman/Elemental"] = {
 					["212009"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -6944,7 +6944,7 @@ context.database = {
 				["Warlock/Demonology"] = {
 					["212072"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -6954,7 +6954,7 @@ context.database = {
 				["Warrior/Protection"] = {
 					["178749"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
@@ -6969,7 +6969,7 @@ context.database = {
 				["Warlock/Affliction"] = {
 					["212072"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -6979,7 +6979,7 @@ context.database = {
 				["Warrior/Arms"] = {
 					["211982"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -6994,7 +6994,7 @@ context.database = {
 				["Warrior/Fury"] = {
 					["211982"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -7009,7 +7009,7 @@ context.database = {
 				["Warlock/Destruction"] = {
 					["212072"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -7021,7 +7021,7 @@ context.database = {
 				["Demon Hunter/Havoc"] = {
 					["225574"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -7036,7 +7036,7 @@ context.database = {
 				["Hunter/Beast Mastery"] = {
 					["225574"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -7051,7 +7051,7 @@ context.database = {
 				["Death Knight/Blood"] = {
 					["225574"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -7066,7 +7066,7 @@ context.database = {
 				["Demon Hunter/Vengeance"] = {
 					["225574"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -7081,7 +7081,7 @@ context.database = {
 				["Evoker/Preservation"] = {
 					["212446"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
@@ -7096,7 +7096,7 @@ context.database = {
 				["Druid/Balance"] = {
 					["212446"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
@@ -7111,7 +7111,7 @@ context.database = {
 				["Evoker/Augmentation"] = {
 					["212446"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
@@ -7126,7 +7126,7 @@ context.database = {
 				["Evoker/Devastation"] = {
 					["225574"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -7141,7 +7141,7 @@ context.database = {
 				["Death Knight/Unholy"] = {
 					["221667"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Unknown",
 					},
@@ -7161,7 +7161,7 @@ context.database = {
 				["Death Knight/Frost"] = {
 					["225574"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -7176,7 +7176,7 @@ context.database = {
 				["Mage/Frost"] = {
 					["212446"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
@@ -7191,7 +7191,7 @@ context.database = {
 				["Hunter/Survival"] = {
 					["222817"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -7211,7 +7211,7 @@ context.database = {
 				["Paladin/Holy"] = {
 					["225574"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -7226,7 +7226,7 @@ context.database = {
 				["Hunter/Marksmanship"] = {
 					["222817"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -7246,7 +7246,7 @@ context.database = {
 				["Monk/Brewmaster"] = {
 					["225574"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -7261,7 +7261,7 @@ context.database = {
 				["Mage/Arcane"] = {
 					["212087"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Unknown",
 					},
@@ -7281,7 +7281,7 @@ context.database = {
 				["Mage/Fire"] = {
 					["221088"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Speaker Brokk/The Stonevault",
@@ -7296,7 +7296,7 @@ context.database = {
 				["Paladin/Retribution"] = {
 					["212446"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
@@ -7311,7 +7311,7 @@ context.database = {
 				["Paladin/Protection"] = {
 					["225574"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -7326,7 +7326,7 @@ context.database = {
 				["Priest/Discipline"] = {
 					["225574"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -7341,7 +7341,7 @@ context.database = {
 				["Rogue/Outlaw"] = {
 					["225574"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -7356,7 +7356,7 @@ context.database = {
 				["Rogue/Assassination"] = {
 					["225574"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -7371,7 +7371,7 @@ context.database = {
 				["Priest/Shadow"] = {
 					["225574"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -7386,7 +7386,7 @@ context.database = {
 				["Shaman/Restoration"] = {
 					["225574"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -7401,7 +7401,7 @@ context.database = {
 				["Priest/Holy"] = {
 					["212446"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
@@ -7416,7 +7416,7 @@ context.database = {
 				["Rogue/Subtlety"] = {
 					["133292"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Drahga Shadowburner/Grim Batol",
@@ -7431,7 +7431,7 @@ context.database = {
 				["Shaman/Elemental"] = {
 					["221667"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Other/Unknown",
@@ -7446,7 +7446,7 @@ context.database = {
 				["Warlock/Demonology"] = {
 					["225574"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -7461,7 +7461,7 @@ context.database = {
 				["Warrior/Protection"] = {
 					["225574"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -7476,7 +7476,7 @@ context.database = {
 				["Warlock/Affliction"] = {
 					["225574"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -7491,7 +7491,7 @@ context.database = {
 				["Warrior/Arms"] = {
 					["222817"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -7511,7 +7511,7 @@ context.database = {
 				["Warrior/Fury"] = {
 					["221088"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Speaker Brokk/The Stonevault",
@@ -7526,7 +7526,7 @@ context.database = {
 				["Warlock/Destruction"] = {
 					["225574"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -7543,7 +7543,7 @@ context.database = {
 				["Demon Hunter/Havoc"] = {
 					["212068"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -7558,7 +7558,7 @@ context.database = {
 				["Hunter/Beast Mastery"] = {
 					["212023"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -7568,7 +7568,7 @@ context.database = {
 				["Death Knight/Blood"] = {
 					["212005"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -7583,7 +7583,7 @@ context.database = {
 				["Demon Hunter/Vengeance"] = {
 					["212068"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -7593,7 +7593,7 @@ context.database = {
 				["Evoker/Preservation"] = {
 					["212032"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -7603,7 +7603,7 @@ context.database = {
 				["Druid/Balance"] = {
 					["212059"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -7613,7 +7613,7 @@ context.database = {
 				["Evoker/Augmentation"] = {
 					["212032"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -7623,7 +7623,7 @@ context.database = {
 				["Evoker/Devastation"] = {
 					["212032"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -7638,7 +7638,7 @@ context.database = {
 				["Death Knight/Unholy"] = {
 					["212005"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -7648,7 +7648,7 @@ context.database = {
 				["Death Knight/Frost"] = {
 					["212005"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -7663,7 +7663,7 @@ context.database = {
 				["Mage/Frost"] = {
 					["212095"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -7678,7 +7678,7 @@ context.database = {
 				["Hunter/Survival"] = {
 					["212421"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
@@ -7693,7 +7693,7 @@ context.database = {
 				["Paladin/Holy"] = {
 					["211996"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -7703,7 +7703,7 @@ context.database = {
 				["Hunter/Marksmanship"] = {
 					["212023"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -7713,7 +7713,7 @@ context.database = {
 				["Monk/Brewmaster"] = {
 					["212050"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -7723,7 +7723,7 @@ context.database = {
 				["Mage/Arcane"] = {
 					["212095"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -7738,7 +7738,7 @@ context.database = {
 				["Mage/Fire"] = {
 					["212095"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -7753,7 +7753,7 @@ context.database = {
 				["Paladin/Retribution"] = {
 					["211996"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -7763,7 +7763,7 @@ context.database = {
 				["Paladin/Protection"] = {
 					["211996"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -7773,7 +7773,7 @@ context.database = {
 				["Priest/Discipline"] = {
 					["212086"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -7783,7 +7783,7 @@ context.database = {
 				["Rogue/Outlaw"] = {
 					["212041"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -7793,7 +7793,7 @@ context.database = {
 				["Rogue/Assassination"] = {
 					["212041"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -7803,7 +7803,7 @@ context.database = {
 				["Priest/Shadow"] = {
 					["212086"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -7813,7 +7813,7 @@ context.database = {
 				["Shaman/Restoration"] = {
 					["212014"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -7823,7 +7823,7 @@ context.database = {
 				["Priest/Holy"] = {
 					["212419"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
@@ -7838,7 +7838,7 @@ context.database = {
 				["Rogue/Subtlety"] = {
 					["212041"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -7853,7 +7853,7 @@ context.database = {
 				["Shaman/Elemental"] = {
 					["212014"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -7868,7 +7868,7 @@ context.database = {
 				["Warlock/Demonology"] = {
 					["212077"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -7878,7 +7878,7 @@ context.database = {
 				["Warrior/Protection"] = {
 					["211987"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -7888,7 +7888,7 @@ context.database = {
 				["Warlock/Affliction"] = {
 					["212077"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -7898,7 +7898,7 @@ context.database = {
 				["Warrior/Arms"] = {
 					["211987"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -7913,7 +7913,7 @@ context.database = {
 				["Warrior/Fury"] = {
 					["211987"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -7928,7 +7928,7 @@ context.database = {
 				["Warlock/Destruction"] = {
 					["212077"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -7940,7 +7940,7 @@ context.database = {
 				["Demon Hunter/Havoc"] = {
 					["212438"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
@@ -7955,7 +7955,7 @@ context.database = {
 				["Hunter/Beast Mastery"] = {
 					["219342"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -7975,7 +7975,7 @@ context.database = {
 				["Death Knight/Blood"] = {
 					["222435"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -7995,7 +7995,7 @@ context.database = {
 				["Demon Hunter/Vengeance"] = {
 					["221142"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
@@ -8010,7 +8010,7 @@ context.database = {
 				["Evoker/Preservation"] = {
 					["212415"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Sikran/Nerub-ar Palace",
@@ -8025,7 +8025,7 @@ context.database = {
 				["Druid/Balance"] = {
 					["212438"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
@@ -8040,7 +8040,7 @@ context.database = {
 				["Evoker/Augmentation"] = {
 					["221174"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Nx/City of Threads",
@@ -8055,7 +8055,7 @@ context.database = {
 				["Evoker/Devastation"] = {
 					["221174"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Nx/City of Threads",
@@ -8070,7 +8070,7 @@ context.database = {
 				["Death Knight/Unholy"] = {
 					["133306"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/General Umbriss/Grim Batol",
@@ -8085,7 +8085,7 @@ context.database = {
 				["Death Knight/Frost"] = {
 					["222435"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -8105,7 +8105,7 @@ context.database = {
 				["Mage/Frost"] = {
 					["225584"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Anub'arash/Nerub-ar Palace",
@@ -8120,7 +8120,7 @@ context.database = {
 				["Hunter/Survival"] = {
 					["212016"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Unknown",
 					},
@@ -8140,7 +8140,7 @@ context.database = {
 				["Paladin/Holy"] = {
 					["221167"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Orator Krix'vizk/City of Threads",
@@ -8155,7 +8155,7 @@ context.database = {
 				["Hunter/Marksmanship"] = {
 					["219342"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -8175,7 +8175,7 @@ context.database = {
 				["Monk/Brewmaster"] = {
 					["225588"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
@@ -8190,7 +8190,7 @@ context.database = {
 				["Mage/Arcane"] = {
 					["222815"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -8210,7 +8210,7 @@ context.database = {
 				["Mage/Fire"] = {
 					["225584"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Anub'arash/Nerub-ar Palace",
@@ -8225,7 +8225,7 @@ context.database = {
 				["Paladin/Retribution"] = {
 					["222435"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -8245,7 +8245,7 @@ context.database = {
 				["Paladin/Protection"] = {
 					["133306"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/General Umbriss/Grim Batol",
@@ -8260,7 +8260,7 @@ context.database = {
 				["Priest/Discipline"] = {
 					["221182"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/The Coaglamation/City of Threads",
@@ -8275,7 +8275,7 @@ context.database = {
 				["Rogue/Outlaw"] = {
 					["219334"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -8295,7 +8295,7 @@ context.database = {
 				["Rogue/Assassination"] = {
 					["219334"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -8315,7 +8315,7 @@ context.database = {
 				["Priest/Shadow"] = {
 					["225584"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Anub'arash/Nerub-ar Palace",
@@ -8330,7 +8330,7 @@ context.database = {
 				["Shaman/Restoration"] = {
 					["225581"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
@@ -8345,7 +8345,7 @@ context.database = {
 				["Priest/Holy"] = {
 					["178782"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Nalthor the Rimebinder/The Necrotic Wake",
@@ -8360,7 +8360,7 @@ context.database = {
 				["Rogue/Subtlety"] = {
 					["219334"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -8380,7 +8380,7 @@ context.database = {
 				["Shaman/Elemental"] = {
 					["225581"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
@@ -8395,7 +8395,7 @@ context.database = {
 				["Warlock/Demonology"] = {
 					["225584"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Anub'arash/Nerub-ar Palace",
@@ -8410,7 +8410,7 @@ context.database = {
 				["Warrior/Protection"] = {
 					["217848"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Unknown",
 					},
@@ -8430,7 +8430,7 @@ context.database = {
 				["Warlock/Affliction"] = {
 					["225584"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Anub'arash/Nerub-ar Palace",
@@ -8445,7 +8445,7 @@ context.database = {
 				["Warrior/Arms"] = {
 					["222435"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -8465,7 +8465,7 @@ context.database = {
 				["Warrior/Fury"] = {
 					["222435"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -8485,7 +8485,7 @@ context.database = {
 				["Warlock/Destruction"] = {
 					["225584"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Anub'arash/Nerub-ar Palace",
@@ -8502,7 +8502,7 @@ context.database = {
 				["Demon Hunter/Havoc"] = {
 					["219333"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -8522,7 +8522,7 @@ context.database = {
 				["Hunter/Beast Mastery"] = {
 					["219341"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -8542,7 +8542,7 @@ context.database = {
 				["Death Knight/Blood"] = {
 					["212003"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -8557,7 +8557,7 @@ context.database = {
 				["Demon Hunter/Vengeance"] = {
 					["212066"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -8567,7 +8567,7 @@ context.database = {
 				["Evoker/Preservation"] = {
 					["212436"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -8582,7 +8582,7 @@ context.database = {
 				["Druid/Balance"] = {
 					["212057"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -8592,7 +8592,7 @@ context.database = {
 				["Evoker/Augmentation"] = {
 					["212030"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -8602,7 +8602,7 @@ context.database = {
 				["Evoker/Devastation"] = {
 					["212030"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -8617,7 +8617,7 @@ context.database = {
 				["Death Knight/Unholy"] = {
 					["212003"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -8627,7 +8627,7 @@ context.database = {
 				["Death Knight/Frost"] = {
 					["212003"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -8642,7 +8642,7 @@ context.database = {
 				["Mage/Frost"] = {
 					["212093"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -8657,7 +8657,7 @@ context.database = {
 				["Hunter/Survival"] = {
 					["212021"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -8667,7 +8667,7 @@ context.database = {
 				["Paladin/Holy"] = {
 					["211994"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -8677,7 +8677,7 @@ context.database = {
 				["Hunter/Marksmanship"] = {
 					["212021"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -8687,7 +8687,7 @@ context.database = {
 				["Monk/Brewmaster"] = {
 					["219333"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -8707,7 +8707,7 @@ context.database = {
 				["Mage/Arcane"] = {
 					["212093"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -8722,7 +8722,7 @@ context.database = {
 				["Mage/Fire"] = {
 					["212093"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -8737,7 +8737,7 @@ context.database = {
 				["Paladin/Retribution"] = {
 					["211994"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -8752,7 +8752,7 @@ context.database = {
 				["Paladin/Protection"] = {
 					["211994"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -8762,7 +8762,7 @@ context.database = {
 				["Priest/Discipline"] = {
 					["212084"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -8772,7 +8772,7 @@ context.database = {
 				["Rogue/Outlaw"] = {
 					["212039"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -8782,7 +8782,7 @@ context.database = {
 				["Rogue/Assassination"] = {
 					["212039"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -8792,7 +8792,7 @@ context.database = {
 				["Priest/Shadow"] = {
 					["178748"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
@@ -8807,7 +8807,7 @@ context.database = {
 				["Shaman/Restoration"] = {
 					["212012"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -8817,7 +8817,7 @@ context.database = {
 				["Priest/Holy"] = {
 					["212084"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -8827,7 +8827,7 @@ context.database = {
 				["Rogue/Subtlety"] = {
 					["212039"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -8842,7 +8842,7 @@ context.database = {
 				["Shaman/Elemental"] = {
 					["212012"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -8857,7 +8857,7 @@ context.database = {
 				["Warlock/Demonology"] = {
 					["212075"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -8867,7 +8867,7 @@ context.database = {
 				["Warrior/Protection"] = {
 					["211985"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -8877,7 +8877,7 @@ context.database = {
 				["Warlock/Affliction"] = {
 					["212075"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -8887,7 +8887,7 @@ context.database = {
 				["Warrior/Arms"] = {
 					["212418"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
@@ -8902,7 +8902,7 @@ context.database = {
 				["Warrior/Fury"] = {
 					["211985"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -8917,7 +8917,7 @@ context.database = {
 				["Warlock/Destruction"] = {
 					["212075"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -8929,7 +8929,7 @@ context.database = {
 				["Demon Hunter/Havoc"] = {
 					["221134"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
@@ -8944,7 +8944,7 @@ context.database = {
 				["Hunter/Beast Mastery"] = {
 					["212017"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Other/Unknown",
@@ -8959,7 +8959,7 @@ context.database = {
 				["Death Knight/Blood"] = {
 					["222431"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Other/Crafting",
@@ -8974,7 +8974,7 @@ context.database = {
 				["Demon Hunter/Vengeance"] = {
 					["219502"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -8994,7 +8994,7 @@ context.database = {
 				["Evoker/Preservation"] = {
 					["221168"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Orator Krix'vizk/City of Threads",
@@ -9009,7 +9009,7 @@ context.database = {
 				["Druid/Balance"] = {
 					["212425"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
@@ -9024,7 +9024,7 @@ context.database = {
 				["Evoker/Augmentation"] = {
 					["219339"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -9044,7 +9044,7 @@ context.database = {
 				["Evoker/Devastation"] = {
 					["225580"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
@@ -9059,7 +9059,7 @@ context.database = {
 				["Death Knight/Unholy"] = {
 					["221133"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
@@ -9074,7 +9074,7 @@ context.database = {
 				["Death Knight/Frost"] = {
 					["221079"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Skarmorak/The Stonevault",
@@ -9089,7 +9089,7 @@ context.database = {
 				["Mage/Frost"] = {
 					["225585"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -9104,7 +9104,7 @@ context.database = {
 				["Hunter/Survival"] = {
 					["225580"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
@@ -9119,7 +9119,7 @@ context.database = {
 				["Paladin/Holy"] = {
 					["225589"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
@@ -9134,7 +9134,7 @@ context.database = {
 				["Hunter/Marksmanship"] = {
 					["225580"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
@@ -9149,7 +9149,7 @@ context.database = {
 				["Monk/Brewmaster"] = {
 					["219502"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -9169,7 +9169,7 @@ context.database = {
 				["Mage/Arcane"] = {
 					["225585"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -9184,7 +9184,7 @@ context.database = {
 				["Mage/Fire"] = {
 					["221666"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Unknown",
 					},
@@ -9204,7 +9204,7 @@ context.database = {
 				["Paladin/Retribution"] = {
 					["221133"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
@@ -9219,7 +9219,7 @@ context.database = {
 				["Paladin/Protection"] = {
 					["221133"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
@@ -9234,7 +9234,7 @@ context.database = {
 				["Priest/Discipline"] = {
 					["221158"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
@@ -9249,7 +9249,7 @@ context.database = {
 				["Rogue/Outlaw"] = {
 					["178699"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Tred'ova/Mists of Tirna Scithe",
@@ -9264,7 +9264,7 @@ context.database = {
 				["Rogue/Assassination"] = {
 					["219331"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -9284,7 +9284,7 @@ context.database = {
 				["Priest/Shadow"] = {
 					["225585"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -9299,7 +9299,7 @@ context.database = {
 				["Shaman/Restoration"] = {
 					["225580"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
@@ -9314,7 +9314,7 @@ context.database = {
 				["Priest/Holy"] = {
 					["225585"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -9329,7 +9329,7 @@ context.database = {
 				["Rogue/Subtlety"] = {
 					["212425"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
@@ -9344,7 +9344,7 @@ context.database = {
 				["Shaman/Elemental"] = {
 					["212414"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
@@ -9359,7 +9359,7 @@ context.database = {
 				["Warlock/Demonology"] = {
 					["225585"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -9374,7 +9374,7 @@ context.database = {
 				["Warrior/Protection"] = {
 					["217849"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Unknown",
 					},
@@ -9394,7 +9394,7 @@ context.database = {
 				["Warlock/Affliction"] = {
 					["225585"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -9409,7 +9409,7 @@ context.database = {
 				["Warrior/Arms"] = {
 					["221079"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Dungeon/Skarmorak/The Stonevault",
 					},
@@ -9429,7 +9429,7 @@ context.database = {
 				["Warrior/Fury"] = {
 					["221133"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
@@ -9444,7 +9444,7 @@ context.database = {
 				["Warlock/Destruction"] = {
 					["225585"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -9461,7 +9461,7 @@ context.database = {
 				["Demon Hunter/Havoc"] = {
 					["212064"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -9476,7 +9476,7 @@ context.database = {
 				["Hunter/Beast Mastery"] = {
 					["212019"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -9486,7 +9486,7 @@ context.database = {
 				["Death Knight/Blood"] = {
 					["212001"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -9501,7 +9501,7 @@ context.database = {
 				["Demon Hunter/Vengeance"] = {
 					["212064"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -9511,7 +9511,7 @@ context.database = {
 				["Evoker/Preservation"] = {
 					["212028"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -9521,7 +9521,7 @@ context.database = {
 				["Druid/Balance"] = {
 					["212055"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -9531,7 +9531,7 @@ context.database = {
 				["Evoker/Augmentation"] = {
 					["212028"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -9541,7 +9541,7 @@ context.database = {
 				["Evoker/Devastation"] = {
 					["212435"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -9556,7 +9556,7 @@ context.database = {
 				["Death Knight/Unholy"] = {
 					["212001"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -9566,7 +9566,7 @@ context.database = {
 				["Death Knight/Frost"] = {
 					["212001"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -9581,7 +9581,7 @@ context.database = {
 				["Mage/Frost"] = {
 					["212434"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -9596,7 +9596,7 @@ context.database = {
 				["Hunter/Survival"] = {
 					["212019"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -9606,7 +9606,7 @@ context.database = {
 				["Paladin/Holy"] = {
 					["211992"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -9616,7 +9616,7 @@ context.database = {
 				["Hunter/Marksmanship"] = {
 					["212019"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -9631,7 +9631,7 @@ context.database = {
 				["Monk/Brewmaster"] = {
 					["212046"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -9641,7 +9641,7 @@ context.database = {
 				["Mage/Arcane"] = {
 					["212091"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -9656,7 +9656,7 @@ context.database = {
 				["Mage/Fire"] = {
 					["212091"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -9671,7 +9671,7 @@ context.database = {
 				["Paladin/Retribution"] = {
 					["221092"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Void Speaker Eirich/The Stonevault",
@@ -9686,7 +9686,7 @@ context.database = {
 				["Paladin/Protection"] = {
 					["211992"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -9696,7 +9696,7 @@ context.database = {
 				["Priest/Discipline"] = {
 					["212082"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -9706,7 +9706,7 @@ context.database = {
 				["Rogue/Outlaw"] = {
 					["219332"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -9726,7 +9726,7 @@ context.database = {
 				["Rogue/Assassination"] = {
 					["212037"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -9736,7 +9736,7 @@ context.database = {
 				["Priest/Shadow"] = {
 					["212082"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -9746,7 +9746,7 @@ context.database = {
 				["Shaman/Restoration"] = {
 					["212435"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -9761,7 +9761,7 @@ context.database = {
 				["Priest/Holy"] = {
 					["212082"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -9771,7 +9771,7 @@ context.database = {
 				["Rogue/Subtlety"] = {
 					["212037"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -9786,7 +9786,7 @@ context.database = {
 				["Shaman/Elemental"] = {
 					["212010"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -9801,7 +9801,7 @@ context.database = {
 				["Warlock/Demonology"] = {
 					["212073"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -9811,7 +9811,7 @@ context.database = {
 				["Warrior/Protection"] = {
 					["211983"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -9821,7 +9821,7 @@ context.database = {
 				["Warlock/Affliction"] = {
 					["212073"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -9831,7 +9831,7 @@ context.database = {
 				["Warrior/Arms"] = {
 					["211983"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -9846,7 +9846,7 @@ context.database = {
 				["Warrior/Fury"] = {
 					["211983"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Dungeon/Ab'xal/City of Threads",
@@ -9861,7 +9861,7 @@ context.database = {
 				["Warlock/Destruction"] = {
 					["212073"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 							"from M+",
 						},
@@ -9873,7 +9873,7 @@ context.database = {
 				["Demon Hunter/Havoc"] = {
 					["221169"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Orator Krix'vizk/City of Threads",
@@ -9888,7 +9888,7 @@ context.database = {
 				["Hunter/Beast Mastery"] = {
 					["212022"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Other/Unknown",
@@ -9903,7 +9903,7 @@ context.database = {
 				["Death Knight/Blood"] = {
 					["212443"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Raid/Anub'arash/Nerub-ar Palace",
 					},
@@ -9923,7 +9923,7 @@ context.database = {
 				["Demon Hunter/Vengeance"] = {
 					["159320"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
@@ -9938,7 +9938,7 @@ context.database = {
 				["Evoker/Preservation"] = {
 					["225586"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -9953,7 +9953,7 @@ context.database = {
 				["Druid/Balance"] = {
 					["221169"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Orator Krix'vizk/City of Threads",
@@ -9968,7 +9968,7 @@ context.database = {
 				["Evoker/Augmentation"] = {
 					["159379"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
@@ -9983,7 +9983,7 @@ context.database = {
 				["Evoker/Devastation"] = {
 					["225586"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -9998,7 +9998,7 @@ context.database = {
 				["Death Knight/Unholy"] = {
 					["225590"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
@@ -10013,7 +10013,7 @@ context.database = {
 				["Death Knight/Frost"] = {
 					["159428"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
@@ -10028,7 +10028,7 @@ context.database = {
 				["Mage/Frost"] = {
 					["222814"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -10048,7 +10048,7 @@ context.database = {
 				["Hunter/Survival"] = {
 					["221202"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
 					},
@@ -10068,7 +10068,7 @@ context.database = {
 				["Paladin/Holy"] = {
 					["159428"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					},
@@ -10088,7 +10088,7 @@ context.database = {
 				["Hunter/Marksmanship"] = {
 					["225586"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -10103,7 +10103,7 @@ context.database = {
 				["Monk/Brewmaster"] = {
 					["225591"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
@@ -10118,7 +10118,7 @@ context.database = {
 				["Mage/Arcane"] = {
 					["212094"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Unknown",
 					},
@@ -10138,7 +10138,7 @@ context.database = {
 				["Mage/Fire"] = {
 					["221082"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Skarmorak/The Stonevault",
@@ -10153,7 +10153,7 @@ context.database = {
 				["Paladin/Retribution"] = {
 					["225590"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
@@ -10168,7 +10168,7 @@ context.database = {
 				["Paladin/Protection"] = {
 					["225590"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
@@ -10183,7 +10183,7 @@ context.database = {
 				["Priest/Discipline"] = {
 					["221082"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Skarmorak/The Stonevault",
@@ -10198,7 +10198,7 @@ context.database = {
 				["Rogue/Outlaw"] = {
 					["178731"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Blightbone/The Necrotic Wake",
@@ -10213,7 +10213,7 @@ context.database = {
 				["Rogue/Assassination"] = {
 					["212445"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Raid/Sikran/Nerub-ar Palace",
 					},
@@ -10233,7 +10233,7 @@ context.database = {
 				["Priest/Shadow"] = {
 					["225582"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
@@ -10248,7 +10248,7 @@ context.database = {
 				["Shaman/Restoration"] = {
 					["178745"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
@@ -10263,7 +10263,7 @@ context.database = {
 				["Priest/Holy"] = {
 					["221149"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
@@ -10278,7 +10278,7 @@ context.database = {
 				["Rogue/Subtlety"] = {
 					["225591"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
@@ -10293,7 +10293,7 @@ context.database = {
 				["Shaman/Elemental"] = {
 					["133293"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Drahga Shadowburner/Grim Batol",
@@ -10308,7 +10308,7 @@ context.database = {
 				["Warlock/Demonology"] = {
 					["222814"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -10328,7 +10328,7 @@ context.database = {
 				["Warrior/Protection"] = {
 					["211986"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Unknown",
 					},
@@ -10348,7 +10348,7 @@ context.database = {
 				["Warlock/Affliction"] = {
 					["222814"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -10368,7 +10368,7 @@ context.database = {
 				["Warrior/Arms"] = {
 					["225590"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
@@ -10383,7 +10383,7 @@ context.database = {
 				["Warrior/Fury"] = {
 					["225590"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
@@ -10398,7 +10398,7 @@ context.database = {
 				["Warlock/Destruction"] = {
 					["222814"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -10420,14 +10420,14 @@ context.database = {
 				["Demon Hunter/Havoc"] = {
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 					["162542"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Sergeant Bainbridge/Siege of Boralus",
@@ -10448,14 +10448,14 @@ context.database = {
 				["Hunter/Beast Mastery"] = {
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 					["212447"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
@@ -10476,14 +10476,14 @@ context.database = {
 				["Death Knight/Blood"] = {
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 					["178781"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Nalthor the Rimebinder/The Necrotic Wake",
@@ -10504,14 +10504,14 @@ context.database = {
 				["Demon Hunter/Vengeance"] = {
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 					["159461"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
@@ -10532,14 +10532,14 @@ context.database = {
 				["Evoker/Preservation"] = {
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 					["225576"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
@@ -10560,14 +10560,14 @@ context.database = {
 				["Druid/Balance"] = {
 					["225576"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -10588,14 +10588,14 @@ context.database = {
 				["Evoker/Augmentation"] = {
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 					["215133"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -10621,14 +10621,14 @@ context.database = {
 				["Evoker/Devastation"] = {
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 					["221136"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
@@ -10649,14 +10649,14 @@ context.database = {
 				["Death Knight/Unholy"] = {
 					["212447"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					},
 					["133299"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Erudax/Grim Batol",
@@ -10677,14 +10677,14 @@ context.database = {
 				["Death Knight/Frost"] = {
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 					["162541"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Chopper Redhook/Siege of Boralus",
@@ -10705,14 +10705,14 @@ context.database = {
 				["Mage/Frost"] = {
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 					["221189"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
 					},
@@ -10738,14 +10738,14 @@ context.database = {
 				["Hunter/Survival"] = {
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 					["225576"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
@@ -10766,14 +10766,14 @@ context.database = {
 				["Paladin/Holy"] = {
 					["178736"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Blightbone/The Necrotic Wake",
 					},
 					["159461"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					},
@@ -10799,14 +10799,14 @@ context.database = {
 				["Hunter/Marksmanship"] = {
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 					["162542"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Sergeant Bainbridge/Siege of Boralus",
@@ -10827,14 +10827,14 @@ context.database = {
 				["Monk/Brewmaster"] = {
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 					["178781"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Nalthor the Rimebinder/The Necrotic Wake",
@@ -10855,14 +10855,14 @@ context.database = {
 				["Mage/Arcane"] = {
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 					["225576"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
@@ -10888,13 +10888,13 @@ context.database = {
 				["Mage/Fire"] = {
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 					["212447"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
@@ -10921,14 +10921,14 @@ context.database = {
 				["Paladin/Retribution"] = {
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 					["225576"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
@@ -10949,14 +10949,14 @@ context.database = {
 				["Paladin/Protection"] = {
 					["212447"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					},
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -10977,14 +10977,14 @@ context.database = {
 				["Priest/Discipline"] = {
 					["212447"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					},
 					["159461"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
@@ -11005,14 +11005,14 @@ context.database = {
 				["Rogue/Outlaw"] = {
 					["178736"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Blightbone/The Necrotic Wake",
 					},
 					["221189"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
@@ -11033,14 +11033,14 @@ context.database = {
 				["Rogue/Assassination"] = {
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 					["162542"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Sergeant Bainbridge/Siege of Boralus",
@@ -11061,14 +11061,14 @@ context.database = {
 				["Priest/Shadow"] = {
 					["212447"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					},
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -11089,13 +11089,13 @@ context.database = {
 				["Shaman/Restoration"] = {
 					["221136"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
 					},
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -11122,14 +11122,14 @@ context.database = {
 				["Priest/Holy"] = {
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 					["162541"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Chopper Redhook/Siege of Boralus",
@@ -11150,13 +11150,13 @@ context.database = {
 				["Rogue/Subtlety"] = {
 					["215135"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
 					["221141"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
@@ -11183,14 +11183,14 @@ context.database = {
 				["Shaman/Elemental"] = {
 					["159461"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					},
 					["178736"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Blightbone/The Necrotic Wake",
@@ -11211,14 +11211,14 @@ context.database = {
 				["Warlock/Demonology"] = {
 					["212447"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					},
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -11239,14 +11239,14 @@ context.database = {
 				["Warrior/Protection"] = {
 					["221136"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
 					},
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -11267,14 +11267,14 @@ context.database = {
 				["Warlock/Affliction"] = {
 					["221136"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
 					},
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -11295,14 +11295,14 @@ context.database = {
 				["Warrior/Arms"] = {
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 					["159461"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
@@ -11323,14 +11323,14 @@ context.database = {
 				["Warrior/Fury"] = {
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 					["225576"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
@@ -11351,14 +11351,14 @@ context.database = {
 				["Warlock/Destruction"] = {
 					["221136"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
 					},
 					["225578"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -11381,7 +11381,7 @@ context.database = {
 				["Demon Hunter/Havoc"] = {
 					["219877"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
@@ -11396,7 +11396,7 @@ context.database = {
 				["Hunter/Beast Mastery"] = {
 					["212400"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
@@ -11411,7 +11411,7 @@ context.database = {
 				["Death Knight/Blood"] = {
 					["212407"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Anub'arash/Nerub-ar Palace",
@@ -11426,14 +11426,14 @@ context.database = {
 				["Demon Hunter/Vengeance"] = {
 					["219877"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					},
 					["222440"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -11459,7 +11459,7 @@ context.database = {
 				["Evoker/Preservation"] = {
 					["212405"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Sikran/Nerub-ar Palace",
@@ -11480,7 +11480,7 @@ context.database = {
 				["Druid/Balance"] = {
 					["212397"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Anub'arash/Nerub-ar Palace",
@@ -11495,14 +11495,14 @@ context.database = {
 				["Evoker/Augmentation"] = {
 					["133303"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Erudax/Grim Batol",
 					},
 					["212405"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Sikran/Nerub-ar Palace",
@@ -11523,14 +11523,14 @@ context.database = {
 				["Evoker/Devastation"] = {
 					["212397"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Anub'arash/Nerub-ar Palace",
 					},
 					["212394"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -11545,7 +11545,7 @@ context.database = {
 				["Death Knight/Unholy"] = {
 					["222447"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -11565,14 +11565,14 @@ context.database = {
 				["Death Knight/Frost"] = {
 					["212401"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 					["222451"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -11586,13 +11586,13 @@ context.database = {
 				["Mage/Frost"] = {
 					["222568"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
 					["212394"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -11619,7 +11619,7 @@ context.database = {
 				["Hunter/Survival"] = {
 					["222448"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -11639,7 +11639,7 @@ context.database = {
 				["Paladin/Holy"] = {
 					["178737"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Amarth/The Necrotic Wake",
@@ -11654,7 +11654,7 @@ context.database = {
 				["Hunter/Marksmanship"] = {
 					["212399"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Sikran/Nerub-ar Palace",
@@ -11669,21 +11669,21 @@ context.database = {
 				["Monk/Brewmaster"] = {
 					["221159"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
 					},
 					["219877"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					},
 					["221144"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
@@ -11710,7 +11710,7 @@ context.database = {
 				["Mage/Arcane"] = {
 					["212394"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
@@ -11730,14 +11730,14 @@ context.database = {
 				["Mage/Fire"] = {
 					["212397"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Anub'arash/Nerub-ar Palace",
 					},
 					["212394"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -11752,7 +11752,7 @@ context.database = {
 				["Paladin/Retribution"] = {
 					["222443"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -11772,7 +11772,7 @@ context.database = {
 				["Paladin/Protection"] = {
 					["178730"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Blightbone/The Necrotic Wake",
@@ -11787,14 +11787,14 @@ context.database = {
 				["Priest/Discipline"] = {
 					["221166"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Orator Krix'vizk/City of Threads",
 					},
 					["212394"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -11815,7 +11815,7 @@ context.database = {
 				["Rogue/Outlaw"] = {
 					["219877"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
@@ -11830,7 +11830,7 @@ context.database = {
 				["Rogue/Assassination"] = {
 					["225636"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
@@ -11845,7 +11845,7 @@ context.database = {
 				["Priest/Shadow"] = {
 					["212397"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Anub'arash/Nerub-ar Palace",
@@ -11860,14 +11860,14 @@ context.database = {
 				["Shaman/Restoration"] = {
 					["221083"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Skarmorak/The Stonevault",
 					},
 					["212394"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -11888,14 +11888,14 @@ context.database = {
 				["Priest/Holy"] = {
 					["56137"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Erudax/Grim Batol",
 					},
 					["178709"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
@@ -11916,7 +11916,7 @@ context.database = {
 				["Rogue/Subtlety"] = {
 					["212395"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
@@ -11931,7 +11931,7 @@ context.database = {
 				["Shaman/Elemental"] = {
 					["212394"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -11952,13 +11952,13 @@ context.database = {
 				["Warlock/Demonology"] = {
 					["212394"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 					["212397"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Anub'arash/Nerub-ar Palace",
@@ -11973,7 +11973,7 @@ context.database = {
 				["Warrior/Protection"] = {
 					["212392"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Sikran/Nerub-ar Palace",
@@ -11988,13 +11988,13 @@ context.database = {
 				["Warlock/Affliction"] = {
 					["212394"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 					["212397"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Anub'arash/Nerub-ar Palace",
@@ -12009,7 +12009,7 @@ context.database = {
 				["Warrior/Arms"] = {
 					["221184"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
@@ -12024,7 +12024,7 @@ context.database = {
 				["Warrior/Fury"] = {
 					["133298"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Erudax/Grim Batol",
@@ -12039,13 +12039,13 @@ context.database = {
 				["Warlock/Destruction"] = {
 					["212394"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 					["212397"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Anub'arash/Nerub-ar Palace",
@@ -12062,7 +12062,7 @@ context.database = {
 				["Demon Hunter/Havoc"] = {
 					["222441"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -12082,7 +12082,7 @@ context.database = {
 				["Evoker/Preservation"] = {
 					["212387"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
@@ -12091,7 +12091,7 @@ context.database = {
 				["Evoker/Augmentation"] = {
 					["221172"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Nx/City of Threads",
@@ -12106,7 +12106,7 @@ context.database = {
 				["Evoker/Devastation"] = {
 					["222566"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -12120,7 +12120,7 @@ context.database = {
 				["Mage/Frost"] = {
 					["222566"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -12140,7 +12140,7 @@ context.database = {
 				["Paladin/Holy"] = {
 					["225579"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -12155,7 +12155,7 @@ context.database = {
 				["Mage/Arcane"] = {
 					["222566"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -12163,7 +12163,7 @@ context.database = {
 				["Mage/Fire"] = {
 					["222566"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -12177,7 +12177,7 @@ context.database = {
 				["Paladin/Protection"] = {
 					["178712"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Tred'ova/Mists of Tirna Scithe",
@@ -12192,7 +12192,7 @@ context.database = {
 				["Priest/Discipline"] = {
 					["221172"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Nx/City of Threads",
@@ -12207,7 +12207,7 @@ context.database = {
 				["Rogue/Outlaw"] = {
 					["212395"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
@@ -12222,7 +12222,7 @@ context.database = {
 				["Rogue/Assassination"] = {
 					["212395"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
@@ -12237,7 +12237,7 @@ context.database = {
 				["Shaman/Restoration"] = {
 					["225579"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -12252,7 +12252,7 @@ context.database = {
 				["Priest/Holy"] = {
 					["221132"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
@@ -12267,7 +12267,7 @@ context.database = {
 				["Rogue/Subtlety"] = {
 					["178743"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from M+",
 						},
 						location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
@@ -12282,7 +12282,7 @@ context.database = {
 				["Shaman/Elemental"] = {
 					["225579"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -12297,7 +12297,7 @@ context.database = {
 				["Warlock/Demonology"] = {
 					["222566"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -12305,7 +12305,7 @@ context.database = {
 				["Warrior/Protection"] = {
 					["225579"] = {
 						listNames = {
-							"Overall",
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
@@ -12320,7 +12320,7 @@ context.database = {
 				["Warlock/Affliction"] = {
 					["222566"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -12328,7 +12328,7 @@ context.database = {
 				["Warrior/Fury"] = {
 					["222447"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},
@@ -12348,7 +12348,7 @@ context.database = {
 				["Warlock/Destruction"] = {
 					["222566"] = {
 						listNames = {
-							"Overall",
+							"overall",
 						},
 						location = "Other/Crafting",
 					},

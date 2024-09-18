@@ -75,7 +75,7 @@ local function AddItemTooltipText()
                             local listNames = ""
                             local k = 1
                             for _, listName in ipairs(bisList) do
-                                isOverall = listName == "Overall" and true or false
+                                isOverall = listName == "overall" and true or false
                                 listNames = listNames .. (k > 1 and ", " or "") .. context.data.ApplyTierColor(listName, isOverall and 5 or 4)
                                 if isOverall then
                                     if specName == context.player.GetCurrentSpecName(unit) then
@@ -117,7 +117,7 @@ local function AddItemTooltipText()
                             if not itemName then
                                 itemName = "Loading..."
                             end
-                            currentLine = context.data.ApplyTierColor("[" .. itemName .. "]", 4) .. " is " .. context.data.ApplyTrinketTierColor(itemInfo.tier) .. " " .. sourceString .. " from " .. itemInfo.location
+                            currentLine = context.data.ApplyColor("[" .. itemName .. "]", context.data.GetTrinketTierColor(itemInfo.tier)) .. " is " .. context.data.ApplyTrinketTierColor(itemInfo.tier) .. " " .. sourceString .. " from " .. itemInfo.location
                             GameTooltip:AddLine(currentLine, 1, 1, 1, true)
                             i = i + 1
                         end
@@ -128,6 +128,8 @@ local function AddItemTooltipText()
                     if next(entries) then
                         GameTooltip:AddLine(" ")
                         local i = 1
+                        local primaryLines = {}
+                        local secondaryLines = {}
                         for itemId, itemInfo in pairs(entries) do
                             local isOverallForCurrentSpec = false
                             local sourceString = ""
@@ -137,7 +139,7 @@ local function AddItemTooltipText()
                                 local k = 1
                                 local isOverall = false
                                 for _, listName in ipairs(sourceInfo) do
-                                    isOverall = listName == "Overall" and true or false
+                                    isOverall = listName == "overall" and true or false
                                     listNames = listNames .. (k > 1 and ", " or "") .. context.data.ApplyTierColor(listName, isOverall and 5 or 4)
                                     if isOverall then
                                         if specName == context.player.GetCurrentSpecName(unit) then
@@ -157,19 +159,37 @@ local function AddItemTooltipText()
                             end
 
                             if not skip then
-                                local spec = string.sub(specName, (unit == "player" and #context.player.localClassName or #context.player.unitClassName) + 2)
-                                local prefix = i > 1 and "or" or spec .. "'s BiS is"
-                                if isSecondaryBis then
-                                    prefix = i > 1 and "or" or "Other BiS options for " .. spec .. " are "
-                                end
+                                
                                 local itemName, _ = C_Item.GetItemInfo(itemId)
                                 if not itemName then
                                     itemName = "Loading..."
                                 end
-                                currentLine = prefix .. " " .. context.data.ApplyTierColor("[" .. itemName .. "]", 4) .. " " .. sourceString .. " from " .. itemInfo.location
-                                GameTooltip:AddLine(currentLine, 1, 1, 1, true)
+                                currentLine = context.data.ApplyTierColor("[" .. itemName .. "]", isOverallForCurrentSpec and 5 or 4) .. " " .. sourceString .. " from " .. itemInfo.location
+                                if isOverallForCurrentSpec then
+                                    table.insert(primaryLines, currentLine)
+                                else
+                                    table.insert(secondaryLines, currentLine)
+                                end
                                 i = i + 1
                             end
+                        end
+                        i = 1
+                        local spec = string.sub(specName, (unit == "player" and #context.player.localClassName or #context.player.unitClassName) + 2)
+                        for _, line in ipairs(primaryLines) do
+                            local prefix = i > 1 and "or " or spec .. "'s BiS is "
+                            if isSecondaryBis then
+                                prefix = i > 1 and "or " or "Other BiS options for " .. spec .. " are "
+                            end
+                            GameTooltip:AddLine(prefix .. line, 1, 1, 1, true)
+                            i = i + 1
+                        end
+                        for _, line in ipairs(secondaryLines) do
+                            local prefix = i > 1 and "or " or spec .. "'s BiS is "
+                            if isSecondaryBis then
+                                prefix = i > 1 and "or " or "Other BiS options for " .. spec .. " are "
+                            end
+                            GameTooltip:AddLine(prefix .. line, 1, 1, 1, true)
+                            i = i + 1
                         end
                         bisFound = true
                     end

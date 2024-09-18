@@ -101,7 +101,7 @@ local function UpdateChracterPanelItemButton(button, unit)
                     for sourceName, sourceInfo in pairs(entry) do
                         if not isBisOverall then
                             for _, listName in ipairs(sourceInfo) do
-                                if listName == "Overall" then
+                                if listName == "overall" then
                                     isBisOverall = true
                                     break
                                 end
@@ -159,7 +159,7 @@ local function UpdateItemButton(button)
                         for sourceName, sourceInfo in pairs(entry) do
                             if not isBisOverall then
                                 for _, listName in ipairs(sourceInfo) do
-                                    if listName == "Overall" then
+                                    if listName == "overall" then
                                         isBisOverall = true
                                         break
                                     end
@@ -205,7 +205,7 @@ local function UpdateVaultButton(icon, itemLink)
                     for sourceName, sourceInfo in pairs(entry) do
                         if not isBisOverall then
                             for _, listName in ipairs(sourceInfo) do
-                                if listName == "Overall" then
+                                if listName == "overall" then
                                     isBisOverall = true
                                     break
                                 end

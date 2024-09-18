@@ -102,10 +102,10 @@ def parse_sheet():
             output["gearSources"][scrape_source] = {}
 
         if "bis" in bis_type.lower():
-            entry["bis_type"] = bis_type.replace("bis_", "").title()
-            if entry["bis_type"] == "Mythic":
+            entry["bis_type"] = bis_type.replace("bis_", "")
+            if entry["bis_type"] == "mythic":
                 entry["bis_type"] = "from M+"
-            elif entry["bis_type"] == "Raid":
+            elif entry["bis_type"] == "raid":
                 entry["bis_type"] = "from raid"
             bis_entries.append(entry)
         else:
