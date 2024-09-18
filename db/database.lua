@@ -3,381 +3,328 @@ local addonName, context = ...
 context.database = {
 	trinkets = {
 		wowhead = {
-			["Silken Chain Weaver"] = {
-				["Death Knight/Blood"] = "S",
-				["Demon Hunter/Vengeance"] = "B",
-				["Monk/Brewmaster"] = "B",
-			},
-			["Ara-Kara Sacbrood"] = {
-				["Death Knight/Blood"] = "A",
-				["Druid/Balance"] = "S",
-				["Demon Hunter/Havoc"] = "S-",
-				["Hunter/Beast Mastery"] = "S",
-				["Demon Hunter/Vengeance"] = "A+",
-				["Death Knight/Frost"] = "S",
-				["Death Knight/Unholy"] = "S",
-				["Evoker/Preservation"] = "A",
-				["Evoker/Devastation"] = "A",
-				["Evoker/Augmentation"] = "A",
-				["Monk/Windwalker"] = "A",
-				["Monk/Mistweaver"] = "A",
-				["Hunter/Survival"] = "A",
-				["Mage/Frost"] = "A",
-				["Mage/Arcane"] = "A",
-				["Monk/Brewmaster"] = "A",
-				["Mage/Fire"] = "A",
-				["Paladin/Protection"] = "S",
-				["Priest/Shadow"] = "A",
-				["Priest/Discipline"] = "A",
-				["Paladin/Retribution"] = "S",
-				["Shaman/Elemental"] = "S",
-				["Priest/Holy"] = "A",
-				["Rogue/Assassination"] = "S",
-				["Warlock/Demonology"] = "S",
-				["Warlock/Affliction"] = "S",
-				["Warlock/Destruction"] = "S",
-				["Rogue/Outlaw"] = "S",
-				["Shaman/Enhancement"] = "S",
-				["Shaman/Restoration"] = "S",
-				["Warrior/Protection"] = "S",
-			},
-			["Sikrans Endless Arsenal"] = {
-				["Death Knight/Blood"] = "A",
-				["Demon Hunter/Vengeance"] = "A",
-				["Death Knight/Unholy"] = "C",
-				["Hunter/Marksmanship"] = "A",
-				["Hunter/Survival"] = "B",
-				["Monk/Brewmaster"] = "A",
-				["Rogue/Assassination"] = "B",
-				["Rogue/Outlaw"] = "A",
-				["Warrior/Protection"] = "A",
-			},
-			["Spare Meat Hook"] = {
-				["Death Knight/Blood"] = "A",
-				["Death Knight/Frost"] = "B",
-				["Death Knight/Unholy"] = "B",
-				["Paladin/Retribution"] = "B",
-				["Warrior/Protection"] = "S",
-			},
-			["Spymasters Web"] = {
-				["Druid/Balance"] = "S",
-				["Evoker/Preservation"] = "S",
-				["Evoker/Devastation"] = "S",
-				["Evoker/Augmentation"] = "S",
-				["Mage/Frost"] = "S",
-				["Mage/Arcane"] = "S",
-				["Mage/Fire"] = "S",
-				["Paladin/Holy"] = "S",
-				["Priest/Shadow"] = "S",
-				["Priest/Discipline"] = "S",
-				["Shaman/Elemental"] = "S",
-				["Warlock/Demonology"] = "S+",
-				["Warlock/Affliction"] = "S",
-				["Warlock/Destruction"] = "S",
-				["Shaman/Restoration"] = "S",
-			},
-			["Empowering Crystal of Anubikkaj"] = {
-				["Druid/Balance"] = "A",
-				["Demon Hunter/Havoc"] = "A",
-				["Hunter/Beast Mastery"] = "A+",
-				["Demon Hunter/Vengeance"] = "A",
-				["Evoker/Preservation"] = "A",
-				["Evoker/Devastation"] = "A",
-				["Evoker/Augmentation"] = "C",
-				["Monk/Mistweaver"] = "A",
-				["Hunter/Survival"] = "A",
-				["Mage/Frost"] = "B",
-				["Mage/Arcane"] = "A",
-				["Monk/Brewmaster"] = "B",
-				["Mage/Fire"] = "B",
-				["Priest/Shadow"] = "A",
-				["Priest/Discipline"] = "A",
-				["Shaman/Elemental"] = "A",
-				["Priest/Holy"] = "S",
-				["Rogue/Assassination"] = "A",
-				["Warlock/Demonology"] = "A",
-				["Warlock/Affliction"] = "A",
-				["Warlock/Destruction"] = "A",
-				["Shaman/Enhancement"] = "S",
-				["Shaman/Restoration"] = "A",
-			},
-			["Unbound Changeling"] = {
-				["Druid/Balance"] = "A",
-				["Evoker/Preservation"] = "S",
-				["Evoker/Devastation"] = "A",
-				["Evoker/Augmentation"] = "B",
-				["Monk/Mistweaver"] = "A",
-				["Mage/Frost"] = "A",
-				["Mage/Arcane"] = "B",
-				["Mage/Fire"] = "A",
-				["Paladin/Holy"] = "A",
-				["Priest/Shadow"] = "A",
-				["Priest/Discipline"] = "A",
-				["Shaman/Elemental"] = "S",
-				["Priest/Holy"] = "S",
-				["Warlock/Demonology"] = "A",
-				["Warlock/Affliction"] = "A",
-				["Warlock/Destruction"] = "B",
-				["Shaman/Restoration"] = "S",
-			},
-			["Gale of Shadows"] = {
-				["Druid/Balance"] = "A",
-				["Evoker/Preservation"] = "S",
-				["Evoker/Devastation"] = "A",
-				["Evoker/Augmentation"] = "C",
-				["Monk/Mistweaver"] = "S",
-				["Mage/Frost"] = "A",
-				["Mage/Fire"] = "A",
-				["Paladin/Holy"] = "S",
-				["Priest/Shadow"] = "A",
-				["Priest/Discipline"] = "A",
-				["Shaman/Elemental"] = "S",
-				["Priest/Holy"] = "S",
-				["Warlock/Affliction"] = "B",
-				["Warlock/Destruction"] = "A",
-				["Shaman/Restoration"] = "S",
-			},
-			["Ovinaxs Mercurial Egg"] = {
-				["Druid/Balance"] = "B",
-				["Demon Hunter/Havoc"] = "A",
-				["Death Knight/Frost"] = "A",
-				["Death Knight/Unholy"] = "A",
-				["Evoker/Devastation"] = "A",
-				["Evoker/Augmentation"] = "B",
-				["Monk/Mistweaver"] = "B",
-				["Hunter/Survival"] = "A",
-				["Mage/Frost"] = "A",
-				["Mage/Arcane"] = "B",
-				["Monk/Brewmaster"] = "A",
-				["Mage/Fire"] = "A",
-				["Paladin/Holy"] = "A",
-				["Priest/Shadow"] = "B",
-				["Paladin/Retribution"] = "C",
-				["Shaman/Elemental"] = "S",
-				["Rogue/Assassination"] = "B",
-				["Rogue/Subtlety"] = "A",
-				["Warlock/Demonology"] = "A",
-				["Warlock/Affliction"] = "S",
-				["Shaman/Enhancement"] = "B+",
-				["Shaman/Restoration"] = "A",
-			},
-			["Treacherous Transmitter"] = {
-				["Druid/Balance"] = "B",
-				["Demon Hunter/Havoc"] = "B",
-				["Death Knight/Frost"] = "S",
-				["Death Knight/Unholy"] = "S",
-				["Evoker/Devastation"] = "B",
-				["Hunter/Marksmanship"] = "S",
-				["Evoker/Augmentation"] = "C",
-				["Monk/Windwalker"] = "S",
-				["Hunter/Survival"] = "B",
-				["Mage/Frost"] = "A",
-				["Mage/Arcane"] = "A",
-				["Mage/Fire"] = "B",
-				["Paladin/Holy"] = "C",
-				["Paladin/Protection"] = "C",
-				["Priest/Shadow"] = "A",
-				["Paladin/Retribution"] = "B",
-				["Shaman/Elemental"] = "A",
-				["Rogue/Assassination"] = "C",
-				["Rogue/Subtlety"] = "S",
-				["Shaman/Enhancement"] = "A",
-				["Warrior/Protection"] = "B",
-			},
-			["Skardyns Grace"] = {
+			["133282"] = {
 				["Demon Hunter/Havoc"] = "S",
 				["Hunter/Beast Mastery"] = "S",
-				["Hunter/Marksmanship"] = "S",
-				["Monk/Windwalker"] = "S",
 				["Hunter/Survival"] = "S",
-				["Monk/Brewmaster"] = "B",
+				["Hunter/Marksmanship"] = "S",
 				["Rogue/Assassination"] = "S",
-				["Rogue/Subtlety"] = "B",
 				["Shaman/Enhancement"] = "S",
+				["Rogue/Subtlety"] = "B",
 			},
-			["Mad Queens Mandate"] = {
+			["212454"] = {
 				["Demon Hunter/Havoc"] = "S",
 				["Hunter/Beast Mastery"] = "A+",
 				["Demon Hunter/Vengeance"] = "B",
-				["Death Knight/Frost"] = "B",
-				["Death Knight/Unholy"] = "B",
-				["Evoker/Devastation"] = "A",
-				["Hunter/Marksmanship"] = "S",
 				["Evoker/Augmentation"] = "S",
-				["Monk/Windwalker"] = "A",
+				["Evoker/Devastation"] = "A",
+				["Death Knight/Unholy"] = "B",
+				["Death Knight/Frost"] = "B",
 				["Hunter/Survival"] = "A",
+				["Hunter/Marksmanship"] = "S",
 				["Monk/Brewmaster"] = "S",
 				["Paladin/Retribution"] = "A",
+				["Rogue/Outlaw"] = "S",
 				["Rogue/Assassination"] = "S",
 				["Warlock/Demonology"] = "S",
 				["Warlock/Affliction"] = "S",
 				["Warlock/Destruction"] = "S",
-				["Rogue/Outlaw"] = "S",
 			},
-			["Void Reapers Contract"] = {
+			["219314"] = {
+				["Demon Hunter/Havoc"] = "S-",
+				["Hunter/Beast Mastery"] = "S",
+				["Death Knight/Blood"] = "A",
+				["Demon Hunter/Vengeance"] = "A+",
+				["Evoker/Preservation"] = "A",
+				["Druid/Balance"] = "S",
+				["Evoker/Augmentation"] = "A",
+				["Evoker/Devastation"] = "A",
+				["Death Knight/Unholy"] = "S",
+				["Death Knight/Frost"] = "S",
+				["Mage/Frost"] = "A",
+				["Hunter/Survival"] = "A",
+				["Monk/Brewmaster"] = "A",
+				["Mage/Arcane"] = "A",
+				["Mage/Fire"] = "A",
+				["Paladin/Retribution"] = "S",
+				["Paladin/Protection"] = "S",
+				["Priest/Discipline"] = "A",
+				["Rogue/Outlaw"] = "S",
+				["Rogue/Assassination"] = "S",
+				["Shaman/Enhancement"] = "S",
+				["Priest/Shadow"] = "A",
+				["Shaman/Restoration"] = "S",
+				["Priest/Holy"] = "A",
+				["Shaman/Elemental"] = "S",
+				["Warlock/Demonology"] = "S",
+				["Warrior/Protection"] = "S",
+				["Warlock/Affliction"] = "S",
+				["Warlock/Destruction"] = "S",
+			},
+			["212456"] = {
 				["Demon Hunter/Havoc"] = "S-",
 				["Hunter/Beast Mastery"] = "A",
 				["Demon Hunter/Vengeance"] = "A",
-				["Monk/Windwalker"] = "S",
 				["Hunter/Survival"] = "A",
 				["Monk/Brewmaster"] = "A",
-				["Rogue/Assassination"] = "A",
-				["Rogue/Subtlety"] = "A",
 				["Rogue/Outlaw"] = "S",
+				["Rogue/Assassination"] = "A",
 				["Shaman/Enhancement"] = "B+",
+				["Rogue/Subtlety"] = "A",
 			},
-			["Dead-Eye Spyglass"] = {
+			["219312"] = {
+				["Demon Hunter/Havoc"] = "A",
+				["Hunter/Beast Mastery"] = "A+",
+				["Demon Hunter/Vengeance"] = "A",
+				["Evoker/Preservation"] = "A",
+				["Druid/Balance"] = "A",
+				["Evoker/Augmentation"] = "C",
+				["Evoker/Devastation"] = "A",
+				["Mage/Frost"] = "B",
+				["Hunter/Survival"] = "A",
+				["Monk/Brewmaster"] = "B",
+				["Mage/Arcane"] = "A",
+				["Mage/Fire"] = "B",
+				["Priest/Discipline"] = "A",
+				["Rogue/Assassination"] = "A",
+				["Shaman/Enhancement"] = "S",
+				["Priest/Shadow"] = "A",
+				["Shaman/Restoration"] = "A",
+				["Priest/Holy"] = "S",
+				["Shaman/Elemental"] = "A",
+				["Warlock/Demonology"] = "A",
+				["Warlock/Affliction"] = "A",
+				["Warlock/Destruction"] = "A",
+			},
+			["159623"] = {
 				["Demon Hunter/Havoc"] = "A",
 				["Hunter/Beast Mastery"] = "A",
 				["Demon Hunter/Vengeance"] = "A",
-				["Hunter/Marksmanship"] = "A",
 				["Hunter/Survival"] = "A",
-				["Rogue/Assassination"] = "A",
-				["Rogue/Subtlety"] = "A",
+				["Hunter/Marksmanship"] = "A",
 				["Rogue/Outlaw"] = "A",
+				["Rogue/Assassination"] = "A",
 				["Shaman/Enhancement"] = "B+",
+				["Rogue/Subtlety"] = "A",
 			},
-			["Mistcaller Ocarina"] = {
+			["220305"] = {
+				["Demon Hunter/Havoc"] = "A",
+				["Druid/Balance"] = "B",
+				["Evoker/Augmentation"] = "B",
+				["Evoker/Devastation"] = "A",
+				["Death Knight/Unholy"] = "A",
+				["Death Knight/Frost"] = "A",
+				["Mage/Frost"] = "A",
+				["Hunter/Survival"] = "A",
+				["Paladin/Holy"] = "A",
+				["Monk/Brewmaster"] = "A",
+				["Mage/Arcane"] = "B",
+				["Mage/Fire"] = "A",
+				["Paladin/Retribution"] = "C",
+				["Rogue/Assassination"] = "B",
+				["Shaman/Enhancement"] = "B+",
+				["Priest/Shadow"] = "B",
+				["Shaman/Restoration"] = "A",
+				["Rogue/Subtlety"] = "A",
+				["Shaman/Elemental"] = "S",
+				["Warlock/Demonology"] = "A",
+				["Warlock/Affliction"] = "S",
+			},
+			["178715"] = {
 				["Demon Hunter/Havoc"] = "B",
 				["Hunter/Beast Mastery"] = "A",
 				["Hunter/Survival"] = "C",
 				["Rogue/Outlaw"] = "B",
 				["Shaman/Enhancement"] = "C",
 			},
-			["Darkmoon Deck Ascension"] = {
+			["221023"] = {
+				["Demon Hunter/Havoc"] = "B",
+				["Druid/Balance"] = "B",
+				["Evoker/Augmentation"] = "C",
+				["Evoker/Devastation"] = "B",
+				["Death Knight/Unholy"] = "S",
+				["Death Knight/Frost"] = "S",
+				["Mage/Frost"] = "A",
+				["Hunter/Survival"] = "B",
+				["Paladin/Holy"] = "C",
+				["Hunter/Marksmanship"] = "S",
+				["Mage/Arcane"] = "A",
+				["Mage/Fire"] = "B",
+				["Paladin/Retribution"] = "B",
+				["Paladin/Protection"] = "C",
+				["Rogue/Assassination"] = "C",
+				["Shaman/Enhancement"] = "A",
+				["Priest/Shadow"] = "A",
+				["Rogue/Subtlety"] = "S",
+				["Shaman/Elemental"] = "A",
+				["Warrior/Protection"] = "B",
+			},
+			["222680"] = {
 				["Demon Hunter/Havoc"] = "D",
 			},
-			["Quickwick Candlestick"] = {
+			["225649"] = {
 				["Hunter/Beast Mastery"] = "B",
 				["Evoker/Preservation"] = "C",
 				["Evoker/Devastation"] = "C",
-				["Hunter/Marksmanship"] = "B",
-				["Hunter/Survival"] = "B",
 				["Mage/Frost"] = "B",
-				["Mage/Fire"] = "C",
+				["Hunter/Survival"] = "B",
 				["Paladin/Holy"] = "B",
+				["Hunter/Marksmanship"] = "B",
+				["Mage/Arcane"] = "C",
+				["Mage/Fire"] = "C",
 				["Paladin/Retribution"] = "C",
-				["Priest/Holy"] = "B",
-				["Rogue/Subtlety"] = "C",
 				["Shaman/Enhancement"] = "A",
 				["Shaman/Restoration"] = "B",
+				["Priest/Holy"] = "B",
+				["Rogue/Subtlety"] = "C",
 			},
-			["Spelunkers Waning Candle"] = {
+			["225638"] = {
 				["Hunter/Beast Mastery"] = "B",
-				["Rogue/Assassination"] = "C",
 				["Rogue/Outlaw"] = "B",
+				["Rogue/Assassination"] = "C",
 				["Shaman/Enhancement"] = "B+",
 			},
-			["Bottled Flayedwing Toxin"] = {
+			["178742"] = {
 				["Hunter/Beast Mastery"] = "B",
 				["Demon Hunter/Vengeance"] = "A+",
 				["Hunter/Survival"] = "B",
 				["Rogue/Outlaw"] = "S",
 			},
-			["Foul Behemoths Chelicera"] = {
+			["215172"] = {
+				["Death Knight/Blood"] = "S",
+				["Demon Hunter/Vengeance"] = "B",
+				["Monk/Brewmaster"] = "B",
+			},
+			["212449"] = {
+				["Death Knight/Blood"] = "A",
+				["Demon Hunter/Vengeance"] = "A",
+				["Death Knight/Unholy"] = "C",
+				["Hunter/Survival"] = "B",
+				["Hunter/Marksmanship"] = "A",
+				["Monk/Brewmaster"] = "A",
+				["Rogue/Outlaw"] = "A",
+				["Rogue/Assassination"] = "B",
+				["Warrior/Protection"] = "A",
+			},
+			["178751"] = {
+				["Death Knight/Blood"] = "A",
+				["Death Knight/Unholy"] = "B",
+				["Death Knight/Frost"] = "B",
+				["Paladin/Retribution"] = "B",
+				["Warrior/Protection"] = "S",
+			},
+			["219915"] = {
 				["Demon Hunter/Vengeance"] = "A+",
 				["Monk/Brewmaster"] = "A",
 				["Rogue/Subtlety"] = "B",
 			},
-			["Twin Fang Instruments"] = {
+			["219319"] = {
 				["Demon Hunter/Vengeance"] = "B",
 				["Hunter/Survival"] = "C",
 				["Rogue/Outlaw"] = "B",
 			},
-			["Mark of Khardros"] = {
-				["Death Knight/Frost"] = "S",
-				["Death Knight/Unholy"] = "S",
-				["Paladin/Protection"] = "A",
-				["Paladin/Retribution"] = "S",
-				["Warrior/Protection"] = "A",
-			},
-			["Skarmorak Shard"] = {
-				["Death Knight/Frost"] = "S",
-				["Death Knight/Unholy"] = "S",
-				["Paladin/Protection"] = "A",
-				["Paladin/Retribution"] = "S",
-			},
-			["Skyterrors Corrosive Organ"] = {
-				["Death Knight/Frost"] = "A",
-				["Death Knight/Unholy"] = "B",
-				["Paladin/Retribution"] = "A",
-			},
-			["Oppressive Orators Larynx"] = {
-				["Death Knight/Frost"] = "B",
-				["Death Knight/Unholy"] = "B",
-				["Paladin/Protection"] = "B",
-				["Paladin/Retribution"] = "B",
-				["Warrior/Protection"] = "A",
-			},
-			["Imperfect Ascendancy Serum"] = {
-				["Death Knight/Frost"] = "D",
-				["Evoker/Devastation"] = "C",
+			["178708"] = {
+				["Evoker/Preservation"] = "S",
+				["Druid/Balance"] = "A",
 				["Evoker/Augmentation"] = "B",
-				["Hunter/Survival"] = "B",
-				["Mage/Arcane"] = "C",
-				["Mage/Fire"] = "C",
-				["Rogue/Subtlety"] = "D",
-				["Warrior/Protection"] = "D",
+				["Evoker/Devastation"] = "A",
+				["Mage/Frost"] = "A",
+				["Paladin/Holy"] = "A",
+				["Mage/Arcane"] = "A",
+				["Mage/Fire"] = "A",
+				["Priest/Discipline"] = "A",
+				["Priest/Shadow"] = "A",
+				["Shaman/Restoration"] = "S",
+				["Priest/Holy"] = "S",
+				["Shaman/Elemental"] = "S",
+				["Warlock/Demonology"] = "A",
+				["Warlock/Affliction"] = "A",
+				["Warlock/Destruction"] = "B",
 			},
-			["Shadow-Binding Ritual Knife"] = {
-				["Death Knight/Unholy"] = "A",
-				["Evoker/Augmentation"] = "A",
-				["Paladin/Retribution"] = "A",
-				["Rogue/Assassination"] = "A",
+			["133304"] = {
+				["Evoker/Preservation"] = "S",
+				["Druid/Balance"] = "A",
+				["Evoker/Augmentation"] = "C",
+				["Paladin/Holy"] = "S",
+				["Shaman/Elemental"] = "S",
+				["Warlock/Affliction"] = "B",
+				["Warlock/Destruction"] = "A",
 			},
-			["Sturdy Deepflayer Scute"] = {
-				["Death Knight/Unholy"] = "B",
+			["220202"] = {
+				["Evoker/Preservation"] = "S",
+				["Druid/Balance"] = "S",
+				["Evoker/Augmentation"] = "S",
+				["Evoker/Devastation"] = "S",
+				["Mage/Frost"] = "S",
+				["Paladin/Holy"] = "S",
+				["Mage/Arcane"] = "S",
+				["Mage/Fire"] = "S",
+				["Priest/Discipline"] = "S",
+				["Priest/Shadow"] = "S",
+				["Shaman/Restoration"] = "S",
+				["Shaman/Elemental"] = "S",
+				["Warlock/Demonology"] = "S+",
+				["Warlock/Affliction"] = "S",
+				["Warlock/Destruction"] = "S",
 			},
-			["Smoldering Howler Horn"] = {
-				["Death Knight/Unholy"] = "B",
-			},
-			["Void Pactstone"] = {
-				["Death Knight/Unholy"] = "C",
-				["Paladin/Retribution"] = "C",
-			},
-			["Creeping Coagulum"] = {
+			["219917"] = {
 				["Evoker/Preservation"] = "A",
-				["Monk/Mistweaver"] = "A",
 				["Paladin/Holy"] = "B",
 				["Priest/Discipline"] = "A",
-				["Priest/Holy"] = "S",
 				["Shaman/Restoration"] = "B+",
+				["Priest/Holy"] = "S",
 			},
-			["Gruesome Syringe"] = {
+			["212452"] = {
 				["Evoker/Preservation"] = "A",
 				["Paladin/Holy"] = "C",
 				["Priest/Discipline"] = "C",
 				["Priest/Holy"] = "C",
 			},
-			["Unstable Power Suit Core"] = {
+			["225668"] = {
 				["Evoker/Preservation"] = "A",
 				["Evoker/Augmentation"] = "D",
+				["Mage/Arcane"] = "B",
 				["Priest/Discipline"] = "B",
-				["Priest/Holy"] = "B",
 				["Shaman/Restoration"] = "B+",
+				["Priest/Holy"] = "B",
 			},
-			["Goldenglow Censer"] = {
+			["225656"] = {
 				["Evoker/Preservation"] = "B",
 				["Paladin/Holy"] = "C",
 			},
-			["Cirral Concoctory"] = {
+			["219321"] = {
 				["Evoker/Preservation"] = "B",
 				["Evoker/Augmentation"] = "C",
 			},
-			["Corrupted Egg Shell"] = {
+			["133305"] = {
 				["Evoker/Preservation"] = "F",
 			},
-			["Aberrant Spellforge"] = {
-				["Evoker/Devastation"] = "A",
+			["219313"] = {
+				["Evoker/Augmentation"] = "A",
+				["Evoker/Devastation"] = "C",
+				["Paladin/Holy"] = "C",
+				["Mage/Arcane"] = "A",
+				["Mage/Fire"] = "C",
+			},
+			["215178"] = {
+				["Evoker/Augmentation"] = "A",
+				["Death Knight/Unholy"] = "A",
+				["Mage/Arcane"] = "B",
+				["Paladin/Retribution"] = "A",
+				["Rogue/Assassination"] = "A",
+				["Rogue/Subtlety"] = "A",
+			},
+			["212451"] = {
 				["Evoker/Augmentation"] = "B",
+				["Evoker/Devastation"] = "A",
 				["Mage/Arcane"] = "C",
 				["Mage/Fire"] = "C",
 				["Shaman/Elemental"] = "A",
 				["Warlock/Demonology"] = "B",
 			},
-			["Hadals Nautilus"] = {
-				["Evoker/Devastation"] = "B",
+			["159622"] = {
 				["Evoker/Augmentation"] = "B",
+				["Evoker/Devastation"] = "B",
 				["Mage/Frost"] = "B",
 				["Mage/Arcane"] = "B",
 				["Mage/Fire"] = "C",
@@ -387,7 +334,41 @@ context.database = {
 				["Warlock/Affliction"] = "B",
 				["Warlock/Destruction"] = "B",
 			},
-			["Satchel of Misbegotten Minions"] = {
+			["225654"] = {
+				["Evoker/Augmentation"] = "B",
+				["Evoker/Devastation"] = "C",
+				["Death Knight/Frost"] = "D",
+				["Hunter/Survival"] = "B",
+				["Mage/Arcane"] = "C",
+				["Mage/Fire"] = "C",
+				["Rogue/Subtlety"] = "D",
+				["Warrior/Protection"] = "D",
+			},
+			["219317"] = {
+				["Evoker/Augmentation"] = "C",
+				["Evoker/Devastation"] = "B",
+				["Hunter/Survival"] = "B",
+				["Mage/Arcane"] = "C",
+				["Mage/Fire"] = "C",
+				["Warlock/Affliction"] = "A",
+				["Warlock/Destruction"] = "A",
+			},
+			["219303"] = {
+				["Evoker/Augmentation"] = "D",
+			},
+			["222671"] = {
+				["Evoker/Augmentation"] = "D",
+			},
+			["56462"] = {
+				["Evoker/Devastation"] = "A",
+				["Mage/Frost"] = "A",
+				["Mage/Fire"] = "A",
+				["Priest/Discipline"] = "A",
+				["Priest/Shadow"] = "A",
+				["Shaman/Restoration"] = "S",
+				["Priest/Holy"] = "S",
+			},
+			["178772"] = {
 				["Evoker/Devastation"] = "B",
 				["Mage/Frost"] = "A",
 				["Mage/Arcane"] = "C",
@@ -398,2825 +379,5291 @@ context.database = {
 				["Warlock/Affliction"] = "B",
 				["Warlock/Destruction"] = "B",
 			},
-			["Harvesters Edict"] = {
-				["Evoker/Devastation"] = "B",
-				["Evoker/Augmentation"] = "C",
-				["Hunter/Survival"] = "B",
-				["Mage/Arcane"] = "C",
-				["Mage/Fire"] = "C",
-				["Warlock/Affliction"] = "A",
-				["Warlock/Destruction"] = "A",
+			["133300"] = {
+				["Death Knight/Unholy"] = "S",
+				["Death Knight/Frost"] = "S",
+				["Paladin/Retribution"] = "S",
+				["Paladin/Protection"] = "A",
 			},
-			["Mereldars Toll"] = {
-				["Evoker/Devastation"] = "C",
-				["Evoker/Augmentation"] = "A",
-				["Mage/Arcane"] = "A",
-				["Mage/Fire"] = "C",
-				["Paladin/Holy"] = "C",
+			["219300"] = {
+				["Death Knight/Unholy"] = "S",
+				["Death Knight/Frost"] = "S",
+				["Paladin/Retribution"] = "S",
+				["Paladin/Protection"] = "A",
 			},
-			["High Speakers Accretion"] = {
-				["Evoker/Augmentation"] = "D",
+			["219318"] = {
+				["Death Knight/Unholy"] = "B",
+				["Death Knight/Frost"] = "B",
+				["Paladin/Retribution"] = "B",
+				["Paladin/Protection"] = "B",
+				["Warrior/Protection"] = "A",
 			},
-			["Darkmoon Deck Vivacity"] = {
-				["Evoker/Augmentation"] = "D",
+			["212453"] = {
+				["Death Knight/Unholy"] = "B",
+				["Death Knight/Frost"] = "A",
+				["Paladin/Retribution"] = "A",
 			},
-			["Overclocked Geara-Rang Launcher"] = {
+			["205193"] = {
+				["Death Knight/Unholy"] = "B",
+			},
+			["205201"] = {
+				["Death Knight/Unholy"] = "B",
+			},
+			["219311"] = {
+				["Death Knight/Unholy"] = "C",
+				["Paladin/Retribution"] = "C",
+			},
+			["219301"] = {
 				["Hunter/Survival"] = "D",
 				["Rogue/Outlaw"] = "A",
 			},
-			["Swarmlords Authority"] = {
+			["56440"] = {
+				["Monk/Brewmaster"] = "B",
+			},
+			["212450"] = {
 				["Monk/Brewmaster"] = "B",
 				["Paladin/Protection"] = "A",
 				["Warrior/Protection"] = "C",
 			},
-			["Thronguss Finger"] = {
-				["Paladin/Protection"] = "A",
+			["215174"] = {
+				["Mage/Arcane"] = "A",
 			},
-			["Algari Alchemist Stone"] = {
-				["Paladin/Protection"] = "B",
+			["215169"] = {
+				["Mage/Arcane"] = "B",
+			},
+			["225648"] = {
+				["Mage/Arcane"] = "C",
+			},
+			["210816"] = {
 				["Paladin/Retribution"] = "D",
+				["Paladin/Protection"] = "B",
 				["Warrior/Protection"] = "C",
 			},
-			["Refracting Aggression Module"] = {
+			["133291"] = {
+				["Paladin/Protection"] = "A",
+			},
+			["219315"] = {
 				["Paladin/Protection"] = "F",
 			},
-			["Scrapsingers Symphony"] = {
+			["219302"] = {
 				["Priest/Discipline"] = "C",
 				["Priest/Holy"] = "A",
 			},
-			["Entropic Skardyn Core"] = {
+			["219296"] = {
 				["Priest/Discipline"] = "C",
 				["Priest/Holy"] = "C",
 			},
-			["Carved Blazikon Wax"] = {
-				["Priest/Holy"] = "B",
-			},
-			["Scroll of Momentum"] = {
-				["Rogue/Assassination"] = "C",
-			},
-			["Detachable Fang"] = {
+			["225657"] = {
 				["Rogue/Outlaw"] = "B",
 			},
-			["Viscous Coaglam"] = {
+			["226539"] = {
+				["Rogue/Assassination"] = "C",
+				["Rogue/Subtlety"] = "B",
+			},
+			["219320"] = {
 				["Shaman/Restoration"] = "B",
 			},
-			["Ceaseless Swarmgland"] = {
+			["219305"] = {
+				["Priest/Holy"] = "B",
+			},
+			["56458"] = {
+				["Warrior/Protection"] = "A",
+			},
+			["219316"] = {
 				["Warrior/Protection"] = "B",
 			},
 		},
 	},
 	gear = {
 		wowhead = {
-			["Soaring Behemoths Greathelm"] = {
-				["Death Knight/Blood"] = 1,
-			},
-			["Silken Advisors Favor"] = {
-				["Death Knight/Blood"] = 1,
-				["Evoker/Preservation"] = 1,
-				["Monk/Brewmaster"] = 1,
-				["Rogue/Subtlety"] = 1,
-			},
-			["Exhumed Centurions Spikes"] = {
-				["Death Knight/Blood"] = 1,
-				["Death Knight/Frost"] = 1,
-				["Death Knight/Unholy"] = 1,
-			},
-			["Wings of Shattered Sorrow"] = {
-				["Death Knight/Blood"] = 1,
-				["Demon Hunter/Havoc"] = 1,
-				["Hunter/Beast Mastery"] = 1,
-				["Demon Hunter/Vengeance"] = 1,
-				["Death Knight/Frost"] = 1,
-				["Evoker/Devastation"] = 1,
-				["Monk/Windwalker"] = 1,
-				["Monk/Brewmaster"] = 1,
-				["Paladin/Holy"] = 1,
-				["Paladin/Protection"] = 1,
-				["Priest/Shadow"] = 1,
-				["Priest/Discipline"] = 1,
-				["Rogue/Assassination"] = 1,
-				["Warlock/Demonology"] = 1,
-				["Warlock/Affliction"] = 1,
-				["Warlock/Destruction"] = 1,
-				["Rogue/Outlaw"] = 1,
-				["Shaman/Restoration"] = 1,
-				["Warrior/Protection"] = 1,
-			},
-			["Exhumed Centurions Breastplate"] = {
-				["Death Knight/Blood"] = 1,
-				["Death Knight/Frost"] = 1,
-				["Death Knight/Unholy"] = 1,
-			},
-			["Everforged Vambraces"] = {
-				["Death Knight/Blood"] = 1,
-				["Death Knight/Frost"] = 1,
-				["Paladin/Retribution"] = 1,
-				["Warrior/Arms"] = 1,
-				["Warrior/Fury"] = 1,
-			},
-			["Exhumed Centurions Gauntlets"] = {
-				["Death Knight/Blood"] = 1,
-				["Death Knight/Frost"] = 1,
-				["Death Knight/Unholy"] = 1,
-			},
-			["Everforged Greatbelt"] = {
-				["Death Knight/Blood"] = 1,
-			},
-			["Exhumed Centurions Chausses"] = {
-				["Death Knight/Blood"] = 1,
-				["Death Knight/Frost"] = 1,
-				["Death Knight/Unholy"] = 1,
-			},
-			["Shattershell Greaves"] = {
-				["Death Knight/Blood"] = 1,
-			},
-			["Seal of the Poisoned Pact"] = {
-				["Death Knight/Blood"] = 1,
-				["Druid/Balance"] = 1,
-				["Demon Hunter/Havoc"] = 1,
-				["Hunter/Beast Mastery"] = 1,
-				["Demon Hunter/Vengeance"] = 1,
-				["Death Knight/Frost"] = 1,
-				["Evoker/Preservation"] = 1,
-				["Evoker/Devastation"] = 1,
-				["Hunter/Marksmanship"] = 1,
-				["Evoker/Augmentation"] = 1,
-				["Hunter/Survival"] = 1,
-				["Mage/Frost"] = 1,
-				["Mage/Arcane"] = 1,
-				["Monk/Brewmaster"] = 1,
-				["Mage/Fire"] = 1,
-				["Paladin/Protection"] = 1,
-				["Priest/Shadow"] = 1,
-				["Paladin/Retribution"] = 1,
-				["Priest/Holy"] = 1,
-				["Rogue/Assassination"] = 1,
-				["Warrior/Arms"] = 1,
-				["Warrior/Fury"] = 1,
-				["Warlock/Demonology"] = 1,
-				["Warlock/Affliction"] = 1,
-				["Warlock/Destruction"] = 1,
-				["Shaman/Restoration"] = 1,
-				["Warrior/Protection"] = 1,
-			},
-			["Ritual Commanders Ring"] = {
-				["Death Knight/Blood"] = 1,
-				["Monk/Brewmaster"] = 1,
-			},
-			["Anubarashs Colossal Mandible"] = {
-				["Death Knight/Blood"] = 1,
-			},
-			["Whispering Mask"] = {
-				["Druid/Balance"] = 1,
-				["Rogue/Subtlety"] = 1,
-			},
-			["Sureki Zealots Insignia"] = {
-				["Druid/Balance"] = 1,
-				["Hunter/Beast Mastery"] = 1,
-				["Monk/Windwalker"] = 1,
-				["Monk/Mistweaver"] = 1,
-				["Mage/Frost"] = 1,
-				["Mage/Arcane"] = 1,
-				["Mage/Fire"] = 1,
-				["Paladin/Holy"] = 1,
-				["Paladin/Protection"] = 1,
-				["Priest/Shadow"] = 1,
-				["Priest/Discipline"] = 1,
-				["Paladin/Retribution"] = 1,
-				["Rogue/Assassination"] = 1,
-				["Warrior/Arms"] = 1,
-				["Warlock/Demonology"] = 1,
-				["Warlock/Affliction"] = 1,
-				["Warlock/Destruction"] = 1,
-				["Warrior/Protection"] = 1,
-			},
-			["Maw of the Greatlynx"] = {
-				["Druid/Balance"] = 1,
-			},
-			["Royal Emblem of Nerubar"] = {
-				["Druid/Balance"] = 1,
-				["Evoker/Preservation"] = 1,
-				["Mage/Frost"] = 1,
-				["Paladin/Retribution"] = 1,
-				["Priest/Holy"] = 1,
-			},
-			["Hide of the Greatlynx"] = {
-				["Druid/Balance"] = 1,
-			},
-			["Polluted Spectres Wraps"] = {
-				["Druid/Balance"] = 1,
-				["Demon Hunter/Havoc"] = 1,
-			},
-			["Eviscerators of the Greatlynx"] = {
-				["Druid/Balance"] = 1,
-			},
-			["Devourers Taut Innards"] = {
-				["Druid/Balance"] = 1,
-				["Rogue/Subtlety"] = 1,
-			},
-			["Leggings of the Greatlynx"] = {
-				["Druid/Balance"] = 1,
-			},
-			["Whisperers Echoing Steps"] = {
-				["Druid/Balance"] = 1,
-				["Demon Hunter/Havoc"] = 1,
-			},
-			["Writhing Ringworm"] = {
-				["Druid/Balance"] = 1,
-				["Evoker/Preservation"] = 1,
-				["Hunter/Survival"] = 1,
-				["Mage/Arcane"] = 1,
-				["Paladin/Retribution"] = 1,
-				["Warrior/Fury"] = 1,
-			},
-			["Takazjs Entropic Edict"] = {
-				["Druid/Balance"] = 1,
-				["Evoker/Devastation"] = 1,
-				["Mage/Fire"] = 1,
-				["Priest/Shadow"] = 1,
-				["Warlock/Demonology"] = 1,
-				["Warlock/Affliction"] = 1,
-				["Warlock/Destruction"] = 1,
-			},
-			["Impalers of the Hypogeal Nemesis"] = {
-				["Demon Hunter/Havoc"] = 1,
-			},
-			["Trailspinner Pendant"] = {
-				["Demon Hunter/Havoc"] = 1,
-				["Death Knight/Frost"] = 1,
-				["Evoker/Augmentation"] = 1,
-				["Hunter/Survival"] = 1,
-				["Priest/Holy"] = 1,
-			},
-			["War-Mantle of the Hypogeal Nemesis"] = {
-				["Demon Hunter/Havoc"] = 1,
-				["Demon Hunter/Vengeance"] = 1,
-			},
-			["Chestguard of the Hypogeal Nemesis"] = {
-				["Demon Hunter/Havoc"] = 1,
-				["Demon Hunter/Vengeance"] = 1,
-			},
-			["Rune-Branded Grasps"] = {
-				["Demon Hunter/Havoc"] = 1,
-			},
-			["Shadow Congregants Belt"] = {
-				["Demon Hunter/Havoc"] = 1,
-			},
-			["Pantaloons of the Hypogeal Nemesis"] = {
-				["Demon Hunter/Havoc"] = 1,
-				["Demon Hunter/Vengeance"] = 1,
-			},
-			["Seal of the City Watch"] = {
-				["Demon Hunter/Havoc"] = 1,
-				["Hunter/Marksmanship"] = 1,
-				["Rogue/Assassination"] = 1,
-			},
-			["Void Reapers Warp Blade"] = {
-				["Demon Hunter/Havoc"] = 1,
-				["Demon Hunter/Vengeance"] = 1,
-				["Monk/Windwalker"] = 1,
-				["Monk/Brewmaster"] = 1,
-				["Rogue/Outlaw"] = 1,
-			},
-			["Everforged Warglaive"] = {
-				["Demon Hunter/Havoc"] = 1,
-			},
-			["Lightless Scavengers Skull"] = {
-				["Hunter/Beast Mastery"] = 1,
-				["Hunter/Survival"] = 1,
-			},
-			["Lightless Scavengers Taxidermy"] = {
-				["Hunter/Beast Mastery"] = 1,
-				["Hunter/Marksmanship"] = 1,
-				["Hunter/Survival"] = 1,
-			},
-			["Lightless Scavengers Tunic"] = {
-				["Hunter/Beast Mastery"] = 1,
-				["Hunter/Marksmanship"] = 1,
-			},
-			["Glyph-Etched Vambraces"] = {
-				["Hunter/Beast Mastery"] = 1,
-				["Hunter/Marksmanship"] = 1,
-			},
-			["Glyph-Etched Gauntlets"] = {
-				["Hunter/Beast Mastery"] = 1,
-			},
-			["Lightless Scavengers Bonegirdle"] = {
-				["Hunter/Beast Mastery"] = 1,
-			},
-			["Lightless Scavengers Stalkings"] = {
-				["Hunter/Beast Mastery"] = 1,
-				["Hunter/Marksmanship"] = 1,
-				["Hunter/Survival"] = 1,
-			},
-			["Lightless Scavengers Footpads"] = {
-				["Hunter/Beast Mastery"] = 1,
-			},
-			["Key to the Unseeming"] = {
-				["Hunter/Beast Mastery"] = 1,
-				["Death Knight/Unholy"] = 1,
-				["Monk/Mistweaver"] = 1,
-				["Mage/Fire"] = 1,
-				["Paladin/Protection"] = 1,
-				["Priest/Shadow"] = 1,
-				["Priest/Discipline"] = 1,
-				["Warlock/Demonology"] = 1,
-			},
-			["Shade-Touched Silencer"] = {
-				["Hunter/Beast Mastery"] = 1,
-			},
-			["Guise of the Construct"] = {
-				["Demon Hunter/Vengeance"] = 1,
-			},
-			["Locket of Broken Memories"] = {
-				["Demon Hunter/Vengeance"] = 1,
-				["Evoker/Devastation"] = 1,
-				["Hunter/Marksmanship"] = 1,
-				["Shaman/Restoration"] = 1,
-			},
-			["Scheming Assailers Bands"] = {
-				["Demon Hunter/Vengeance"] = 1,
-				["Monk/Mistweaver"] = 1,
-			},
-			["Claws of the Hypogeal Nemesis"] = {
-				["Demon Hunter/Vengeance"] = 1,
-			},
-			["Adrenal Surge Clasp Rune-Branded Waistband"] = {
-				["Demon Hunter/Vengeance"] = 1,
-			},
-			["Besiegers Deckstalkers"] = {
-				["Demon Hunter/Vengeance"] = 1,
-				["Monk/Mistweaver"] = 1,
-			},
-			["Band of the Ancient Dredger"] = {
-				["Demon Hunter/Vengeance"] = 1,
-				["Paladin/Holy"] = 1,
-				["Priest/Discipline"] = 1,
-				["Shaman/Elemental"] = 1,
-				["Warrior/Arms"] = 1,
-			},
-			["Everforged Longsword-With  Blessed Weapon Grip  and  Algari Missive of the Fireflash "] = {
-				["Demon Hunter/Vengeance"] = 1,
-			},
-			["Wrathbark Greathelm"] = {
-				["Death Knight/Frost"] = 1,
-				["Death Knight/Unholy"] = 1,
-				["Paladin/Protection"] = 1,
-			},
-			["Crystal-Fissure Girdle"] = {
-				["Death Knight/Frost"] = 1,
-				["Warrior/Arms"] = 1,
-			},
-			["Ballast Sinkers"] = {
-				["Death Knight/Frost"] = 1,
-				["Paladin/Holy"] = 1,
-			},
-			["Band of the Roving Scalawag"] = {
-				["Death Knight/Frost"] = 1,
-				["Priest/Holy"] = 1,
-			},
-			["Ansureks Final Judgment"] = {
-				["Death Knight/Frost"] = 1,
-			},
-			["Charged Slicer"] = {
-				["Death Knight/Frost"] = 1,
-			},
-			["Emergency Stop Keychain"] = {
-				["Death Knight/Unholy"] = 1,
-				["Warrior/Fury"] = 1,
-			},
-			["Consecrated Cloak"] = {
-				["Death Knight/Unholy"] = 1,
-				["Hunter/Marksmanship"] = 1,
-				["Hunter/Survival"] = 1,
-				["Shaman/Elemental"] = 1,
-				["Warrior/Arms"] = 1,
-			},
-			["Bracers of Umbral Mending"] = {
-				["Death Knight/Unholy"] = 1,
-				["Paladin/Protection"] = 1,
-			},
-			["Girdle of Somber Ploys"] = {
-				["Death Knight/Unholy"] = 1,
-				["Paladin/Protection"] = 1,
-				["Paladin/Retribution"] = 1,
-				["Warrior/Fury"] = 1,
-			},
-			["Boots of the Black Bulwark"] = {
-				["Death Knight/Unholy"] = 1,
-				["Paladin/Protection"] = 1,
-				["Paladin/Retribution"] = 1,
-				["Warrior/Arms"] = 1,
-				["Warrior/Fury"] = 1,
-			},
-			["Circle of Bone"] = {
-				["Death Knight/Unholy"] = 1,
-			},
-			["Charged Claymore"] = {
-				["Death Knight/Unholy"] = 1,
-				["Warrior/Fury"] = 1,
-			},
-			["Horns of the Destroyer"] = {
-				["Evoker/Preservation"] = 1,
-				["Evoker/Devastation"] = 1,
-			},
-			["Fumaroles of the Destroyer"] = {
-				["Evoker/Preservation"] = 1,
-				["Evoker/Devastation"] = 1,
-				["Evoker/Augmentation"] = 1,
-			},
-			["Scales of the Destroyer"] = {
-				["Evoker/Preservation"] = 1,
-				["Evoker/Devastation"] = 1,
-				["Evoker/Augmentation"] = 1,
-			},
-			["Throne Defenders Bangles"] = {
-				["Evoker/Preservation"] = 1,
-			},
-			["Clutches of Paranoia"] = {
-				["Evoker/Preservation"] = 1,
-			},
-			["Cinch of Lingering Influence"] = {
-				["Evoker/Preservation"] = 1,
-			},
-			["Legguards of the Destroyer"] = {
-				["Evoker/Preservation"] = 1,
-				["Evoker/Augmentation"] = 1,
-			},
-			["Rashanans Grotesque Talons"] = {
-				["Evoker/Preservation"] = 1,
-				["Evoker/Devastation"] = 1,
-				["Hunter/Marksmanship"] = 1,
-			},
-			["Spymasters Web Advanced"] = {
-				["Evoker/Preservation"] = 1,
-			},
-			["Flawless Phase Blade"] = {
-				["Evoker/Preservation"] = 1,
-			},
-			["Broodtwisters Grim Catalyst"] = {
-				["Evoker/Preservation"] = 1,
-			},
-			["Penumbral Rimeguards"] = {
-				["Evoker/Devastation"] = 1,
-				["Evoker/Augmentation"] = 1,
-			},
-			["Rippers of the Destroyer"] = {
-				["Evoker/Devastation"] = 1,
-				["Evoker/Augmentation"] = 1,
-			},
-			["Accelerated Ascension Coil"] = {
-				["Evoker/Devastation"] = 1,
-				["Hunter/Marksmanship"] = 1,
-				["Hunter/Survival"] = 1,
-				["Shaman/Restoration"] = 1,
-			},
-			["Liquified Defectors Leggings"] = {
-				["Evoker/Devastation"] = 1,
-				["Shaman/Restoration"] = 1,
-			},
-			["Devout Zealots Ring"] = {
-				["Evoker/Devastation"] = 1,
-				["Warlock/Affliction"] = 1,
-				["Warlock/Destruction"] = 1,
-				["Shaman/Restoration"] = 1,
-				["Warrior/Protection"] = 1,
-			},
-			["Charged Hexsword"] = {
-				["Evoker/Devastation"] = 1,
-			},
-			["Vagabonds Torch"] = {
-				["Evoker/Devastation"] = 1,
-				["Mage/Frost"] = 1,
-				["Mage/Arcane"] = 1,
-				["Mage/Fire"] = 1,
-				["Warlock/Demonology"] = 1,
-				["Warlock/Affliction"] = 1,
-				["Warlock/Destruction"] = 1,
-			},
-			["Rattling Deadeye Hood"] = {
-				["Hunter/Marksmanship"] = 1,
-				["Evoker/Augmentation"] = 1,
-			},
-			["Lightless Scavengers Mitts"] = {
-				["Hunter/Marksmanship"] = 1,
-				["Hunter/Survival"] = 1,
-			},
-			["Splintershot Silkbow"] = {
-				["Hunter/Marksmanship"] = 1,
-			},
-			["Royal Emblem of Nerubar Troggstitched Drape Wings of Shattered Sorrow "] = {
-				["Evoker/Augmentation"] = 1,
-			},
-			["Glyph-Etched Binding Glyph-Etched Binding"] = {
-				["Evoker/Augmentation"] = 1,
-			},
-			["Sure-Foot Sabatons"] = {
-				["Evoker/Augmentation"] = 1,
-			},
-			["Binding of Binding"] = {
-				["Evoker/Augmentation"] = 1,
-			},
-			["Staff of Siphoned Essences"] = {
-				["Evoker/Augmentation"] = 1,
-				["Priest/Holy"] = 1,
-			},
-			["Flawless Phase Blade Arachnoid Soulcleaver Scithewood Scepter"] = {
-				["Evoker/Augmentation"] = 1,
-			},
-			["Pail of Preserved Obscurity"] = {
-				["Evoker/Augmentation"] = 1,
-				["Priest/Discipline"] = 1,
-			},
-			["Hood of the Hidden Path"] = {
-				["Monk/Windwalker"] = 1,
-			},
-			["Gatecrashers Enduring Effigy"] = {
-				["Monk/Windwalker"] = 1,
-				["Monk/Brewmaster"] = 1,
-			},
-			["Gatecrashers Gi"] = {
-				["Monk/Windwalker"] = 1,
-				["Monk/Mistweaver"] = 1,
-				["Monk/Brewmaster"] = 1,
-			},
-			["Risen Monstrosity Cuffs"] = {
-				["Monk/Windwalker"] = 1,
-			},
-			["Gatecrashers Protectors"] = {
-				["Monk/Windwalker"] = 1,
-				["Monk/Mistweaver"] = 1,
-			},
-			["Sapgorger Belt"] = {
-				["Monk/Windwalker"] = 1,
-				["Rogue/Outlaw"] = 1,
-			},
-			["Gatecrashers Kilt"] = {
-				["Monk/Windwalker"] = 1,
-				["Monk/Mistweaver"] = 1,
-				["Monk/Brewmaster"] = 1,
-			},
-			["Chitin-Spiked Jackboots"] = {
-				["Monk/Windwalker"] = 1,
-				["Rogue/Assassination"] = 1,
-			},
-			["Experiment 08752s Band"] = {
-				["Monk/Windwalker"] = 1,
-				["Mage/Frost"] = 1,
-				["Rogue/Outlaw"] = 1,
-			},
-			["Stitchfleshs Misplaced Signet"] = {
-				["Monk/Windwalker"] = 1,
-				["Monk/Mistweaver"] = 1,
-				["Paladin/Holy"] = 1,
-				["Shaman/Elemental"] = 1,
-				["Rogue/Outlaw"] = 1,
-			},
-			["Honored Executioners Perforator"] = {
-				["Monk/Windwalker"] = 1,
-			},
-			["Eirichs Fist of Deception"] = {
-				["Monk/Windwalker"] = 1,
-			},
-			["Gatecrashers Horns"] = {
-				["Monk/Mistweaver"] = 1,
-				["Monk/Brewmaster"] = 1,
-			},
-			["Frame of Felled Insurgents"] = {
-				["Monk/Mistweaver"] = 1,
-				["Rogue/Outlaw"] = 1,
-			},
-			["Azureborne Cloak"] = {
-				["Monk/Mistweaver"] = 1,
-				["Rogue/Subtlety"] = 1,
-			},
-			["Behemoths Eroded Cinch"] = {
-				["Monk/Mistweaver"] = 1,
-			},
-			["Vagabonds Bounding Baton with  Darkmoon Sigil Ascension"] = {
-				["Monk/Mistweaver"] = 1,
-			},
-			["Goresplattered Membrane"] = {
-				["Hunter/Survival"] = 1,
-			},
-			["Lightless Scavengers Wristguards"] = {
-				["Hunter/Survival"] = 1,
-			},
-			["Defiance Crushers Sabatons"] = {
-				["Hunter/Survival"] = 1,
-			},
-			["Charged Halberd"] = {
-				["Hunter/Survival"] = 1,
-			},
-			["Hood of Violet Rebirth"] = {
-				["Mage/Frost"] = 1,
-			},
-			["Beacons of Violet Rebirth"] = {
-				["Mage/Frost"] = 1,
-				["Mage/Arcane"] = 1,
-				["Mage/Fire"] = 1,
-			},
-			["Runecoat of Violet Rebirth"] = {
-				["Mage/Frost"] = 1,
-				["Mage/Arcane"] = 1,
-				["Mage/Fire"] = 1,
-			},
-			["Skeinspinners Duplicitous Cuffs"] = {
-				["Mage/Frost"] = 1,
-				["Mage/Fire"] = 1,
-				["Priest/Shadow"] = 1,
-				["Warlock/Demonology"] = 1,
-				["Warlock/Affliction"] = 1,
-				["Warlock/Destruction"] = 1,
-			},
-			["Jeweled Gauntlets of Violet Rebirth"] = {
-				["Mage/Frost"] = 1,
-				["Mage/Arcane"] = 1,
-				["Mage/Fire"] = 1,
-			},
-			["Acrid Ascendants Sash"] = {
-				["Mage/Frost"] = 1,
-				["Mage/Arcane"] = 1,
-				["Priest/Shadow"] = 1,
-				["Priest/Holy"] = 1,
-				["Warlock/Demonology"] = 1,
-				["Warlock/Affliction"] = 1,
-				["Warlock/Destruction"] = 1,
-			},
-			["Voidspoken Sarong"] = {
-				["Mage/Frost"] = 1,
-			},
-			["Consecrated Slippers"] = {
-				["Mage/Frost"] = 1,
-				["Warlock/Demonology"] = 1,
-				["Warlock/Affliction"] = 1,
-				["Warlock/Destruction"] = 1,
-			},
-			["Vagabonds Bounding Baton"] = {
-				["Mage/Frost"] = 1,
-			},
-			["Sovereigns Disdain"] = {
-				["Mage/Frost"] = 1,
-				["Mage/Arcane"] = 1,
-				["Mage/Fire"] = 1,
-				["Priest/Discipline"] = 1,
-				["Shaman/Elemental"] = 1,
-				["Warlock/Demonology"] = 1,
-				["Warlock/Affliction"] = 1,
-				["Warlock/Destruction"] = 1,
-				["Shaman/Restoration"] = 1,
-			},
-			["Cocoonsilk Cowl"] = {
-				["Mage/Arcane"] = 1,
-			},
-			["Ward of Violet Rebirth"] = {
-				["Mage/Arcane"] = 1,
-			},
-			["Consecrated Cuffs"] = {
-				["Mage/Arcane"] = 1,
-			},
-			["Coattails of Violet Rebirth"] = {
-				["Mage/Arcane"] = 1,
-				["Mage/Fire"] = 1,
-			},
-			["Slippers of Violet Rebirth"] = {
-				["Mage/Arcane"] = 1,
-			},
-			["Sanguine Experiments Bandages"] = {
-				["Monk/Brewmaster"] = 1,
-			},
-			["Rune-Branded Grasps-With  Writhing Armor Banding  and  Algari Missive of the Quickblade "] = {
-				["Monk/Brewmaster"] = 1,
-			},
-			["Adrenal Surge Clasp"] = {
-				["Monk/Brewmaster"] = 1,
-			},
-			["Fleeting Massacre Footpads"] = {
-				["Monk/Brewmaster"] = 1,
-				["Rogue/Subtlety"] = 1,
-			},
-			["Harvesters Interdiction"] = {
-				["Monk/Brewmaster"] = 1,
-			},
-			["Zephyrous Sail Carver"] = {
-				["Monk/Brewmaster"] = 1,
-			},
-			["Devotees Discarded Headdress"] = {
-				["Mage/Fire"] = 1,
-				["Priest/Discipline"] = 1,
-				["Warlock/Demonology"] = 1,
-			},
-			["Anvilhide Cape"] = {
-				["Mage/Fire"] = 1,
-				["Warrior/Fury"] = 1,
-			},
-			["Consecrated Cord"] = {
-				["Mage/Fire"] = 1,
-			},
-			["Tainted Earthshard Walkers"] = {
-				["Mage/Fire"] = 1,
-				["Priest/Discipline"] = 1,
-			},
-			["Entombed Seraphs Casque"] = {
-				["Paladin/Holy"] = 1,
-				["Paladin/Retribution"] = 1,
-			},
-			["Flesh Connectors Epaulets"] = {
-				["Paladin/Holy"] = 1,
-			},
-			["Entombed Seraphs Breastplate"] = {
-				["Paladin/Holy"] = 1,
-				["Paladin/Protection"] = 1,
-				["Paladin/Retribution"] = 1,
-			},
-			["Vociferous Subjugators Bracers"] = {
-				["Paladin/Holy"] = 1,
-			},
-			["Entombed Seraphs Castigation"] = {
-				["Paladin/Holy"] = 1,
-				["Paladin/Protection"] = 1,
-				["Paladin/Retribution"] = 1,
-			},
-			["Nether Bountys Greatbelt"] = {
-				["Paladin/Holy"] = 1,
-			},
-			["Entombed Seraphs Greaves"] = {
-				["Paladin/Holy"] = 1,
-				["Paladin/Protection"] = 1,
-			},
-			["Gale of Shadows as Herald"] = {
-				["Paladin/Holy"] = 1,
-			},
-			["Amarths Spellblade"] = {
-				["Paladin/Holy"] = 1,
-			},
-			["Crest of the Caustic Despot"] = {
-				["Paladin/Holy"] = 1,
-				["Shaman/Elemental"] = 1,
-				["Shaman/Restoration"] = 1,
-				["Warrior/Protection"] = 1,
-			},
-			["Entombed Seraphs Plumes"] = {
-				["Paladin/Protection"] = 1,
-				["Paladin/Retribution"] = 1,
-			},
-			["Engorged Worm Smasher"] = {
-				["Paladin/Protection"] = 1,
-			},
-			["Acidslough Bulwark"] = {
-				["Paladin/Protection"] = 1,
-			},
-			["Living Lusters Semblance"] = {
-				["Priest/Shadow"] = 1,
-				["Priest/Holy"] = 1,
-			},
-			["Living Lusters Dominion"] = {
-				["Priest/Shadow"] = 1,
-				["Priest/Discipline"] = 1,
-				["Priest/Holy"] = 1,
-			},
-			["Living Lusters Raiment"] = {
-				["Priest/Shadow"] = 1,
-				["Priest/Discipline"] = 1,
-			},
-			["Gory Surgeons Gloves"] = {
-				["Priest/Shadow"] = 1,
-			},
-			["Living Lusters Trousers"] = {
-				["Priest/Shadow"] = 1,
-				["Priest/Discipline"] = 1,
-				["Priest/Holy"] = 1,
-			},
-			["Assimilated Eggshell Slippers"] = {
-				["Priest/Shadow"] = 1,
-			},
-			["Vitriolic Veinwoven Wraps"] = {
-				["Priest/Discipline"] = 1,
-			},
-			["Living Lusters Touch"] = {
-				["Priest/Discipline"] = 1,
-				["Priest/Holy"] = 1,
-			},
-			["Burrowers Cinch"] = {
-				["Priest/Discipline"] = 1,
-			},
-			["Krixvizks Speech Rod"] = {
-				["Priest/Discipline"] = 1,
-			},
-			["Legplates of Broken Trust"] = {
-				["Paladin/Retribution"] = 1,
-			},
-			["Everforged Greataxe"] = {
-				["Paladin/Retribution"] = 1,
-			},
-			["Final Meals Horns"] = {
-				["Shaman/Elemental"] = 1,
-			},
-			["Amulet of Earthen Craftsmanship"] = {
-				["Shaman/Elemental"] = 1,
-			},
-			["Concourse of the Forgotten Reservoir"] = {
-				["Shaman/Elemental"] = 1,
-				["Shaman/Restoration"] = 1,
-			},
-			["Vestments of the Forgotten Reservoir"] = {
-				["Shaman/Elemental"] = 1,
-				["Shaman/Restoration"] = 1,
-			},
-			["Kyvezas Covert Clasps"] = {
-				["Shaman/Elemental"] = 1,
-				["Shaman/Restoration"] = 1,
-			},
-			["Covenant of the Forgotten Reservoir"] = {
-				["Shaman/Elemental"] = 1,
-				["Shaman/Restoration"] = 1,
-			},
-			["Lost Watchers Remains"] = {
-				["Shaman/Elemental"] = 1,
-			},
-			["Sarong of the Forgotten Reservoir"] = {
-				["Shaman/Elemental"] = 1,
-			},
-			["Red Scale Boots"] = {
-				["Shaman/Elemental"] = 1,
-			},
-			["Bile-Soaked Harness"] = {
-				["Priest/Holy"] = 1,
-			},
-			["Necropolis Lords Shackles"] = {
-				["Priest/Holy"] = 1,
-			},
-			["Membranous Slippers"] = {
-				["Priest/Holy"] = 1,
-			},
-			["Scithewood Scepter"] = {
-				["Priest/Holy"] = 1,
-			},
-			["Overflowing Umbral Pail"] = {
-				["Priest/Holy"] = 1,
-			},
-			["Kareshi Phantoms Emptiness"] = {
-				["Rogue/Assassination"] = 1,
-			},
-			["Kareshi Phantoms Shoulderpads"] = {
-				["Rogue/Assassination"] = 1,
-				["Rogue/Subtlety"] = 1,
-			},
-			["Kareshi Phantoms Nexus Wraps"] = {
-				["Rogue/Assassination"] = 1,
-				["Rogue/Subtlety"] = 1,
-				["Rogue/Outlaw"] = 1,
-			},
-			["Rune-Branded Armbands"] = {
-				["Rogue/Assassination"] = 1,
-				["Rogue/Subtlety"] = 1,
-			},
-			["Kareshi Phantoms Grips"] = {
-				["Rogue/Assassination"] = 1,
-				["Rogue/Subtlety"] = 1,
-				["Rogue/Outlaw"] = 1,
-			},
-			["Rune-Branded Waistband"] = {
-				["Rogue/Assassination"] = 1,
-			},
-			["Kareshi Phantoms Leggings"] = {
-				["Rogue/Assassination"] = 1,
-				["Rogue/Subtlety"] = 1,
-			},
-			Regicide = {
-				["Rogue/Assassination"] = 1,
-			},
-			["Blood-Kissed Kukri"] = {
-				["Rogue/Assassination"] = 1,
-				["Rogue/Subtlety"] = 1,
-				["Rogue/Outlaw"] = 1,
-			},
-			["Warsculptors Barbute"] = {
-				["Warrior/Arms"] = 1,
-				["Warrior/Protection"] = 1,
-			},
-			["Warsculptors Horned Spaulders"] = {
-				["Warrior/Arms"] = 1,
-				["Warrior/Fury"] = 1,
-			},
-			["Warsculptors Furred Plastron"] = {
-				["Warrior/Arms"] = 1,
-				["Warrior/Fury"] = 1,
-				["Warrior/Protection"] = 1,
-			},
-			["Black Blood Injectors"] = {
-				["Warrior/Arms"] = 1,
-			},
-			["Warsculptors Cuisses"] = {
-				["Warrior/Arms"] = 1,
-				["Warrior/Fury"] = 1,
-				["Warrior/Protection"] = 1,
-			},
-			["Surgical Heartstopper"] = {
-				["Warrior/Arms"] = 1,
-			},
-			["Darkfrost Helmet"] = {
-				["Warrior/Fury"] = 1,
-			},
-			["Warsculptors Crushers"] = {
-				["Warrior/Fury"] = 1,
-				["Warrior/Protection"] = 1,
-			},
-			["Wild Hammer"] = {
-				["Warrior/Fury"] = 1,
-			},
-			["Ring of Earthen Craftsmanship"] = {
-				["Rogue/Subtlety"] = 1,
-			},
-			["High Nerubian Signet"] = {
-				["Rogue/Subtlety"] = 1,
-			},
-			["Stitchfleshs Scalpel"] = {
-				["Rogue/Subtlety"] = 1,
-			},
-			["Hexflame Covens Altar"] = {
-				["Warlock/Demonology"] = 1,
-				["Warlock/Affliction"] = 1,
-				["Warlock/Destruction"] = 1,
-			},
-			["Hexflame Covens Ritual Harness"] = {
-				["Warlock/Demonology"] = 1,
-				["Warlock/Affliction"] = 1,
-				["Warlock/Destruction"] = 1,
-			},
-			["Hexflame Covens Sleeves"] = {
-				["Warlock/Demonology"] = 1,
-				["Warlock/Affliction"] = 1,
-				["Warlock/Destruction"] = 1,
-			},
-			["Hexflame Covens Leggings"] = {
-				["Warlock/Demonology"] = 1,
-				["Warlock/Affliction"] = 1,
-				["Warlock/Destruction"] = 1,
-			},
-			["Hexflame Covens All-Seeing Eye"] = {
-				["Warlock/Affliction"] = 1,
-				["Warlock/Destruction"] = 1,
-			},
-			["Beyonds Dark Visage"] = {
-				["Rogue/Outlaw"] = 1,
-			},
-			["Elders Hemolymphal Periapt"] = {
-				["Rogue/Outlaw"] = 1,
-			},
-			["Rune-Branded Armbands with  Elemental Focusing Lens"] = {
-				["Rogue/Outlaw"] = 1,
-			},
-			["Rune-Branded Legwraps with  Elemental Focusing Lens"] = {
-				["Rogue/Outlaw"] = 1,
-			},
-			["Viscera-Stitched Footpads"] = {
-				["Rogue/Outlaw"] = 1,
-			},
-			["Noetic of the Forgotten Reservoir"] = {
-				["Shaman/Restoration"] = 1,
-			},
-			["Striders of Restless Malice"] = {
-				["Shaman/Restoration"] = 1,
-			},
-			["Wardbreaker of the Fractured"] = {
-				["Shaman/Restoration"] = 1,
-			},
-			["Vile Butchers Pauldrons"] = {
-				["Warrior/Protection"] = 1,
-			},
-			["Everforged Wrists"] = {
-				["Warrior/Protection"] = 1,
-			},
-			["Everforged Waist"] = {
-				["Warrior/Protection"] = 1,
-			},
-			["Warsculptors Carved Boots"] = {
-				["Warrior/Protection"] = 1,
-			},
-			["Duelists Dancing Steel"] = {
-				["Warrior/Protection"] = 1,
+			["212065"] = {
+				["Demon Hunter/Havoc"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["178707"] = {
+				["Demon Hunter/Havoc"] = {
+					"Overall",
+					"from M+",
+				},
+				["Hunter/Beast Mastery"] = {
+					"from M+",
+				},
+				["Death Knight/Blood"] = {
+					"from M+",
+				},
+				["Evoker/Augmentation"] = {
+					"Overall",
+					"from M+",
+				},
+				["Death Knight/Frost"] = {
+					"Overall",
+					"from M+",
+				},
+				["Hunter/Survival"] = {
+					"Overall",
+					"from M+",
+				},
+				["Hunter/Marksmanship"] = {
+					"from M+",
+				},
+				["Priest/Holy"] = {
+					"Overall",
+					"from M+",
+				},
+				["Rogue/Subtlety"] = {
+					"from M+",
+				},
+				["Warrior/Arms"] = {
+					"from M+",
+				},
+			},
+			["212063"] = {
+				["Demon Hunter/Havoc"] = {
+					"Overall",
+					"from raid",
+				},
+				["Demon Hunter/Vengeance"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["225574"] = {
+				["Demon Hunter/Havoc"] = {
+					"Overall",
+					"from raid",
+				},
+				["Hunter/Beast Mastery"] = {
+					"Overall",
+					"from raid",
+				},
+				["Death Knight/Blood"] = {
+					"Overall",
+					"from raid",
+				},
+				["Demon Hunter/Vengeance"] = {
+					"Overall",
+					"from raid",
+				},
+				["Evoker/Devastation"] = {
+					"Overall",
+					"from raid",
+				},
+				["Death Knight/Unholy"] = {
+					"from raid",
+				},
+				["Death Knight/Frost"] = {
+					"Overall",
+					"from raid",
+				},
+				["Paladin/Holy"] = {
+					"Overall",
+					"from raid",
+				},
+				["Hunter/Marksmanship"] = {
+					"from raid",
+				},
+				["Monk/Brewmaster"] = {
+					"Overall",
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"from raid",
+				},
+				["Paladin/Protection"] = {
+					"Overall",
+					"from raid",
+				},
+				["Priest/Discipline"] = {
+					"Overall",
+					"from raid",
+				},
+				["Rogue/Outlaw"] = {
+					"Overall",
+					"from raid",
+				},
+				["Rogue/Assassination"] = {
+					"Overall",
+					"from raid",
+				},
+				["Priest/Shadow"] = {
+					"Overall",
+					"from raid",
+				},
+				["Shaman/Restoration"] = {
+					"Overall",
+					"from raid",
+				},
+				["Rogue/Subtlety"] = {
+					"from raid",
+				},
+				["Warlock/Demonology"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warrior/Protection"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warlock/Affliction"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warrior/Arms"] = {
+					"from raid",
+				},
+				["Warlock/Destruction"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212068"] = {
+				["Demon Hunter/Havoc"] = {
+					"Overall",
+					"from raid",
+				},
+				["Demon Hunter/Vengeance"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212438"] = {
+				["Demon Hunter/Havoc"] = {
+					"Overall",
+					"from raid",
+				},
+				["Druid/Balance"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["219333"] = {
+				["Demon Hunter/Havoc"] = {
+					"Overall",
+				},
+				["Monk/Brewmaster"] = {
+					"Overall",
+				},
+			},
+			["221134"] = {
+				["Demon Hunter/Havoc"] = {
+					"Overall",
+					"from M+",
+				},
+				["Druid/Balance"] = {
+					"from M+",
+				},
+				["Monk/Brewmaster"] = {
+					"from M+",
+				},
+			},
+			["212064"] = {
+				["Demon Hunter/Havoc"] = {
+					"Overall",
+					"from raid",
+				},
+				["Demon Hunter/Vengeance"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["221169"] = {
+				["Demon Hunter/Havoc"] = {
+					"Overall",
+					"from M+",
+				},
+				["Druid/Balance"] = {
+					"Overall",
+					"from M+",
+				},
+				["Rogue/Assassination"] = {
+					"from M+",
+				},
+			},
+			["225578"] = {
+				["Demon Hunter/Havoc"] = {
+					"Overall",
+					"from raid",
+				},
+				["Hunter/Beast Mastery"] = {
+					"Overall",
+					"from raid",
+				},
+				["Death Knight/Blood"] = {
+					"Overall",
+					"from raid",
+				},
+				["Demon Hunter/Vengeance"] = {
+					"Overall",
+					"from raid",
+				},
+				["Evoker/Preservation"] = {
+					"Overall",
+					"from raid",
+				},
+				["Druid/Balance"] = {
+					"Overall",
+					"from raid",
+				},
+				["Evoker/Augmentation"] = {
+					"Overall",
+					"from raid",
+				},
+				["Evoker/Devastation"] = {
+					"Overall",
+					"from raid",
+				},
+				["Death Knight/Frost"] = {
+					"Overall",
+					"from raid",
+				},
+				["Mage/Frost"] = {
+					"Overall",
+					"from raid",
+				},
+				["Hunter/Survival"] = {
+					"Overall",
+					"from raid",
+				},
+				["Hunter/Marksmanship"] = {
+					"Overall",
+					"from raid",
+				},
+				["Monk/Brewmaster"] = {
+					"Overall",
+					"from raid",
+				},
+				["Mage/Arcane"] = {
+					"Overall",
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"Overall",
+				},
+				["Paladin/Retribution"] = {
+					"Overall",
+					"from raid",
+				},
+				["Paladin/Protection"] = {
+					"Overall",
+					"from raid",
+				},
+				["Priest/Discipline"] = {
+					"from raid",
+				},
+				["Rogue/Outlaw"] = {
+					"from raid",
+				},
+				["Rogue/Assassination"] = {
+					"Overall",
+					"from raid",
+				},
+				["Priest/Shadow"] = {
+					"Overall",
+					"from raid",
+				},
+				["Shaman/Restoration"] = {
+					"Overall",
+					"from raid",
+				},
+				["Priest/Holy"] = {
+					"Overall",
+					"from raid",
+				},
+				["Rogue/Subtlety"] = {
+					"from raid",
+				},
+				["Warlock/Demonology"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warrior/Protection"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warlock/Affliction"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warrior/Arms"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warrior/Fury"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warlock/Destruction"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["162542"] = {
+				["Demon Hunter/Havoc"] = {
+					"Overall",
+					"from M+",
+				},
+				["Hunter/Beast Mastery"] = {
+					"from M+",
+				},
+				["Evoker/Augmentation"] = {
+					"from M+",
+				},
+				["Hunter/Survival"] = {
+					"from M+",
+				},
+				["Hunter/Marksmanship"] = {
+					"Overall",
+					"from M+",
+				},
+				["Rogue/Assassination"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["219877"] = {
+				["Demon Hunter/Havoc"] = {
+					"Overall",
+					"from raid",
+				},
+				["Demon Hunter/Vengeance"] = {
+					"Overall",
+					"from raid",
+				},
+				["Monk/Brewmaster"] = {
+					"Overall",
+					"from raid",
+				},
+				["Rogue/Outlaw"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["222441"] = {
+				["Demon Hunter/Havoc"] = {
+					"Overall",
+				},
+			},
+			["212448"] = {
+				["Demon Hunter/Havoc"] = {
+					"from raid",
+				},
+				["Demon Hunter/Vengeance"] = {
+					"Overall",
+					"from raid",
+				},
+				["Evoker/Augmentation"] = {
+					"from raid",
+				},
+				["Evoker/Devastation"] = {
+					"Overall",
+					"from raid",
+				},
+				["Death Knight/Frost"] = {
+					"from raid",
+				},
+				["Hunter/Survival"] = {
+					"from raid",
+				},
+				["Hunter/Marksmanship"] = {
+					"Overall",
+					"from raid",
+				},
+				["Rogue/Outlaw"] = {
+					"from raid",
+				},
+				["Shaman/Restoration"] = {
+					"Overall",
+					"from raid",
+				},
+				["Shaman/Elemental"] = {
+					"from raid",
+				},
+			},
+			["212432"] = {
+				["Demon Hunter/Havoc"] = {
+					"from raid",
+				},
+				["Monk/Brewmaster"] = {
+					"from raid",
+				},
+			},
+			["225583"] = {
+				["Demon Hunter/Havoc"] = {
+					"from raid",
+				},
+				["Demon Hunter/Vengeance"] = {
+					"from raid",
+				},
+				["Rogue/Outlaw"] = {
+					"from raid",
+				},
+				["Rogue/Assassination"] = {
+					"from raid",
+				},
+			},
+			["212445"] = {
+				["Demon Hunter/Havoc"] = {
+					"from raid",
+				},
+				["Demon Hunter/Vengeance"] = {
+					"from raid",
+				},
+				["Druid/Balance"] = {
+					"from raid",
+				},
+				["Rogue/Outlaw"] = {
+					"from raid",
+				},
+				["Rogue/Assassination"] = {
+					"Overall",
+				},
+			},
+			["212447"] = {
+				["Demon Hunter/Havoc"] = {
+					"from raid",
+				},
+				["Hunter/Beast Mastery"] = {
+					"Overall",
+					"from raid",
+				},
+				["Demon Hunter/Vengeance"] = {
+					"from raid",
+				},
+				["Evoker/Devastation"] = {
+					"from raid",
+				},
+				["Death Knight/Unholy"] = {
+					"Overall",
+					"from raid",
+				},
+				["Mage/Frost"] = {
+					"from raid",
+				},
+				["Paladin/Holy"] = {
+					"from raid",
+				},
+				["Mage/Arcane"] = {
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"Overall",
+					"from raid",
+				},
+				["Paladin/Protection"] = {
+					"Overall",
+					"from raid",
+				},
+				["Priest/Discipline"] = {
+					"Overall",
+					"from raid",
+				},
+				["Rogue/Outlaw"] = {
+					"from raid",
+				},
+				["Priest/Shadow"] = {
+					"Overall",
+					"from raid",
+				},
+				["Shaman/Elemental"] = {
+					"from raid",
+				},
+				["Warlock/Demonology"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warrior/Protection"] = {
+					"from raid",
+				},
+				["Warlock/Affliction"] = {
+					"from raid",
+				},
+				["Warrior/Arms"] = {
+					"from raid",
+				},
+				["Warlock/Destruction"] = {
+					"from raid",
+				},
+			},
+			["212391"] = {
+				["Demon Hunter/Havoc"] = {
+					"from raid",
+				},
+			},
+			["221163"] = {
+				["Demon Hunter/Havoc"] = {
+					"from M+",
+				},
+				["Druid/Balance"] = {
+					"Overall",
+					"from M+",
+				},
+				["Rogue/Subtlety"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["221094"] = {
+				["Demon Hunter/Havoc"] = {
+					"from M+",
+				},
+			},
+			["133363"] = {
+				["Demon Hunter/Havoc"] = {
+					"from M+",
+				},
+				["Evoker/Augmentation"] = {
+					"from M+",
+				},
+				["Evoker/Devastation"] = {
+					"from M+",
+				},
+				["Death Knight/Frost"] = {
+					"from M+",
+				},
+				["Hunter/Marksmanship"] = {
+					"from M+",
+				},
+				["Rogue/Assassination"] = {
+					"from M+",
+				},
+			},
+			["133297"] = {
+				["Demon Hunter/Havoc"] = {
+					"from M+",
+				},
+			},
+			["221157"] = {
+				["Demon Hunter/Havoc"] = {
+					"from M+",
+				},
+				["Druid/Balance"] = {
+					"from M+",
+				},
+				["Rogue/Assassination"] = {
+					"from M+",
+				},
+				["Rogue/Subtlety"] = {
+					"from M+",
+				},
+			},
+			["221180"] = {
+				["Demon Hunter/Havoc"] = {
+					"from M+",
+				},
+				["Monk/Brewmaster"] = {
+					"from M+",
+				},
+			},
+			["221153"] = {
+				["Demon Hunter/Havoc"] = {
+					"from M+",
+				},
+				["Rogue/Subtlety"] = {
+					"from M+",
+				},
+			},
+			["221136"] = {
+				["Demon Hunter/Havoc"] = {
+					"from M+",
+				},
+				["Hunter/Beast Mastery"] = {
+					"from M+",
+				},
+				["Demon Hunter/Vengeance"] = {
+					"from M+",
+				},
+				["Evoker/Preservation"] = {
+					"from M+",
+				},
+				["Evoker/Devastation"] = {
+					"Overall",
+					"from M+",
+				},
+				["Death Knight/Frost"] = {
+					"from M+",
+				},
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Hunter/Marksmanship"] = {
+					"from M+",
+				},
+				["Mage/Arcane"] = {
+					"from M+",
+				},
+				["Priest/Shadow"] = {
+					"from M+",
+				},
+				["Shaman/Restoration"] = {
+					"Overall",
+				},
+				["Warlock/Demonology"] = {
+					"from M+",
+				},
+				["Warrior/Protection"] = {
+					"Overall",
+					"from M+",
+				},
+				["Warlock/Affliction"] = {
+					"Overall",
+					"from M+",
+				},
+				["Warlock/Destruction"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["159651"] = {
+				["Demon Hunter/Havoc"] = {
+					"from M+",
+				},
+			},
+			["221160"] = {
+				["Demon Hunter/Havoc"] = {
+					"from M+",
+				},
+			},
+			["212020"] = {
+				["Hunter/Beast Mastery"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Hunter/Survival"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Hunter/Marksmanship"] = {
+					"from raid",
+				},
+			},
+			["225577"] = {
+				["Hunter/Beast Mastery"] = {
+					"Overall",
+					"from raid",
+				},
+				["Evoker/Preservation"] = {
+					"from raid",
+				},
+				["Druid/Balance"] = {
+					"Overall",
+					"from raid",
+				},
+				["Death Knight/Unholy"] = {
+					"from raid",
+				},
+				["Mage/Frost"] = {
+					"Overall",
+					"from raid",
+				},
+				["Paladin/Holy"] = {
+					"Overall",
+					"from raid",
+				},
+				["Mage/Arcane"] = {
+					"Overall",
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"Overall",
+					"from raid",
+				},
+				["Paladin/Retribution"] = {
+					"Overall",
+					"from raid",
+				},
+				["Paladin/Protection"] = {
+					"Overall",
+					"from raid",
+				},
+				["Priest/Discipline"] = {
+					"Overall",
+					"from raid",
+				},
+				["Rogue/Assassination"] = {
+					"Overall",
+					"from raid",
+				},
+				["Priest/Shadow"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warlock/Demonology"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warrior/Protection"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warlock/Affliction"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warrior/Arms"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warrior/Fury"] = {
+					"from raid",
+				},
+				["Warlock/Destruction"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212018"] = {
+				["Hunter/Beast Mastery"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Hunter/Survival"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Hunter/Marksmanship"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212023"] = {
+				["Hunter/Beast Mastery"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Hunter/Survival"] = {
+					"from M+",
+				},
+				["Hunter/Marksmanship"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["219342"] = {
+				["Hunter/Beast Mastery"] = {
+					"Overall",
+				},
+				["Hunter/Marksmanship"] = {
+					"Overall",
+				},
+			},
+			["219341"] = {
+				["Hunter/Beast Mastery"] = {
+					"Overall",
+				},
+			},
+			["212017"] = {
+				["Hunter/Beast Mastery"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212019"] = {
+				["Hunter/Beast Mastery"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Hunter/Survival"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Hunter/Marksmanship"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["212022"] = {
+				["Hunter/Beast Mastery"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212400"] = {
+				["Hunter/Beast Mastery"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["225581"] = {
+				["Hunter/Beast Mastery"] = {
+					"from raid",
+				},
+				["Evoker/Devastation"] = {
+					"from raid",
+				},
+				["Hunter/Marksmanship"] = {
+					"from raid",
+				},
+				["Shaman/Restoration"] = {
+					"Overall",
+					"from raid",
+				},
+				["Shaman/Elemental"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212436"] = {
+				["Hunter/Beast Mastery"] = {
+					"from raid",
+				},
+				["Evoker/Preservation"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212015"] = {
+				["Hunter/Beast Mastery"] = {
+					"from M+",
+				},
+			},
+			["221174"] = {
+				["Hunter/Beast Mastery"] = {
+					"from M+",
+				},
+				["Evoker/Preservation"] = {
+					"from M+",
+				},
+				["Evoker/Augmentation"] = {
+					"Overall",
+					"from M+",
+				},
+				["Evoker/Devastation"] = {
+					"Overall",
+					"from M+",
+				},
+				["Hunter/Survival"] = {
+					"from M+",
+				},
+				["Hunter/Marksmanship"] = {
+					"from M+",
+				},
+			},
+			["221080"] = {
+				["Hunter/Beast Mastery"] = {
+					"from M+",
+				},
+				["Evoker/Devastation"] = {
+					"from M+",
+				},
+			},
+			["221075"] = {
+				["Hunter/Beast Mastery"] = {
+					"from M+",
+				},
+				["Evoker/Augmentation"] = {
+					"from M+",
+				},
+				["Hunter/Survival"] = {
+					"from M+",
+				},
+			},
+			["159379"] = {
+				["Hunter/Beast Mastery"] = {
+					"from M+",
+				},
+				["Evoker/Preservation"] = {
+					"from M+",
+				},
+				["Evoker/Augmentation"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["221143"] = {
+				["Hunter/Beast Mastery"] = {
+					"from M+",
+				},
+			},
+			["221146"] = {
+				["Death Knight/Blood"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["225575"] = {
+				["Death Knight/Blood"] = {
+					"Overall",
+					"from raid",
+				},
+				["Evoker/Preservation"] = {
+					"Overall",
+					"from raid",
+				},
+				["Monk/Brewmaster"] = {
+					"Overall",
+					"from raid",
+				},
+				["Priest/Holy"] = {
+					"from raid",
+				},
+				["Rogue/Subtlety"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212000"] = {
+				["Death Knight/Blood"] = {
+					"Overall",
+					"from raid",
+				},
+				["Death Knight/Unholy"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Death Knight/Frost"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212005"] = {
+				["Death Knight/Blood"] = {
+					"Overall",
+					"from raid",
+				},
+				["Death Knight/Unholy"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Death Knight/Frost"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["222435"] = {
+				["Death Knight/Blood"] = {
+					"Overall",
+				},
+				["Death Knight/Frost"] = {
+					"Overall",
+				},
+				["Paladin/Retribution"] = {
+					"Overall",
+				},
+				["Warrior/Arms"] = {
+					"Overall",
+				},
+				["Warrior/Fury"] = {
+					"Overall",
+				},
+			},
+			["212003"] = {
+				["Death Knight/Blood"] = {
+					"Overall",
+					"from raid",
+				},
+				["Death Knight/Unholy"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Death Knight/Frost"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["222431"] = {
+				["Death Knight/Blood"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212001"] = {
+				["Death Knight/Blood"] = {
+					"Overall",
+					"from raid",
+				},
+				["Death Knight/Unholy"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Death Knight/Frost"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212443"] = {
+				["Death Knight/Blood"] = {
+					"Overall",
+				},
+				["Warrior/Protection"] = {
+					"from raid",
+				},
+			},
+			["178781"] = {
+				["Death Knight/Blood"] = {
+					"Overall",
+					"from M+",
+				},
+				["Hunter/Survival"] = {
+					"from M+",
+				},
+				["Monk/Brewmaster"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["212407"] = {
+				["Death Knight/Blood"] = {
+					"Overall",
+					"from raid",
+				},
+				["Paladin/Retribution"] = {
+					"from raid",
+				},
+				["Warrior/Arms"] = {
+					"from raid",
+				},
+			},
+			["212427"] = {
+				["Death Knight/Blood"] = {
+					"from raid",
+				},
+				["Death Knight/Frost"] = {
+					"from raid",
+				},
+				["Paladin/Protection"] = {
+					"from raid",
+				},
+			},
+			["225587"] = {
+				["Death Knight/Blood"] = {
+					"from raid",
+				},
+				["Death Knight/Unholy"] = {
+					"from raid",
+				},
+				["Death Knight/Frost"] = {
+					"from raid",
+				},
+				["Paladin/Holy"] = {
+					"from raid",
+				},
+				["Paladin/Retribution"] = {
+					"from raid",
+				},
+			},
+			["222429"] = {
+				["Death Knight/Blood"] = {
+					"from raid",
+				},
+			},
+			["225576"] = {
+				["Death Knight/Blood"] = {
+					"from raid",
+				},
+				["Evoker/Preservation"] = {
+					"Overall",
+					"from raid",
+				},
+				["Druid/Balance"] = {
+					"Overall",
+					"from raid",
+				},
+				["Evoker/Augmentation"] = {
+					"from raid",
+				},
+				["Death Knight/Unholy"] = {
+					"from raid",
+				},
+				["Death Knight/Frost"] = {
+					"from raid",
+				},
+				["Hunter/Survival"] = {
+					"Overall",
+					"from raid",
+				},
+				["Paladin/Holy"] = {
+					"from raid",
+				},
+				["Hunter/Marksmanship"] = {
+					"from raid",
+				},
+				["Monk/Brewmaster"] = {
+					"from raid",
+				},
+				["Mage/Arcane"] = {
+					"Overall",
+				},
+				["Mage/Fire"] = {
+					"from raid",
+				},
+				["Paladin/Retribution"] = {
+					"Overall",
+					"from raid",
+				},
+				["Rogue/Assassination"] = {
+					"from raid",
+				},
+				["Shaman/Restoration"] = {
+					"from raid",
+				},
+				["Priest/Holy"] = {
+					"from raid",
+				},
+				["Rogue/Subtlety"] = {
+					"from raid",
+				},
+				["Shaman/Elemental"] = {
+					"from raid",
+				},
+				["Warrior/Fury"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["133294"] = {
+				["Death Knight/Blood"] = {
+					"from M+",
+				},
+				["Warrior/Fury"] = {
+					"from M+",
+				},
+			},
+			["221154"] = {
+				["Death Knight/Blood"] = {
+					"from M+",
+				},
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Paladin/Holy"] = {
+					"from M+",
+				},
+				["Rogue/Outlaw"] = {
+					"from M+",
+				},
+				["Shaman/Restoration"] = {
+					"from M+",
+				},
+			},
+			["221139"] = {
+				["Death Knight/Blood"] = {
+					"from M+",
+				},
+				["Death Knight/Frost"] = {
+					"from M+",
+				},
+			},
+			["133306"] = {
+				["Death Knight/Blood"] = {
+					"from M+",
+				},
+				["Death Knight/Unholy"] = {
+					"Overall",
+					"from M+",
+				},
+				["Death Knight/Frost"] = {
+					"from M+",
+				},
+				["Paladin/Retribution"] = {
+					"from M+",
+				},
+				["Paladin/Protection"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["221086"] = {
+				["Death Knight/Blood"] = {
+					"from M+",
+				},
+				["Warrior/Arms"] = {
+					"from M+",
+				},
+			},
+			["159434"] = {
+				["Death Knight/Blood"] = {
+					"from M+",
+				},
+			},
+			["221092"] = {
+				["Death Knight/Blood"] = {
+					"from M+",
+				},
+				["Paladin/Retribution"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["221178"] = {
+				["Death Knight/Blood"] = {
+					"from M+",
+				},
+				["Paladin/Holy"] = {
+					"from M+",
+				},
+				["Paladin/Protection"] = {
+					"from M+",
+				},
+				["Warrior/Protection"] = {
+					"from M+",
+				},
+			},
+			["162541"] = {
+				["Death Knight/Blood"] = {
+					"from M+",
+				},
+				["Death Knight/Frost"] = {
+					"Overall",
+					"from M+",
+				},
+				["Paladin/Retribution"] = {
+					"from M+",
+				},
+				["Priest/Holy"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["159650"] = {
+				["Death Knight/Blood"] = {
+					"from M+",
+				},
+			},
+			["221081"] = {
+				["Demon Hunter/Vengeance"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["221142"] = {
+				["Demon Hunter/Vengeance"] = {
+					"Overall",
+					"from M+",
+				},
+				["Rogue/Outlaw"] = {
+					"from M+",
+				},
+			},
+			["212066"] = {
+				["Demon Hunter/Vengeance"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["219502"] = {
+				["Demon Hunter/Vengeance"] = {
+					"Overall",
+				},
+				["Monk/Brewmaster"] = {
+					"Overall",
+				},
+			},
+			["159320"] = {
+				["Demon Hunter/Vengeance"] = {
+					"Overall",
+					"from M+",
+				},
+				["Monk/Brewmaster"] = {
+					"from M+",
+				},
+				["Rogue/Subtlety"] = {
+					"from M+",
+				},
+			},
+			["159461"] = {
+				["Demon Hunter/Vengeance"] = {
+					"Overall",
+					"from M+",
+				},
+				["Evoker/Preservation"] = {
+					"from M+",
+				},
+				["Evoker/Devastation"] = {
+					"from M+",
+				},
+				["Paladin/Holy"] = {
+					"Overall",
+				},
+				["Paladin/Protection"] = {
+					"from M+",
+				},
+				["Priest/Discipline"] = {
+					"Overall",
+					"from M+",
+				},
+				["Shaman/Restoration"] = {
+					"from M+",
+				},
+				["Shaman/Elemental"] = {
+					"Overall",
+					"from M+",
+				},
+				["Warrior/Protection"] = {
+					"from M+",
+				},
+				["Warrior/Arms"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["222440"] = {
+				["Demon Hunter/Vengeance"] = {
+					"Overall",
+				},
+			},
+			["212417"] = {
+				["Demon Hunter/Vengeance"] = {
+					"from raid",
+				},
+				["Druid/Balance"] = {
+					"from raid",
+				},
+				["Rogue/Subtlety"] = {
+					"from raid",
+				},
+			},
+			["225588"] = {
+				["Demon Hunter/Vengeance"] = {
+					"from raid",
+				},
+				["Monk/Brewmaster"] = {
+					"Overall",
+					"from raid",
+				},
+				["Rogue/Outlaw"] = {
+					"from raid",
+				},
+				["Rogue/Assassination"] = {
+					"from raid",
+				},
+				["Rogue/Subtlety"] = {
+					"from raid",
+				},
+			},
+			["212409"] = {
+				["Demon Hunter/Vengeance"] = {
+					"from raid",
+				},
+			},
+			["221181"] = {
+				["Demon Hunter/Vengeance"] = {
+					"from M+",
+				},
+				["Evoker/Devastation"] = {
+					"from M+",
+				},
+				["Paladin/Holy"] = {
+					"from M+",
+				},
+				["Monk/Brewmaster"] = {
+					"from M+",
+				},
+				["Rogue/Outlaw"] = {
+					"Overall",
+					"from M+",
+				},
+				["Shaman/Restoration"] = {
+					"from M+",
+				},
+			},
+			["133292"] = {
+				["Demon Hunter/Vengeance"] = {
+					"from M+",
+				},
+				["Rogue/Subtlety"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["159309"] = {
+				["Demon Hunter/Vengeance"] = {
+					"from M+",
+				},
+			},
+			["221090"] = {
+				["Demon Hunter/Vengeance"] = {
+					"from M+",
+				},
+			},
+			["221084"] = {
+				["Demon Hunter/Vengeance"] = {
+					"from M+",
+				},
+			},
+			["212029"] = {
+				["Evoker/Preservation"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Evoker/Devastation"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212027"] = {
+				["Evoker/Preservation"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Evoker/Augmentation"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Evoker/Devastation"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212446"] = {
+				["Evoker/Preservation"] = {
+					"Overall",
+					"from raid",
+				},
+				["Druid/Balance"] = {
+					"Overall",
+					"from raid",
+				},
+				["Evoker/Augmentation"] = {
+					"Overall",
+					"from raid",
+				},
+				["Mage/Frost"] = {
+					"Overall",
+					"from raid",
+				},
+				["Hunter/Survival"] = {
+					"from raid",
+				},
+				["Mage/Arcane"] = {
+					"from raid",
+				},
+				["Paladin/Retribution"] = {
+					"Overall",
+					"from raid",
+				},
+				["Priest/Holy"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warrior/Fury"] = {
+					"from raid",
+				},
+			},
+			["212032"] = {
+				["Evoker/Preservation"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Evoker/Augmentation"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Evoker/Devastation"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212415"] = {
+				["Evoker/Preservation"] = {
+					"Overall",
+					"from raid",
+				},
+				["Evoker/Augmentation"] = {
+					"from raid",
+				},
+				["Hunter/Survival"] = {
+					"from raid",
+				},
+			},
+			["221168"] = {
+				["Evoker/Preservation"] = {
+					"Overall",
+					"from M+",
+				},
+				["Evoker/Devastation"] = {
+					"from M+",
+				},
+			},
+			["212028"] = {
+				["Evoker/Preservation"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Evoker/Augmentation"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["225586"] = {
+				["Evoker/Preservation"] = {
+					"Overall",
+					"from raid",
+				},
+				["Evoker/Augmentation"] = {
+					"from raid",
+				},
+				["Evoker/Devastation"] = {
+					"Overall",
+					"from raid",
+				},
+				["Hunter/Survival"] = {
+					"from raid",
+				},
+				["Hunter/Marksmanship"] = {
+					"Overall",
+					"from raid",
+				},
+				["Shaman/Restoration"] = {
+					"from raid",
+				},
+				["Shaman/Elemental"] = {
+					"from raid",
+				},
+			},
+			["212405"] = {
+				["Evoker/Preservation"] = {
+					"Overall",
+					"from raid",
+				},
+				["Evoker/Augmentation"] = {
+					"Overall",
+					"from raid",
+				},
+				["Paladin/Holy"] = {
+					"from raid",
+				},
+			},
+			["212387"] = {
+				["Evoker/Preservation"] = {
+					"Overall",
+					"from raid",
+				},
+				["Evoker/Augmentation"] = {
+					"from raid",
+				},
+				["Evoker/Devastation"] = {
+					"from raid",
+				},
+				["Mage/Frost"] = {
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"from raid",
+				},
+				["Priest/Discipline"] = {
+					"from raid",
+				},
+				["Priest/Holy"] = {
+					"from raid",
+				},
+			},
+			["225580"] = {
+				["Evoker/Preservation"] = {
+					"from raid",
+				},
+				["Evoker/Devastation"] = {
+					"Overall",
+					"from raid",
+				},
+				["Hunter/Survival"] = {
+					"Overall",
+					"from raid",
+				},
+				["Hunter/Marksmanship"] = {
+					"Overall",
+					"from raid",
+				},
+				["Shaman/Restoration"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212397"] = {
+				["Evoker/Preservation"] = {
+					"from raid",
+				},
+				["Druid/Balance"] = {
+					"Overall",
+					"from raid",
+				},
+				["Evoker/Augmentation"] = {
+					"from raid",
+				},
+				["Evoker/Devastation"] = {
+					"Overall",
+					"from raid",
+				},
+				["Mage/Frost"] = {
+					"from raid",
+				},
+				["Mage/Arcane"] = {
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"Overall",
+					"from raid",
+				},
+				["Priest/Discipline"] = {
+					"from raid",
+				},
+				["Priest/Shadow"] = {
+					"Overall",
+					"from raid",
+				},
+				["Shaman/Restoration"] = {
+					"from raid",
+				},
+				["Priest/Holy"] = {
+					"from raid",
+				},
+				["Warlock/Demonology"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warlock/Affliction"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warlock/Destruction"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["221077"] = {
+				["Evoker/Preservation"] = {
+					"from M+",
+				},
+				["Druid/Balance"] = {
+					"from M+",
+				},
+				["Death Knight/Unholy"] = {
+					"Overall",
+					"from M+",
+				},
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Mage/Arcane"] = {
+					"from M+",
+				},
+				["Mage/Fire"] = {
+					"from M+",
+				},
+				["Paladin/Retribution"] = {
+					"from M+",
+				},
+				["Paladin/Protection"] = {
+					"from M+",
+				},
+				["Priest/Discipline"] = {
+					"from M+",
+				},
+				["Rogue/Assassination"] = {
+					"from M+",
+				},
+				["Priest/Shadow"] = {
+					"from M+",
+				},
+				["Shaman/Elemental"] = {
+					"from M+",
+				},
+				["Warlock/Demonology"] = {
+					"from M+",
+				},
+				["Warrior/Protection"] = {
+					"from M+",
+				},
+				["Warlock/Affliction"] = {
+					"from M+",
+				},
+				["Warrior/Fury"] = {
+					"Overall",
+					"from M+",
+				},
+				["Warlock/Destruction"] = {
+					"from M+",
+				},
+			},
+			["221088"] = {
+				["Evoker/Preservation"] = {
+					"from M+",
+				},
+				["Druid/Balance"] = {
+					"from M+",
+				},
+				["Death Knight/Unholy"] = {
+					"from M+",
+				},
+				["Hunter/Survival"] = {
+					"from M+",
+				},
+				["Mage/Arcane"] = {
+					"from M+",
+				},
+				["Mage/Fire"] = {
+					"Overall",
+					"from M+",
+				},
+				["Paladin/Retribution"] = {
+					"from M+",
+				},
+				["Paladin/Protection"] = {
+					"from M+",
+				},
+				["Priest/Discipline"] = {
+					"from M+",
+				},
+				["Priest/Shadow"] = {
+					"from M+",
+				},
+				["Shaman/Elemental"] = {
+					"from M+",
+				},
+				["Warlock/Demonology"] = {
+					"from M+",
+				},
+				["Warrior/Protection"] = {
+					"from M+",
+				},
+				["Warlock/Affliction"] = {
+					"from M+",
+				},
+				["Warrior/Arms"] = {
+					"from M+",
+				},
+				["Warrior/Fury"] = {
+					"Overall",
+					"from M+",
+				},
+				["Warlock/Destruction"] = {
+					"from M+",
+				},
+			},
+			["221162"] = {
+				["Evoker/Preservation"] = {
+					"from M+",
+				},
+				["Shaman/Elemental"] = {
+					"from M+",
+				},
+			},
+			["221083"] = {
+				["Evoker/Preservation"] = {
+					"from M+",
+				},
+				["Evoker/Devastation"] = {
+					"from M+",
+				},
+				["Shaman/Restoration"] = {
+					"Overall",
+					"from M+",
+				},
+				["Shaman/Elemental"] = {
+					"from M+",
+				},
+			},
+			["212054"] = {
+				["Druid/Balance"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212059"] = {
+				["Druid/Balance"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212057"] = {
+				["Druid/Balance"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212425"] = {
+				["Druid/Balance"] = {
+					"Overall",
+					"from raid",
+				},
+				["Monk/Brewmaster"] = {
+					"from raid",
+				},
+				["Rogue/Subtlety"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212055"] = {
+				["Druid/Balance"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["133286"] = {
+				["Druid/Balance"] = {
+					"from M+",
+				},
+				["Evoker/Augmentation"] = {
+					"from M+",
+				},
+				["Paladin/Retribution"] = {
+					"from M+",
+				},
+				["Warrior/Fury"] = {
+					"from M+",
+				},
+			},
+			["133299"] = {
+				["Druid/Balance"] = {
+					"from M+",
+				},
+				["Death Knight/Unholy"] = {
+					"Overall",
+					"from M+",
+				},
+				["Mage/Fire"] = {
+					"from M+",
+				},
+				["Paladin/Protection"] = {
+					"from M+",
+				},
+				["Priest/Shadow"] = {
+					"from M+",
+				},
+				["Warlock/Demonology"] = {
+					"from M+",
+				},
+				["Warlock/Affliction"] = {
+					"from M+",
+				},
+				["Warrior/Arms"] = {
+					"from M+",
+				},
+				["Warlock/Destruction"] = {
+					"from M+",
+				},
+			},
+			["221085"] = {
+				["Druid/Balance"] = {
+					"from M+",
+				},
+				["Mage/Arcane"] = {
+					"from M+",
+				},
+				["Priest/Shadow"] = {
+					"from M+",
+				},
+				["Warlock/Demonology"] = {
+					"from M+",
+				},
+				["Warlock/Affliction"] = {
+					"from M+",
+				},
+				["Warlock/Destruction"] = {
+					"from M+",
+				},
+			},
+			["178738"] = {
+				["Evoker/Augmentation"] = {
+					"Overall",
+					"from M+",
+				},
+				["Hunter/Marksmanship"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["212030"] = {
+				["Evoker/Augmentation"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Evoker/Devastation"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["219339"] = {
+				["Evoker/Augmentation"] = {
+					"Overall",
+				},
+			},
+			["215133"] = {
+				["Evoker/Augmentation"] = {
+					"Overall",
+				},
+			},
+			["133303"] = {
+				["Evoker/Augmentation"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["221172"] = {
+				["Evoker/Augmentation"] = {
+					"Overall",
+					"from M+",
+				},
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Priest/Discipline"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["212428"] = {
+				["Evoker/Augmentation"] = {
+					"from raid",
+				},
+				["Shaman/Elemental"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212414"] = {
+				["Evoker/Augmentation"] = {
+					"from raid",
+				},
+				["Shaman/Elemental"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["221150"] = {
+				["Evoker/Augmentation"] = {
+					"from M+",
+				},
+			},
+			["212435"] = {
+				["Evoker/Devastation"] = {
+					"Overall",
+					"from raid",
+				},
+				["Hunter/Marksmanship"] = {
+					"from raid",
+				},
+				["Shaman/Restoration"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212394"] = {
+				["Evoker/Devastation"] = {
+					"Overall",
+					"from raid",
+				},
+				["Mage/Frost"] = {
+					"Overall",
+					"from raid",
+				},
+				["Mage/Arcane"] = {
+					"Overall",
+				},
+				["Mage/Fire"] = {
+					"Overall",
+					"from raid",
+				},
+				["Priest/Discipline"] = {
+					"Overall",
+					"from raid",
+				},
+				["Shaman/Restoration"] = {
+					"Overall",
+					"from raid",
+				},
+				["Priest/Holy"] = {
+					"from raid",
+				},
+				["Shaman/Elemental"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warlock/Demonology"] = {
+					"Overall",
+				},
+				["Warlock/Affliction"] = {
+					"Overall",
+				},
+				["Warlock/Destruction"] = {
+					"Overall",
+				},
+			},
+			["222566"] = {
+				["Evoker/Devastation"] = {
+					"Overall",
+				},
+				["Mage/Frost"] = {
+					"Overall",
+				},
+				["Mage/Arcane"] = {
+					"Overall",
+				},
+				["Mage/Fire"] = {
+					"Overall",
+				},
+				["Warlock/Demonology"] = {
+					"Overall",
+				},
+				["Warlock/Affliction"] = {
+					"Overall",
+				},
+				["Warlock/Destruction"] = {
+					"Overall",
+				},
+			},
+			["221156"] = {
+				["Evoker/Devastation"] = {
+					"from M+",
+				},
+			},
+			["221140"] = {
+				["Evoker/Devastation"] = {
+					"from M+",
+				},
+			},
+			["221147"] = {
+				["Evoker/Devastation"] = {
+					"from M+",
+				},
+				["Shaman/Elemental"] = {
+					"from M+",
+				},
+			},
+			["221186"] = {
+				["Evoker/Devastation"] = {
+					"from M+",
+				},
+				["Shaman/Elemental"] = {
+					"from M+",
+				},
+			},
+			["221152"] = {
+				["Evoker/Devastation"] = {
+					"from M+",
+				},
+			},
+			["178694"] = {
+				["Death Knight/Unholy"] = {
+					"Overall",
+					"from M+",
+				},
+				["Death Knight/Frost"] = {
+					"Overall",
+					"from M+",
+				},
+				["Paladin/Protection"] = {
+					"Overall",
+					"from M+",
+				},
+				["Warrior/Arms"] = {
+					"from M+",
+				},
+			},
+			["221667"] = {
+				["Death Knight/Unholy"] = {
+					"Overall",
+				},
+				["Shaman/Elemental"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["221133"] = {
+				["Death Knight/Unholy"] = {
+					"Overall",
+					"from M+",
+				},
+				["Paladin/Retribution"] = {
+					"Overall",
+					"from M+",
+				},
+				["Paladin/Protection"] = {
+					"Overall",
+					"from M+",
+				},
+				["Warrior/Protection"] = {
+					"from M+",
+				},
+				["Warrior/Fury"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["225590"] = {
+				["Death Knight/Unholy"] = {
+					"Overall",
+					"from raid",
+				},
+				["Death Knight/Frost"] = {
+					"from raid",
+				},
+				["Paladin/Holy"] = {
+					"from raid",
+				},
+				["Paladin/Retribution"] = {
+					"Overall",
+					"from raid",
+				},
+				["Paladin/Protection"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warrior/Arms"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warrior/Fury"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["222447"] = {
+				["Death Knight/Unholy"] = {
+					"Overall",
+				},
+				["Warrior/Fury"] = {
+					"Overall",
+				},
+			},
+			["212002"] = {
+				["Death Knight/Unholy"] = {
+					"from raid",
+				},
+			},
+			["225589"] = {
+				["Death Knight/Unholy"] = {
+					"from raid",
+				},
+				["Death Knight/Frost"] = {
+					"from raid",
+				},
+				["Paladin/Holy"] = {
+					"Overall",
+					"from raid",
+				},
+				["Paladin/Retribution"] = {
+					"from raid",
+				},
+				["Paladin/Protection"] = {
+					"from raid",
+				},
+				["Warrior/Protection"] = {
+					"from raid",
+				},
+				["Warrior/Arms"] = {
+					"from raid",
+				},
+			},
+			["212388"] = {
+				["Death Knight/Unholy"] = {
+					"from raid",
+				},
+				["Warrior/Fury"] = {
+					"from raid",
+				},
+			},
+			["159428"] = {
+				["Death Knight/Unholy"] = {
+					"from M+",
+				},
+				["Death Knight/Frost"] = {
+					"Overall",
+					"from M+",
+				},
+				["Paladin/Holy"] = {
+					"Overall",
+				},
+				["Paladin/Retribution"] = {
+					"from M+",
+				},
+				["Warrior/Arms"] = {
+					"from M+",
+				},
+				["Warrior/Fury"] = {
+					"from M+",
+				},
+			},
+			["178736"] = {
+				["Death Knight/Unholy"] = {
+					"from M+",
+				},
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Paladin/Holy"] = {
+					"Overall",
+					"from M+",
+				},
+				["Priest/Discipline"] = {
+					"from M+",
+				},
+				["Rogue/Outlaw"] = {
+					"Overall",
+					"from M+",
+				},
+				["Shaman/Restoration"] = {
+					"from M+",
+				},
+				["Shaman/Elemental"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["56131"] = {
+				["Death Knight/Unholy"] = {
+					"from M+",
+				},
+			},
+			["221079"] = {
+				["Death Knight/Frost"] = {
+					"Overall",
+					"from M+",
+				},
+				["Warrior/Arms"] = {
+					"Overall",
+				},
+			},
+			["212401"] = {
+				["Death Knight/Frost"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["222451"] = {
+				["Death Knight/Frost"] = {
+					"Overall",
+				},
+			},
+			["221185"] = {
+				["Death Knight/Frost"] = {
+					"from M+",
+				},
+				["Paladin/Holy"] = {
+					"Overall",
+					"from M+",
+				},
+				["Warrior/Arms"] = {
+					"from M+",
+				},
+			},
+			["178706"] = {
+				["Death Knight/Frost"] = {
+					"from M+",
+				},
+			},
+			["178739"] = {
+				["Death Knight/Frost"] = {
+					"from M+",
+				},
+			},
+			["221145"] = {
+				["Death Knight/Frost"] = {
+					"from M+",
+				},
+				["Warrior/Protection"] = {
+					"from M+",
+				},
+			},
+			["212092"] = {
+				["Mage/Frost"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212090"] = {
+				["Mage/Frost"] = {
+					"Overall",
+					"from raid",
+				},
+				["Mage/Arcane"] = {
+					"Overall",
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212095"] = {
+				["Mage/Frost"] = {
+					"Overall",
+					"from raid",
+				},
+				["Mage/Arcane"] = {
+					"Overall",
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["225584"] = {
+				["Mage/Frost"] = {
+					"Overall",
+					"from raid",
+				},
+				["Mage/Arcane"] = {
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"Overall",
+					"from raid",
+				},
+				["Priest/Discipline"] = {
+					"from raid",
+				},
+				["Priest/Shadow"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warlock/Demonology"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warlock/Affliction"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warlock/Destruction"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212093"] = {
+				["Mage/Frost"] = {
+					"Overall",
+					"from raid",
+				},
+				["Mage/Arcane"] = {
+					"Overall",
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["225585"] = {
+				["Mage/Frost"] = {
+					"Overall",
+					"from raid",
+				},
+				["Mage/Arcane"] = {
+					"Overall",
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"from raid",
+				},
+				["Priest/Discipline"] = {
+					"from raid",
+				},
+				["Priest/Shadow"] = {
+					"Overall",
+					"from raid",
+				},
+				["Priest/Holy"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warlock/Demonology"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warlock/Affliction"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warlock/Destruction"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212434"] = {
+				["Mage/Frost"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["222814"] = {
+				["Mage/Frost"] = {
+					"Overall",
+				},
+				["Warlock/Demonology"] = {
+					"Overall",
+				},
+				["Warlock/Affliction"] = {
+					"Overall",
+				},
+				["Warlock/Destruction"] = {
+					"Overall",
+				},
+			},
+			["221189"] = {
+				["Mage/Frost"] = {
+					"Overall",
+				},
+				["Paladin/Holy"] = {
+					"from M+",
+				},
+				["Mage/Arcane"] = {
+					"from M+",
+				},
+				["Mage/Fire"] = {
+					"from M+",
+				},
+				["Rogue/Outlaw"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["222568"] = {
+				["Mage/Frost"] = {
+					"Overall",
+				},
+			},
+			["225582"] = {
+				["Mage/Frost"] = {
+					"from raid",
+				},
+				["Mage/Arcane"] = {
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"from raid",
+				},
+				["Priest/Discipline"] = {
+					"from raid",
+				},
+				["Priest/Shadow"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["221187"] = {
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Mage/Arcane"] = {
+					"from M+",
+				},
+				["Mage/Fire"] = {
+					"from M+",
+				},
+			},
+			["221135"] = {
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Mage/Arcane"] = {
+					"from M+",
+				},
+			},
+			["221095"] = {
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Mage/Arcane"] = {
+					"from M+",
+				},
+				["Mage/Fire"] = {
+					"from M+",
+				},
+			},
+			["221182"] = {
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Mage/Arcane"] = {
+					"from M+",
+				},
+				["Mage/Fire"] = {
+					"from M+",
+				},
+				["Priest/Discipline"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["178705"] = {
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Mage/Fire"] = {
+					"from M+",
+				},
+			},
+			["221158"] = {
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Mage/Arcane"] = {
+					"from M+",
+				},
+				["Mage/Fire"] = {
+					"from M+",
+				},
+				["Priest/Discipline"] = {
+					"Overall",
+					"from M+",
+				},
+				["Priest/Shadow"] = {
+					"from M+",
+				},
+				["Warlock/Demonology"] = {
+					"from M+",
+				},
+				["Warlock/Affliction"] = {
+					"from M+",
+				},
+				["Warlock/Destruction"] = {
+					"from M+",
+				},
+			},
+			["221164"] = {
+				["Mage/Frost"] = {
+					"from M+",
+				},
+			},
+			["221149"] = {
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Priest/Shadow"] = {
+					"from M+",
+				},
+				["Priest/Holy"] = {
+					"Overall",
+					"from M+",
+				},
+				["Warlock/Demonology"] = {
+					"from M+",
+				},
+				["Warlock/Affliction"] = {
+					"from M+",
+				},
+				["Warlock/Destruction"] = {
+					"from M+",
+				},
+			},
+			["221166"] = {
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Mage/Fire"] = {
+					"from M+",
+				},
+				["Priest/Discipline"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["133283"] = {
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Shaman/Restoration"] = {
+					"from M+",
+				},
+			},
+			["222817"] = {
+				["Hunter/Survival"] = {
+					"Overall",
+				},
+				["Hunter/Marksmanship"] = {
+					"Overall",
+				},
+				["Warrior/Arms"] = {
+					"Overall",
+				},
+			},
+			["212421"] = {
+				["Hunter/Survival"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212016"] = {
+				["Hunter/Survival"] = {
+					"Overall",
+				},
+			},
+			["212021"] = {
+				["Hunter/Survival"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Hunter/Marksmanship"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["221202"] = {
+				["Hunter/Survival"] = {
+					"Overall",
+				},
+			},
+			["222448"] = {
+				["Hunter/Survival"] = {
+					"Overall",
+				},
+			},
+			["212389"] = {
+				["Hunter/Survival"] = {
+					"from raid",
+				},
+				["Monk/Brewmaster"] = {
+					"from raid",
+				},
+			},
+			["133293"] = {
+				["Hunter/Survival"] = {
+					"from M+",
+				},
+				["Hunter/Marksmanship"] = {
+					"from M+",
+				},
+				["Shaman/Elemental"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["221159"] = {
+				["Hunter/Survival"] = {
+					"from M+",
+				},
+				["Monk/Brewmaster"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["211993"] = {
+				["Paladin/Holy"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Paladin/Retribution"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["211996"] = {
+				["Paladin/Holy"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Paladin/Retribution"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Paladin/Protection"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["221167"] = {
+				["Paladin/Holy"] = {
+					"Overall",
+					"from M+",
+				},
+				["Warrior/Protection"] = {
+					"from M+",
+				},
+				["Warrior/Arms"] = {
+					"from M+",
+				},
+				["Warrior/Fury"] = {
+					"from M+",
+				},
+			},
+			["211994"] = {
+				["Paladin/Holy"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Paladin/Retribution"] = {
+					"Overall",
+					"from M+",
+				},
+				["Paladin/Protection"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["211992"] = {
+				["Paladin/Holy"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Paladin/Retribution"] = {
+					"from raid",
+				},
+				["Paladin/Protection"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["178737"] = {
+				["Paladin/Holy"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["225579"] = {
+				["Paladin/Holy"] = {
+					"Overall",
+					"from raid",
+				},
+				["Paladin/Protection"] = {
+					"from raid",
+				},
+				["Shaman/Restoration"] = {
+					"Overall",
+					"from raid",
+				},
+				["Shaman/Elemental"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warrior/Protection"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212424"] = {
+				["Paladin/Holy"] = {
+					"from raid",
+				},
+			},
+			["133289"] = {
+				["Paladin/Holy"] = {
+					"from M+",
+				},
+				["Warrior/Arms"] = {
+					"from M+",
+				},
+			},
+			["221177"] = {
+				["Paladin/Holy"] = {
+					"from M+",
+				},
+				["Shaman/Restoration"] = {
+					"from M+",
+				},
+			},
+			["212399"] = {
+				["Hunter/Marksmanship"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["159386"] = {
+				["Hunter/Marksmanship"] = {
+					"from M+",
+				},
+				["Shaman/Restoration"] = {
+					"from M+",
+				},
+				["Shaman/Elemental"] = {
+					"from M+",
+				},
+			},
+			["221074"] = {
+				["Hunter/Marksmanship"] = {
+					"from M+",
+				},
+			},
+			["212047"] = {
+				["Monk/Brewmaster"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212045"] = {
+				["Monk/Brewmaster"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212050"] = {
+				["Monk/Brewmaster"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212046"] = {
+				["Monk/Brewmaster"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["225591"] = {
+				["Monk/Brewmaster"] = {
+					"Overall",
+					"from raid",
+				},
+				["Rogue/Assassination"] = {
+					"from raid",
+				},
+				["Rogue/Subtlety"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["221144"] = {
+				["Monk/Brewmaster"] = {
+					"Overall",
+					"from M+",
+				},
+				["Rogue/Outlaw"] = {
+					"from M+",
+				},
+			},
+			["212398"] = {
+				["Monk/Brewmaster"] = {
+					"from raid",
+				},
+			},
+			["56126"] = {
+				["Monk/Brewmaster"] = {
+					"from M+",
+				},
+				["Priest/Holy"] = {
+					"from M+",
+				},
+			},
+			["178702"] = {
+				["Monk/Brewmaster"] = {
+					"from M+",
+				},
+			},
+			["56445"] = {
+				["Monk/Brewmaster"] = {
+					"from M+",
+				},
+			},
+			["159648"] = {
+				["Monk/Brewmaster"] = {
+					"from M+",
+				},
+			},
+			["178693"] = {
+				["Mage/Arcane"] = {
+					"Overall",
+				},
+			},
+			["212087"] = {
+				["Mage/Arcane"] = {
+					"Overall",
+				},
+			},
+			["222815"] = {
+				["Mage/Arcane"] = {
+					"Overall",
+				},
+			},
+			["212091"] = {
+				["Mage/Arcane"] = {
+					"Overall",
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212094"] = {
+				["Mage/Arcane"] = {
+					"Overall",
+				},
+			},
+			["212440"] = {
+				["Mage/Arcane"] = {
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"Overall",
+					"from raid",
+				},
+				["Priest/Discipline"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warlock/Demonology"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warlock/Destruction"] = {
+					"from raid",
+				},
+			},
+			["221170"] = {
+				["Mage/Arcane"] = {
+					"from M+",
+				},
+			},
+			["221076"] = {
+				["Mage/Arcane"] = {
+					"from M+",
+				},
+				["Mage/Fire"] = {
+					"from M+",
+				},
+			},
+			["221082"] = {
+				["Mage/Arcane"] = {
+					"from M+",
+				},
+				["Mage/Fire"] = {
+					"Overall",
+					"from M+",
+				},
+				["Priest/Discipline"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["221666"] = {
+				["Mage/Fire"] = {
+					"Overall",
+				},
+			},
+			["178740"] = {
+				["Mage/Fire"] = {
+					"from M+",
+				},
+			},
+			["211991"] = {
+				["Paladin/Retribution"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Paladin/Protection"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["222443"] = {
+				["Paladin/Retribution"] = {
+					"Overall",
+				},
+			},
+			["212418"] = {
+				["Paladin/Retribution"] = {
+					"from raid",
+				},
+				["Warrior/Arms"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["133298"] = {
+				["Paladin/Retribution"] = {
+					"from M+",
+				},
+				["Warrior/Fury"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["178730"] = {
+				["Paladin/Protection"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["178712"] = {
+				["Paladin/Protection"] = {
+					"Overall",
+					"from M+",
+				},
+				["Warrior/Protection"] = {
+					"from M+",
+				},
+			},
+			["212437"] = {
+				["Paladin/Protection"] = {
+					"from raid",
+				},
+				["Warrior/Protection"] = {
+					"from raid",
+				},
+				["Warrior/Arms"] = {
+					"from raid",
+				},
+				["Warrior/Fury"] = {
+					"from raid",
+				},
+			},
+			["212392"] = {
+				["Paladin/Protection"] = {
+					"from raid",
+				},
+				["Warrior/Protection"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212081"] = {
+				["Priest/Discipline"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Priest/Shadow"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Priest/Holy"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212086"] = {
+				["Priest/Discipline"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Priest/Shadow"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212084"] = {
+				["Priest/Discipline"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Priest/Holy"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212082"] = {
+				["Priest/Discipline"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Priest/Shadow"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Priest/Holy"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["133302"] = {
+				["Priest/Discipline"] = {
+					"from M+",
+				},
+				["Warlock/Demonology"] = {
+					"from M+",
+				},
+				["Warlock/Destruction"] = {
+					"from M+",
+				},
+			},
+			["221165"] = {
+				["Priest/Discipline"] = {
+					"from M+",
+				},
+				["Shaman/Elemental"] = {
+					"from M+",
+				},
+			},
+			["212038"] = {
+				["Rogue/Outlaw"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Rogue/Assassination"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212036"] = {
+				["Rogue/Outlaw"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Rogue/Assassination"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Rogue/Subtlety"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212041"] = {
+				["Rogue/Outlaw"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Rogue/Assassination"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Rogue/Subtlety"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["219334"] = {
+				["Rogue/Outlaw"] = {
+					"Overall",
+				},
+				["Rogue/Assassination"] = {
+					"Overall",
+				},
+				["Rogue/Subtlety"] = {
+					"Overall",
+				},
+			},
+			["212039"] = {
+				["Rogue/Outlaw"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Rogue/Assassination"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Rogue/Subtlety"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["178699"] = {
+				["Rogue/Outlaw"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["219332"] = {
+				["Rogue/Outlaw"] = {
+					"Overall",
+				},
+			},
+			["178731"] = {
+				["Rogue/Outlaw"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["212395"] = {
+				["Rogue/Outlaw"] = {
+					"Overall",
+					"from raid",
+				},
+				["Rogue/Assassination"] = {
+					"Overall",
+					"from raid",
+				},
+				["Rogue/Subtlety"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212423"] = {
+				["Rogue/Outlaw"] = {
+					"from raid",
+				},
+			},
+			["133354"] = {
+				["Rogue/Outlaw"] = {
+					"from M+",
+				},
+			},
+			["221183"] = {
+				["Rogue/Outlaw"] = {
+					"from M+",
+				},
+				["Rogue/Assassination"] = {
+					"from M+",
+				},
+			},
+			["219331"] = {
+				["Rogue/Assassination"] = {
+					"Overall",
+				},
+			},
+			["212037"] = {
+				["Rogue/Assassination"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Rogue/Subtlety"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["225636"] = {
+				["Rogue/Assassination"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["133353"] = {
+				["Rogue/Assassination"] = {
+					"from M+",
+				},
+				["Rogue/Subtlety"] = {
+					"from M+",
+				},
+			},
+			["56444"] = {
+				["Rogue/Assassination"] = {
+					"from M+",
+				},
+				["Priest/Holy"] = {
+					"from M+",
+				},
+			},
+			["221138"] = {
+				["Rogue/Assassination"] = {
+					"from M+",
+				},
+			},
+			["212083"] = {
+				["Priest/Shadow"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Priest/Holy"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["178748"] = {
+				["Priest/Shadow"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["212441"] = {
+				["Priest/Shadow"] = {
+					"from raid",
+				},
+			},
+			["133295"] = {
+				["Priest/Shadow"] = {
+					"from M+",
+				},
+				["Warlock/Demonology"] = {
+					"from M+",
+				},
+				["Warlock/Affliction"] = {
+					"from M+",
+				},
+				["Warlock/Destruction"] = {
+					"from M+",
+				},
+			},
+			["212011"] = {
+				["Shaman/Restoration"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212009"] = {
+				["Shaman/Restoration"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Shaman/Elemental"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212014"] = {
+				["Shaman/Restoration"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Shaman/Elemental"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212012"] = {
+				["Shaman/Restoration"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Shaman/Elemental"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["178745"] = {
+				["Shaman/Restoration"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["159372"] = {
+				["Shaman/Restoration"] = {
+					"from M+",
+				},
+				["Shaman/Elemental"] = {
+					"from M+",
+				},
+			},
+			["178778"] = {
+				["Shaman/Restoration"] = {
+					"from M+",
+				},
+			},
+			["212419"] = {
+				["Priest/Holy"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["178782"] = {
+				["Priest/Holy"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["56137"] = {
+				["Priest/Holy"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["178709"] = {
+				["Priest/Holy"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["221132"] = {
+				["Priest/Holy"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["212426"] = {
+				["Priest/Holy"] = {
+					"from raid",
+				},
+			},
+			["212416"] = {
+				["Priest/Holy"] = {
+					"from raid",
+				},
+				["Warlock/Demonology"] = {
+					"from raid",
+				},
+				["Warlock/Affliction"] = {
+					"from raid",
+				},
+				["Warlock/Destruction"] = {
+					"from raid",
+				},
+			},
+			["221176"] = {
+				["Priest/Holy"] = {
+					"from M+",
+				},
+			},
+			["221087"] = {
+				["Priest/Holy"] = {
+					"from M+",
+				},
+			},
+			["215135"] = {
+				["Rogue/Subtlety"] = {
+					"Overall",
+				},
+			},
+			["221141"] = {
+				["Rogue/Subtlety"] = {
+					"Overall",
+					"from M+",
+				},
+				["Warrior/Fury"] = {
+					"from M+",
+				},
+			},
+			["178743"] = {
+				["Rogue/Subtlety"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["221175"] = {
+				["Rogue/Subtlety"] = {
+					"from M+",
+				},
+			},
+			["178744"] = {
+				["Rogue/Subtlety"] = {
+					"from M+",
+				},
+			},
+			["159328"] = {
+				["Rogue/Subtlety"] = {
+					"from M+",
+				},
+			},
+			["133287"] = {
+				["Rogue/Subtlety"] = {
+					"from M+",
+				},
+			},
+			["215136"] = {
+				["Shaman/Elemental"] = {
+					"Overall",
+				},
+			},
+			["212010"] = {
+				["Shaman/Elemental"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["133285"] = {
+				["Shaman/Elemental"] = {
+					"from M+",
+				},
+			},
+			["178695"] = {
+				["Shaman/Elemental"] = {
+					"from M+",
+				},
+			},
+			["178750"] = {
+				["Shaman/Elemental"] = {
+					"from M+",
+				},
+			},
+			["212072"] = {
+				["Warlock/Demonology"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Warlock/Affliction"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Warlock/Destruction"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212077"] = {
+				["Warlock/Demonology"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Warlock/Affliction"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Warlock/Destruction"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212075"] = {
+				["Warlock/Demonology"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Warlock/Affliction"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Warlock/Destruction"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212073"] = {
+				["Warlock/Demonology"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Warlock/Affliction"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Warlock/Destruction"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["211984"] = {
+				["Warrior/Protection"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Warrior/Arms"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warrior/Fury"] = {
+					"from raid",
+				},
+			},
+			["178749"] = {
+				["Warrior/Protection"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["211987"] = {
+				["Warrior/Protection"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Warrior/Arms"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warrior/Fury"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["217848"] = {
+				["Warrior/Protection"] = {
+					"Overall",
+				},
+			},
+			["211985"] = {
+				["Warrior/Protection"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Warrior/Fury"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["217849"] = {
+				["Warrior/Protection"] = {
+					"Overall",
+				},
+			},
+			["211983"] = {
+				["Warrior/Protection"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Warrior/Arms"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warrior/Fury"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["211986"] = {
+				["Warrior/Protection"] = {
+					"Overall",
+				},
+			},
+			["211982"] = {
+				["Warrior/Protection"] = {
+					"from raid",
+				},
+				["Warrior/Arms"] = {
+					"Overall",
+					"from raid",
+				},
+				["Warrior/Fury"] = {
+					"Overall",
+					"from raid",
+				},
+			},
+			["212074"] = {
+				["Warlock/Affliction"] = {
+					"Overall",
+					"from raid",
+					"from M+",
+				},
+				["Warlock/Destruction"] = {
+					"Overall",
+				},
+			},
+			["221184"] = {
+				["Warrior/Arms"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["221161"] = {
+				["Warrior/Arms"] = {
+					"from M+",
+				},
+				["Warrior/Fury"] = {
+					"from M+",
+				},
+			},
+			["178701"] = {
+				["Warrior/Arms"] = {
+					"from M+",
+				},
+				["Warrior/Fury"] = {
+					"from M+",
+				},
+			},
+			["178777"] = {
+				["Warrior/Fury"] = {
+					"Overall",
+					"from M+",
+				},
+			},
+			["212442"] = {
+				["Warrior/Fury"] = {
+					"from raid",
+				},
+			},
+			["159429"] = {
+				["Warrior/Fury"] = {
+					"from M+",
+				},
 			},
 		},
 	},
 	trinketSources = {
 		wowhead = {
-			["Death Knight/Blood"] = {
-				["Silken Chain Weaver"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
-					tier = "S",
-				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
-					tier = "A",
-				},
-				["Sikrans Endless Arsenal"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "A",
-				},
-				["Spare Meat Hook"] = {
-					location = "Dungeons/The Necrotic Wake",
-					itemId = 0,
-					tier = "A",
-				},
-			},
-			["Druid/Balance"] = {
-				["Spymasters Web"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "S",
-				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
-					tier = "S",
-				},
-				["Empowering Crystal of Anubikkaj"] = {
-					location = "Dungeons/The Dawnbreaker",
-					itemId = 0,
-					tier = "A",
-				},
-				["Unbound Changeling"] = {
-					location = "Dungeons/Mists of Tirna Scithe",
-					itemId = 0,
-					tier = "A",
-				},
-				["Gale of Shadows"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
-					tier = "A",
-				},
-				["Ovinaxs Mercurial Egg"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "B",
-				},
-				["Treacherous Transmitter"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "B",
-				},
-			},
 			["Demon Hunter/Havoc"] = {
-				["Skardyns Grace"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
+				["133282"] = {
+					location = "Dungeon/General Umbriss/Grim Batol",
 					tier = "S",
 				},
-				["Mad Queens Mandate"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["212454"] = {
+					location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					tier = "S",
 				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
 					tier = "S-",
 				},
-				["Void Reapers Contract"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["212456"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					tier = "S-",
 				},
-				["Empowering Crystal of Anubikkaj"] = {
-					location = "Dungeons/The Dawnbreaker",
-					itemId = 0,
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
 					tier = "A",
 				},
-				["Dead-Eye Spyglass"] = {
-					location = "Dungeons/Siege of Boralus",
-					itemId = 0,
+				["159623"] = {
+					location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
 					tier = "A",
 				},
-				["Ovinaxs Mercurial Egg"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					tier = "A",
 				},
-				["Mistcaller Ocarina"] = {
-					location = "Dungeons/Mists of Tirna Scithe",
-					itemId = 0,
+				["178715"] = {
+					location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
 					tier = "B",
 				},
-				["Treacherous Transmitter"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["221023"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					tier = "B",
 				},
-				["Darkmoon Deck Ascension"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["222680"] = {
+					location = "Other/Crafting",
 					tier = "D",
 				},
 			},
 			["Hunter/Beast Mastery"] = {
-				["Skardyns Grace"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
+				["133282"] = {
+					location = "Dungeon/General Umbriss/Grim Batol",
 					tier = "S",
 				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
 					tier = "S",
 				},
-				["Empowering Crystal of Anubikkaj"] = {
-					location = "Dungeons/The Dawnbreaker",
-					itemId = 0,
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
 					tier = "A+",
 				},
-				["Mad Queens Mandate"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["212454"] = {
+					location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					tier = "A+",
 				},
-				["Mistcaller Ocarina"] = {
-					location = "Dungeons/Mists of Tirna Scithe",
-					itemId = 0,
+				["178715"] = {
+					location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
 					tier = "A",
 				},
-				["Dead-Eye Spyglass"] = {
-					location = "Dungeons/Siege of Boralus",
-					itemId = 0,
+				["159623"] = {
+					location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
 					tier = "A",
 				},
-				["Void Reapers Contract"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["212456"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					tier = "A",
 				},
-				["Quickwick Candlestick"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["225649"] = {
+					location = "Other/Unknown",
 					tier = "B",
 				},
-				["Spelunkers Waning Candle"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["225638"] = {
+					location = "Other/Unknown",
 					tier = "B",
 				},
-				["Bottled Flayedwing Toxin"] = {
-					location = "Dungeons/The Necrotic Wake",
-					itemId = 0,
+				["178742"] = {
+					location = "Dungeon/Amarth/The Necrotic Wake",
 					tier = "B",
+				},
+			},
+			["Death Knight/Blood"] = {
+				["215172"] = {
+					location = "Delve/Bountiful Coffer",
+					tier = "S",
+				},
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					tier = "A",
+				},
+				["212449"] = {
+					location = "Raid/Sikran/Nerub-ar Palace",
+					tier = "A",
+				},
+				["178751"] = {
+					location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
+					tier = "A",
 				},
 			},
 			["Demon Hunter/Vengeance"] = {
-				["Bottled Flayedwing Toxin"] = {
-					location = "Dungeons/The Necrotic Wake",
-					itemId = 0,
+				["178742"] = {
+					location = "Dungeon/Amarth/The Necrotic Wake",
 					tier = "A+",
 				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
 					tier = "A+",
 				},
-				["Foul Behemoths Chelicera"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["219915"] = {
+					location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
 					tier = "A+",
 				},
-				["Empowering Crystal of Anubikkaj"] = {
-					location = "Dungeons/The Dawnbreaker",
-					itemId = 0,
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
 					tier = "A",
 				},
-				["Void Reapers Contract"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["212456"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					tier = "A",
 				},
-				["Dead-Eye Spyglass"] = {
-					location = "Dungeons/Siege of Boralus",
-					itemId = 0,
+				["159623"] = {
+					location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
 					tier = "A",
 				},
-				["Sikrans Endless Arsenal"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["212449"] = {
+					location = "Raid/Sikran/Nerub-ar Palace",
 					tier = "A",
 				},
-				["Twin Fang Instruments"] = {
-					location = "Dungeons/City of Threads",
-					itemId = 0,
+				["219319"] = {
+					location = "Dungeon/Nx/City of Threads",
 					tier = "B",
 				},
-				["Mad Queens Mandate"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["212454"] = {
+					location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					tier = "B",
 				},
-				["Silken Chain Weaver"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["215172"] = {
+					location = "Delve/Bountiful Coffer",
 					tier = "B",
-				},
-			},
-			["Death Knight/Frost"] = {
-				["Mark of Khardros"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
-					tier = "S",
-				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
-					tier = "S",
-				},
-				["Skarmorak Shard"] = {
-					location = "Dungeons/The Stonevault",
-					itemId = 0,
-					tier = "S",
-				},
-				["Treacherous Transmitter"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "S",
-				},
-				["Ovinaxs Mercurial Egg"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "A",
-				},
-				["Skyterrors Corrosive Organ"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "A",
-				},
-				["Spare Meat Hook"] = {
-					location = "Dungeons/The Necrotic Wake",
-					itemId = 0,
-					tier = "B",
-				},
-				["Oppressive Orators Larynx"] = {
-					location = "Dungeons/City of Threads",
-					itemId = 0,
-					tier = "B",
-				},
-				["Mad Queens Mandate"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "B",
-				},
-				["Imperfect Ascendancy Serum"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
-					tier = "D",
-				},
-			},
-			["Death Knight/Unholy"] = {
-				["Treacherous Transmitter"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "S",
-				},
-				["Mark of Khardros"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
-					tier = "S",
-				},
-				["Skarmorak Shard"] = {
-					location = "Dungeons/The Stonevault",
-					itemId = 0,
-					tier = "S",
-				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
-					tier = "S",
-				},
-				["Ovinaxs Mercurial Egg"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "A",
-				},
-				["Shadow-Binding Ritual Knife"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
-					tier = "A",
-				},
-				["Spare Meat Hook"] = {
-					location = "Dungeons/The Necrotic Wake",
-					itemId = 0,
-					tier = "B",
-				},
-				["Oppressive Orators Larynx"] = {
-					location = "Dungeons/City of Threads",
-					itemId = 0,
-					tier = "B",
-				},
-				["Skyterrors Corrosive Organ"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "B",
-				},
-				["Mad Queens Mandate"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "B",
-				},
-				["Sturdy Deepflayer Scute"] = {
-					location = "Boss/Zaralek Cavern",
-					itemId = 0,
-					tier = "B",
-				},
-				["Smoldering Howler Horn"] = {
-					location = "Boss/Zaralek Cavern",
-					itemId = 0,
-					tier = "B",
-				},
-				["Sikrans Endless Arsenal"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "C",
-				},
-				["Void Pactstone"] = {
-					location = "Dungeons/The Dawnbreaker",
-					itemId = 0,
-					tier = "C",
 				},
 			},
 			["Evoker/Preservation"] = {
-				["Unbound Changeling"] = {
-					location = "Dungeons/Mists of Tirna Scithe",
-					itemId = 0,
+				["178708"] = {
+					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
 					tier = "S",
 				},
-				["Gale of Shadows"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
+				["133304"] = {
+					location = "Dungeon/Forgemaster Throngus/Grim Batol",
 					tier = "S",
 				},
-				["Spymasters Web"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["220202"] = {
+					location = "Raid/Anub'arash/Nerub-ar Palace",
 					tier = "S",
 				},
-				["Empowering Crystal of Anubikkaj"] = {
-					location = "Dungeons/The Dawnbreaker",
-					itemId = 0,
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
 					tier = "A",
 				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
 					tier = "A",
 				},
-				["Creeping Coagulum"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["219917"] = {
+					location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					tier = "A",
 				},
-				["Gruesome Syringe"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["212452"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					tier = "A",
 				},
-				["Unstable Power Suit Core"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["225668"] = {
+					location = "Other/Unknown",
 					tier = "A",
 				},
-				["Goldenglow Censer"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["225656"] = {
+					location = "Other/Unknown",
 					tier = "B",
 				},
-				["Cirral Concoctory"] = {
-					location = "Dungeons/City of Threads",
-					itemId = 0,
+				["219321"] = {
+					location = "Dungeon/Izo, the Grand Splicer/City of Threads",
 					tier = "B",
 				},
-				["Quickwick Candlestick"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["225649"] = {
+					location = "Other/Unknown",
 					tier = "C",
 				},
-				["Corrupted Egg Shell"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
+				["133305"] = {
+					location = "Dungeon/Erudax/Grim Batol",
 					tier = "F",
 				},
 			},
-			["Evoker/Devastation"] = {
-				["Spymasters Web"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+			["Druid/Balance"] = {
+				["220202"] = {
+					location = "Raid/Anub'arash/Nerub-ar Palace",
 					tier = "S",
 				},
-				["Aberrant Spellforge"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "A",
-				},
-				["Mad Queens Mandate"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "A",
-				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
-					tier = "A",
-				},
-				["Ovinaxs Mercurial Egg"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "A",
-				},
-				["Gale of Shadows"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
-					tier = "A",
-				},
-				["Unbound Changeling"] = {
-					location = "Dungeons/Mists of Tirna Scithe",
-					itemId = 0,
-					tier = "A",
-				},
-				["Empowering Crystal of Anubikkaj"] = {
-					location = "Dungeons/The Dawnbreaker",
-					itemId = 0,
-					tier = "A",
-				},
-				["Treacherous Transmitter"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "B",
-				},
-				["Hadals Nautilus"] = {
-					location = "Dungeons/Siege of Boralus",
-					itemId = 0,
-					tier = "B",
-				},
-				["Satchel of Misbegotten Minions"] = {
-					location = "Dungeons/The Necrotic Wake",
-					itemId = 0,
-					tier = "B",
-				},
-				["Harvesters Edict"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
-					tier = "B",
-				},
-				["Quickwick Candlestick"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
-					tier = "C",
-				},
-				["Imperfect Ascendancy Serum"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
-					tier = "C",
-				},
-				["Mereldars Toll"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "C",
-				},
-			},
-			["Hunter/Marksmanship"] = {
-				["Mad Queens Mandate"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
 					tier = "S",
 				},
-				["Skardyns Grace"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
-					tier = "S",
-				},
-				["Treacherous Transmitter"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "S",
-				},
-				["Dead-Eye Spyglass"] = {
-					location = "Dungeons/Siege of Boralus",
-					itemId = 0,
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
 					tier = "A",
 				},
-				["Sikrans Endless Arsenal"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["178708"] = {
+					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
 					tier = "A",
 				},
-				["Quickwick Candlestick"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["133304"] = {
+					location = "Dungeon/Forgemaster Throngus/Grim Batol",
+					tier = "A",
+				},
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					tier = "B",
+				},
+				["221023"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					tier = "B",
 				},
 			},
 			["Evoker/Augmentation"] = {
-				["Spymasters Web"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["220202"] = {
+					location = "Raid/Anub'arash/Nerub-ar Palace",
 					tier = "S",
 				},
-				["Mad Queens Mandate"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["212454"] = {
+					location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					tier = "S",
 				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
 					tier = "A",
 				},
-				["Mereldars Toll"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["219313"] = {
+					location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
 					tier = "A",
 				},
-				["Shadow-Binding Ritual Knife"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["215178"] = {
+					location = "Delve/Heavy Trunk",
 					tier = "A",
 				},
-				["Aberrant Spellforge"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["212451"] = {
+					location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					tier = "B",
 				},
-				["Ovinaxs Mercurial Egg"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					tier = "B",
 				},
-				["Unbound Changeling"] = {
-					location = "Dungeons/Mists of Tirna Scithe",
-					itemId = 0,
+				["178708"] = {
+					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
 					tier = "B",
 				},
-				["Hadals Nautilus"] = {
-					location = "Dungeons/Siege of Boralus",
-					itemId = 0,
+				["159622"] = {
+					location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					tier = "B",
 				},
-				["Imperfect Ascendancy Serum"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["225654"] = {
+					location = "Other/Unknown",
 					tier = "B",
 				},
-				["Gale of Shadows"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
+				["133304"] = {
+					location = "Dungeon/Forgemaster Throngus/Grim Batol",
 					tier = "C",
 				},
-				["Empowering Crystal of Anubikkaj"] = {
-					location = "Dungeons/The Dawnbreaker",
-					itemId = 0,
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
 					tier = "C",
 				},
-				["Harvesters Edict"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
+				["219317"] = {
+					location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
 					tier = "C",
 				},
-				["Cirral Concoctory"] = {
-					location = "Dungeons/City of Threads",
-					itemId = 0,
+				["219321"] = {
+					location = "Dungeon/Izo, the Grand Splicer/City of Threads",
 					tier = "C",
 				},
-				["Treacherous Transmitter"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["221023"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					tier = "C",
 				},
-				["High Speakers Accretion"] = {
-					location = "Dungeons/The Stonevault",
-					itemId = 0,
+				["219303"] = {
+					location = "Dungeon/Void Speaker Eirich/The Stonevault",
 					tier = "D",
 				},
-				["Unstable Power Suit Core"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["225668"] = {
+					location = "Other/Unknown",
 					tier = "D",
 				},
-				["Darkmoon Deck Vivacity"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["222671"] = {
+					location = "Other/Crafting",
 					tier = "D",
 				},
 			},
-			["Monk/Windwalker"] = {
-				["Skardyns Grace"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
+			["Evoker/Devastation"] = {
+				["220202"] = {
+					location = "Raid/Anub'arash/Nerub-ar Palace",
 					tier = "S",
 				},
-				["Treacherous Transmitter"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "S",
-				},
-				["Void Reapers Contract"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "S",
-				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
+				["212451"] = {
+					location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					tier = "A",
 				},
-				["Mad Queens Mandate"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["212454"] = {
+					location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					tier = "A",
 				},
-			},
-			["Monk/Mistweaver"] = {
-				["Gale of Shadows"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
-					tier = "S",
-				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
 					tier = "A",
 				},
-				["Unbound Changeling"] = {
-					location = "Dungeons/Mists of Tirna Scithe",
-					itemId = 0,
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					tier = "A",
 				},
-				["Empowering Crystal of Anubikkaj"] = {
-					location = "Dungeons/The Dawnbreaker",
-					itemId = 0,
+				["56462"] = {
+					location = "Dungeon/Erudax/Grim Batol",
 					tier = "A",
 				},
-				["Creeping Coagulum"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["178708"] = {
+					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
 					tier = "A",
 				},
-				["Ovinaxs Mercurial Egg"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					tier = "A",
+				},
+				["221023"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					tier = "B",
 				},
-			},
-			["Hunter/Survival"] = {
-				["Skardyns Grace"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
-					tier = "S",
-				},
-				["Mad Queens Mandate"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "A",
-				},
-				["Empowering Crystal of Anubikkaj"] = {
-					location = "Dungeons/The Dawnbreaker",
-					itemId = 0,
-					tier = "A",
-				},
-				["Void Reapers Contract"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "A",
-				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
-					tier = "A",
-				},
-				["Dead-Eye Spyglass"] = {
-					location = "Dungeons/Siege of Boralus",
-					itemId = 0,
-					tier = "A",
-				},
-				["Ovinaxs Mercurial Egg"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "A",
-				},
-				["Quickwick Candlestick"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["159622"] = {
+					location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					tier = "B",
 				},
-				["Sikrans Endless Arsenal"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["178772"] = {
+					location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
 					tier = "B",
 				},
-				["Bottled Flayedwing Toxin"] = {
-					location = "Dungeons/The Necrotic Wake",
-					itemId = 0,
+				["219317"] = {
+					location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
 					tier = "B",
 				},
-				["Harvesters Edict"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
-					tier = "B",
-				},
-				["Imperfect Ascendancy Serum"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
-					tier = "B",
-				},
-				["Treacherous Transmitter"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "B",
-				},
-				["Twin Fang Instruments"] = {
-					location = "Dungeons/City of Threads",
-					itemId = 0,
+				["225649"] = {
+					location = "Other/Unknown",
 					tier = "C",
 				},
-				["Mistcaller Ocarina"] = {
-					location = "Dungeons/Mists of Tirna Scithe",
-					itemId = 0,
+				["225654"] = {
+					location = "Other/Unknown",
 					tier = "C",
 				},
-				["Overclocked Geara-Rang Launcher"] = {
-					location = "Dungeons/The Stonevault",
-					itemId = 0,
+				["219313"] = {
+					location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
+					tier = "C",
+				},
+			},
+			["Death Knight/Unholy"] = {
+				["221023"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					tier = "S",
+				},
+				["133300"] = {
+					location = "Dungeon/Erudax/Grim Batol",
+					tier = "S",
+				},
+				["219300"] = {
+					location = "Dungeon/Skarmorak/The Stonevault",
+					tier = "S",
+				},
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					tier = "S",
+				},
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					tier = "A",
+				},
+				["215178"] = {
+					location = "Delve/Heavy Trunk",
+					tier = "A",
+				},
+				["178751"] = {
+					location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
+					tier = "B",
+				},
+				["219318"] = {
+					location = "Dungeon/Orator Krix'vizk/City of Threads",
+					tier = "B",
+				},
+				["212453"] = {
+					location = "Raid/Rasha'nan/Nerub-ar Palace",
+					tier = "B",
+				},
+				["212454"] = {
+					location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					tier = "B",
+				},
+				["205193"] = {
+					location = "Other/Response Team Watcher/Zaralek Cavern",
+					tier = "B",
+				},
+				["205201"] = {
+					location = "Other/Captain Reykal/Zaralek Cavern",
+					tier = "B",
+				},
+				["212449"] = {
+					location = "Raid/Sikran/Nerub-ar Palace",
+					tier = "C",
+				},
+				["219311"] = {
+					location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
+					tier = "C",
+				},
+			},
+			["Death Knight/Frost"] = {
+				["133300"] = {
+					location = "Dungeon/Erudax/Grim Batol",
+					tier = "S",
+				},
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					tier = "S",
+				},
+				["219300"] = {
+					location = "Dungeon/Skarmorak/The Stonevault",
+					tier = "S",
+				},
+				["221023"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					tier = "S",
+				},
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					tier = "A",
+				},
+				["212453"] = {
+					location = "Raid/Rasha'nan/Nerub-ar Palace",
+					tier = "A",
+				},
+				["178751"] = {
+					location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
+					tier = "B",
+				},
+				["219318"] = {
+					location = "Dungeon/Orator Krix'vizk/City of Threads",
+					tier = "B",
+				},
+				["212454"] = {
+					location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					tier = "B",
+				},
+				["225654"] = {
+					location = "Other/Unknown",
 					tier = "D",
 				},
 			},
 			["Mage/Frost"] = {
-				["Spymasters Web"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["220202"] = {
+					location = "Raid/Anub'arash/Nerub-ar Palace",
 					tier = "S",
 				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
 					tier = "A",
 				},
-				["Treacherous Transmitter"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["221023"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					tier = "A",
 				},
-				["Satchel of Misbegotten Minions"] = {
-					location = "Dungeons/The Necrotic Wake",
-					itemId = 0,
+				["178772"] = {
+					location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
 					tier = "A",
 				},
-				["Gale of Shadows"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
+				["56462"] = {
+					location = "Dungeon/Erudax/Grim Batol",
 					tier = "A",
 				},
-				["Unbound Changeling"] = {
-					location = "Dungeons/Mists of Tirna Scithe",
-					itemId = 0,
+				["178708"] = {
+					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
 					tier = "A",
 				},
-				["Ovinaxs Mercurial Egg"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					tier = "A",
 				},
-				["Quickwick Candlestick"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["225649"] = {
+					location = "Other/Unknown",
 					tier = "B",
 				},
-				["Hadals Nautilus"] = {
-					location = "Dungeons/Siege of Boralus",
-					itemId = 0,
+				["159622"] = {
+					location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					tier = "B",
 				},
-				["Empowering Crystal of Anubikkaj"] = {
-					location = "Dungeons/The Dawnbreaker",
-					itemId = 0,
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					tier = "B",
+				},
+			},
+			["Hunter/Survival"] = {
+				["133282"] = {
+					location = "Dungeon/General Umbriss/Grim Batol",
+					tier = "S",
+				},
+				["212454"] = {
+					location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					tier = "A",
+				},
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					tier = "A",
+				},
+				["212456"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					tier = "A",
+				},
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					tier = "A",
+				},
+				["159623"] = {
+					location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
+					tier = "A",
+				},
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					tier = "A",
+				},
+				["225649"] = {
+					location = "Other/Unknown",
+					tier = "B",
+				},
+				["212449"] = {
+					location = "Raid/Sikran/Nerub-ar Palace",
+					tier = "B",
+				},
+				["178742"] = {
+					location = "Dungeon/Amarth/The Necrotic Wake",
+					tier = "B",
+				},
+				["219317"] = {
+					location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
+					tier = "B",
+				},
+				["225654"] = {
+					location = "Other/Unknown",
+					tier = "B",
+				},
+				["221023"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					tier = "B",
+				},
+				["219319"] = {
+					location = "Dungeon/Nx/City of Threads",
+					tier = "C",
+				},
+				["178715"] = {
+					location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
+					tier = "C",
+				},
+				["219301"] = {
+					location = "Dungeon/Speaker Brokk/The Stonevault",
+					tier = "D",
+				},
+			},
+			["Paladin/Holy"] = {
+				["220202"] = {
+					location = "Raid/Anub'arash/Nerub-ar Palace",
+					tier = "S",
+				},
+				["133304"] = {
+					location = "Dungeon/Forgemaster Throngus/Grim Batol",
+					tier = "S",
+				},
+				["178708"] = {
+					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
+					tier = "A",
+				},
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					tier = "A",
+				},
+				["219917"] = {
+					location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					tier = "B",
+				},
+				["225649"] = {
+					location = "Other/Unknown",
+					tier = "B",
+				},
+				["221023"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					tier = "C",
+				},
+				["219313"] = {
+					location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
+					tier = "C",
+				},
+				["225656"] = {
+					location = "Other/Unknown",
+					tier = "C",
+				},
+				["212452"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					tier = "C",
+				},
+			},
+			["Hunter/Marksmanship"] = {
+				["212454"] = {
+					location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					tier = "S",
+				},
+				["133282"] = {
+					location = "Dungeon/General Umbriss/Grim Batol",
+					tier = "S",
+				},
+				["221023"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					tier = "S",
+				},
+				["159623"] = {
+					location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
+					tier = "A",
+				},
+				["212449"] = {
+					location = "Raid/Sikran/Nerub-ar Palace",
+					tier = "A",
+				},
+				["225649"] = {
+					location = "Other/Unknown",
+					tier = "B",
+				},
+			},
+			["Monk/Brewmaster"] = {
+				["212454"] = {
+					location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					tier = "S",
+				},
+				["212456"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					tier = "A",
+				},
+				["219915"] = {
+					location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					tier = "A",
+				},
+				["212449"] = {
+					location = "Raid/Sikran/Nerub-ar Palace",
+					tier = "A",
+				},
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					tier = "A",
+				},
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					tier = "A",
+				},
+				["215172"] = {
+					location = "Delve/Bountiful Coffer",
+					tier = "B",
+				},
+				["56440"] = {
+					location = "Dungeon/General Umbriss/Grim Batol",
+					tier = "B",
+				},
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					tier = "B",
+				},
+				["212450"] = {
+					location = "Raid/Anub'arash/Nerub-ar Palace",
 					tier = "B",
 				},
 			},
 			["Mage/Arcane"] = {
-				["Spymasters Web"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["220202"] = {
+					location = "Raid/Anub'arash/Nerub-ar Palace",
 					tier = "S",
 				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
+				["221023"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					tier = "A",
 				},
-				["Mereldars Toll"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["215174"] = {
+					location = "Delve/Heavy Trunk",
 					tier = "A",
 				},
-				["Empowering Crystal of Anubikkaj"] = {
-					location = "Dungeons/The Dawnbreaker",
-					itemId = 0,
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
 					tier = "A",
 				},
-				["Treacherous Transmitter"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["219313"] = {
+					location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
 					tier = "A",
 				},
-				["Ovinaxs Mercurial Egg"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["178708"] = {
+					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
+					tier = "A",
+				},
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					tier = "A",
+				},
+				["215178"] = {
+					location = "Delve/Heavy Trunk",
 					tier = "B",
 				},
-				["Hadals Nautilus"] = {
-					location = "Dungeons/Siege of Boralus",
-					itemId = 0,
+				["159622"] = {
+					location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					tier = "B",
 				},
-				["Unbound Changeling"] = {
-					location = "Dungeons/Mists of Tirna Scithe",
-					itemId = 0,
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					tier = "B",
 				},
-				["Satchel of Misbegotten Minions"] = {
-					location = "Dungeons/The Necrotic Wake",
-					itemId = 0,
+				["215169"] = {
+					location = "Delve/Heavy Trunk",
+					tier = "B",
+				},
+				["225668"] = {
+					location = "Other/Unknown",
+					tier = "B",
+				},
+				["225649"] = {
+					location = "Other/Unknown",
 					tier = "C",
 				},
-				["Harvesters Edict"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
+				["178772"] = {
+					location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
 					tier = "C",
 				},
-				["Aberrant Spellforge"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["219317"] = {
+					location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
 					tier = "C",
 				},
-				["Imperfect Ascendancy Serum"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["212451"] = {
+					location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					tier = "C",
 				},
-			},
-			["Monk/Brewmaster"] = {
-				["Mad Queens Mandate"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "S",
+				["225648"] = {
+					location = "Other/Unknown",
+					tier = "C",
 				},
-				["Void Reapers Contract"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "A",
-				},
-				["Foul Behemoths Chelicera"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "A",
-				},
-				["Sikrans Endless Arsenal"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "A",
-				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
-					tier = "A",
-				},
-				["Ovinaxs Mercurial Egg"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "A",
-				},
-				["Silken Chain Weaver"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
-					tier = "B",
-				},
-				["Skardyns Grace"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
-					tier = "B",
-				},
-				["Empowering Crystal of Anubikkaj"] = {
-					location = "Dungeons/The Dawnbreaker",
-					itemId = 0,
-					tier = "B",
-				},
-				["Swarmlords Authority"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "B",
+				["225654"] = {
+					location = "Other/Unknown",
+					tier = "C",
 				},
 			},
 			["Mage/Fire"] = {
-				["Spymasters Web"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["220202"] = {
+					location = "Raid/Anub'arash/Nerub-ar Palace",
 					tier = "S",
 				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
 					tier = "A",
 				},
-				["Gale of Shadows"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
+				["56462"] = {
+					location = "Dungeon/Erudax/Grim Batol",
 					tier = "A",
 				},
-				["Unbound Changeling"] = {
-					location = "Dungeons/Mists of Tirna Scithe",
-					itemId = 0,
+				["178708"] = {
+					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
 					tier = "A",
 				},
-				["Ovinaxs Mercurial Egg"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					tier = "A",
 				},
-				["Treacherous Transmitter"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["221023"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					tier = "B",
 				},
-				["Empowering Crystal of Anubikkaj"] = {
-					location = "Dungeons/The Dawnbreaker",
-					itemId = 0,
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
 					tier = "B",
 				},
-				["Hadals Nautilus"] = {
-					location = "Dungeons/Siege of Boralus",
-					itemId = 0,
+				["159622"] = {
+					location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					tier = "C",
 				},
-				["Quickwick Candlestick"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["225649"] = {
+					location = "Other/Unknown",
 					tier = "C",
 				},
-				["Satchel of Misbegotten Minions"] = {
-					location = "Dungeons/The Necrotic Wake",
-					itemId = 0,
+				["178772"] = {
+					location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
 					tier = "C",
 				},
-				["Harvesters Edict"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
+				["219317"] = {
+					location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
 					tier = "C",
 				},
-				["Aberrant Spellforge"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["212451"] = {
+					location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					tier = "C",
 				},
-				["Imperfect Ascendancy Serum"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["225654"] = {
+					location = "Other/Unknown",
 					tier = "C",
 				},
-				["Mereldars Toll"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "C",
-				},
-			},
-			["Paladin/Holy"] = {
-				["Spymasters Web"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "S",
-				},
-				["Gale of Shadows"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
-					tier = "S",
-				},
-				["Unbound Changeling"] = {
-					location = "Dungeons/Mists of Tirna Scithe",
-					itemId = 0,
-					tier = "A",
-				},
-				["Ovinaxs Mercurial Egg"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "A",
-				},
-				["Creeping Coagulum"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "B",
-				},
-				["Quickwick Candlestick"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
-					tier = "B",
-				},
-				["Treacherous Transmitter"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "C",
-				},
-				["Mereldars Toll"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "C",
-				},
-				["Goldenglow Censer"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
-					tier = "C",
-				},
-				["Gruesome Syringe"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "C",
-				},
-			},
-			["Paladin/Protection"] = {
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
-					tier = "S",
-				},
-				["Skarmorak Shard"] = {
-					location = "Dungeons/The Stonevault",
-					itemId = 0,
-					tier = "A",
-				},
-				["Thronguss Finger"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
-					tier = "A",
-				},
-				["Mark of Khardros"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
-					tier = "A",
-				},
-				["Swarmlords Authority"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "A",
-				},
-				["Algari Alchemist Stone"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
-					tier = "B",
-				},
-				["Oppressive Orators Larynx"] = {
-					location = "Dungeons/City of Threads",
-					itemId = 0,
-					tier = "B",
-				},
-				["Treacherous Transmitter"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "C",
-				},
-				["Refracting Aggression Module"] = {
-					location = "Dungeons/The Stonevault",
-					itemId = 0,
-					tier = "F",
-				},
-			},
-			["Priest/Shadow"] = {
-				["Spymasters Web"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "S",
-				},
-				["Unbound Changeling"] = {
-					location = "Dungeons/Mists of Tirna Scithe",
-					itemId = 0,
-					tier = "A",
-				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
-					tier = "A",
-				},
-				["Gale of Shadows"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
-					tier = "A",
-				},
-				["Treacherous Transmitter"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "A",
-				},
-				["Empowering Crystal of Anubikkaj"] = {
-					location = "Dungeons/The Dawnbreaker",
-					itemId = 0,
-					tier = "A",
-				},
-				["Hadals Nautilus"] = {
-					location = "Dungeons/Siege of Boralus",
-					itemId = 0,
-					tier = "B",
-				},
-				["Satchel of Misbegotten Minions"] = {
-					location = "Dungeons/The Necrotic Wake",
-					itemId = 0,
-					tier = "B",
-				},
-				["Ovinaxs Mercurial Egg"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "B",
-				},
-			},
-			["Priest/Discipline"] = {
-				["Spymasters Web"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "S",
-				},
-				["Gale of Shadows"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
-					tier = "A",
-				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
-					tier = "A",
-				},
-				["Unbound Changeling"] = {
-					location = "Dungeons/Mists of Tirna Scithe",
-					itemId = 0,
-					tier = "A",
-				},
-				["Empowering Crystal of Anubikkaj"] = {
-					location = "Dungeons/The Dawnbreaker",
-					itemId = 0,
-					tier = "A",
-				},
-				["Creeping Coagulum"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "A",
-				},
-				["Unstable Power Suit Core"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
-					tier = "B",
-				},
-				["Gruesome Syringe"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "C",
-				},
-				["Scrapsingers Symphony"] = {
-					location = "Dungeons/The Stonevault",
-					itemId = 0,
-					tier = "C",
-				},
-				["Entropic Skardyn Core"] = {
-					location = "Boss/The Rookery",
-					itemId = 0,
+				["219313"] = {
+					location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
 					tier = "C",
 				},
 			},
 			["Paladin/Retribution"] = {
-				["Mark of Khardros"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
+				["133300"] = {
+					location = "Dungeon/Erudax/Grim Batol",
 					tier = "S",
 				},
-				["Skarmorak Shard"] = {
-					location = "Dungeons/The Stonevault",
-					itemId = 0,
+				["219300"] = {
+					location = "Dungeon/Skarmorak/The Stonevault",
 					tier = "S",
 				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
 					tier = "S",
 				},
-				["Shadow-Binding Ritual Knife"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["215178"] = {
+					location = "Delve/Heavy Trunk",
 					tier = "A",
 				},
-				["Mad Queens Mandate"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["212454"] = {
+					location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					tier = "A",
 				},
-				["Skyterrors Corrosive Organ"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["212453"] = {
+					location = "Raid/Rasha'nan/Nerub-ar Palace",
 					tier = "A",
 				},
-				["Spare Meat Hook"] = {
-					location = "Dungeons/The Necrotic Wake",
-					itemId = 0,
+				["178751"] = {
+					location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
 					tier = "B",
 				},
-				["Oppressive Orators Larynx"] = {
-					location = "Dungeons/City of Threads",
-					itemId = 0,
+				["219318"] = {
+					location = "Dungeon/Orator Krix'vizk/City of Threads",
 					tier = "B",
 				},
-				["Treacherous Transmitter"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["221023"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					tier = "B",
 				},
-				["Ovinaxs Mercurial Egg"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					tier = "C",
 				},
-				["Void Pactstone"] = {
-					location = "Dungeons/The Dawnbreaker",
-					itemId = 0,
+				["219311"] = {
+					location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
 					tier = "C",
 				},
-				["Quickwick Candlestick"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["225649"] = {
+					location = "Other/Unknown",
 					tier = "C",
 				},
-				["Algari Alchemist Stone"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["210816"] = {
+					location = "Other/Crafting",
 					tier = "D",
 				},
 			},
-			["Shaman/Elemental"] = {
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
+			["Paladin/Protection"] = {
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
 					tier = "S",
 				},
-				["Ovinaxs Mercurial Egg"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "S",
-				},
-				["Spymasters Web"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "S",
-				},
-				["Gale of Shadows"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
-					tier = "S",
-				},
-				["Unbound Changeling"] = {
-					location = "Dungeons/Mists of Tirna Scithe",
-					itemId = 0,
-					tier = "S",
-				},
-				["Empowering Crystal of Anubikkaj"] = {
-					location = "Dungeons/The Dawnbreaker",
-					itemId = 0,
+				["219300"] = {
+					location = "Dungeon/Skarmorak/The Stonevault",
 					tier = "A",
 				},
-				["Aberrant Spellforge"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["133291"] = {
+					location = "Dungeon/Forgemaster Throngus/Grim Batol",
 					tier = "A",
 				},
-				["Treacherous Transmitter"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["133300"] = {
+					location = "Dungeon/Erudax/Grim Batol",
 					tier = "A",
 				},
-				["Satchel of Misbegotten Minions"] = {
-					location = "Dungeons/The Necrotic Wake",
-					itemId = 0,
-					tier = "A-",
+				["212450"] = {
+					location = "Raid/Anub'arash/Nerub-ar Palace",
+					tier = "A",
 				},
-				["Hadals Nautilus"] = {
-					location = "Dungeons/Siege of Boralus",
-					itemId = 0,
-					tier = "A-",
+				["210816"] = {
+					location = "Other/Crafting",
+					tier = "B",
+				},
+				["219318"] = {
+					location = "Dungeon/Orator Krix'vizk/City of Threads",
+					tier = "B",
+				},
+				["221023"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					tier = "C",
+				},
+				["219315"] = {
+					location = "Dungeon/E.D.N.A/The Stonevault",
+					tier = "F",
 				},
 			},
-			["Priest/Holy"] = {
-				["Unbound Changeling"] = {
-					location = "Dungeons/Mists of Tirna Scithe",
-					itemId = 0,
+			["Priest/Discipline"] = {
+				["220202"] = {
+					location = "Raid/Anub'arash/Nerub-ar Palace",
 					tier = "S",
 				},
-				["Creeping Coagulum"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "S",
-				},
-				["Empowering Crystal of Anubikkaj"] = {
-					location = "Dungeons/The Dawnbreaker",
-					itemId = 0,
-					tier = "S",
-				},
-				["Gale of Shadows"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
-					tier = "S",
-				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
+				["56462"] = {
+					location = "Dungeon/Erudax/Grim Batol",
 					tier = "A",
 				},
-				["Scrapsingers Symphony"] = {
-					location = "Dungeons/The Stonevault",
-					itemId = 0,
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
 					tier = "A",
 				},
-				["Unstable Power Suit Core"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["178708"] = {
+					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
+					tier = "A",
+				},
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					tier = "A",
+				},
+				["219917"] = {
+					location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					tier = "A",
+				},
+				["225668"] = {
+					location = "Other/Unknown",
 					tier = "B",
 				},
-				["Quickwick Candlestick"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
-					tier = "B",
-				},
-				["Carved Blazikon Wax"] = {
-					location = "Boss/Darkflame Cleft",
-					itemId = 0,
-					tier = "B",
-				},
-				["Gruesome Syringe"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["212452"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					tier = "C",
 				},
-				["Entropic Skardyn Core"] = {
-					location = "Boss/The Rookery",
-					itemId = 0,
+				["219302"] = {
+					location = "Dungeon/Speaker Brokk/The Stonevault",
 					tier = "C",
+				},
+				["219296"] = {
+					location = "Other/Voidstone Monstrosity/The Rookery",
+					tier = "C",
+				},
+			},
+			["Rogue/Outlaw"] = {
+				["212456"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					tier = "S",
+				},
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					tier = "S",
+				},
+				["178742"] = {
+					location = "Dungeon/Amarth/The Necrotic Wake",
+					tier = "S",
+				},
+				["212454"] = {
+					location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					tier = "S",
+				},
+				["159623"] = {
+					location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
+					tier = "A",
+				},
+				["219301"] = {
+					location = "Dungeon/Speaker Brokk/The Stonevault",
+					tier = "A",
+				},
+				["212449"] = {
+					location = "Raid/Sikran/Nerub-ar Palace",
+					tier = "A",
+				},
+				["219319"] = {
+					location = "Dungeon/Nx/City of Threads",
+					tier = "B",
+				},
+				["178715"] = {
+					location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
+					tier = "B",
+				},
+				["225638"] = {
+					location = "Other/Unknown",
+					tier = "B",
+				},
+				["225657"] = {
+					location = "Other/Unknown",
+					tier = "B",
 				},
 			},
 			["Rogue/Assassination"] = {
-				["Skardyns Grace"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
+				["133282"] = {
+					location = "Dungeon/General Umbriss/Grim Batol",
 					tier = "S",
 				},
-				["Mad Queens Mandate"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["212454"] = {
+					location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					tier = "S",
 				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
 					tier = "S",
 				},
-				["Dead-Eye Spyglass"] = {
-					location = "Dungeons/Siege of Boralus",
-					itemId = 0,
+				["159623"] = {
+					location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
 					tier = "A",
 				},
-				["Empowering Crystal of Anubikkaj"] = {
-					location = "Dungeons/The Dawnbreaker",
-					itemId = 0,
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
 					tier = "A",
 				},
-				["Shadow-Binding Ritual Knife"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["215178"] = {
+					location = "Delve/Heavy Trunk",
 					tier = "A",
 				},
-				["Void Reapers Contract"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["212456"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					tier = "A",
 				},
-				["Ovinaxs Mercurial Egg"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					tier = "B",
 				},
-				["Sikrans Endless Arsenal"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["212449"] = {
+					location = "Raid/Sikran/Nerub-ar Palace",
 					tier = "B",
 				},
-				["Treacherous Transmitter"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["221023"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					tier = "C",
 				},
-				["Spelunkers Waning Candle"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["225638"] = {
+					location = "Other/Unknown",
 					tier = "C",
 				},
-				["Scroll of Momentum"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["226539"] = {
+					location = "Other/Unknown",
+					tier = "C",
+				},
+			},
+			["Shaman/Enhancement"] = {
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					tier = "S",
+				},
+				["133282"] = {
+					location = "Dungeon/General Umbriss/Grim Batol",
+					tier = "S",
+				},
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					tier = "S",
+				},
+				["225649"] = {
+					location = "Other/Unknown",
+					tier = "A",
+				},
+				["221023"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					tier = "A",
+				},
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					tier = "B+",
+				},
+				["225638"] = {
+					location = "Other/Unknown",
+					tier = "B+",
+				},
+				["212456"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					tier = "B+",
+				},
+				["159623"] = {
+					location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
+					tier = "B+",
+				},
+				["178715"] = {
+					location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
+					tier = "C",
+				},
+			},
+			["Priest/Shadow"] = {
+				["220202"] = {
+					location = "Raid/Anub'arash/Nerub-ar Palace",
+					tier = "S",
+				},
+				["178708"] = {
+					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
+					tier = "A",
+				},
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					tier = "A",
+				},
+				["56462"] = {
+					location = "Dungeon/Erudax/Grim Batol",
+					tier = "A",
+				},
+				["221023"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					tier = "A",
+				},
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					tier = "A",
+				},
+				["159622"] = {
+					location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					tier = "B",
+				},
+				["178772"] = {
+					location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
+					tier = "B",
+				},
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					tier = "B",
+				},
+			},
+			["Shaman/Restoration"] = {
+				["220202"] = {
+					location = "Raid/Anub'arash/Nerub-ar Palace",
+					tier = "S",
+				},
+				["56462"] = {
+					location = "Dungeon/Erudax/Grim Batol",
+					tier = "S",
+				},
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					tier = "S",
+				},
+				["178708"] = {
+					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
+					tier = "S",
+				},
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					tier = "A",
+				},
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					tier = "A",
+				},
+				["219917"] = {
+					location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					tier = "B+",
+				},
+				["225668"] = {
+					location = "Other/Unknown",
+					tier = "B+",
+				},
+				["219320"] = {
+					location = "Dungeon/The Coaglamation/City of Threads",
+					tier = "B",
+				},
+				["225649"] = {
+					location = "Other/Unknown",
+					tier = "B",
+				},
+			},
+			["Priest/Holy"] = {
+				["178708"] = {
+					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
+					tier = "S",
+				},
+				["219917"] = {
+					location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					tier = "S",
+				},
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					tier = "S",
+				},
+				["56462"] = {
+					location = "Dungeon/Erudax/Grim Batol",
+					tier = "S",
+				},
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					tier = "A",
+				},
+				["219302"] = {
+					location = "Dungeon/Speaker Brokk/The Stonevault",
+					tier = "A",
+				},
+				["225668"] = {
+					location = "Other/Unknown",
+					tier = "B",
+				},
+				["225649"] = {
+					location = "Other/Unknown",
+					tier = "B",
+				},
+				["219305"] = {
+					location = "Other/Blazikon/Darkflame Cleft",
+					tier = "B",
+				},
+				["212452"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					tier = "C",
+				},
+				["219296"] = {
+					location = "Other/Voidstone Monstrosity/The Rookery",
 					tier = "C",
 				},
 			},
 			["Rogue/Subtlety"] = {
-				["Treacherous Transmitter"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["221023"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					tier = "S",
 				},
-				["Void Reapers Contract"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["212456"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					tier = "A",
 				},
-				["Ovinaxs Mercurial Egg"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					tier = "A",
 				},
-				["Dead-Eye Spyglass"] = {
-					location = "Dungeons/Siege of Boralus",
-					itemId = 0,
+				["159623"] = {
+					location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
 					tier = "A",
 				},
-				["Foul Behemoths Chelicera"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["215178"] = {
+					location = "Delve/Heavy Trunk",
+					tier = "A",
+				},
+				["219915"] = {
+					location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
 					tier = "B",
 				},
-				["Skardyns Grace"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
+				["133282"] = {
+					location = "Dungeon/General Umbriss/Grim Batol",
 					tier = "B",
 				},
-				["Quickwick Candlestick"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["226539"] = {
+					location = "Other/Unknown",
+					tier = "B",
+				},
+				["225649"] = {
+					location = "Other/Unknown",
 					tier = "C",
 				},
-				["Imperfect Ascendancy Serum"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["225654"] = {
+					location = "Other/Unknown",
 					tier = "D",
 				},
 			},
+			["Shaman/Elemental"] = {
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					tier = "S",
+				},
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					tier = "S",
+				},
+				["220202"] = {
+					location = "Raid/Anub'arash/Nerub-ar Palace",
+					tier = "S",
+				},
+				["133304"] = {
+					location = "Dungeon/Forgemaster Throngus/Grim Batol",
+					tier = "S",
+				},
+				["178708"] = {
+					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
+					tier = "S",
+				},
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					tier = "A",
+				},
+				["212451"] = {
+					location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					tier = "A",
+				},
+				["221023"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					tier = "A",
+				},
+				["178772"] = {
+					location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
+					tier = "A-",
+				},
+				["159622"] = {
+					location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					tier = "A-",
+				},
+			},
 			["Warlock/Demonology"] = {
-				["Spymasters Web"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["220202"] = {
+					location = "Raid/Anub'arash/Nerub-ar Palace",
 					tier = "S+",
 				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
 					tier = "S",
 				},
-				["Mad Queens Mandate"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["212454"] = {
+					location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					tier = "S",
 				},
-				["Unbound Changeling"] = {
-					location = "Dungeons/Mists of Tirna Scithe",
-					itemId = 0,
+				["178708"] = {
+					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
 					tier = "A",
 				},
-				["Ovinaxs Mercurial Egg"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					tier = "A",
 				},
-				["Empowering Crystal of Anubikkaj"] = {
-					location = "Dungeons/The Dawnbreaker",
-					itemId = 0,
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
 					tier = "A",
 				},
-				["Hadals Nautilus"] = {
-					location = "Dungeons/Siege of Boralus",
-					itemId = 0,
+				["159622"] = {
+					location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					tier = "B",
 				},
-				["Aberrant Spellforge"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["212451"] = {
+					location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					tier = "B",
 				},
-				["Satchel of Misbegotten Minions"] = {
-					location = "Dungeons/The Necrotic Wake",
-					itemId = 0,
-					tier = "B",
-				},
-			},
-			["Warlock/Affliction"] = {
-				["Spymasters Web"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "S",
-				},
-				["Ovinaxs Mercurial Egg"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "S",
-				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
-					tier = "S",
-				},
-				["Mad Queens Mandate"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "S",
-				},
-				["Unbound Changeling"] = {
-					location = "Dungeons/Mists of Tirna Scithe",
-					itemId = 0,
-					tier = "A",
-				},
-				["Harvesters Edict"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
-					tier = "A",
-				},
-				["Empowering Crystal of Anubikkaj"] = {
-					location = "Dungeons/The Dawnbreaker",
-					itemId = 0,
-					tier = "A",
-				},
-				["Hadals Nautilus"] = {
-					location = "Dungeons/Siege of Boralus",
-					itemId = 0,
-					tier = "B",
-				},
-				["Satchel of Misbegotten Minions"] = {
-					location = "Dungeons/The Necrotic Wake",
-					itemId = 0,
-					tier = "B",
-				},
-				["Gale of Shadows"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
-					tier = "B",
-				},
-			},
-			["Warlock/Destruction"] = {
-				["Spymasters Web"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "S",
-				},
-				["Mad Queens Mandate"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "S",
-				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
-					tier = "S",
-				},
-				["Gale of Shadows"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
-					tier = "A",
-				},
-				["Harvesters Edict"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
-					tier = "A",
-				},
-				["Empowering Crystal of Anubikkaj"] = {
-					location = "Dungeons/The Dawnbreaker",
-					itemId = 0,
-					tier = "A",
-				},
-				["Hadals Nautilus"] = {
-					location = "Dungeons/Siege of Boralus",
-					itemId = 0,
-					tier = "B",
-				},
-				["Unbound Changeling"] = {
-					location = "Dungeons/Mists of Tirna Scithe",
-					itemId = 0,
-					tier = "B",
-				},
-				["Satchel of Misbegotten Minions"] = {
-					location = "Dungeons/The Necrotic Wake",
-					itemId = 0,
-					tier = "B",
-				},
-			},
-			["Rogue/Outlaw"] = {
-				["Void Reapers Contract"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "S",
-				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
-					tier = "S",
-				},
-				["Bottled Flayedwing Toxin"] = {
-					location = "Dungeons/The Necrotic Wake",
-					itemId = 0,
-					tier = "S",
-				},
-				["Mad Queens Mandate"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "S",
-				},
-				["Dead-Eye Spyglass"] = {
-					location = "Dungeons/Siege of Boralus",
-					itemId = 0,
-					tier = "A",
-				},
-				["Overclocked Geara-Rang Launcher"] = {
-					location = "Dungeons/The Stonevault",
-					itemId = 0,
-					tier = "A",
-				},
-				["Sikrans Endless Arsenal"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "A",
-				},
-				["Twin Fang Instruments"] = {
-					location = "Dungeons/City of Threads",
-					itemId = 0,
-					tier = "B",
-				},
-				["Mistcaller Ocarina"] = {
-					location = "Dungeons/Mists of Tirna Scithe",
-					itemId = 0,
-					tier = "B",
-				},
-				["Spelunkers Waning Candle"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
-					tier = "B",
-				},
-				["Detachable Fang"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
-					tier = "B",
-				},
-			},
-			["Shaman/Enhancement"] = {
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
-					tier = "S",
-				},
-				["Skardyns Grace"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
-					tier = "S",
-				},
-				["Empowering Crystal of Anubikkaj"] = {
-					location = "Dungeons/The Dawnbreaker",
-					itemId = 0,
-					tier = "S",
-				},
-				["Quickwick Candlestick"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
-					tier = "A",
-				},
-				["Treacherous Transmitter"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "A",
-				},
-				["Ovinaxs Mercurial Egg"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "B+",
-				},
-				["Spelunkers Waning Candle"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
-					tier = "B+",
-				},
-				["Void Reapers Contract"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "B+",
-				},
-				["Dead-Eye Spyglass"] = {
-					location = "Dungeons/Siege of Boralus",
-					itemId = 0,
-					tier = "B+",
-				},
-				["Mistcaller Ocarina"] = {
-					location = "Dungeons/Mists of Tirna Scithe",
-					itemId = 0,
-					tier = "C",
-				},
-			},
-			["Shaman/Restoration"] = {
-				["Spymasters Web"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "S",
-				},
-				["Gale of Shadows"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
-					tier = "S",
-				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
-					tier = "S",
-				},
-				["Unbound Changeling"] = {
-					location = "Dungeons/Mists of Tirna Scithe",
-					itemId = 0,
-					tier = "S",
-				},
-				["Empowering Crystal of Anubikkaj"] = {
-					location = "Dungeons/The Dawnbreaker",
-					itemId = 0,
-					tier = "A",
-				},
-				["Ovinaxs Mercurial Egg"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "A",
-				},
-				["Creeping Coagulum"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
-					tier = "B+",
-				},
-				["Unstable Power Suit Core"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
-					tier = "B+",
-				},
-				["Viscous Coaglam"] = {
-					location = "Dungeons/City of Threads",
-					itemId = 0,
-					tier = "B",
-				},
-				["Quickwick Candlestick"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["178772"] = {
+					location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
 					tier = "B",
 				},
 			},
 			["Warrior/Protection"] = {
-				["Spare Meat Hook"] = {
-					location = "Dungeons/The Necrotic Wake",
-					itemId = 0,
+				["178751"] = {
+					location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
 					tier = "S",
 				},
-				["Ara-Kara Sacbrood"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
 					tier = "S",
 				},
-				["Mark of Khardros"] = {
-					location = "Dungeons/Grim Batol",
-					itemId = 0,
+				["56458"] = {
+					location = "Dungeon/Erudax/Grim Batol",
 					tier = "A",
 				},
-				["Oppressive Orators Larynx"] = {
-					location = "Dungeons/City of Threads",
-					itemId = 0,
+				["219318"] = {
+					location = "Dungeon/Orator Krix'vizk/City of Threads",
 					tier = "A",
 				},
-				["Sikrans Endless Arsenal"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["212449"] = {
+					location = "Raid/Sikran/Nerub-ar Palace",
 					tier = "A",
 				},
-				["Ceaseless Swarmgland"] = {
-					location = "Dungeons/Ara-Kara, City of Echoes",
-					itemId = 0,
+				["219316"] = {
+					location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
 					tier = "B",
 				},
-				["Treacherous Transmitter"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["221023"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					tier = "B",
 				},
-				["Algari Alchemist Stone"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["210816"] = {
+					location = "Other/Crafting",
 					tier = "C",
 				},
-				["Swarmlords Authority"] = {
-					location = "Boss/Nerub-ar Palace",
-					itemId = 0,
+				["212450"] = {
+					location = "Raid/Anub'arash/Nerub-ar Palace",
 					tier = "C",
 				},
-				["Imperfect Ascendancy Serum"] = {
-					location = "Other/Crafting or Delves",
-					itemId = 0,
+				["225654"] = {
+					location = "Other/Unknown",
 					tier = "D",
+				},
+			},
+			["Warlock/Affliction"] = {
+				["220202"] = {
+					location = "Raid/Anub'arash/Nerub-ar Palace",
+					tier = "S",
+				},
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					tier = "S",
+				},
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					tier = "S",
+				},
+				["212454"] = {
+					location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					tier = "S",
+				},
+				["178708"] = {
+					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
+					tier = "A",
+				},
+				["219317"] = {
+					location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
+					tier = "A",
+				},
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					tier = "A",
+				},
+				["159622"] = {
+					location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					tier = "B",
+				},
+				["178772"] = {
+					location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
+					tier = "B",
+				},
+				["133304"] = {
+					location = "Dungeon/Forgemaster Throngus/Grim Batol",
+					tier = "B",
+				},
+			},
+			["Warlock/Destruction"] = {
+				["220202"] = {
+					location = "Raid/Anub'arash/Nerub-ar Palace",
+					tier = "S",
+				},
+				["212454"] = {
+					location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					tier = "S",
+				},
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					tier = "S",
+				},
+				["133304"] = {
+					location = "Dungeon/Forgemaster Throngus/Grim Batol",
+					tier = "A",
+				},
+				["219317"] = {
+					location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
+					tier = "A",
+				},
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					tier = "A",
+				},
+				["159622"] = {
+					location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					tier = "B",
+				},
+				["178708"] = {
+					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
+					tier = "B",
+				},
+				["178772"] = {
+					location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
+					tier = "B",
 				},
 			},
 		},
@@ -3224,2892 +5671,6686 @@ context.database = {
 	gearSources = {
 		wowhead = {
 			INVTYPE_HEAD = {
-				["Death Knight/Blood"] = {
-					["Soaring Behemoths Greathelm"] = {
-						location = "Dungeons/The Dawnbreaker",
-						itemId = 0,
-					},
-				},
-				["Druid/Balance"] = {
-					["Whispering Mask"] = {
-						location = "Dungeons/Ara-Kara, City of Echoes",
-						itemId = 0,
-					},
-				},
 				["Demon Hunter/Havoc"] = {
-					["Impalers of the Hypogeal Nemesis"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212065"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221163"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
 					},
 				},
 				["Hunter/Beast Mastery"] = {
-					["Lightless Scavengers Skull"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212020"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Death Knight/Blood"] = {
+					["221146"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
+					},
+					["212427"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
 					},
 				},
 				["Demon Hunter/Vengeance"] = {
-					["Guise of the Construct"] = {
-						location = "Dungeons/The Stonevault",
-						itemId = 0,
+					["221081"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Skarmorak/The Stonevault",
 					},
-				},
-				["Death Knight/Frost"] = {
-					["Wrathbark Greathelm"] = {
-						location = "Dungeons/Mists of Tirna Scithe",
-						itemId = 0,
-					},
-				},
-				["Death Knight/Unholy"] = {
-					["Wrathbark Greathelm"] = {
-						location = "Dungeons/Mists of Tirna Scithe",
-						itemId = 0,
+					["212417"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					},
 				},
 				["Evoker/Preservation"] = {
-					["Horns of the Destroyer"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212029"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Evoker/Devastation"] = {
-					["Horns of the Destroyer"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Druid/Balance"] = {
+					["221163"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
 					},
-				},
-				["Hunter/Marksmanship"] = {
-					["Rattling Deadeye Hood"] = {
-						location = "Dungeons/The Necrotic Wake",
-						itemId = 0,
+					["212417"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					},
 				},
 				["Evoker/Augmentation"] = {
-					["Rattling Deadeye Hood"] = {
-						location = "Dungeons/The Necrotic Wake",
-						itemId = 0,
+					["178738"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Amarth/The Necrotic Wake",
+					},
+					["212428"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
 					},
 				},
-				["Monk/Windwalker"] = {
-					["Hood of the Hidden Path"] = {
-						location = "Dungeons/Mists of Tirna Scithe",
-						itemId = 0,
+				["Evoker/Devastation"] = {
+					["212029"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221156"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
 					},
 				},
-				["Monk/Mistweaver"] = {
-					["Gatecrashers Horns"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Death Knight/Unholy"] = {
+					["178694"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
+					},
+					["212002"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Hunter/Survival"] = {
-					["Lightless Scavengers Skull"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Death Knight/Frost"] = {
+					["178694"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
+					},
+					["212427"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
 					},
 				},
 				["Mage/Frost"] = {
-					["Hood of Violet Rebirth"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212092"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221187"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
 					},
 				},
-				["Mage/Arcane"] = {
-					["Cocoonsilk Cowl"] = {
-						location = "Dungeons/Mists of Tirna Scithe",
-						itemId = 0,
-					},
-				},
-				["Monk/Brewmaster"] = {
-					["Gatecrashers Horns"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Mage/Fire"] = {
-					["Devotees Discarded Headdress"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
+				["Hunter/Survival"] = {
+					["212020"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 				["Paladin/Holy"] = {
-					["Entombed Seraphs Casque"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["211993"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Paladin/Protection"] = {
-					["Wrathbark Greathelm"] = {
-						location = "Dungeons/Mists of Tirna Scithe",
-						itemId = 0,
+				["Hunter/Marksmanship"] = {
+					["178738"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Amarth/The Necrotic Wake",
+					},
+					["212020"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Priest/Shadow"] = {
-					["Living Lusters Semblance"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Monk/Brewmaster"] = {
+					["212047"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Priest/Discipline"] = {
-					["Devotees Discarded Headdress"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
+				["Mage/Arcane"] = {
+					["178693"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Dungeon/Tred'ova/Mists of Tirna Scithe",
+					},
+					["212440"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221187"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
+					},
+				},
+				["Mage/Fire"] = {
+					["212440"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221187"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
 					},
 				},
 				["Paladin/Retribution"] = {
-					["Entombed Seraphs Casque"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["211993"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Shaman/Elemental"] = {
-					["Final Meals Horns"] = {
-						location = "Boss/[DNT] Tug of War Stalker",
-						itemId = 0,
+				["Paladin/Protection"] = {
+					["178694"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
+					},
+					["212427"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
 					},
 				},
-				["Priest/Holy"] = {
-					["Living Lusters Semblance"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Priest/Discipline"] = {
+					["212440"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
 					},
-				},
-				["Rogue/Assassination"] = {
-					["Kareshi Phantoms Emptiness"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Warrior/Arms"] = {
-					["Warsculptors Barbute"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Warrior/Fury"] = {
-					["Darkfrost Helmet"] = {
-						location = "Dungeons/The Necrotic Wake",
-						itemId = 0,
-					},
-				},
-				["Rogue/Subtlety"] = {
-					["Whispering Mask"] = {
-						location = "Dungeons/Ara-Kara, City of Echoes",
-						itemId = 0,
-					},
-				},
-				["Warlock/Demonology"] = {
-					["Devotees Discarded Headdress"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
-					},
-				},
-				["Warlock/Affliction"] = {
-					["Hexflame Covens All-Seeing Eye"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Warlock/Destruction"] = {
-					["Hexflame Covens All-Seeing Eye"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["133302"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
 					},
 				},
 				["Rogue/Outlaw"] = {
-					["Beyonds Dark Visage"] = {
-						location = "Boss/The Bloodbound Horror",
-						itemId = 0,
+					["212038"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Rogue/Assassination"] = {
+					["212038"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Priest/Shadow"] = {
+					["212083"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 				["Shaman/Restoration"] = {
-					["Noetic of the Forgotten Reservoir"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212011"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Priest/Holy"] = {
+					["212083"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Rogue/Subtlety"] = {
+					["221163"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
+					},
+					["212417"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+				},
+				["Shaman/Elemental"] = {
+					["212428"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					},
+					["133285"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/General Umbriss/Grim Batol",
+					},
+				},
+				["Warlock/Demonology"] = {
+					["212440"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["133302"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
 					},
 				},
 				["Warrior/Protection"] = {
-					["Warsculptors Barbute"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["211984"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Warlock/Affliction"] = {
+					["212074"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Warrior/Arms"] = {
+					["211984"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["178694"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
+					},
+				},
+				["Warrior/Fury"] = {
+					["178777"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Nalthor the Rimebinder/The Necrotic Wake",
+					},
+					["211984"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Warlock/Destruction"] = {
+					["212074"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["212440"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["133302"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
 					},
 				},
 			},
 			INVTYPE_NECK = {
-				["Death Knight/Blood"] = {
-					["Silken Advisors Favor"] = {
-						location = "Boss/Anub'arash",
-						itemId = 0,
-					},
-				},
-				["Druid/Balance"] = {
-					["Sureki Zealots Insignia"] = {
-						location = "Boss/Sikran",
-						itemId = 0,
-					},
-				},
 				["Demon Hunter/Havoc"] = {
-					["Trailspinner Pendant"] = {
-						location = "Dungeons/Mists of Tirna Scithe",
-						itemId = 0,
+					["178707"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
+					},
+					["212448"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
 					},
 				},
 				["Hunter/Beast Mastery"] = {
-					["Sureki Zealots Insignia"] = {
-						location = "Boss/Sikran",
-						itemId = 0,
+					["225577"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["178707"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
+					},
+				},
+				["Death Knight/Blood"] = {
+					["225575"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["178707"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
 					},
 				},
 				["Demon Hunter/Vengeance"] = {
-					["Locket of Broken Memories"] = {
-						location = "Boss/Rasha'nan (Nerub-ar Palace)",
-						itemId = 0,
+					["212448"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
 					},
-				},
-				["Death Knight/Frost"] = {
-					["Trailspinner Pendant"] = {
-						location = "Dungeons/Mists of Tirna Scithe",
-						itemId = 0,
-					},
-				},
-				["Death Knight/Unholy"] = {
-					["Emergency Stop Keychain"] = {
-						location = "Dungeons/The Stonevault",
-						itemId = 0,
+					["221181"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/The Coaglamation/City of Threads",
 					},
 				},
 				["Evoker/Preservation"] = {
-					["Silken Advisors Favor"] = {
-						location = "Boss/Anub'arash (Silken Court)",
-						itemId = 0,
+					["225575"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["225577"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221077"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
 					},
 				},
-				["Evoker/Devastation"] = {
-					["Locket of Broken Memories"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
+				["Druid/Balance"] = {
+					["225577"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
 					},
-				},
-				["Hunter/Marksmanship"] = {
-					["Locket of Broken Memories"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
+					["221077"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
 					},
 				},
 				["Evoker/Augmentation"] = {
-					["Trailspinner Pendant"] = {
-						location = "Dungeons/Mists of Tirna Scithe",
-						itemId = 0,
+					["178707"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
+					},
+					["212448"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
 					},
 				},
-				["Monk/Windwalker"] = {
-					["Sureki Zealots Insignia"] = {
-						location = "Boss/Sikran - Nerub-ar Palace",
-						itemId = 0,
+				["Evoker/Devastation"] = {
+					["212448"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221181"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/The Coaglamation/City of Threads",
 					},
 				},
-				["Monk/Mistweaver"] = {
-					["Sureki Zealots Insignia"] = {
-						location = "Boss/Sikran (Nerub-ar Palace)",
-						itemId = 0,
+				["Death Knight/Unholy"] = {
+					["221077"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
+					},
+					["225577"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
 					},
 				},
-				["Hunter/Survival"] = {
-					["Trailspinner Pendant"] = {
-						location = "Dungeons/Mists of Tirna Scithe",
-						itemId = 0,
+				["Death Knight/Frost"] = {
+					["178707"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
+					},
+					["212448"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
 					},
 				},
 				["Mage/Frost"] = {
-					["Sureki Zealots Insignia"] = {
-						location = "Boss/Sikran",
-						itemId = 0,
+					["225577"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221077"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
 					},
 				},
-				["Mage/Arcane"] = {
-					["Sureki Zealots Insignia"] = {
-						location = "Boss/Sikran",
-						itemId = 0,
+				["Hunter/Survival"] = {
+					["178707"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
 					},
-				},
-				["Monk/Brewmaster"] = {
-					["Silken Advisors Favor"] = {
-						location = "Boss/The Silken Court (Nerub-ar Palace)",
-						itemId = 0,
-					},
-				},
-				["Mage/Fire"] = {
-					["Sureki Zealots Insignia"] = {
-						location = "Boss/Sikran",
-						itemId = 0,
+					["212448"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
 					},
 				},
 				["Paladin/Holy"] = {
-					["Sureki Zealots Insignia"] = {
-						location = "Boss/Sikran",
-						itemId = 0,
+					["225577"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221181"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/The Coaglamation/City of Threads",
 					},
 				},
-				["Paladin/Protection"] = {
-					["Sureki Zealots Insignia"] = {
-						location = "Boss/Sikran",
-						itemId = 0,
+				["Hunter/Marksmanship"] = {
+					["212448"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["178707"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
 					},
 				},
-				["Priest/Shadow"] = {
-					["Sureki Zealots Insignia"] = {
-						location = "Boss/Sikran",
-						itemId = 0,
+				["Monk/Brewmaster"] = {
+					["225575"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["221181"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/The Coaglamation/City of Threads",
 					},
 				},
-				["Priest/Discipline"] = {
-					["Sureki Zealots Insignia"] = {
-						location = "Boss/Sikran",
-						itemId = 0,
+				["Mage/Arcane"] = {
+					["225577"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221077"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
+					},
+				},
+				["Mage/Fire"] = {
+					["225577"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221077"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
 					},
 				},
 				["Paladin/Retribution"] = {
-					["Sureki Zealots Insignia"] = {
-						location = "Boss/Sikran",
-						itemId = 0,
+					["225577"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221077"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
 					},
 				},
-				["Shaman/Elemental"] = {
-					["Amulet of Earthen Craftsmanship"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
+				["Paladin/Protection"] = {
+					["225577"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221077"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
 					},
 				},
-				["Priest/Holy"] = {
-					["Trailspinner Pendant"] = {
-						location = "Dungeons/Mists of Tirna Scithe",
-						itemId = 0,
+				["Priest/Discipline"] = {
+					["225577"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
 					},
-				},
-				["Rogue/Assassination"] = {
-					["Sureki Zealots Insignia"] = {
-						location = "Boss/Sikran",
-						itemId = 0,
-					},
-				},
-				["Warrior/Arms"] = {
-					["Sureki Zealots Insignia"] = {
-						location = "Boss/Sikran",
-						itemId = 0,
-					},
-				},
-				["Warrior/Fury"] = {
-					["Emergency Stop Keychain"] = {
-						location = "Dungeons/The Stonevault",
-						itemId = 0,
-					},
-				},
-				["Rogue/Subtlety"] = {
-					["Silken Advisors Favor"] = {
-						location = "Boss/Anub'arash",
-						itemId = 0,
-					},
-				},
-				["Warlock/Demonology"] = {
-					["Sureki Zealots Insignia"] = {
-						location = "Boss/Sikran",
-						itemId = 0,
-					},
-				},
-				["Warlock/Affliction"] = {
-					["Sureki Zealots Insignia"] = {
-						location = "Boss/Sikran",
-						itemId = 0,
-					},
-				},
-				["Warlock/Destruction"] = {
-					["Sureki Zealots Insignia"] = {
-						location = "Boss/Sikran",
-						itemId = 0,
+					["221077"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
 					},
 				},
 				["Rogue/Outlaw"] = {
-					["Elders Hemolymphal Periapt"] = {
-						location = "Dungeons/City of Threads",
-						itemId = 0,
+					["221181"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/The Coaglamation/City of Threads",
+					},
+					["212448"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+				},
+				["Rogue/Assassination"] = {
+					["225577"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221077"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
+					},
+				},
+				["Priest/Shadow"] = {
+					["225577"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221077"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
 					},
 				},
 				["Shaman/Restoration"] = {
-					["Locket of Broken Memories"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
+					["212448"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221181"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/The Coaglamation/City of Threads",
+					},
+				},
+				["Priest/Holy"] = {
+					["178707"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
+					},
+					["225575"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+				},
+				["Rogue/Subtlety"] = {
+					["225575"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["178707"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
+					},
+				},
+				["Shaman/Elemental"] = {
+					["215136"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["212448"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221077"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
+					},
+				},
+				["Warlock/Demonology"] = {
+					["225577"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221077"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
 					},
 				},
 				["Warrior/Protection"] = {
-					["Sureki Zealots Insignia"] = {
-						location = "Boss/Sikran",
-						itemId = 0,
+					["225577"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221077"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
+					},
+				},
+				["Warlock/Affliction"] = {
+					["225577"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221077"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
+					},
+				},
+				["Warrior/Arms"] = {
+					["225577"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["178707"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
+					},
+				},
+				["Warrior/Fury"] = {
+					["221077"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
+					},
+					["225577"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+				},
+				["Warlock/Destruction"] = {
+					["225577"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221077"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
 					},
 				},
 			},
 			INVTYPE_SHOULDER = {
-				["Death Knight/Blood"] = {
-					["Exhumed Centurions Spikes"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Druid/Balance"] = {
-					["Maw of the Greatlynx"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
 				["Demon Hunter/Havoc"] = {
-					["War-Mantle of the Hypogeal Nemesis"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212063"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221094"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Void Speaker Eirich/The Stonevault",
 					},
 				},
 				["Hunter/Beast Mastery"] = {
-					["Lightless Scavengers Taxidermy"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212018"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Death Knight/Blood"] = {
+					["212000"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["133294"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
 					},
 				},
 				["Demon Hunter/Vengeance"] = {
-					["War-Mantle of the Hypogeal Nemesis"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Death Knight/Frost"] = {
-					["Exhumed Centurions Spikes"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Death Knight/Unholy"] = {
-					["Exhumed Centurions Spikes"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212063"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 				["Evoker/Preservation"] = {
-					["Fumaroles of the Destroyer"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212027"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Evoker/Devastation"] = {
-					["Fumaroles of the Destroyer"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Hunter/Marksmanship"] = {
-					["Lightless Scavengers Taxidermy"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Druid/Balance"] = {
+					["212054"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 				["Evoker/Augmentation"] = {
-					["Fumaroles of the Destroyer"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212027"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Monk/Windwalker"] = {
-					["Gatecrashers Enduring Effigy"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Evoker/Devastation"] = {
+					["212027"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221140"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
 					},
 				},
-				["Monk/Mistweaver"] = {
-					["Frame of Felled Insurgents"] = {
-						location = "Boss/Queen Ansurek (Nerub-ar Palace)",
-						itemId = 0,
+				["Death Knight/Unholy"] = {
+					["212000"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Hunter/Survival"] = {
-					["Lightless Scavengers Taxidermy"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Death Knight/Frost"] = {
+					["212000"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221185"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
 					},
 				},
 				["Mage/Frost"] = {
-					["Beacons of Violet Rebirth"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212090"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221135"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
 					},
 				},
-				["Mage/Arcane"] = {
-					["Beacons of Violet Rebirth"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Monk/Brewmaster"] = {
-					["Gatecrashers Enduring Effigy"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Mage/Fire"] = {
-					["Beacons of Violet Rebirth"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Hunter/Survival"] = {
+					["212018"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 				["Paladin/Holy"] = {
-					["Flesh Connectors Epaulets"] = {
-						location = "Dungeons/City of Threads",
-						itemId = 0,
+					["221185"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
+					},
+					["212424"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
 					},
 				},
-				["Paladin/Protection"] = {
-					["Entombed Seraphs Plumes"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Hunter/Marksmanship"] = {
+					["212018"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Priest/Shadow"] = {
-					["Living Lusters Dominion"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Monk/Brewmaster"] = {
+					["212045"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Priest/Discipline"] = {
-					["Living Lusters Dominion"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Mage/Arcane"] = {
+					["212090"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221135"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
+					},
+				},
+				["Mage/Fire"] = {
+					["212090"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["178740"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Amarth/The Necrotic Wake",
 					},
 				},
 				["Paladin/Retribution"] = {
-					["Entombed Seraphs Plumes"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["211991"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Shaman/Elemental"] = {
-					["Concourse of the Forgotten Reservoir"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
+				["Paladin/Protection"] = {
+					["211991"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Priest/Holy"] = {
-					["Living Lusters Dominion"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Rogue/Assassination"] = {
-					["Kareshi Phantoms Shoulderpads"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Warrior/Arms"] = {
-					["Warsculptors Horned Spaulders"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Warrior/Fury"] = {
-					["Warsculptors Horned Spaulders"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Rogue/Subtlety"] = {
-					["Kareshi Phantoms Shoulderpads"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Warlock/Demonology"] = {
-					["Hexflame Covens Altar"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Warlock/Affliction"] = {
-					["Hexflame Covens Altar"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Warlock/Destruction"] = {
-					["Hexflame Covens Altar"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Priest/Discipline"] = {
+					["212081"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 				["Rogue/Outlaw"] = {
-					["Frame of Felled Insurgents"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["212036"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Rogue/Assassination"] = {
+					["212036"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Priest/Shadow"] = {
+					["212081"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 				["Shaman/Restoration"] = {
-					["Concourse of the Forgotten Reservoir"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212009"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Priest/Holy"] = {
+					["212081"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Rogue/Subtlety"] = {
+					["212036"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221175"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Nx/City of Threads",
+					},
+				},
+				["Shaman/Elemental"] = {
+					["212009"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["178695"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
+					},
+				},
+				["Warlock/Demonology"] = {
+					["212072"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 				["Warrior/Protection"] = {
-					["Vile Butchers Pauldrons"] = {
-						location = "Dungeons/The Necrotic Wake",
-						itemId = 0,
+					["178749"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
+					},
+					["211982"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Warlock/Affliction"] = {
+					["212072"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Warrior/Arms"] = {
+					["211982"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221185"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
+					},
+				},
+				["Warrior/Fury"] = {
+					["211982"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["133294"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
+					},
+				},
+				["Warlock/Destruction"] = {
+					["212072"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 			},
 			INVTYPE_CLOAK = {
-				["Death Knight/Blood"] = {
-					["Wings of Shattered Sorrow"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
-					},
-				},
-				["Druid/Balance"] = {
-					["Royal Emblem of Nerubar"] = {
-						location = "Boss/Ulgrax the Devourer",
-						itemId = 0,
-					},
-				},
 				["Demon Hunter/Havoc"] = {
-					["Wings of Shattered Sorrow"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
+					["225574"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["133363"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
 					},
 				},
 				["Hunter/Beast Mastery"] = {
-					["Wings of Shattered Sorrow"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
+					["225574"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["212015"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Other/Unknown",
+					},
+				},
+				["Death Knight/Blood"] = {
+					["225574"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221154"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
 					},
 				},
 				["Demon Hunter/Vengeance"] = {
-					["Wings of Shattered Sorrow"] = {
-						location = "Boss/Rasha'nan (Nerub-ar Palace)",
-						itemId = 0,
+					["225574"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
 					},
-				},
-				["Death Knight/Frost"] = {
-					["Wings of Shattered Sorrow"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
-					},
-				},
-				["Death Knight/Unholy"] = {
-					["Consecrated Cloak"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
+					["133292"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
 					},
 				},
 				["Evoker/Preservation"] = {
-					["Royal Emblem of Nerubar"] = {
-						location = "Boss/Ulgrax the Devourer",
-						itemId = 0,
+					["212446"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					},
+					["221088"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
-				["Evoker/Devastation"] = {
-					["Wings of Shattered Sorrow"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
+				["Druid/Balance"] = {
+					["212446"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
 					},
-				},
-				["Hunter/Marksmanship"] = {
-					["Consecrated Cloak"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
+					["221088"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
 				["Evoker/Augmentation"] = {
-					["Royal Emblem of Nerubar Troggstitched Drape Wings of Shattered Sorrow "] = {
-						location = "Boss/Ulgrax the DevourerGrim BatolRasha'nan",
-						itemId = 0,
+					["212446"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					},
+					["133363"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
 					},
 				},
-				["Monk/Windwalker"] = {
-					["Wings of Shattered Sorrow"] = {
-						location = "Boss/Rasha'nan - Nerub-ar Palace",
-						itemId = 0,
+				["Evoker/Devastation"] = {
+					["225574"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["133363"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
 					},
 				},
-				["Monk/Mistweaver"] = {
-					["Azureborne Cloak"] = {
-						location = "Dungeons/Grim Batol",
-						itemId = 0,
+				["Death Knight/Unholy"] = {
+					["221667"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Unknown",
+					},
+					["225574"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221088"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
-				["Hunter/Survival"] = {
-					["Consecrated Cloak"] = {
-						location = "Boss/Crafted",
-						itemId = 0,
+				["Death Knight/Frost"] = {
+					["225574"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["133363"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
 					},
 				},
 				["Mage/Frost"] = {
-					["Royal Emblem of Nerubar"] = {
-						location = "Boss/[DNT] Tug of War Stalker",
-						itemId = 0,
+					["212446"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					},
+					["221154"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
 					},
 				},
-				["Mage/Arcane"] = {
-					["Ward of Violet Rebirth"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Hunter/Survival"] = {
+					["222817"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
 					},
-				},
-				["Monk/Brewmaster"] = {
-					["Wings of Shattered Sorrow"] = {
-						location = "Boss/Rasha'nan (Nerub-ar Palace)",
-						itemId = 0,
+					["212446"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
 					},
-				},
-				["Mage/Fire"] = {
-					["Anvilhide Cape"] = {
-						location = "Dungeons/The Stonevault",
-						itemId = 0,
+					["221088"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
 				["Paladin/Holy"] = {
-					["Wings of Shattered Sorrow"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
+					["225574"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221154"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
 					},
 				},
-				["Paladin/Protection"] = {
-					["Wings of Shattered Sorrow"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
+				["Hunter/Marksmanship"] = {
+					["222817"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["225574"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["133363"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
 					},
 				},
-				["Priest/Shadow"] = {
-					["Wings of Shattered Sorrow"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
+				["Monk/Brewmaster"] = {
+					["225574"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["56126"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
 					},
 				},
-				["Priest/Discipline"] = {
-					["Wings of Shattered Sorrow"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
+				["Mage/Arcane"] = {
+					["212087"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Unknown",
+					},
+					["212446"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					},
+					["221088"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
+					},
+				},
+				["Mage/Fire"] = {
+					["221088"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
+					},
+					["225574"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
 					},
 				},
 				["Paladin/Retribution"] = {
-					["Royal Emblem of Nerubar"] = {
-						location = "Boss/[DNT] Tug of War Stalker",
-						itemId = 0,
+					["212446"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					},
+					["221088"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
-				["Shaman/Elemental"] = {
-					["Consecrated Cloak"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
+				["Paladin/Protection"] = {
+					["225574"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221088"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
-				["Priest/Holy"] = {
-					["Royal Emblem of Nerubar"] = {
-						location = "Boss/Ulgrax the Devourer",
-						itemId = 0,
+				["Priest/Discipline"] = {
+					["225574"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
 					},
-				},
-				["Rogue/Assassination"] = {
-					["Wings of Shattered Sorrow"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
-					},
-				},
-				["Warrior/Arms"] = {
-					["Consecrated Cloak"] = {
-						location = "Boss/Crafted",
-						itemId = 0,
-					},
-				},
-				["Warrior/Fury"] = {
-					["Anvilhide Cape"] = {
-						location = "Dungeons/The Stonevault",
-						itemId = 0,
-					},
-				},
-				["Rogue/Subtlety"] = {
-					["Azureborne Cloak"] = {
-						location = "Dungeons/Grim Batol",
-						itemId = 0,
-					},
-				},
-				["Warlock/Demonology"] = {
-					["Wings of Shattered Sorrow"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
-					},
-				},
-				["Warlock/Affliction"] = {
-					["Wings of Shattered Sorrow"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
-					},
-				},
-				["Warlock/Destruction"] = {
-					["Wings of Shattered Sorrow"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
+					["221088"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
 				["Rogue/Outlaw"] = {
-					["Wings of Shattered Sorrow"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
+					["225574"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221154"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
+					},
+				},
+				["Rogue/Assassination"] = {
+					["225574"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["133363"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
+					},
+				},
+				["Priest/Shadow"] = {
+					["225574"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221088"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
 				["Shaman/Restoration"] = {
-					["Wings of Shattered Sorrow"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
+					["225574"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221154"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
+					},
+				},
+				["Priest/Holy"] = {
+					["212446"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					},
+					["56126"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
+					},
+				},
+				["Rogue/Subtlety"] = {
+					["133292"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
+					},
+					["225574"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+				},
+				["Shaman/Elemental"] = {
+					["221667"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Other/Unknown",
+					},
+					["221088"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
+					},
+				},
+				["Warlock/Demonology"] = {
+					["225574"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221088"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
 				["Warrior/Protection"] = {
-					["Wings of Shattered Sorrow"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
+					["225574"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221088"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
+					},
+				},
+				["Warlock/Affliction"] = {
+					["225574"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221088"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
+					},
+				},
+				["Warrior/Arms"] = {
+					["222817"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["225574"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221088"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
+					},
+				},
+				["Warrior/Fury"] = {
+					["221088"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
+					},
+					["212446"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					},
+				},
+				["Warlock/Destruction"] = {
+					["225574"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221088"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
 			},
 			INVTYPE_CHEST = {
-				["Death Knight/Blood"] = {
-					["Exhumed Centurions Breastplate"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Druid/Balance"] = {
-					["Hide of the Greatlynx"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
 				["Demon Hunter/Havoc"] = {
-					["Chestguard of the Hypogeal Nemesis"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212068"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["133297"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
 					},
 				},
 				["Hunter/Beast Mastery"] = {
-					["Lightless Scavengers Tunic"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212023"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Death Knight/Blood"] = {
+					["212005"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221139"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
 					},
 				},
 				["Demon Hunter/Vengeance"] = {
-					["Chestguard of the Hypogeal Nemesis"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Death Knight/Frost"] = {
-					["Exhumed Centurions Breastplate"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Death Knight/Unholy"] = {
-					["Exhumed Centurions Breastplate"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212068"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 				["Evoker/Preservation"] = {
-					["Scales of the Destroyer"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212032"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Evoker/Devastation"] = {
-					["Scales of the Destroyer"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Hunter/Marksmanship"] = {
-					["Lightless Scavengers Tunic"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Druid/Balance"] = {
+					["212059"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 				["Evoker/Augmentation"] = {
-					["Scales of the Destroyer"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212032"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Monk/Windwalker"] = {
-					["Gatecrashers Gi"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Evoker/Devastation"] = {
+					["212032"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221147"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
 					},
 				},
-				["Monk/Mistweaver"] = {
-					["Gatecrashers Gi"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Death Knight/Unholy"] = {
+					["212005"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Hunter/Survival"] = {
-					["Goresplattered Membrane"] = {
-						location = "Boss/The Bloodbound Horror",
-						itemId = 0,
+				["Death Knight/Frost"] = {
+					["212005"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221139"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
 					},
 				},
 				["Mage/Frost"] = {
-					["Runecoat of Violet Rebirth"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212095"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221095"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Void Speaker Eirich/The Stonevault",
 					},
 				},
-				["Mage/Arcane"] = {
-					["Runecoat of Violet Rebirth"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Hunter/Survival"] = {
+					["212421"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					},
-				},
-				["Monk/Brewmaster"] = {
-					["Gatecrashers Gi"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Mage/Fire"] = {
-					["Runecoat of Violet Rebirth"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212023"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 				["Paladin/Holy"] = {
-					["Entombed Seraphs Breastplate"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["211996"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Paladin/Protection"] = {
-					["Entombed Seraphs Breastplate"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Hunter/Marksmanship"] = {
+					["212023"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Priest/Shadow"] = {
-					["Living Lusters Raiment"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Monk/Brewmaster"] = {
+					["212050"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Priest/Discipline"] = {
-					["Living Lusters Raiment"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Mage/Arcane"] = {
+					["212095"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221095"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Void Speaker Eirich/The Stonevault",
+					},
+				},
+				["Mage/Fire"] = {
+					["212095"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221095"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Void Speaker Eirich/The Stonevault",
 					},
 				},
 				["Paladin/Retribution"] = {
-					["Entombed Seraphs Breastplate"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["211996"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Shaman/Elemental"] = {
-					["Vestments of the Forgotten Reservoir"] = {
-						location = "Boss/Broodtwister Ovi'nax",
-						itemId = 0,
+				["Paladin/Protection"] = {
+					["211996"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Priest/Holy"] = {
-					["Bile-Soaked Harness"] = {
-						location = "Boss/Ulgrax the Devourer",
-						itemId = 0,
-					},
-				},
-				["Rogue/Assassination"] = {
-					["Kareshi Phantoms Nexus Wraps"] = {
-						location = "Boss/Broodtwister Ovi'nax",
-						itemId = 0,
-					},
-				},
-				["Warrior/Arms"] = {
-					["Warsculptors Furred Plastron"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Warrior/Fury"] = {
-					["Warsculptors Furred Plastron"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Rogue/Subtlety"] = {
-					["Kareshi Phantoms Nexus Wraps"] = {
-						location = "Boss/Broodtwister Ovi'nax",
-						itemId = 0,
-					},
-				},
-				["Warlock/Demonology"] = {
-					["Hexflame Covens Ritual Harness"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Warlock/Affliction"] = {
-					["Hexflame Covens Ritual Harness"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Warlock/Destruction"] = {
-					["Hexflame Covens Ritual Harness"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Priest/Discipline"] = {
+					["212086"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 				["Rogue/Outlaw"] = {
-					["Kareshi Phantoms Nexus Wraps"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212041"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Rogue/Assassination"] = {
+					["212041"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Priest/Shadow"] = {
+					["212086"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 				["Shaman/Restoration"] = {
-					["Vestments of the Forgotten Reservoir"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212014"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Priest/Holy"] = {
+					["212419"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					},
+					["221176"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Nx/City of Threads",
+					},
+				},
+				["Rogue/Subtlety"] = {
+					["212041"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["178744"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
+					},
+				},
+				["Shaman/Elemental"] = {
+					["212014"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221147"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
+					},
+				},
+				["Warlock/Demonology"] = {
+					["212077"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 				["Warrior/Protection"] = {
-					["Warsculptors Furred Plastron"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["211987"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Warlock/Affliction"] = {
+					["212077"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Warrior/Arms"] = {
+					["211987"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221161"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
+					},
+				},
+				["Warrior/Fury"] = {
+					["211987"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221161"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
+					},
+				},
+				["Warlock/Destruction"] = {
+					["212077"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 			},
 			INVTYPE_WRIST = {
-				["Death Knight/Blood"] = {
-					["Everforged Vambraces"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
-					},
-				},
-				["Druid/Balance"] = {
-					["Polluted Spectres Wraps"] = {
-						location = "Boss/The Bloodbound Horror",
-						itemId = 0,
-					},
-				},
 				["Demon Hunter/Havoc"] = {
-					["Polluted Spectres Wraps"] = {
-						location = "Boss/The Bloodbound Horror",
-						itemId = 0,
+					["212438"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["221157"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
 					},
 				},
 				["Hunter/Beast Mastery"] = {
-					["Glyph-Etched Vambraces"] = {
-						location = "Boss/Crafted",
-						itemId = 0,
+					["219342"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["225581"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					},
+					["221174"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Nx/City of Threads",
+					},
+				},
+				["Death Knight/Blood"] = {
+					["222435"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["225587"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["133306"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/General Umbriss/Grim Batol",
 					},
 				},
 				["Demon Hunter/Vengeance"] = {
-					["Scheming Assailers Bands"] = {
-						location = "Dungeons/The Dawnbreaker",
-						itemId = 0,
+					["221142"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
 					},
-				},
-				["Death Knight/Frost"] = {
-					["Everforged Vambraces"] = {
-						location = "Crafting/Blacksmithing",
-						itemId = 0,
-					},
-				},
-				["Death Knight/Unholy"] = {
-					["Bracers of Umbral Mending"] = {
-						location = "Dungeons/Grim Batol",
-						itemId = 0,
+					["225588"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
 				},
 				["Evoker/Preservation"] = {
-					["Throne Defenders Bangles"] = {
-						location = "Boss/Sikran",
-						itemId = 0,
+					["212415"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221174"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Nx/City of Threads",
 					},
 				},
-				["Evoker/Devastation"] = {
-					["Penumbral Rimeguards"] = {
-						location = "Dungeons/City of Threads",
-						itemId = 0,
+				["Druid/Balance"] = {
+					["212438"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					},
-				},
-				["Hunter/Marksmanship"] = {
-					["Glyph-Etched Vambraces"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
+					["221157"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
 					},
 				},
 				["Evoker/Augmentation"] = {
-					["Penumbral Rimeguards"] = {
-						location = "Dungeons/City of Threads",
-						itemId = 0,
+					["221174"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Nx/City of Threads",
+					},
+					["212415"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
 					},
 				},
-				["Monk/Windwalker"] = {
-					["Risen Monstrosity Cuffs"] = {
-						location = "Dungeons/The Necrotic Wake",
-						itemId = 0,
+				["Evoker/Devastation"] = {
+					["221174"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Nx/City of Threads",
+					},
+					["225581"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					},
 				},
-				["Monk/Mistweaver"] = {
-					["Scheming Assailers Bands"] = {
-						location = "Dungeons/The Dawnbreaker",
-						itemId = 0,
+				["Death Knight/Unholy"] = {
+					["133306"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/General Umbriss/Grim Batol",
+					},
+					["225587"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 				},
-				["Hunter/Survival"] = {
-					["Lightless Scavengers Wristguards"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Death Knight/Frost"] = {
+					["222435"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["225587"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["133306"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/General Umbriss/Grim Batol",
 					},
 				},
 				["Mage/Frost"] = {
-					["Skeinspinners Duplicitous Cuffs"] = {
-						location = "Boss/Anub'arash (The Silken Court)",
-						itemId = 0,
+					["225584"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["221182"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/The Coaglamation/City of Threads",
 					},
 				},
-				["Mage/Arcane"] = {
-					["Consecrated Cuffs"] = {
-						location = "Boss/Crafted",
-						itemId = 0,
+				["Hunter/Survival"] = {
+					["212016"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Unknown",
 					},
-				},
-				["Monk/Brewmaster"] = {
-					["Sanguine Experiments Bandages"] = {
-						location = "Boss/Broodtwister Ovi'nax",
-						itemId = 0,
+					["212415"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
 					},
-				},
-				["Mage/Fire"] = {
-					["Skeinspinners Duplicitous Cuffs"] = {
-						location = "Boss/Anub'arash The Silken Court",
-						itemId = 0,
+					["221174"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Nx/City of Threads",
 					},
 				},
 				["Paladin/Holy"] = {
-					["Vociferous Subjugators Bracers"] = {
-						location = "Dungeons/City of Threads",
-						itemId = 0,
+					["221167"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Orator Krix'vizk/City of Threads",
+					},
+					["225587"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 				},
-				["Paladin/Protection"] = {
-					["Bracers of Umbral Mending"] = {
-						location = "Dungeons/Grim Batol",
-						itemId = 0,
+				["Hunter/Marksmanship"] = {
+					["219342"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["225581"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					},
+					["221174"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Nx/City of Threads",
 					},
 				},
-				["Priest/Shadow"] = {
-					["Skeinspinners Duplicitous Cuffs"] = {
-						location = "Boss/Anub'arash",
-						itemId = 0,
+				["Monk/Brewmaster"] = {
+					["225588"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["178702"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Tred'ova/Mists of Tirna Scithe",
 					},
 				},
-				["Priest/Discipline"] = {
-					["Vitriolic Veinwoven Wraps"] = {
-						location = "Dungeons/City of Threads",
-						itemId = 0,
+				["Mage/Arcane"] = {
+					["222815"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["225584"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["221182"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/The Coaglamation/City of Threads",
+					},
+				},
+				["Mage/Fire"] = {
+					["225584"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["221182"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/The Coaglamation/City of Threads",
 					},
 				},
 				["Paladin/Retribution"] = {
-					["Everforged Vambraces"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
+					["222435"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["225587"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["133306"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/General Umbriss/Grim Batol",
 					},
 				},
-				["Shaman/Elemental"] = {
-					["Kyvezas Covert Clasps"] = {
-						location = "Boss/Nexus-Princess Ky'veza",
-						itemId = 0,
+				["Paladin/Protection"] = {
+					["133306"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/General Umbriss/Grim Batol",
+					},
+					["212437"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
 					},
 				},
-				["Priest/Holy"] = {
-					["Necropolis Lords Shackles"] = {
-						location = "Dungeons/The Necrotic Wake",
-						itemId = 0,
+				["Priest/Discipline"] = {
+					["221182"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/The Coaglamation/City of Threads",
 					},
-				},
-				["Rogue/Assassination"] = {
-					["Rune-Branded Armbands"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
-					},
-				},
-				["Warrior/Arms"] = {
-					["Everforged Vambraces"] = {
-						location = "Boss/Crafted",
-						itemId = 0,
-					},
-				},
-				["Warrior/Fury"] = {
-					["Everforged Vambraces"] = {
-						location = "Boss/Crafted",
-						itemId = 0,
-					},
-				},
-				["Rogue/Subtlety"] = {
-					["Rune-Branded Armbands"] = {
-						location = "Crafting/Leatherworking",
-						itemId = 0,
-					},
-				},
-				["Warlock/Demonology"] = {
-					["Skeinspinners Duplicitous Cuffs"] = {
-						location = "Boss/Anub'arash",
-						itemId = 0,
-					},
-				},
-				["Warlock/Affliction"] = {
-					["Skeinspinners Duplicitous Cuffs"] = {
-						location = "Boss/Anub'arash",
-						itemId = 0,
-					},
-				},
-				["Warlock/Destruction"] = {
-					["Skeinspinners Duplicitous Cuffs"] = {
-						location = "Boss/Anub'arash",
-						itemId = 0,
+					["225584"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
 					},
 				},
 				["Rogue/Outlaw"] = {
-					["Rune-Branded Armbands with  Elemental Focusing Lens"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
+					["219334"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["225588"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["221142"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					},
+				},
+				["Rogue/Assassination"] = {
+					["219334"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["225588"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["221157"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
+					},
+				},
+				["Priest/Shadow"] = {
+					["225584"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["133295"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
 					},
 				},
 				["Shaman/Restoration"] = {
-					["Kyvezas Covert Clasps"] = {
-						location = "Boss/Nexus-Princess Ky'veza",
-						itemId = 0,
+					["225581"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					},
+					["159372"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
+					},
+				},
+				["Priest/Holy"] = {
+					["178782"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Nalthor the Rimebinder/The Necrotic Wake",
+					},
+					["212426"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					},
+				},
+				["Rogue/Subtlety"] = {
+					["219334"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["225588"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["221157"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
+					},
+				},
+				["Shaman/Elemental"] = {
+					["225581"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					},
+					["159372"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
+					},
+				},
+				["Warlock/Demonology"] = {
+					["225584"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["133295"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
 					},
 				},
 				["Warrior/Protection"] = {
-					["Everforged Wrists"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
+					["217848"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Unknown",
+					},
+					["212437"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221167"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Orator Krix'vizk/City of Threads",
+					},
+				},
+				["Warlock/Affliction"] = {
+					["225584"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["133295"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
+					},
+				},
+				["Warrior/Arms"] = {
+					["222435"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["212437"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221167"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Orator Krix'vizk/City of Threads",
+					},
+				},
+				["Warrior/Fury"] = {
+					["222435"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["212437"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221167"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Orator Krix'vizk/City of Threads",
+					},
+				},
+				["Warlock/Destruction"] = {
+					["225584"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["133295"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
 					},
 				},
 			},
 			INVTYPE_HAND = {
-				["Death Knight/Blood"] = {
-					["Exhumed Centurions Gauntlets"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Druid/Balance"] = {
-					["Eviscerators of the Greatlynx"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
 				["Demon Hunter/Havoc"] = {
-					["Rune-Branded Grasps"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
+					["219333"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["212432"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["221180"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/The Coaglamation/City of Threads",
 					},
 				},
 				["Hunter/Beast Mastery"] = {
-					["Glyph-Etched Gauntlets"] = {
-						location = "Boss/Crafted",
-						itemId = 0,
+					["219341"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["212436"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221080"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Skarmorak/The Stonevault",
+					},
+				},
+				["Death Knight/Blood"] = {
+					["212003"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221086"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
 				["Demon Hunter/Vengeance"] = {
-					["Claws of the Hypogeal Nemesis"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Death Knight/Frost"] = {
-					["Exhumed Centurions Gauntlets"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Death Knight/Unholy"] = {
-					["Exhumed Centurions Gauntlets"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212066"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 				["Evoker/Preservation"] = {
-					["Clutches of Paranoia"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["212436"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221162"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
 					},
 				},
-				["Evoker/Devastation"] = {
-					["Rippers of the Destroyer"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Hunter/Marksmanship"] = {
-					["Lightless Scavengers Mitts"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Druid/Balance"] = {
+					["212057"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 				["Evoker/Augmentation"] = {
-					["Rippers of the Destroyer"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212030"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Monk/Windwalker"] = {
-					["Gatecrashers Protectors"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Evoker/Devastation"] = {
+					["212030"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221080"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Skarmorak/The Stonevault",
 					},
 				},
-				["Monk/Mistweaver"] = {
-					["Gatecrashers Protectors"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Death Knight/Unholy"] = {
+					["212003"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Hunter/Survival"] = {
-					["Lightless Scavengers Mitts"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Death Knight/Frost"] = {
+					["212003"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["178706"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
 					},
 				},
 				["Mage/Frost"] = {
-					["Jeweled Gauntlets of Violet Rebirth"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212093"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["178705"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
 					},
 				},
-				["Mage/Arcane"] = {
-					["Jeweled Gauntlets of Violet Rebirth"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Monk/Brewmaster"] = {
-					["Rune-Branded Grasps-With  Writhing Armor Banding  and  Algari Missive of the Quickblade "] = {
-						location = "Boss/Leatherworking (See note)",
-						itemId = 0,
-					},
-				},
-				["Mage/Fire"] = {
-					["Jeweled Gauntlets of Violet Rebirth"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Hunter/Survival"] = {
+					["212021"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 				["Paladin/Holy"] = {
-					["Entombed Seraphs Castigation"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["211994"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Paladin/Protection"] = {
-					["Entombed Seraphs Castigation"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Hunter/Marksmanship"] = {
+					["212021"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Priest/Shadow"] = {
-					["Gory Surgeons Gloves"] = {
-						location = "Dungeons/The Necrotic Wake",
-						itemId = 0,
+				["Monk/Brewmaster"] = {
+					["219333"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["212432"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["221180"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/The Coaglamation/City of Threads",
 					},
 				},
-				["Priest/Discipline"] = {
-					["Living Lusters Touch"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Mage/Arcane"] = {
+					["212093"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221170"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Orator Krix'vizk/City of Threads",
+					},
+				},
+				["Mage/Fire"] = {
+					["212093"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["178705"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
 					},
 				},
 				["Paladin/Retribution"] = {
-					["Entombed Seraphs Castigation"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["211994"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["212418"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
 				},
-				["Shaman/Elemental"] = {
-					["Covenant of the Forgotten Reservoir"] = {
-						location = "Boss/Sikran",
-						itemId = 0,
+				["Paladin/Protection"] = {
+					["211994"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Priest/Holy"] = {
-					["Living Lusters Touch"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Rogue/Assassination"] = {
-					["Kareshi Phantoms Grips"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Warrior/Arms"] = {
-					["Black Blood Injectors"] = {
-						location = "Boss/Broodtwister Ovi'nax",
-						itemId = 0,
-					},
-				},
-				["Warrior/Fury"] = {
-					["Warsculptors Crushers"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Rogue/Subtlety"] = {
-					["Kareshi Phantoms Grips"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Warlock/Demonology"] = {
-					["Hexflame Covens Sleeves"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Warlock/Affliction"] = {
-					["Hexflame Covens Sleeves"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Warlock/Destruction"] = {
-					["Hexflame Covens Sleeves"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Priest/Discipline"] = {
+					["212084"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 				["Rogue/Outlaw"] = {
-					["Kareshi Phantoms Grips"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212039"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Rogue/Assassination"] = {
+					["212039"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Priest/Shadow"] = {
+					["178748"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
+					},
+					["212441"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					},
 				},
 				["Shaman/Restoration"] = {
-					["Covenant of the Forgotten Reservoir"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212012"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Priest/Holy"] = {
+					["212084"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Rogue/Subtlety"] = {
+					["212039"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["159328"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Sergeant Bainbridge/Siege of Boralus",
+					},
+				},
+				["Shaman/Elemental"] = {
+					["212012"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221162"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
+					},
+				},
+				["Warlock/Demonology"] = {
+					["212075"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 				["Warrior/Protection"] = {
-					["Warsculptors Crushers"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["211985"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Warlock/Affliction"] = {
+					["212075"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Warrior/Arms"] = {
+					["212418"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["221086"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
+					},
+				},
+				["Warrior/Fury"] = {
+					["211985"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["159429"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
+					},
+				},
+				["Warlock/Destruction"] = {
+					["212075"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 			},
 			INVTYPE_WAIST = {
-				["Death Knight/Blood"] = {
-					["Everforged Greatbelt"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
-					},
-				},
-				["Druid/Balance"] = {
-					["Devourers Taut Innards"] = {
-						location = "Boss/Ulgrax the Devourer",
-						itemId = 0,
-					},
-				},
 				["Demon Hunter/Havoc"] = {
-					["Shadow Congregants Belt"] = {
-						location = "Dungeons/The Dawnbreaker",
-						itemId = 0,
+					["221134"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
+					},
+					["225583"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
 					},
 				},
 				["Hunter/Beast Mastery"] = {
-					["Lightless Scavengers Bonegirdle"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212017"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Other/Unknown",
+					},
+					["221075"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
+					},
+				},
+				["Death Knight/Blood"] = {
+					["222431"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Other/Crafting",
+					},
+					["159434"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
 					},
 				},
 				["Demon Hunter/Vengeance"] = {
-					["Adrenal Surge Clasp Rune-Branded Waistband"] = {
-						location = "Crafting/Leatherworking",
-						itemId = 0,
+					["219502"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
 					},
-				},
-				["Death Knight/Frost"] = {
-					["Crystal-Fissure Girdle"] = {
-						location = "Dungeons/The Stonevault",
-						itemId = 0,
+					["225583"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
 					},
-				},
-				["Death Knight/Unholy"] = {
-					["Girdle of Somber Ploys"] = {
-						location = "Dungeons/The Dawnbreaker",
-						itemId = 0,
+					["159309"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
 					},
 				},
 				["Evoker/Preservation"] = {
-					["Cinch of Lingering Influence"] = {
-						location = "Dungeons/City of Threads",
-						itemId = 0,
+					["221168"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Orator Krix'vizk/City of Threads",
+					},
+					["225580"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
 				},
-				["Evoker/Devastation"] = {
-					["Accelerated Ascension Coil"] = {
-						location = "Boss/Broodtwister Ovi'nax",
-						itemId = 0,
+				["Druid/Balance"] = {
+					["212425"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
 					},
-				},
-				["Hunter/Marksmanship"] = {
-					["Accelerated Ascension Coil"] = {
-						location = "Boss/Broodtwister Ovi'nax",
-						itemId = 0,
+					["221134"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
 					},
 				},
 				["Evoker/Augmentation"] = {
-					["Glyph-Etched Binding Glyph-Etched Binding"] = {
-						location = "Boss/Crafted",
-						itemId = 0,
+					["219339"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["212414"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["221075"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
 					},
 				},
-				["Monk/Windwalker"] = {
-					["Sapgorger Belt"] = {
-						location = "Dungeons/Mists of Tirna Scithe",
-						itemId = 0,
+				["Evoker/Devastation"] = {
+					["225580"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["221168"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Orator Krix'vizk/City of Threads",
 					},
 				},
-				["Monk/Mistweaver"] = {
-					["Behemoths Eroded Cinch"] = {
-						location = "Boss/Rasha'nan (Nerub-ar Palace)",
-						itemId = 0,
+				["Death Knight/Unholy"] = {
+					["221133"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
+					},
+					["225589"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					},
 				},
-				["Hunter/Survival"] = {
-					["Accelerated Ascension Coil"] = {
-						location = "Boss/Broodtwister Ovi'nax",
-						itemId = 0,
+				["Death Knight/Frost"] = {
+					["221079"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Skarmorak/The Stonevault",
+					},
+					["225589"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					},
 				},
 				["Mage/Frost"] = {
-					["Acrid Ascendants Sash"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["225585"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221158"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
 					},
 				},
-				["Mage/Arcane"] = {
-					["Acrid Ascendants Sash"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+				["Hunter/Survival"] = {
+					["225580"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
-				},
-				["Monk/Brewmaster"] = {
-					["Adrenal Surge Clasp"] = {
-						location = "Crafting/Leatherworking",
-						itemId = 0,
-					},
-				},
-				["Mage/Fire"] = {
-					["Consecrated Cord"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
+					["221075"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
 					},
 				},
 				["Paladin/Holy"] = {
-					["Nether Bountys Greatbelt"] = {
-						location = "Boss/Nexus-Princess Ky'veza",
-						itemId = 0,
+					["225589"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					},
+					["133289"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Forgemaster Throngus/Grim Batol",
 					},
 				},
-				["Paladin/Protection"] = {
-					["Girdle of Somber Ploys"] = {
-						location = "Dungeons/The Dawnbreaker",
-						itemId = 0,
+				["Hunter/Marksmanship"] = {
+					["225580"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["159386"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					},
 				},
-				["Priest/Shadow"] = {
-					["Acrid Ascendants Sash"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+				["Monk/Brewmaster"] = {
+					["219502"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["212425"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					},
+					["221134"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
 					},
 				},
-				["Priest/Discipline"] = {
-					["Burrowers Cinch"] = {
-						location = "Dungeons/Ara-Kara, City of Echoes",
-						itemId = 0,
+				["Mage/Arcane"] = {
+					["225585"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221158"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
+					},
+				},
+				["Mage/Fire"] = {
+					["221666"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Unknown",
+					},
+					["225585"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221158"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
 					},
 				},
 				["Paladin/Retribution"] = {
-					["Girdle of Somber Ploys"] = {
-						location = "Dungeons/The Dawnbreaker",
-						itemId = 0,
+					["221133"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
+					},
+					["225589"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					},
 				},
-				["Shaman/Elemental"] = {
-					["Lost Watchers Remains"] = {
-						location = "Boss/The Bloodbound Horror",
-						itemId = 0,
+				["Paladin/Protection"] = {
+					["221133"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
+					},
+					["225589"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					},
 				},
-				["Priest/Holy"] = {
-					["Acrid Ascendants Sash"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+				["Priest/Discipline"] = {
+					["221158"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
 					},
-				},
-				["Rogue/Assassination"] = {
-					["Rune-Branded Waistband"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
-					},
-				},
-				["Warrior/Arms"] = {
-					["Crystal-Fissure Girdle"] = {
-						location = "Dungeons/The Stonevault",
-						itemId = 0,
-					},
-				},
-				["Warrior/Fury"] = {
-					["Girdle of Somber Ploys"] = {
-						location = "Dungeons/The Dawnbreaker",
-						itemId = 0,
-					},
-				},
-				["Rogue/Subtlety"] = {
-					["Devourers Taut Innards"] = {
-						location = "Boss/[DNT] Tug of War Stalker",
-						itemId = 0,
-					},
-				},
-				["Warlock/Demonology"] = {
-					["Acrid Ascendants Sash"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
-					},
-				},
-				["Warlock/Affliction"] = {
-					["Acrid Ascendants Sash"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
-					},
-				},
-				["Warlock/Destruction"] = {
-					["Acrid Ascendants Sash"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["225585"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 				},
 				["Rogue/Outlaw"] = {
-					["Sapgorger Belt"] = {
-						location = "Dungeons/Mists of Tirna Scithe",
-						itemId = 0,
+					["178699"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Tred'ova/Mists of Tirna Scithe",
+					},
+					["225583"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+				},
+				["Rogue/Assassination"] = {
+					["219331"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["225583"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["133353"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Forgemaster Throngus/Grim Batol",
+					},
+				},
+				["Priest/Shadow"] = {
+					["225585"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221158"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
 					},
 				},
 				["Shaman/Restoration"] = {
-					["Accelerated Ascension Coil"] = {
-						location = "Boss/Broodtwister Ovi'nax",
-						itemId = 0,
+					["225580"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["159386"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					},
+				},
+				["Priest/Holy"] = {
+					["225585"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221087"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
+					},
+				},
+				["Rogue/Subtlety"] = {
+					["212425"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					},
+					["133353"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Forgemaster Throngus/Grim Batol",
+					},
+				},
+				["Shaman/Elemental"] = {
+					["212414"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["159386"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					},
+				},
+				["Warlock/Demonology"] = {
+					["225585"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221158"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
 					},
 				},
 				["Warrior/Protection"] = {
-					["Everforged Waist"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
+					["217849"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Unknown",
+					},
+					["225589"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					},
+					["221133"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
+					},
+				},
+				["Warlock/Affliction"] = {
+					["225585"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221158"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
+					},
+				},
+				["Warrior/Arms"] = {
+					["221079"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Dungeon/Skarmorak/The Stonevault",
+					},
+					["225589"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					},
+					["133289"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Forgemaster Throngus/Grim Batol",
+					},
+				},
+				["Warrior/Fury"] = {
+					["221133"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
+					},
+					["212442"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					},
+				},
+				["Warlock/Destruction"] = {
+					["225585"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221158"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
 					},
 				},
 			},
 			INVTYPE_LEGS = {
-				["Death Knight/Blood"] = {
-					["Exhumed Centurions Chausses"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Druid/Balance"] = {
-					["Leggings of the Greatlynx"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
 				["Demon Hunter/Havoc"] = {
-					["Pantaloons of the Hypogeal Nemesis"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212064"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221153"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
 					},
 				},
 				["Hunter/Beast Mastery"] = {
-					["Lightless Scavengers Stalkings"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212019"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Death Knight/Blood"] = {
+					["212001"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221092"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Void Speaker Eirich/The Stonevault",
 					},
 				},
 				["Demon Hunter/Vengeance"] = {
-					["Pantaloons of the Hypogeal Nemesis"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Death Knight/Frost"] = {
-					["Exhumed Centurions Chausses"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Death Knight/Unholy"] = {
-					["Exhumed Centurions Chausses"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212064"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 				["Evoker/Preservation"] = {
-					["Legguards of the Destroyer"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212028"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Evoker/Devastation"] = {
-					["Liquified Defectors Leggings"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
-					},
-				},
-				["Hunter/Marksmanship"] = {
-					["Lightless Scavengers Stalkings"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Druid/Balance"] = {
+					["212055"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 				["Evoker/Augmentation"] = {
-					["Legguards of the Destroyer"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212028"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Monk/Windwalker"] = {
-					["Gatecrashers Kilt"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Evoker/Devastation"] = {
+					["212435"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221186"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
 					},
 				},
-				["Monk/Mistweaver"] = {
-					["Gatecrashers Kilt"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Death Knight/Unholy"] = {
+					["212001"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Hunter/Survival"] = {
-					["Lightless Scavengers Stalkings"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Death Knight/Frost"] = {
+					["212001"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["178739"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Amarth/The Necrotic Wake",
 					},
 				},
 				["Mage/Frost"] = {
-					["Voidspoken Sarong"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["212434"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221164"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
 					},
 				},
-				["Mage/Arcane"] = {
-					["Coattails of Violet Rebirth"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Monk/Brewmaster"] = {
-					["Gatecrashers Kilt"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Mage/Fire"] = {
-					["Coattails of Violet Rebirth"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Hunter/Survival"] = {
+					["212019"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 				["Paladin/Holy"] = {
-					["Entombed Seraphs Greaves"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["211992"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Paladin/Protection"] = {
-					["Entombed Seraphs Greaves"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Hunter/Marksmanship"] = {
+					["212019"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["212435"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 				},
-				["Priest/Shadow"] = {
-					["Living Lusters Trousers"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Monk/Brewmaster"] = {
+					["212046"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Priest/Discipline"] = {
-					["Living Lusters Trousers"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Mage/Arcane"] = {
+					["212091"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221076"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
+					},
+				},
+				["Mage/Fire"] = {
+					["212091"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221076"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
 					},
 				},
 				["Paladin/Retribution"] = {
-					["Legplates of Broken Trust"] = {
-						location = "Dungeons/The Stonevault",
-						itemId = 0,
+					["221092"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Void Speaker Eirich/The Stonevault",
+					},
+					["211992"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Shaman/Elemental"] = {
-					["Sarong of the Forgotten Reservoir"] = {
-						location = "Boss/Nexus-Princess Ky'veza",
-						itemId = 0,
+				["Paladin/Protection"] = {
+					["211992"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
-				["Priest/Holy"] = {
-					["Living Lusters Trousers"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Rogue/Assassination"] = {
-					["Kareshi Phantoms Leggings"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Warrior/Arms"] = {
-					["Warsculptors Cuisses"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Warrior/Fury"] = {
-					["Warsculptors Cuisses"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Rogue/Subtlety"] = {
-					["Kareshi Phantoms Leggings"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Warlock/Demonology"] = {
-					["Hexflame Covens Leggings"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Warlock/Affliction"] = {
-					["Hexflame Covens Leggings"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
-					},
-				},
-				["Warlock/Destruction"] = {
-					["Hexflame Covens Leggings"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Priest/Discipline"] = {
+					["212082"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 				["Rogue/Outlaw"] = {
-					["Rune-Branded Legwraps with  Elemental Focusing Lens"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
+					["219332"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["212423"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					},
+					["133354"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
+					},
+				},
+				["Rogue/Assassination"] = {
+					["212037"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Priest/Shadow"] = {
+					["212082"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 				["Shaman/Restoration"] = {
-					["Liquified Defectors Leggings"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["212435"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["178778"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Nalthor the Rimebinder/The Necrotic Wake",
+					},
+				},
+				["Priest/Holy"] = {
+					["212082"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Rogue/Subtlety"] = {
+					["212037"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221153"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					},
+				},
+				["Shaman/Elemental"] = {
+					["212010"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["221186"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
+					},
+				},
+				["Warlock/Demonology"] = {
+					["212073"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 				["Warrior/Protection"] = {
-					["Warsculptors Cuisses"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["211983"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Warlock/Affliction"] = {
+					["212073"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+				},
+				["Warrior/Arms"] = {
+					["211983"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["178701"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Tred'ova/Mists of Tirna Scithe",
+					},
+				},
+				["Warrior/Fury"] = {
+					["211983"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
+					},
+					["178701"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Tred'ova/Mists of Tirna Scithe",
+					},
+				},
+				["Warlock/Destruction"] = {
+					["212073"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Dungeon/Ab'xal/City of Threads",
 					},
 				},
 			},
 			INVTYPE_FEET = {
-				["Death Knight/Blood"] = {
-					["Shattershell Greaves"] = {
-						location = "Boss/Anub'arash",
-						itemId = 0,
-					},
-				},
-				["Druid/Balance"] = {
-					["Whisperers Echoing Steps"] = {
-						location = "Dungeons/City of Threads",
-						itemId = 0,
-					},
-				},
 				["Demon Hunter/Havoc"] = {
-					["Whisperers Echoing Steps"] = {
-						location = "Dungeons/City of Threads",
-						itemId = 0,
+					["221169"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Orator Krix'vizk/City of Threads",
+					},
+					["212445"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
 					},
 				},
 				["Hunter/Beast Mastery"] = {
-					["Lightless Scavengers Footpads"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["212022"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Other/Unknown",
+					},
+					["159379"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
+					},
+				},
+				["Death Knight/Blood"] = {
+					["212443"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["222429"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Other/Crafting",
+					},
+					["221178"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/The Coaglamation/City of Threads",
 					},
 				},
 				["Demon Hunter/Vengeance"] = {
-					["Besiegers Deckstalkers"] = {
-						location = "Dungeons/Siege of Boralus",
-						itemId = 0,
+					["159320"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
 					},
-				},
-				["Death Knight/Frost"] = {
-					["Ballast Sinkers"] = {
-						location = "Dungeons/Siege of Boralus",
-						itemId = 0,
-					},
-				},
-				["Death Knight/Unholy"] = {
-					["Boots of the Black Bulwark"] = {
-						location = "Boss/The Bloodbound Horror",
-						itemId = 0,
+					["212445"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
 					},
 				},
 				["Evoker/Preservation"] = {
-					["Rashanans Grotesque Talons"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
+					["225586"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["159379"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
 					},
 				},
-				["Evoker/Devastation"] = {
-					["Rashanans Grotesque Talons"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
+				["Druid/Balance"] = {
+					["221169"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Orator Krix'vizk/City of Threads",
 					},
-				},
-				["Hunter/Marksmanship"] = {
-					["Rashanans Grotesque Talons"] = {
-						location = "Boss/Rasha'nan",
-						itemId = 0,
+					["212445"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
 					},
 				},
 				["Evoker/Augmentation"] = {
-					["Sure-Foot Sabatons"] = {
-						location = "Dungeons/Siege of Boralus",
-						itemId = 0,
+					["159379"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
+					},
+					["225586"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
 					},
 				},
-				["Monk/Windwalker"] = {
-					["Chitin-Spiked Jackboots"] = {
-						location = "Boss/Sikran - Nerub-ar Palace",
-						itemId = 0,
+				["Evoker/Devastation"] = {
+					["225586"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221152"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
 					},
 				},
-				["Monk/Mistweaver"] = {
-					["Besiegers Deckstalkers"] = {
-						location = "Dungeons/Siege of Boralus",
-						itemId = 0,
+				["Death Knight/Unholy"] = {
+					["225590"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["159428"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					},
 				},
-				["Hunter/Survival"] = {
-					["Defiance Crushers Sabatons"] = {
-						location = "Dungeons/The Dawnbreaker",
-						itemId = 0,
+				["Death Knight/Frost"] = {
+					["159428"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					},
+					["225590"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					},
 				},
 				["Mage/Frost"] = {
-					["Consecrated Slippers"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
+					["222814"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["225582"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["221149"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
 					},
 				},
-				["Mage/Arcane"] = {
-					["Slippers of Violet Rebirth"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+				["Hunter/Survival"] = {
+					["221202"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
 					},
-				},
-				["Monk/Brewmaster"] = {
-					["Fleeting Massacre Footpads"] = {
-						location = "Boss/Nexus-Princess Ky'veza (Nerub-ar Palace)",
-						itemId = 0,
+					["225586"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
 					},
-				},
-				["Mage/Fire"] = {
-					["Tainted Earthshard Walkers"] = {
-						location = "Dungeons/The Stonevault",
-						itemId = 0,
+					["133293"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
 					},
 				},
 				["Paladin/Holy"] = {
-					["Ballast Sinkers"] = {
-						location = "Dungeons/Siege of Boralus",
-						itemId = 0,
+					["159428"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					},
+					["225590"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["221178"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/The Coaglamation/City of Threads",
 					},
 				},
-				["Paladin/Protection"] = {
-					["Boots of the Black Bulwark"] = {
-						location = "Boss/The Bloodbound Horror",
-						itemId = 0,
+				["Hunter/Marksmanship"] = {
+					["225586"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["133293"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
 					},
 				},
-				["Priest/Shadow"] = {
-					["Assimilated Eggshell Slippers"] = {
-						location = "Boss/Broodtwister Ovi'nax",
-						itemId = 0,
+				["Monk/Brewmaster"] = {
+					["225591"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					},
+					["159320"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
 					},
 				},
-				["Priest/Discipline"] = {
-					["Tainted Earthshard Walkers"] = {
-						location = "Dungeons/The Stonevault",
-						itemId = 0,
+				["Mage/Arcane"] = {
+					["212094"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Unknown",
+					},
+					["225582"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["221082"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Skarmorak/The Stonevault",
+					},
+				},
+				["Mage/Fire"] = {
+					["221082"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Skarmorak/The Stonevault",
+					},
+					["225582"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
 				},
 				["Paladin/Retribution"] = {
-					["Boots of the Black Bulwark"] = {
-						location = "Boss/The Bloodbound Horror",
-						itemId = 0,
+					["225590"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["159428"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					},
 				},
-				["Shaman/Elemental"] = {
-					["Red Scale Boots"] = {
-						location = "Dungeons/Grim Batol",
-						itemId = 0,
+				["Paladin/Protection"] = {
+					["225590"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["221178"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/The Coaglamation/City of Threads",
 					},
 				},
-				["Priest/Holy"] = {
-					["Membranous Slippers"] = {
-						location = "Dungeons/The Dawnbreaker",
-						itemId = 0,
+				["Priest/Discipline"] = {
+					["221082"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Skarmorak/The Stonevault",
 					},
-				},
-				["Rogue/Assassination"] = {
-					["Chitin-Spiked Jackboots"] = {
-						location = "Boss/Sikran",
-						itemId = 0,
-					},
-				},
-				["Warrior/Arms"] = {
-					["Boots of the Black Bulwark"] = {
-						location = "Boss/The Bloodbound Horror",
-						itemId = 0,
-					},
-				},
-				["Warrior/Fury"] = {
-					["Boots of the Black Bulwark"] = {
-						location = "Boss/The Bloodbound Horror",
-						itemId = 0,
-					},
-				},
-				["Rogue/Subtlety"] = {
-					["Fleeting Massacre Footpads"] = {
-						location = "Boss/Nexus-Princess Ky'veza",
-						itemId = 0,
-					},
-				},
-				["Warlock/Demonology"] = {
-					["Consecrated Slippers"] = {
-						location = "Crafting/Tailoring",
-						itemId = 0,
-					},
-				},
-				["Warlock/Affliction"] = {
-					["Consecrated Slippers"] = {
-						location = "Crafting/Tailoring",
-						itemId = 0,
-					},
-				},
-				["Warlock/Destruction"] = {
-					["Consecrated Slippers"] = {
-						location = "Crafting/Tailoring",
-						itemId = 0,
+					["225582"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
 				},
 				["Rogue/Outlaw"] = {
-					["Viscera-Stitched Footpads"] = {
-						location = "Dungeons/The Necrotic Wake",
-						itemId = 0,
+					["178731"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Blightbone/The Necrotic Wake",
+					},
+					["212445"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+				},
+				["Rogue/Assassination"] = {
+					["212445"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["225591"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					},
+					["221169"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Orator Krix'vizk/City of Threads",
+					},
+				},
+				["Priest/Shadow"] = {
+					["225582"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["221149"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
 					},
 				},
 				["Shaman/Restoration"] = {
-					["Striders of Restless Malice"] = {
-						location = "Dungeons/The Necrotic Wake",
-						itemId = 0,
+					["178745"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
+					},
+					["225586"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+				},
+				["Priest/Holy"] = {
+					["221149"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
+					},
+					["212416"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+				},
+				["Rogue/Subtlety"] = {
+					["225591"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					},
+					["159320"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
+					},
+				},
+				["Shaman/Elemental"] = {
+					["133293"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
+					},
+					["225586"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+				},
+				["Warlock/Demonology"] = {
+					["222814"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["212416"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221149"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
 					},
 				},
 				["Warrior/Protection"] = {
-					["Warsculptors Carved Boots"] = {
-						location = "Weekly/Catalyst, Raid, or Vault",
-						itemId = 0,
+					["211986"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Unknown",
+					},
+					["212443"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["221178"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/The Coaglamation/City of Threads",
+					},
+				},
+				["Warlock/Affliction"] = {
+					["222814"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["212416"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221149"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
+					},
+				},
+				["Warrior/Arms"] = {
+					["225590"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["159428"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					},
+				},
+				["Warrior/Fury"] = {
+					["225590"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["159428"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					},
+				},
+				["Warlock/Destruction"] = {
+					["222814"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["212416"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221149"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
 					},
 				},
 			},
 			INVTYPE_FINGER = {
-				["Death Knight/Blood"] = {
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
-					},
-					["Ritual Commanders Ring"] = {
-						location = "Dungeons/The Necrotic Wake",
-						itemId = 0,
-					},
-				},
-				["Druid/Balance"] = {
-					["Writhing Ringworm"] = {
-						location = "Boss/Broodtwister Ovi'nax",
-						itemId = 0,
-					},
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
-					},
-				},
 				["Demon Hunter/Havoc"] = {
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
-					["Seal of the City Watch"] = {
-						location = "Dungeons/Siege of Boralus",
-						itemId = 0,
+					["162542"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Sergeant Bainbridge/Siege of Boralus",
+					},
+					["212447"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["221136"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
 					},
 				},
 				["Hunter/Beast Mastery"] = {
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
-					["Key to the Unseeming"] = {
-						location = "Boss/The Bloodbound Horror",
-						itemId = 0,
+					["212447"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["221136"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
+					},
+					["162542"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Sergeant Bainbridge/Siege of Boralus",
+					},
+				},
+				["Death Knight/Blood"] = {
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["178781"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Nalthor the Rimebinder/The Necrotic Wake",
+					},
+					["225576"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["162541"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Chopper Redhook/Siege of Boralus",
 					},
 				},
 				["Demon Hunter/Vengeance"] = {
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek (Nerub-ar Palace)",
-						itemId = 0,
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
-					["Band of the Ancient Dredger"] = {
-						location = "Dungeons/Siege of Boralus",
-						itemId = 0,
+					["159461"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					},
-				},
-				["Death Knight/Frost"] = {
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["212447"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					},
-					["Band of the Roving Scalawag"] = {
-						location = "Dungeons/Siege of Boralus",
-						itemId = 0,
-					},
-				},
-				["Death Knight/Unholy"] = {
-					["Key to the Unseeming"] = {
-						location = "Boss/The Bloodbound Horror",
-						itemId = 0,
-					},
-					["Circle of Bone"] = {
-						location = "Dungeons/Grim Batol",
-						itemId = 0,
+					["221136"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
 					},
 				},
 				["Evoker/Preservation"] = {
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
-					["Writhing Ringworm"] = {
-						location = "Boss/Broodtwister Ovi'nax",
-						itemId = 0,
+					["225576"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["159461"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					},
+					["221136"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
 					},
 				},
-				["Evoker/Devastation"] = {
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+				["Druid/Balance"] = {
+					["225576"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
-					["Devout Zealots Ring"] = {
-						location = "Dungeons/The Dawnbreaker",
-						itemId = 0,
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
-				},
-				["Hunter/Marksmanship"] = {
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["133286"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/General Umbriss/Grim Batol",
 					},
-					["Seal of the City Watch"] = {
-						location = "Dungeons/Siege of Boralus",
-						itemId = 0,
+					["133299"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
 					},
 				},
 				["Evoker/Augmentation"] = {
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
-					["Binding of Binding"] = {
-						location = "Boss/Crafted",
-						itemId = 0,
+					["215133"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["225576"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["162542"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Sergeant Bainbridge/Siege of Boralus",
+					},
+					["133286"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/General Umbriss/Grim Batol",
 					},
 				},
-				["Monk/Windwalker"] = {
-					["Experiment 08752s Band"] = {
-						location = "Dungeons/City of Threads",
-						itemId = 0,
+				["Evoker/Devastation"] = {
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
-					["Stitchfleshs Misplaced Signet"] = {
-						location = "Dungeons/The Necrotic Wake",
-						itemId = 0,
+					["221136"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
+					},
+					["212447"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["159461"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					},
 				},
-				["Monk/Mistweaver"] = {
-					["Key to the Unseeming"] = {
-						location = "Boss/The Bloodbound Horror (Nerub-ar Palace)",
-						itemId = 0,
+				["Death Knight/Unholy"] = {
+					["212447"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					},
-					["Stitchfleshs Misplaced Signet"] = {
-						location = "Dungeons/The Necrotic Wake",
-						itemId = 0,
+					["133299"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
+					},
+					["225576"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["178736"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Blightbone/The Necrotic Wake",
 					},
 				},
-				["Hunter/Survival"] = {
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+				["Death Knight/Frost"] = {
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
-					["Writhing Ringworm"] = {
-						location = "Boss/Broodtwister Ovi'nax",
-						itemId = 0,
+					["162541"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Chopper Redhook/Siege of Boralus",
+					},
+					["225576"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["221136"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
 					},
 				},
 				["Mage/Frost"] = {
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
-					["Experiment 08752s Band"] = {
-						location = "Dungeons/City of Threads",
-						itemId = 0,
+					["221189"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
+					},
+					["212447"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["221136"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
+					},
+					["178736"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Blightbone/The Necrotic Wake",
 					},
 				},
-				["Mage/Arcane"] = {
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+				["Hunter/Survival"] = {
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
-					["Writhing Ringworm"] = {
-						location = "Boss/Broodtwister Ovi'nax",
-						itemId = 0,
+					["225576"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
-				},
-				["Monk/Brewmaster"] = {
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek (Nerub-ar Palace)",
-						itemId = 0,
+					["162542"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Sergeant Bainbridge/Siege of Boralus",
 					},
-					["Ritual Commanders Ring"] = {
-						location = "Dungeons/The Necrotic Wake",
-						itemId = 0,
-					},
-				},
-				["Mage/Fire"] = {
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
-					},
-					["Key to the Unseeming"] = {
-						location = "Boss/The Bloodbound Horror",
-						itemId = 0,
+					["178781"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Nalthor the Rimebinder/The Necrotic Wake",
 					},
 				},
 				["Paladin/Holy"] = {
-					["Stitchfleshs Misplaced Signet"] = {
-						location = "Dungeons/The Necrotic Wake",
-						itemId = 0,
+					["178736"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Blightbone/The Necrotic Wake",
 					},
-					["Band of the Ancient Dredger"] = {
-						location = "Dungeons/Siege of Boralus",
-						itemId = 0,
+					["159461"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					},
+					["225576"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["212447"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["221189"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
 					},
 				},
-				["Paladin/Protection"] = {
-					["Key to the Unseeming"] = {
-						location = "Boss/The Bloodbound Horror",
-						itemId = 0,
+				["Hunter/Marksmanship"] = {
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["162542"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Sergeant Bainbridge/Siege of Boralus",
+					},
+					["225576"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["221136"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
 					},
 				},
-				["Priest/Shadow"] = {
-					["Key to the Unseeming"] = {
-						location = "Boss/The Bloodbound Horror",
-						itemId = 0,
+				["Monk/Brewmaster"] = {
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["178781"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Nalthor the Rimebinder/The Necrotic Wake",
+					},
+					["225576"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["56445"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Forgemaster Throngus/Grim Batol",
 					},
 				},
-				["Priest/Discipline"] = {
-					["Key to the Unseeming"] = {
-						location = "Boss/The Bloodbound Horror",
-						itemId = 0,
+				["Mage/Arcane"] = {
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
-					["Band of the Ancient Dredger"] = {
-						location = "Dungeons/Siege of Boralus",
-						itemId = 0,
+					["225576"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["212447"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["221136"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
+					},
+					["221189"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
+					},
+				},
+				["Mage/Fire"] = {
+					["225578"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["212447"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["225576"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["133299"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
+					},
+					["221189"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
 					},
 				},
 				["Paladin/Retribution"] = {
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
-					["Writhing Ringworm"] = {
-						location = "Boss/Broodtwister Ovi'nax",
-						itemId = 0,
+					["225576"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
-				},
-				["Shaman/Elemental"] = {
-					["Band of the Ancient Dredger"] = {
-						location = "Dungeons/Siege of Boralus",
-						itemId = 0,
+					["133286"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/General Umbriss/Grim Batol",
 					},
-					["Stitchfleshs Misplaced Signet"] = {
-						location = "Dungeons/The Necrotic Wake",
-						itemId = 0,
-					},
-				},
-				["Priest/Holy"] = {
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
-					},
-					["Band of the Roving Scalawag"] = {
-						location = "Dungeons/Siege of Boralus",
-						itemId = 0,
+					["162541"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Chopper Redhook/Siege of Boralus",
 					},
 				},
-				["Rogue/Assassination"] = {
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+				["Paladin/Protection"] = {
+					["212447"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					},
-					["Seal of the City Watch"] = {
-						location = "Dungeons/Siege of Boralus",
-						itemId = 0,
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
-				},
-				["Warrior/Arms"] = {
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["133299"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
 					},
-					["Band of the Ancient Dredger"] = {
-						location = "Dungeons/Siege of Boralus",
-						itemId = 0,
-					},
-				},
-				["Warrior/Fury"] = {
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
-					},
-					["Writhing Ringworm"] = {
-						location = "Boss/Broodtwister Ovi'nax",
-						itemId = 0,
+					["159461"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					},
 				},
-				["Rogue/Subtlety"] = {
-					["Ring of Earthen Craftsmanship"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
+				["Priest/Discipline"] = {
+					["212447"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					},
-					["High Nerubian Signet"] = {
-						location = "Dungeons/The Dawnbreaker",
-						itemId = 0,
+					["159461"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					},
-				},
-				["Warlock/Demonology"] = {
-					["Key to the Unseeming"] = {
-						location = "Boss/The Bloodbound Horror",
-						itemId = 0,
+					["225578"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
-					},
-				},
-				["Warlock/Affliction"] = {
-					["Devout Zealots Ring"] = {
-						location = "Dungeons/The Dawnbreaker",
-						itemId = 0,
-					},
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
-					},
-				},
-				["Warlock/Destruction"] = {
-					["Devout Zealots Ring"] = {
-						location = "Dungeons/The Dawnbreaker",
-						itemId = 0,
-					},
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["178736"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Blightbone/The Necrotic Wake",
 					},
 				},
 				["Rogue/Outlaw"] = {
-					["Stitchfleshs Misplaced Signet"] = {
-						location = "Dungeons/The Necrotic Wake",
-						itemId = 0,
+					["178736"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Blightbone/The Necrotic Wake",
 					},
-					["Experiment 08752s Band"] = {
-						location = "Dungeons/City of Threads",
-						itemId = 0,
+					["221189"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
+					},
+					["225578"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["212447"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+				},
+				["Rogue/Assassination"] = {
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["162542"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Sergeant Bainbridge/Siege of Boralus",
+					},
+					["225576"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["56444"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/General Umbriss/Grim Batol",
+					},
+				},
+				["Priest/Shadow"] = {
+					["212447"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221136"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
+					},
+					["133299"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
 					},
 				},
 				["Shaman/Restoration"] = {
-					["Devout Zealots Ring"] = {
-						location = "Dungeons/The Dawnbreaker",
-						itemId = 0,
+					["221136"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
 					},
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["225576"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["178736"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Blightbone/The Necrotic Wake",
+					},
+					["159461"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					},
+				},
+				["Priest/Holy"] = {
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["162541"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Chopper Redhook/Siege of Boralus",
+					},
+					["225576"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["56444"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/General Umbriss/Grim Batol",
+					},
+				},
+				["Rogue/Subtlety"] = {
+					["215135"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["221141"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					},
+					["225578"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["225576"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["133287"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Forgemaster Throngus/Grim Batol",
+					},
+				},
+				["Shaman/Elemental"] = {
+					["159461"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					},
+					["178736"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Blightbone/The Necrotic Wake",
+					},
+					["212447"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["225576"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+				},
+				["Warlock/Demonology"] = {
+					["212447"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221136"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
+					},
+					["133299"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
 					},
 				},
 				["Warrior/Protection"] = {
-					["Devout Zealots Ring"] = {
-						location = "Boss/Speaker Shadowcrown",
-						itemId = 0,
+					["221136"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
 					},
-					["Seal of the Poisoned Pact"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["212447"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["159461"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					},
+				},
+				["Warlock/Affliction"] = {
+					["221136"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
+					},
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["212447"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["133299"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
+					},
+				},
+				["Warrior/Arms"] = {
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["159461"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					},
+					["212447"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["133299"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
+					},
+				},
+				["Warrior/Fury"] = {
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["225576"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["133286"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/General Umbriss/Grim Batol",
+					},
+					["221141"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					},
+				},
+				["Warlock/Destruction"] = {
+					["221136"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
+					},
+					["225578"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["212447"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["133299"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
 					},
 				},
 			},
 			INVTYPE_WEAPON = {
-				["Death Knight/Blood"] = {
-					["Anubarashs Colossal Mandible"] = {
-						location = "Boss/Anub'arash",
-						itemId = 0,
-					},
-				},
-				["Druid/Balance"] = {
-					["Takazjs Entropic Edict"] = {
-						location = "Boss/Silken Court",
-						itemId = 0,
-					},
-				},
 				["Demon Hunter/Havoc"] = {
-					["Void Reapers Warp Blade"] = {
-						location = "Boss/Anub'arash",
-						itemId = 0,
+					["219877"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					},
+					["159651"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Viq'Goth/Siege of Boralus",
 					},
 				},
 				["Hunter/Beast Mastery"] = {
-					["Shade-Touched Silencer"] = {
-						location = "Boss/Nexus-Princess Ky'veza",
-						itemId = 0,
+					["212400"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					},
+					["221143"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
+					},
+				},
+				["Death Knight/Blood"] = {
+					["212407"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["159650"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					},
 				},
 				["Demon Hunter/Vengeance"] = {
-					["Void Reapers Warp Blade"] = {
-						location = "Boss/Nexus-Princess Ky'veza (Nerub-ar Palace)",
-						itemId = 0,
+					["219877"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					},
-					["Everforged Longsword-With  Blessed Weapon Grip  and  Algari Missive of the Fireflash "] = {
-						location = "Crafting/Blacksmithing",
-						itemId = 0,
+					["222440"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
 					},
-				},
-				["Death Knight/Frost"] = {
-					["Ansureks Final Judgment"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["212409"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
 					},
-					["Charged Slicer"] = {
-						location = "Crafting/Blacksmithing",
-						itemId = 0,
+					["221090"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Void Speaker Eirich/The Stonevault",
 					},
-				},
-				["Death Knight/Unholy"] = {
-					["Charged Claymore"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
+					["221084"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Skarmorak/The Stonevault",
 					},
 				},
 				["Evoker/Preservation"] = {
-					["Flawless Phase Blade"] = {
-						location = "Boss/Sikran",
-						itemId = 0,
+					["212405"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["212397"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["221083"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Skarmorak/The Stonevault",
 					},
 				},
-				["Evoker/Devastation"] = {
-					["Takazjs Entropic Edict"] = {
-						location = "Boss/Anub'arash The Silken Court",
-						itemId = 0,
+				["Druid/Balance"] = {
+					["212397"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
 					},
-					["Charged Hexsword"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
-					},
-				},
-				["Hunter/Marksmanship"] = {
-					["Splintershot Silkbow"] = {
-						location = "Boss/Sikran",
-						itemId = 0,
+					["221085"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
 				["Evoker/Augmentation"] = {
-					["Staff of Siphoned Essences"] = {
-						location = "Dungeons/Grim Batol",
-						itemId = 0,
+					["133303"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
 					},
-					["Flawless Phase Blade Arachnoid Soulcleaver Scithewood Scepter"] = {
-						location = "Boss/SikranAra-Kara, City of EchoesMists of Tirna Scithe",
-						itemId = 0,
+					["212405"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
 					},
-				},
-				["Monk/Windwalker"] = {
-					["Honored Executioners Perforator"] = {
-						location = "Boss/Sikran - Nerub-ar Palace",
-						itemId = 0,
+					["212397"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
 					},
-					["Void Reapers Warp Blade"] = {
-						location = "Boss/Nexus-Princess Ky'veza - Nerub-ar Palace",
-						itemId = 0,
-					},
-					["Eirichs Fist of Deception"] = {
-						location = "Dungeons/The Stonevault",
-						itemId = 0,
-					},
-				},
-				["Monk/Mistweaver"] = {
-					["Vagabonds Bounding Baton with  Darkmoon Sigil Ascension"] = {
-						location = "Boss/Inscription",
-						itemId = 0,
+					["221150"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
 					},
 				},
-				["Hunter/Survival"] = {
-					["Charged Halberd"] = {
-						location = "Boss/Crafted - Blacksmithing",
-						itemId = 0,
+				["Evoker/Devastation"] = {
+					["212397"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["212394"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221083"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Skarmorak/The Stonevault",
+					},
+				},
+				["Death Knight/Unholy"] = {
+					["222447"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["212388"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					},
+					["56131"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
+					},
+				},
+				["Death Knight/Frost"] = {
+					["212401"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["222451"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["221145"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
 					},
 				},
 				["Mage/Frost"] = {
-					["Vagabonds Bounding Baton"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
+					["222568"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
 					},
-					["Sovereigns Disdain"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["212394"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["212397"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["221166"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Orator Krix'vizk/City of Threads",
+					},
+					["133283"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/General Umbriss/Grim Batol",
 					},
 				},
-				["Mage/Arcane"] = {
-					["Sovereigns Disdain"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+				["Hunter/Survival"] = {
+					["222448"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
 					},
-				},
-				["Monk/Brewmaster"] = {
-					["Harvesters Interdiction"] = {
-						location = "Dungeons/Ara-Kara, City of Echoes",
-						itemId = 0,
+					["212389"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
-					["Void Reapers Warp Blade"] = {
-						location = "Boss/Nexus-Princess Ky'veza (Nerub-ar Palace)",
-						itemId = 0,
-					},
-					["Zephyrous Sail Carver"] = {
-						location = "Dungeons/The Dawnbreaker",
-						itemId = 0,
-					},
-				},
-				["Mage/Fire"] = {
-					["Takazjs Entropic Edict"] = {
-						location = "Boss/Anub'arash The Silken Court",
-						itemId = 0,
-					},
-					["Sovereigns Disdain"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["221159"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
 					},
 				},
 				["Paladin/Holy"] = {
-					["Amarths Spellblade"] = {
-						location = "Dungeons/The Necrotic Wake",
-						itemId = 0,
+					["178737"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Amarth/The Necrotic Wake",
+					},
+					["212405"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
 					},
 				},
-				["Paladin/Protection"] = {
-					["Engorged Worm Smasher"] = {
-						location = "Dungeons/The Necrotic Wake",
-						itemId = 0,
+				["Hunter/Marksmanship"] = {
+					["212399"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221074"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
 					},
 				},
-				["Priest/Shadow"] = {
-					["Takazjs Entropic Edict"] = {
-						location = "Boss/Anub'arash",
-						itemId = 0,
+				["Monk/Brewmaster"] = {
+					["221159"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
+					},
+					["219877"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					},
+					["221144"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
+					},
+					["212389"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["212398"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["159648"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Sergeant Bainbridge/Siege of Boralus",
 					},
 				},
-				["Priest/Discipline"] = {
-					["Krixvizks Speech Rod"] = {
-						location = "Dungeons/City of Threads",
-						itemId = 0,
+				["Mage/Arcane"] = {
+					["212394"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
-					["Sovereigns Disdain"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["212397"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["221085"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
+					},
+				},
+				["Mage/Fire"] = {
+					["212397"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["212394"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221166"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Orator Krix'vizk/City of Threads",
 					},
 				},
 				["Paladin/Retribution"] = {
-					["Everforged Greataxe"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
+					["222443"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["212407"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["133298"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
 					},
 				},
-				["Shaman/Elemental"] = {
-					["Sovereigns Disdain"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+				["Paladin/Protection"] = {
+					["178730"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Blightbone/The Necrotic Wake",
+					},
+					["212392"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
 					},
 				},
-				["Priest/Holy"] = {
-					["Staff of Siphoned Essences"] = {
-						location = "Dungeons/Grim Batol",
-						itemId = 0,
+				["Priest/Discipline"] = {
+					["221166"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Orator Krix'vizk/City of Threads",
 					},
-					["Scithewood Scepter"] = {
-						location = "Dungeons/Mists of Tirna Scithe",
-						itemId = 0,
+					["212394"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
-				},
-				["Rogue/Assassination"] = {
-					Regicide = {
-						location = "Boss/Nexus-Princess Ky'veza",
-						itemId = 0,
+					["212397"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
 					},
-				},
-				["Warrior/Arms"] = {
-					["Surgical Heartstopper"] = {
-						location = "Dungeons/City of Threads",
-						itemId = 0,
-					},
-				},
-				["Warrior/Fury"] = {
-					["Wild Hammer"] = {
-						location = "Dungeons/Grim Batol",
-						itemId = 0,
-					},
-				},
-				["Rogue/Subtlety"] = {
-					["Blood-Kissed Kukri"] = {
-						location = "Boss/The Bloodbound Horror",
-						itemId = 0,
-					},
-				},
-				["Warlock/Demonology"] = {
-					["Sovereigns Disdain"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
-					},
-					["Takazjs Entropic Edict"] = {
-						location = "Boss/Anub'arash",
-						itemId = 0,
-					},
-				},
-				["Warlock/Affliction"] = {
-					["Sovereigns Disdain"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
-					},
-					["Takazjs Entropic Edict"] = {
-						location = "Boss/Anub'arash",
-						itemId = 0,
-					},
-				},
-				["Warlock/Destruction"] = {
-					["Sovereigns Disdain"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
-					},
-					["Takazjs Entropic Edict"] = {
-						location = "Boss/Anub'arash",
-						itemId = 0,
+					["221165"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
 					},
 				},
 				["Rogue/Outlaw"] = {
-					["Void Reapers Warp Blade"] = {
-						location = "Boss/Nexus-Princess Ky'veza",
-						itemId = 0,
+					["219877"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					},
+					["221144"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
+					},
+				},
+				["Rogue/Assassination"] = {
+					["225636"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					},
+					["221183"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
+					},
+				},
+				["Priest/Shadow"] = {
+					["212397"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["221085"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
 				["Shaman/Restoration"] = {
-					["Wardbreaker of the Fractured"] = {
-						location = "Dungeons/The Stonevault",
-						itemId = 0,
+					["221083"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Skarmorak/The Stonevault",
 					},
-					["Sovereigns Disdain"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["212394"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["212397"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["133283"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/General Umbriss/Grim Batol",
+					},
+				},
+				["Priest/Holy"] = {
+					["56137"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
+					},
+					["178709"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
+					},
+					["212397"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["212394"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+				},
+				["Rogue/Subtlety"] = {
+					["212395"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["178743"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
+					},
+				},
+				["Shaman/Elemental"] = {
+					["212394"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221083"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Skarmorak/The Stonevault",
+					},
+					["221165"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
+					},
+				},
+				["Warlock/Demonology"] = {
+					["212394"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["212397"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["221085"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
 				["Warrior/Protection"] = {
-					["Duelists Dancing Steel"] = {
-						location = "Boss/Sikran",
-						itemId = 0,
+					["212392"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221145"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
+					},
+				},
+				["Warlock/Affliction"] = {
+					["212394"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["212397"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["221085"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
+					},
+				},
+				["Warrior/Arms"] = {
+					["221184"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
+					},
+					["212407"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+				},
+				["Warrior/Fury"] = {
+					["133298"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
+					},
+					["212388"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					},
+				},
+				["Warlock/Destruction"] = {
+					["212394"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["212397"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["221085"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
 			},
 			INVTYPE_SHIELD = {
 				["Demon Hunter/Havoc"] = {
-					["Everforged Warglaive"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
+					["222441"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["212391"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221160"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
 					},
 				},
 				["Evoker/Preservation"] = {
-					["Broodtwisters Grim Catalyst"] = {
-						location = "Boss/Broodtwister Ovi'nax",
-						itemId = 0,
-					},
-				},
-				["Evoker/Devastation"] = {
-					["Vagabonds Torch"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
+					["212387"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
 				},
 				["Evoker/Augmentation"] = {
-					["Pail of Preserved Obscurity"] = {
-						location = "Dungeons/City of Threads",
-						itemId = 0,
+					["221172"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Nx/City of Threads",
+					},
+					["212387"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+				},
+				["Evoker/Devastation"] = {
+					["222566"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["212387"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
 				},
 				["Mage/Frost"] = {
-					["Vagabonds Torch"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
+					["222566"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["212387"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["221172"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Nx/City of Threads",
+					},
+				},
+				["Paladin/Holy"] = {
+					["225579"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221177"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/The Coaglamation/City of Threads",
 					},
 				},
 				["Mage/Arcane"] = {
-					["Vagabonds Torch"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
+					["222566"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
 					},
 				},
 				["Mage/Fire"] = {
-					["Vagabonds Torch"] = {
-						location = "Other/Crafting or Delves",
-						itemId = 0,
+					["222566"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
 					},
-				},
-				["Paladin/Holy"] = {
-					["Crest of the Caustic Despot"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["212387"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
 				},
 				["Paladin/Protection"] = {
-					["Acidslough Bulwark"] = {
-						location = "Dungeons/Mists of Tirna Scithe",
-						itemId = 0,
+					["178712"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Tred'ova/Mists of Tirna Scithe",
+					},
+					["225579"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 				},
 				["Priest/Discipline"] = {
-					["Pail of Preserved Obscurity"] = {
-						location = "Dungeons/City of Threads",
-						itemId = 0,
+					["221172"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Nx/City of Threads",
 					},
-				},
-				["Shaman/Elemental"] = {
-					["Crest of the Caustic Despot"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
-					},
-				},
-				["Priest/Holy"] = {
-					["Overflowing Umbral Pail"] = {
-						location = "Dungeons/The Dawnbreaker",
-						itemId = 0,
-					},
-				},
-				["Rogue/Assassination"] = {
-					["Blood-Kissed Kukri"] = {
-						location = "Boss/The Bloodbound Horror",
-						itemId = 0,
-					},
-				},
-				["Warrior/Fury"] = {
-					["Charged Claymore"] = {
-						location = "Boss/Crafted",
-						itemId = 0,
-					},
-				},
-				["Rogue/Subtlety"] = {
-					["Stitchfleshs Scalpel"] = {
-						location = "Dungeons/The Necrotic Wake",
-						itemId = 0,
-					},
-				},
-				["Warlock/Demonology"] = {
-					["Vagabonds Torch"] = {
-						location = "Boss/Inscription",
-						itemId = 0,
-					},
-				},
-				["Warlock/Affliction"] = {
-					["Vagabonds Torch"] = {
-						location = "Boss/Inscription",
-						itemId = 0,
-					},
-				},
-				["Warlock/Destruction"] = {
-					["Vagabonds Torch"] = {
-						location = "Boss/Inscription",
-						itemId = 0,
+					["212387"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
 				},
 				["Rogue/Outlaw"] = {
-					["Blood-Kissed Kukri"] = {
-						location = "Boss/The Bloodbound Horror",
-						itemId = 0,
+					["212395"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["221183"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
+					},
+				},
+				["Rogue/Assassination"] = {
+					["212395"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["221138"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
 					},
 				},
 				["Shaman/Restoration"] = {
-					["Crest of the Caustic Despot"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["225579"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221177"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/The Coaglamation/City of Threads",
+					},
+				},
+				["Priest/Holy"] = {
+					["221132"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
+					},
+					["212387"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+				},
+				["Rogue/Subtlety"] = {
+					["178743"] = {
+						listNames = {
+							"Overall",
+							"from M+",
+						},
+						location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
+					},
+					["212395"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+				},
+				["Shaman/Elemental"] = {
+					["225579"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["178750"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
+					},
+				},
+				["Warlock/Demonology"] = {
+					["222566"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
 					},
 				},
 				["Warrior/Protection"] = {
-					["Crest of the Caustic Despot"] = {
-						location = "Boss/Queen Ansurek",
-						itemId = 0,
+					["225579"] = {
+						listNames = {
+							"Overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["178712"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Tred'ova/Mists of Tirna Scithe",
 					},
 				},
-			},
-			INVTYPE_TRINKET = {
-				["Evoker/Preservation"] = {
-					["Spymasters Web Advanced"] = {
-						location = "Boss/Anub'arash (Silken Court)",
-						itemId = 0,
+				["Warlock/Affliction"] = {
+					["222566"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
 					},
 				},
-				["Paladin/Holy"] = {
-					["Gale of Shadows as Herald"] = {
-						location = "Dungeons/Grim Batol",
-						itemId = 0,
+				["Warrior/Fury"] = {
+					["222447"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
+					},
+					["212388"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					},
+					["133298"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
+					},
+				},
+				["Warlock/Destruction"] = {
+					["222566"] = {
+						listNames = {
+							"Overall",
+						},
+						location = "Other/Crafting",
 					},
 				},
 			},

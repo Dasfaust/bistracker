@@ -56,12 +56,12 @@ local function UpdateChracterPanelItemButton(button, unit)
         return
     end
 
-    if not context.data.IsItemIdGearPiece(item:GetItemID()) then
+    local itemId = tostring(item:GetItemID())
+    if not context.data.IsItemIdGearPiece(itemId) then
         UpdateBisSlotCount(slotId, unit, 0)
         return
     end
 
-    local itemName = item:GetItemName()
     local specNames
     if unit == "player" then
         specNames = context.player.localSpecNames
@@ -70,15 +70,15 @@ local function UpdateChracterPanelItemButton(button, unit)
     end
 
     local itemFound = false
-    if context.data.IsTrackedTrinket(itemName) then
-        local entries = context.data.GetPlayerSpecEntriesForTrinket(itemName, specNames)
+    if context.data.IsTrackedTrinket(itemId) then
+        local entries = context.data.GetPlayerSpecEntriesForTrinket(itemId, specNames)
         if next(entries) then
             for tier, specList in pairs(entries) do
                 for specName, _ in pairs(specList) do
                     if specName == context.player.GetCurrentSpecName(unit) then
                         local sanatized = string.gsub(string.sub(tier, 1, 2), "%s+", "")
 
-                        if sanatized == "S" then
+                        if sanatized == "S" or sanatized == "A" then
                             UpdateBisSlotCount(slotId, unit, 1)
                         else
                             UpdateBisSlotCount(slotId, unit, 0)
@@ -92,12 +92,25 @@ local function UpdateChracterPanelItemButton(button, unit)
                 end
             end
         end
-    elseif context.data.IsTrackedGear(itemName) then
-        local entries = context.data.GetPlayerSpecEntriesForGear(itemName, specNames)
+    elseif context.data.IsTrackedGear(itemId) then
+        local entries = context.data.GetPlayerSpecEntriesForGear(itemId, specNames)
         if next(entries) then
             for specName, entry in pairs(entries) do
                 if specName == context.player.GetCurrentSpecName(unit) then
-                    local color = ITEM_QUALITY_COLORS[5]
+                    local isBisOverall = false
+                    for sourceName, sourceInfo in pairs(entry) do
+                        if not isBisOverall then
+                            for _, listName in ipairs(sourceInfo) do
+                                if listName == "Overall" then
+                                    isBisOverall = true
+                                    break
+                                end
+                            end
+                        else
+                            break
+                        end
+                    end
+                    local color = isBisOverall and ITEM_QUALITY_COLORS[5] or ITEM_QUALITY_COLORS[4]
                     UpdateTextOverlay(button, unit, "BiS", color.r, color.g, color.b)
                     UpdateBisSlotCount(slotId, unit, 1)
                     itemFound = true
@@ -121,10 +134,10 @@ local function UpdateItemButton(button)
         return
     end
 
-    local itemName = item:GetItemName()
-    if context.data.IsItemIdGearPiece(item:GetItemID()) then
-        if context.data.IsTrackedTrinket(itemName) then
-            local entries = context.data.GetPlayerSpecEntriesForTrinket(itemName, context.player.localSpecNames)
+    local itemId = tostring(item:GetItemID())
+    if context.data.IsItemIdGearPiece(itemId) then
+        if context.data.IsTrackedTrinket(itemId) then
+            local entries = context.data.GetPlayerSpecEntriesForTrinket(itemId, context.player.localSpecNames)
             if next(entries) then
                 for tier, specList in pairs(entries) do
                     for specName, _ in pairs(specList) do
@@ -137,12 +150,25 @@ local function UpdateItemButton(button)
                     end
                 end
             end
-        elseif context.data.IsTrackedGear(itemName) then
-            local entries = context.data.GetPlayerSpecEntriesForGear(itemName, context.player.localSpecNames)
+        elseif context.data.IsTrackedGear(itemId) then
+            local entries = context.data.GetPlayerSpecEntriesForGear(itemId, context.player.localSpecNames)
             if next(entries) then
                 for specName, entry in pairs(entries) do
                     if specName == context.player.GetCurrentSpecName("player") then
-                        local color = ITEM_QUALITY_COLORS[5]
+                        local isBisOverall = false
+                        for sourceName, sourceInfo in pairs(entry) do
+                            if not isBisOverall then
+                                for _, listName in ipairs(sourceInfo) do
+                                    if listName == "Overall" then
+                                        isBisOverall = true
+                                        break
+                                    end
+                                end
+                            else
+                                break
+                            end
+                        end
+                        local color = isBisOverall and ITEM_QUALITY_COLORS[5] or ITEM_QUALITY_COLORS[4]
                         UpdateTextOverlay(button, "player", "BiS", color.r, color.g, color.b)
                         break
                     end
@@ -152,11 +178,12 @@ local function UpdateItemButton(button)
     end
 end
 
-local function UpdateVaultButton(icon, itemName, itemLink)
+local function UpdateVaultButton(icon, itemLink)
     HideOverlay(icon)
 
-    if context.data.IsTrackedTrinket(itemName) then
-        local entries = context.data.GetPlayerSpecEntriesForTrinket(itemName, context.player.localSpecNames)
+    local itemId = context.data.GetItemIdFromLink(itemLink)
+    if context.data.IsTrackedTrinket(itemId) then
+        local entries = context.data.GetPlayerSpecEntriesForTrinket(itemId, context.player.localSpecNames)
         if next(entries) then
             for tier, specList in pairs(entries) do
                 for specName, _ in pairs(specList) do
@@ -169,12 +196,25 @@ local function UpdateVaultButton(icon, itemName, itemLink)
                 end
             end
         end
-    elseif context.data.IsTrackedGear(itemName) then
-        local entries = context.data.GetPlayerSpecEntriesForGear(itemName, context.player.localSpecNames)
+    elseif context.data.IsTrackedGear(itemId) then
+        local entries = context.data.GetPlayerSpecEntriesForGear(itemId, context.player.localSpecNames)
         if next(entries) then
             for specName, entry in pairs(entries) do
                 if specName == context.player.GetCurrentSpecName("player") then
-                    local color = ITEM_QUALITY_COLORS[5]
+                    local isBisOverall = false
+                    for sourceName, sourceInfo in pairs(entry) do
+                        if not isBisOverall then
+                            for _, listName in ipairs(sourceInfo) do
+                                if listName == "Overall" then
+                                    isBisOverall = true
+                                    break
+                                end
+                            end
+                        else
+                            break
+                        end
+                    end
+                    local color = isBisOverall and ITEM_QUALITY_COLORS[5] or ITEM_QUALITY_COLORS[4]
                     UpdateTextOverlay(icon, "player", "BiS", color.r, color.g, color.b)
                     break
                 end
@@ -221,9 +261,9 @@ context.events.AddOtherAddonLoadedEventCallback("Blizzard_WeeklyRewards", functi
                     if frame and itemInfos then
                         for _, itemInfo in ipairs(itemInfos) do
                             local itemHyperlink = C_WeeklyRewards.GetItemHyperlink(itemInfo["itemDBID"])
-                            local itemName, _, _, _, _, _, _, _, _, _, _, itemClass = C_Item.GetItemInfo(itemHyperlink);
+                            local _, _, _, _, _, _, _, _, _, _, _, itemClass = C_Item.GetItemInfo(itemHyperlink);
                             if itemClass == Enum.ItemClass.Weapon or itemClass == Enum.ItemClass.Armor then
-                                UpdateVaultButton(frame, itemName, itemHyperlink)
+                                UpdateVaultButton(frame, itemHyperlink)
                             end
                         end
                     end

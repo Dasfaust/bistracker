@@ -9,14 +9,14 @@ function context.data.GetBestInSlotGear(specName, slot)
     for sourceName, source in pairs(context.database.gearSources) do
         if source[slot] ~= nil then
             if source[slot][specName] ~= nil then
-                for itemName, entry in pairs(source[slot][specName]) do
-                    local iname = string.gsub(itemName, "%'", "")
-                    if entries[iname] ~= nil then
-                        table.insert(entries[iname]["sources"], sourceName)
+                for itemId, entry in pairs(source[slot][specName]) do
+                    if entries[itemId] ~= nil then
+                        table.insert(entries[itemId]["sources"], { [sourceName] = entry["listNames"] })
                     else
-                        local result = entry
-                        result["sources"] = { sourceName }
-                        entries[iname] = result
+                        local result = { }
+                        result["location"] = entry["location"]
+                        result["sources"] = { [sourceName] = entry["listNames"] }
+                        entries[itemId] = result
                     end
                 end
             end
@@ -29,15 +29,14 @@ function context.data.GetBestInSlotTrinkets(specName)
     local entries = {}
     for sourceName, source in pairs(context.database.trinketSources) do
         if source[specName] ~= nil then
-            for itemName, entry in pairs(source[specName]) do
-                local iname = string.gsub(itemName, "%'", "")
+            for itemId, entry in pairs(source[specName]) do
                 if string.sub(entry.tier, 1, 1) == "S" then
-                    if entries[iname] ~= nil then
-                        table.insert(entries[iname]["sources"], sourceName)
+                    if entries[itemId] ~= nil then
+                        table.insert(entries[itemId]["sources"], sourceName)
                     else
                         local result = entry
                         result["sources"] = { sourceName }
-                        entries[iname] = result
+                        entries[itemId] = result
                     end
                 end
             end
@@ -70,29 +69,32 @@ function context.data.GetItemEquipLocationFromLink(itemLink)
     return context.data.GetItemEquipLocation(GetItemInfoFromHyperlink(itemLink))
 end
 
-function context.data.IsTrackedGear(itemName)
-    local iname = string.gsub(itemName, "%'", "")
+function context.data.GetItemIdFromLink(itemLink)
+    local itemId, _ = GetItemInfoFromHyperlink(itemLink)
+    return tostring(itemId)
+end
+
+function context.data.IsTrackedGear(itemId)
     for _, source in pairs(context.database.gear) do
-        if source[iname] ~= nil then
+        if source[itemId] ~= nil then
             return true
         end
     end
     return false
 end
 
-function context.data.GetPlayerSpecEntriesForGear(itemName, specNames)
-    local iname = string.gsub(itemName, "%'", "")
+function context.data.GetPlayerSpecEntriesForGear(itemId, specNames)
     local entries = {}
 
     for _, specName in ipairs(specNames) do
         for sourceName, source in pairs(context.database.gear) do
-            if source[iname] ~= nil then
-                local flag = source[iname][specName]
-                if flag ~= nil then
+            if source[itemId] ~= nil then
+                local listNames = source[itemId][specName]
+                if listNames ~= nil then
                     if entries[specName] == nil then
-                        entries[specName] = { sourceName }
+                        entries[specName] = { [sourceName] = listNames }
                     else
-                        table.insert(entries[specName], sourceName)
+                        entries[specName][sourceName] = listNames
                     end
                 end
             end
@@ -102,24 +104,22 @@ function context.data.GetPlayerSpecEntriesForGear(itemName, specNames)
     return entries
 end
 
-function context.data.IsTrackedTrinket(itemName)
-    local iname = string.gsub(itemName, "%'", "")
+function context.data.IsTrackedTrinket(itemId)
     for _, source in pairs(context.database.trinkets) do
-        if source[iname] ~= nil then
+        if source[itemId] ~= nil then
             return true
         end
     end
     return false
 end
 
-function context.data.GetPlayerSpecEntriesForTrinket(itemName, specNames)
-    local iname = string.gsub(itemName, "%'", "")
+function context.data.GetPlayerSpecEntriesForTrinket(itemId, specNames)
     local entries = {}
 
     for _, specName in ipairs(specNames) do
         for sourceName, source in pairs(context.database.trinkets) do
-            if source[iname] ~= nil then
-                local tier = source[iname][specName]
+            if source[itemId] ~= nil then
+                local tier = source[itemId][specName]
                 if tier ~= nil then
                     if entries[tier] == nil then
                         entries[tier] = { [specName] = { sourceName } }
