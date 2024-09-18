@@ -41,34 +41,40 @@ local function AddItemTooltipText()
                 local entries = context.data.GetPlayerSpecEntriesForTrinket(itemId, specNames)
                 if next(entries) then
                     GameTooltip:AddLine(" ")
+                    local currentSpecString = ""
+                    local otherSpecStrings = {}
                     for tier, specList in pairs(entries) do
-                        local specString = ""
-                        local i = 1
                         for specName, sources in pairs(specList) do
-                            if specName == context.player.GetCurrentSpecName(unit) and string.sub(tier, 1, 1) == "S" then
-                                isBis = true
-                            end
-
-                            specString = specString .. (i > 1 and ", " or "") .. string.sub(specName, (unit == "player" and #context.player.localClassName or #context.player.unitClassName) + 2) .. " "
+                            local specString = string.sub(specName, (unit == "player" and #context.player.localClassName or #context.player.unitClassName) + 2) .. " "
                             local j = 1
                             for _, sourceName in ipairs(sources) do
                                 specString = specString .. (j > 1 and " " or "") .. "|TInterface\\AddOns\\bistracker\\media\\" .. sourceName .. ":16:16:0:0|t"
                                 j = j + 1
                             end
-                            i = i + 1
+                            if specName == context.player.GetCurrentSpecName(unit) then
+                                if string.sub(tier, 1, 1) == "S" then
+                                    isBis = true
+                                end
+                                currentSpecString = context.data.ApplyTrinketTierColor(tier) .. " for " .. specString
+                            else
+                                table.insert(otherSpecStrings, specString)
+                            end
                         end
-                        currentLine = context.data.ApplyTrinketTierColor(tier) .. " for " .. specString
-                        GameTooltip:AddLine(currentLine, 1, 1, 1, true)
                     end
+                    local specString = currentSpecString
+                    for i = 1, #otherSpecStrings do
+                        specString = specString .. ", " .. otherSpecStrings[i]
+                    end
+                    GameTooltip:AddLine(specString, 1, 1, 1, true)
                 end
             elseif context.data.IsTrackedGear(itemId) then
                 local entries = context.data.GetPlayerSpecEntriesForGear(itemId, specNames)
                 if next(entries) then
                     GameTooltip:AddLine(" ")
-                    local specString = ""
-                    local i = 1
+                    local currentSpecString = ""
+                    local otherSpecStrings = {}
                     for specName, sourceInfo in pairs(entries) do 
-                        specString = specString .. (i > 1 and ", " or "") .. string.sub(specName, (unit == "player" and #context.player.localClassName or #context.player.unitClassName) + 2) .. " "
+                        local specString = string.sub(specName, (unit == "player" and #context.player.localClassName or #context.player.unitClassName) + 2) .. " "
                         local j = 1
                         local isOverall = false
                         for sourceName, bisList in pairs(sourceInfo) do
@@ -91,10 +97,18 @@ local function AddItemTooltipText()
                         if specName == context.player.GetCurrentSpecName(unit) and not isOverall then
                             isSecondaryBis = true
                         end
-                        i = i + 1
+
+                        if specName == context.player.GetCurrentSpecName(unit) then
+                            currentSpecString = specString
+                        else
+                            table.insert(otherSpecStrings, specString)
+                        end
                     end
-                    currentLine = (isSecondaryBis and "Secondary " or "") .. context.data.ApplyTierColor("BiS", isBis and 5 or 4) .. " for " .. specString
-                    GameTooltip:AddLine(currentLine, 1, 1, 1, true)
+                    local specString = (isSecondaryBis and "Secondary " or "") .. context.data.ApplyTierColor("BiS", isBis and 5 or 4) .. " for " .. currentSpecString
+                    for i = 1, #otherSpecStrings do
+                        specString = specString .. ", " .. otherSpecStrings[i]
+                    end
+                    GameTooltip:AddLine(specString, 1, 1, 1, true)
                 end
             end
             
