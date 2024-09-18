@@ -10,12 +10,13 @@ function context.data.GetBestInSlotGear(specName, slot)
         if source[slot] ~= nil then
             if source[slot][specName] ~= nil then
                 for itemName, entry in pairs(source[slot][specName]) do
-                    if entries[itemName] ~= nil then
-                        table.insert(entries[itemName]["sources"], sourceName)
+                    local iname = string.gsub(itemName, "%'", "")
+                    if entries[iname] ~= nil then
+                        table.insert(entries[iname]["sources"], sourceName)
                     else
                         local result = entry
                         result["sources"] = { sourceName }
-                        entries[itemName] = result
+                        entries[iname] = result
                     end
                 end
             end
@@ -29,13 +30,14 @@ function context.data.GetBestInSlotTrinkets(specName)
     for sourceName, source in pairs(context.database.trinketSources) do
         if source[specName] ~= nil then
             for itemName, entry in pairs(source[specName]) do
+                local iname = string.gsub(itemName, "%'", "")
                 if string.sub(entry.tier, 1, 1) == "S" then
-                    if entries[itemName] ~= nil then
-                        table.insert(entries[itemName]["sources"], sourceName)
+                    if entries[iname] ~= nil then
+                        table.insert(entries[iname]["sources"], sourceName)
                     else
                         local result = entry
                         result["sources"] = { sourceName }
-                        entries[itemName] = result
+                        entries[iname] = result
                     end
                 end
             end
@@ -69,8 +71,9 @@ function context.data.GetItemEquipLocationFromLink(itemLink)
 end
 
 function context.data.IsTrackedGear(itemName)
+    local iname = string.gsub(itemName, "%'", "")
     for _, source in pairs(context.database.gear) do
-        if source[itemName] ~= nil then
+        if source[iname] ~= nil then
             return true
         end
     end
@@ -78,12 +81,13 @@ function context.data.IsTrackedGear(itemName)
 end
 
 function context.data.GetPlayerSpecEntriesForGear(itemName, specNames)
+    local iname = string.gsub(itemName, "%'", "")
     local entries = {}
 
     for _, specName in ipairs(specNames) do
         for sourceName, source in pairs(context.database.gear) do
-            if source[itemName] ~= nil then
-                local flag = source[itemName][specName]
+            if source[iname] ~= nil then
+                local flag = source[iname][specName]
                 if flag ~= nil then
                     if entries[specName] == nil then
                         entries[specName] = { sourceName }
@@ -99,8 +103,9 @@ function context.data.GetPlayerSpecEntriesForGear(itemName, specNames)
 end
 
 function context.data.IsTrackedTrinket(itemName)
+    local iname = string.gsub(itemName, "%'", "")
     for _, source in pairs(context.database.trinkets) do
-        if source[itemName] ~= nil then
+        if source[iname] ~= nil then
             return true
         end
     end
@@ -108,12 +113,13 @@ function context.data.IsTrackedTrinket(itemName)
 end
 
 function context.data.GetPlayerSpecEntriesForTrinket(itemName, specNames)
+    local iname = string.gsub(itemName, "%'", "")
     local entries = {}
 
     for _, specName in ipairs(specNames) do
         for sourceName, source in pairs(context.database.trinkets) do
-            if source[itemName] ~= nil then
-                local tier = source[itemName][specName]
+            if source[iname] ~= nil then
+                local tier = source[iname][specName]
                 if tier ~= nil then
                     if entries[tier] == nil then
                         entries[tier] = { [specName] = { sourceName } }
