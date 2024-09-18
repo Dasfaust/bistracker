@@ -26,22 +26,63 @@ function context.data.GetBestInSlotGear(specName, slot)
 end
 
 function context.data.GetBestInSlotTrinkets(specName)
-    local entries = {}
+    local entriesByTier = {}
     for sourceName, source in pairs(context.database.trinketSources) do
         if source[specName] ~= nil then
             for itemId, entry in pairs(source[specName]) do
-                if string.sub(entry.tier, 1, 1) == "S" then
-                    if entries[itemId] ~= nil then
-                        table.insert(entries[itemId]["sources"], sourceName)
-                    else
-                        local result = entry
-                        result["sources"] = { sourceName }
-                        entries[itemId] = result
-                    end
+                local sanatized = string.sub(entry.tier, 1, 1)
+                if not entriesByTier[sanatized] then
+                    entriesByTier[sanatized] = {}
+                end
+                if entriesByTier[sanatized][itemId] ~= nil then
+                    table.insert(entriesByTier[sanatized][itemId]["sources"], sourceName)
+                else
+                    local result = entry
+                    result["sources"] = { sourceName }
+                    entriesByTier[sanatized][itemId] = result
                 end
             end
         end
     end
+
+    local entries = {}
+    local i = 1
+    if entriesByTier["S"] then
+        for itemId, entry in pairs(entriesByTier["S"]) do
+            if i > 4 then break end
+            entries[itemId] = entry
+            i = i + 1
+        end
+    end
+    if i < 4 and entriesByTier["A"] then
+        for itemId, entry in pairs(entriesByTier["A"]) do
+            if i > 4 then break end
+            entries[itemId] = entry
+            i = i + 1
+        end
+    end
+    if i < 4 and entriesByTier["B"] then
+        for itemId, entry in pairs(entriesByTier["B"]) do
+            if i > 4 then break end
+            entries[itemId] = entry
+            i = i + 1
+        end
+    end
+    if i < 4 and entriesByTier["C"] then
+        for itemId, entry in pairs(entriesByTier["C"]) do
+            if i > 4 then break end
+            entries[itemId] = entry
+            i = i + 1
+        end
+    end
+    if i < 4 and entriesByTier["D"] then
+        for itemId, entry in pairs(entriesByTier["D"]) do
+            if i > 4 then break end
+            entries[itemId] = entry
+            i = i + 1
+        end
+    end
+
     return entries
 end
 
