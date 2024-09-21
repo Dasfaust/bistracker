@@ -27,13 +27,7 @@ local function AddItemTooltipText()
                 end
             end
 
-            local specNames
-            if unit == "player" then
-                specNames = context.player.localSpecNames
-            else
-                specNames = context.player.GetPlayerSpecsForUnit(unit)
-            end
-
+            local specNames = context.player.GetPlayerSpecsForUnit(unit)
             local itemId = context.data.GetItemIdFromLink(itemLink)
             local isBis = false
             local isSecondaryBis = false
@@ -127,7 +121,7 @@ local function AddItemTooltipText()
                                 sourceString = sourceString .. (j > 1 and " " or "") .. "|TInterface\\AddOns\\bistracker\\media\\" .. sourceName .. ":16:16:0:0|t"
                                 j = j + 1
                             end
-                            local itemName, _ = C_Item.GetItemInfo(itemId)
+                            local itemName = select(1, C_Item.GetItemInfo(itemId))
                             if not itemName then
                                 itemName = "Loading..."
                             end
@@ -174,7 +168,7 @@ local function AddItemTooltipText()
 
                             if not skip then
                                 
-                                local itemName, _ = C_Item.GetItemInfo(itemId)
+                                local itemName = select(1, C_Item.GetItemInfo(itemId))
                                 if not itemName then
                                     itemName = "Loading..."
                                 end

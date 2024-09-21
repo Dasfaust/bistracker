@@ -261,7 +261,7 @@ context.events.AddOtherAddonLoadedEventCallback("Blizzard_WeeklyRewards", functi
                     if frame and itemInfos then
                         for _, itemInfo in ipairs(itemInfos) do
                             local itemHyperlink = C_WeeklyRewards.GetItemHyperlink(itemInfo["itemDBID"])
-                            local _, _, _, _, _, _, _, _, _, _, _, itemClass = C_Item.GetItemInfo(itemHyperlink);
+                            local itemClass = select(12, C_Item.GetItemInfo(itemHyperlink));
                             if itemClass == Enum.ItemClass.Weapon or itemClass == Enum.ItemClass.Armor then
                                 UpdateVaultButton(frame, itemHyperlink)
                             end
