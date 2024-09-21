@@ -1,15 +1,39 @@
 local addonName, context = ...
 
 context.data = {
-    trinketTierRarities = { ["S"] = 5, ["A"] = 4, ["B"] = 3, ["C"] = 2, ["D"] = 1, ["F"] = 0 }
+    trinketTierRarities = { ["S"] = 5, ["A"] = 4, ["B"] = 3, ["C"] = 2, ["D"] = 1, ["F"] = 0 },
+    slotToEquipType = {
+        [1] = "INVTYPE_HEAD",
+        [2] = "INVTYPE_NECK",
+        [3] = "INVTYPE_SHOULDER",
+        [4] = "INVTYPE_CLOAK",
+        [5] = "INVTYPE_CHEST",
+        [6] = "INVTYPE_WAIST",
+        [7] = "INVTYPE_LEGS",
+        [8] = "INVTYPE_FEET",
+        [9] = "INVTYPE_WRIST",
+        [10] = "INVTYPE_HAND",
+        [11] = "INVTYPE_FINGER",
+        [12] = "INVTYPE_TRINKET",
+        [13] = "INVTYPE_WEAPON",
+        [14] = "INVTYPE_SHIELD",
+        [15] = "INVTYPE_RANGED",
+        [16] = "INVTYPE_CLOAK"
+    }
 }
 
+local slotRemaps = { ["INVTYPE_2HWEAPON"] = "INVTYPE_WEAPON", ["INVTYPE_WEAPONMAINHAND"] = "INVTYPE_WEAPON", ["INVTYPE_WEAPONOFFHAND"] = "INVTYPE_SHIELD", ["INVTYPE_HOLDABLE"] = "INVTYPE_SHIELD" }
 function context.data.GetBestInSlotGear(specName, slot)
+    local slotId = slot
+    if slotRemaps[slot] ~= nil then
+        slotId = slotRemaps[slot]
+    end
+
     local entries = {}
     for sourceName, source in pairs(context.database.gearSources) do
-        if source[slot] ~= nil then
-            if source[slot][specName] ~= nil then
-                for itemId, entry in pairs(source[slot][specName]) do
+        if source[slotId] ~= nil then
+            if source[slotId][specName] ~= nil then
+                for itemId, entry in pairs(source[slotId][specName]) do
                     if entries[itemId] ~= nil then
                         table.insert(entries[itemId]["sources"], { [sourceName] = entry["listNames"] })
                     else
@@ -90,7 +114,7 @@ function context.data.IsItemIdGearPiece(itemId)
     if itemId == nil then
         return false
     end
-    local _, _, _, _, _, itemClass, _ = C_Item.GetItemInfoInstant(itemId)
+    local itemClass = select(6, C_Item.GetItemInfoInstant(itemId))
     return itemClass == Enum.ItemClass.Weapon or itemClass == Enum.ItemClass.Armor
 end
 
@@ -102,8 +126,7 @@ function context.data.GetItemEquipLocation(itemId)
     if itemId == nil then
         return 0
     end
-    local _, _, _, equipLocation, _, _, _ = C_Item.GetItemInfoInstant(itemId)
-    return equipLocation
+    return select(4, C_Item.GetItemInfoInstant(itemId))
 end
 
 function context.data.GetItemEquipLocationFromLink(itemLink)
@@ -205,4 +228,8 @@ end
 
 function context.data.ApplyColor(text, hex)
     return format("|c%s%s|r", hex, text)
+end
+
+function context.data.CreateItemLink(itemId, creationContext)
+    return "|cff000000|Hitem:" .. tostring(itemId) .. ":::::::::::" .. tostring(creationContext) .. ":::::::|h[]|h|r"
 end
