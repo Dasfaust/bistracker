@@ -28,7 +28,7 @@ local function AddItemTooltipText()
                 elseif owner.rcLootCouncilInfo then
                     rcLootCouncilInfo = owner.rcLootCouncilInfo
                     GameTooltip:AddLine(" ")
-                    GameTooltip:AddLine(context.data.ApplyColor("[BiSTracker: showing BiS information for candidate " .. rcLootCouncilInfo.player .. "]", "ffFF7EFF"), 1, 1, 1, true)
+                    GameTooltip:AddLine(context.data.ApplyColor("[BiSTracker: showing raid-only suggestions for candidate " .. rcLootCouncilInfo.player .. "]", "ffFF7EFF"), 1, 1, 1, true)
                 end
             end
 
@@ -131,35 +131,42 @@ local function AddItemTooltipText()
                 local specName = rcLootCouncilInfo and rcLootCouncilInfo.currentSpecName or context.player.GetCurrentSpecName(unit)
                 local bisFound = false
                 if slotId == "INVTYPE_TRINKET" then
-                    local entries = context.data.GetBestInSlotTrinkets(specName)
+                    local entries = context.data.GetBestInSlotTrinkets(specName, rcLootCouncilInfo ~= nil and false or true)
                     if next(entries) then
-                        GameTooltip:AddLine(" ")
                         local i = 1
                         for itemId, itemInfo in pairs(entries) do
-                            local sourceString = ""
-                            local j = 1
-                            for _, sourceName in ipairs(itemInfo.sources) do
-                                sourceString = sourceString .. (j > 1 and " " or "") .. "|TInterface\\AddOns\\bistracker\\media\\" .. sourceName .. ":16:16:0:0|t"
-                                j = j + 1
+                            local shouldSkip = rcLootCouncilInfo ~= nil and not string.find(itemInfo["location"], "Raid")
+                            if not shouldSkip then
+                                local sourceString = ""
+                                local j = 1
+                                for _, sourceName in ipairs(itemInfo.sources) do
+                                    sourceString = sourceString .. (j > 1 and " " or "") .. "|TInterface\\AddOns\\bistracker\\media\\" .. sourceName .. ":16:16:0:0|t"
+                                    j = j + 1
+                                end
+                                local itemName = select(1, C_Item.GetItemInfo(itemId))
+                                if not itemName then
+                                    itemName = "Loading..."
+                                end
+                                currentLine = context.data.ApplyColor("[" .. itemName .. "]", context.data.GetTrinketTierColor(itemInfo.tier)) .. " is " .. context.data.ApplyTrinketTierColor(itemInfo.tier) .. " " .. sourceString .. " from " .. itemInfo.location
+                                if i == 1 then
+                                    GameTooltip:AddLine(" ")
+                                end
+                                GameTooltip:AddLine(currentLine, 1, 1, 1, true)
+                                bisFound = true
+                                i = i + 1
                             end
-                            local itemName = select(1, C_Item.GetItemInfo(itemId))
-                            if not itemName then
-                                itemName = "Loading..."
-                            end
-                            currentLine = context.data.ApplyColor("[" .. itemName .. "]", context.data.GetTrinketTierColor(itemInfo.tier)) .. " is " .. context.data.ApplyTrinketTierColor(itemInfo.tier) .. " " .. sourceString .. " from " .. itemInfo.location
-                            GameTooltip:AddLine(currentLine, 1, 1, 1, true)
-                            i = i + 1
                         end
-                        bisFound = true
+
                     end
                 else
                     local entries = context.data.GetBestInSlotGear(specName, slotId)
                     if next(entries) then
-                        GameTooltip:AddLine(" ")
                         local i = 1
                         local primaryLines = {}
                         local secondaryLines = {}
+                        local shouldSkip
                         for itemId, itemInfo in pairs(entries) do
+                            shouldSkip = rcLootCouncilInfo ~= nil and not string.find(itemInfo["location"], "Raid")
                             local isOverallForCurrentSpec = false
                             local sourceString = ""
                             local j = 1
@@ -187,7 +194,7 @@ local function AddItemTooltipText()
                                 skip = true
                             end
 
-                            if not skip then
+                            if not skip and not shouldSkip then
                                 
                                 local itemName = select(1, C_Item.GetItemInfo(itemId))
                                 if not itemName then
@@ -203,7 +210,15 @@ local function AddItemTooltipText()
                             end
                         end
                         i = 1
-                        local spec = string.sub(specName, (unit == "player" and #context.player.localClassName or #context.player.unitClassName) + 2)
+                        local spec
+                        if rcLootCouncilInfo ~= nil then
+                            spec = string.sub(specName, #rcLootCouncilInfo.className + 2)
+                        else
+                            spec = string.sub(specName, (unit == "player" and #context.player.localClassName or #context.player.unitClassName) + 2)
+                        end
+                        if #primaryLines + #secondaryLines >= 1 then
+                            GameTooltip:AddLine(" ")
+                        end
                         for _, line in ipairs(primaryLines) do
                             local prefix = i > 1 and "or " or spec .. "'s BiS is "
                             if isSecondaryBis then
@@ -211,6 +226,7 @@ local function AddItemTooltipText()
                             end
                             currentLine = prefix .. line
                             GameTooltip:AddLine(currentLine, 1, 1, 1, true)
+                            bisFound = true
                             i = i + 1
                         end
                         for _, line in ipairs(secondaryLines) do
@@ -220,9 +236,9 @@ local function AddItemTooltipText()
                             end
                             currentLine = prefix .. line
                             GameTooltip:AddLine(currentLine, 1, 1, 1, true)
+                            bisFound = true
                             i = i + 1
                         end
-                        bisFound = true
                     end
                 end
 

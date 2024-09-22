@@ -64,7 +64,7 @@ function context.data.GetBestInSlotGear(specName, slot)
     return entries
 end
 
-function context.data.GetBestInSlotTrinkets(specName)
+function context.data.GetBestInSlotTrinkets(specName, limitItems)
     local entriesByTier = {}
     for sourceName, source in pairs(context.database.trinketSources) do
         if source[specName] ~= nil then
@@ -85,38 +85,39 @@ function context.data.GetBestInSlotTrinkets(specName)
     end
 
     local entries = {}
+    local limit = limitItems and 4 or 100
     local i = 1
     if entriesByTier["S"] then
         for itemId, entry in pairs(entriesByTier["S"]) do
-            if i > 4 then break end
+            if i > limit then break end
             entries[itemId] = entry
             i = i + 1
         end
     end
-    if i < 4 and entriesByTier["A"] then
+    if i < limit and entriesByTier["A"] then
         for itemId, entry in pairs(entriesByTier["A"]) do
-            if i > 4 then break end
+            if i > limit then break end
             entries[itemId] = entry
             i = i + 1
         end
     end
-    if i < 4 and entriesByTier["B"] then
+    if i < limit and entriesByTier["B"] then
         for itemId, entry in pairs(entriesByTier["B"]) do
-            if i > 4 then break end
+            if i > limit then break end
             entries[itemId] = entry
             i = i + 1
         end
     end
-    if i < 4 and entriesByTier["C"] then
+    if i < limit and entriesByTier["C"] then
         for itemId, entry in pairs(entriesByTier["C"]) do
-            if i > 4 then break end
+            if i > limit then break end
             entries[itemId] = entry
             i = i + 1
         end
     end
-    if i < 4 and entriesByTier["D"] then
+    if i < limit and entriesByTier["D"] then
         for itemId, entry in pairs(entriesByTier["D"]) do
-            if i > 4 then break end
+            if i > limit then break end
             entries[itemId] = entry
             i = i + 1
         end

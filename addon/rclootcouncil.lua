@@ -26,14 +26,13 @@ context.events.AddOtherAddonLoadedEventCallback("RCLootCouncil", function()
         hooksecurefunc(tableData, "DoCellUpdate", function(rowFrame, frame, data, cols, row, realrow, column, fShow, table, ...)
             local colName = data[realrow].cols[column].colName
             if string.find(colName, "gear") then
-                if not frame.rcLootCouncilInfo then
-                    local name = data[realrow].name
-                    local itemLink = votingFrame:GetCandidateData(votingFrame:GetCurrentSession(), name, colName)
-                    if itemLink ~= nil then
-                        local class = votingFrame:GetCandidateData(votingFrame:GetCurrentSession(), name, "class")
-                        local specId = votingFrame:GetCandidateData(votingFrame:GetCurrentSession(), name, "specID")
-                        frame.rcLootCouncilInfo = { itemLink = itemLink, player = name, specNames = context.player.GetPlayerSpecsForClassName(class), currentSpecName = context.player.unitSpecNames[specId] }
-                    end
+                local name = data[realrow].name
+                local itemLink = votingFrame:GetCandidateData(votingFrame:GetCurrentSession(), name, colName)
+                if itemLink ~= nil then
+                    local class = votingFrame:GetCandidateData(votingFrame:GetCurrentSession(), name, "class")
+                    local specId = votingFrame:GetCandidateData(votingFrame:GetCurrentSession(), name, "specID")
+                    local specNames, className = context.player.GetPlayerSpecsForClassName(class)
+                    frame.rcLootCouncilInfo = { itemLink = itemLink, player = name, className = className, specNames = specNames, currentSpecName = context.player.unitSpecNames[specId] }
                 end
 
                 frame:SetScript("OnEnter", function() CreateHypertip(frame.rcLootCouncilInfo.itemLink, frame) end)

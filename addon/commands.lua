@@ -62,7 +62,7 @@ local function PrintDelveTasks()
     local tasks = {}
     local i = 1
     for _, task in pairs(context.commands.bis.delveTasks) do
-        local reportHeader = "  " .. tostring(i) .. ". Catalize,  for:"
+        local reportHeader = "  " .. tostring(i) .. ".:"
         local reportItems = "    "
         for idx, itemId in ipairs(task.itemIds) do
             reportItems = reportItems .. (idx > 1 and ", " or "") .. context.commands.bis.itemLinks[itemId] .. " (" .. (task.bossNames[idx]) .. ")"
