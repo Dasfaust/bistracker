@@ -13,3 +13,4 @@ addon/commands.lua
 addon/icons.lua
 addon/tooltips.lua
 addon/characterpanel.lua
+addon/rclootcouncil.lua

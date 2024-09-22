@@ -21,13 +21,18 @@ local function AddItemTooltipText()
 
             local unit = "player"
             local owner = GameTooltip:GetOwner()
+            local rcLootCouncilInfo = nil
             if owner ~= nil then
                 if owner.iconOverlay ~= nil then
                     unit = owner.iconOverlay.unit
+                elseif owner.rcLootCouncilInfo then
+                    rcLootCouncilInfo = owner.rcLootCouncilInfo
+                    GameTooltip:AddLine(" ")
+                    GameTooltip:AddLine(context.data.ApplyColor("[BiSTracker: showing BiS information for candidate " .. rcLootCouncilInfo.player .. "]", "ffFF7EFF"), 1, 1, 1, true)
                 end
             end
 
-            local specNames = context.player.GetPlayerSpecsForUnit(unit)
+            local specNames = rcLootCouncilInfo and rcLootCouncilInfo.specNames or context.player.GetPlayerSpecsForUnit(unit)
             local itemId = context.data.GetItemIdFromLink(itemLink)
             local isBis = false
             local isSecondaryBis = false
@@ -123,7 +128,7 @@ local function AddItemTooltipText()
             end
             
             if not isBis then
-                local specName = context.player.GetCurrentSpecName(unit)
+                local specName = rcLootCouncilInfo and rcLootCouncilInfo.currentSpecName or context.player.GetCurrentSpecName(unit)
                 local bisFound = false
                 if slotId == "INVTYPE_TRINKET" then
                     local entries = context.data.GetBestInSlotTrinkets(specName)
