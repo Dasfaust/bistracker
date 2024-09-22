@@ -214,6 +214,23 @@ context.events.AddEventCallback(context.events.onAddonLoaded, function()
     end)
 end)
 
+-- Loot frame
+local function UpdateLootFrameSlot(frame)
+    HideOverlay(frame)
+    if not frame.Item then return end
+    local data = frame:GetElementData()
+    if not (data and data.slotIndex) then return end
+    local link = GetLootSlotLink(data.slotIndex)
+    local itemId = context.data.GetItemIdFromLink(link)
+    LabelFrame(frame, tostring(itemId), "player")
+end
+
+context.events.AddEventCallback(context.events.onAddonLoaded, function()
+    LootFrame.ScrollBox:RegisterCallback("OnUpdate", function(...)
+        LootFrame.ScrollBox:ForEachFrame(UpdateLootFrameSlot)
+    end)
+end)
+
 -- Weekly vault frame
 context.events.AddOtherAddonLoadedEventCallback("Blizzard_WeeklyRewards", function()
     if WeeklyRewardsFrame then

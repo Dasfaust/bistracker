@@ -81,6 +81,7 @@
         "WeeklyRewardsActivityMixin",
         "WeeklyRewardsMixin",
         "DEFAULT_CHAT_FRAME",
-        "AccountBankPanel"
+        "AccountBankPanel",
+        "LootFrame"
     ]
 }
