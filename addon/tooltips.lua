@@ -59,7 +59,8 @@ local function AddItemTooltipText()
                     for i = 1, #otherSpecStrings do
                         specString = specString .. ", " .. otherSpecStrings[i]
                     end
-                    GameTooltip:AddLine(specString, 1, 1, 1, true)
+                    currentLine = specString
+                    GameTooltip:AddLine(currentLine, 1, 1, 1, true)
                 end
             elseif context.data.IsTrackedGear(itemId) then
                 local entries = context.data.GetPlayerSpecEntriesForGear(itemId, specNames)
@@ -102,7 +103,8 @@ local function AddItemTooltipText()
                     for i = 1, #otherSpecStrings do
                         specString = specString .. ", " .. otherSpecStrings[i]
                     end
-                    GameTooltip:AddLine(specString, 1, 1, 1, true)
+                    currentLine = specString
+                    GameTooltip:AddLine(currentLine, 1, 1, 1, true)
                 end
             end
             
@@ -188,7 +190,8 @@ local function AddItemTooltipText()
                             if isSecondaryBis then
                                 prefix = i > 1 and "or " or "Other BiS options for " .. spec .. " are "
                             end
-                            GameTooltip:AddLine(prefix .. line, 1, 1, 1, true)
+                            currentLine = prefix .. line
+                            GameTooltip:AddLine(currentLine, 1, 1, 1, true)
                             i = i + 1
                         end
                         for _, line in ipairs(secondaryLines) do
@@ -196,7 +199,8 @@ local function AddItemTooltipText()
                             if isSecondaryBis then
                                 prefix = i > 1 and "or " or "Other BiS options for " .. spec .. " are "
                             end
-                            GameTooltip:AddLine(prefix .. line, 1, 1, 1, true)
+                            currentLine = prefix .. line
+                            GameTooltip:AddLine(currentLine, 1, 1, 1, true)
                             i = i + 1
                         end
                         bisFound = true
