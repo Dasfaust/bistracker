@@ -136,10 +136,10 @@ local function UpdateChracterPanelItemButton(button, unit)
     end
 end
 
-local function UpdateItemButton(button)
+local function UpdateInventoryItemButton(button, bagId, slot)
     HideOverlay(button)
 
-    local item = Item:CreateFromBagAndSlot(button:GetBagID(), button:GetID())
+    local item = Item:CreateFromBagAndSlot(bagId, slot)
     if not item then
         return
     end
@@ -147,7 +147,7 @@ local function UpdateItemButton(button)
     LabelFrame(button, tostring(item:GetItemID()), "player")
 end
 
-local function UpdateVaultButton(button, itemLink)
+local function UpdateVaultItemButton(button, itemLink)
     HideOverlay(button)
 
     local itemId = context.data.GetItemIdFromLink(itemLink)
@@ -171,7 +171,7 @@ end)
 -- Inventory frames
 local InventoryFrameUpdate = function(frame)
     for _, itemButton in frame:EnumerateValidItems() do
-        UpdateItemButton(itemButton)
+        UpdateInventoryItemButton(itemButton, itemButton:GetBagID(), itemButton:GetID())
     end
 end
 
@@ -183,7 +183,38 @@ context.events.AddEventCallback(context.events.onAddonLoaded, function()
     end
 end)
 
--- Weekly vault
+-- Bank frame
+context.events.AddEventCallback(context.events.onAddonLoaded, function()
+    hooksecurefunc("BankFrameItemButton_Update", function(button)
+        if not button.isBag then
+            UpdateInventoryItemButton(button, button:GetParent():GetID(), button:GetID())
+        end
+    end)
+end)
+
+-- Warband bank frame
+local lastButtons = {}
+local WarbandFrameUpdate = function(frame)
+    table.wipe(lastButtons)
+    for itemButton in frame:EnumerateValidItems() do
+        UpdateInventoryItemButton(itemButton, itemButton:GetBankTabID(), itemButton:GetContainerSlotID())
+        table.insert(lastButtons, itemButton)
+    end
+end
+
+context.events.AddEventCallback(context.events.onAddonLoaded, function()
+    hooksecurefunc(AccountBankPanel, "GenerateItemSlotsForSelectedTab", WarbandFrameUpdate)
+    hooksecurefunc(AccountBankPanel, "RefreshAllItemsForSelectedTab", WarbandFrameUpdate)
+    hooksecurefunc(AccountBankPanel, "SetItemDisplayEnabled", function(_, state)
+        if state == false then
+            for _, itemButton in ipairs(lastButtons) do
+                HideOverlay(itemButton)
+            end
+        end
+    end)
+end)
+
+-- Weekly vault frame
 context.events.AddOtherAddonLoadedEventCallback("Blizzard_WeeklyRewards", function()
     if WeeklyRewardsFrame then
         for _, child in pairs({WeeklyRewardsFrame:GetChildren()}) do
@@ -194,7 +225,7 @@ context.events.AddOtherAddonLoadedEventCallback("Blizzard_WeeklyRewards", functi
                             local itemHyperlink = C_WeeklyRewards.GetItemHyperlink(itemInfo["itemDBID"])
                             local itemClass = select(12, C_Item.GetItemInfo(itemHyperlink));
                             if itemClass == Enum.ItemClass.Weapon or itemClass == Enum.ItemClass.Armor then
-                                UpdateVaultButton(frame, itemHyperlink)
+                                UpdateVaultItemButton(frame, itemHyperlink)
                             end
                         end
                     end

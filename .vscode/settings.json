@@ -80,6 +80,7 @@
         "WeeklyRewardConfirmSelectionMixin",
         "WeeklyRewardsActivityMixin",
         "WeeklyRewardsMixin",
-        "DEFAULT_CHAT_FRAME"
+        "DEFAULT_CHAT_FRAME",
+        "AccountBankPanel"
     ]
 }
