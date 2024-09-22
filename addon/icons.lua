@@ -76,7 +76,7 @@ local function UpdateChracterPanelItemButton(button, unit)
             for tier, specList in pairs(entries) do
                 for specName, _ in pairs(specList) do
                     if specName == context.player.GetCurrentSpecName(unit) then
-                        local sanatized = string.gsub(string.sub(tier, 1, 2), "%s+", "")
+                        local sanatized = string.sub(tier, 1, 1)
 
                         if sanatized == "S" or sanatized == "A" then
                             UpdateBisSlotCount(slotId, unit, 1)
@@ -85,7 +85,7 @@ local function UpdateChracterPanelItemButton(button, unit)
                         end
 
                         local color = ITEM_QUALITY_COLORS[context.data.trinketTierRarities[sanatized]]
-                        UpdateTextOverlay(button, unit, sanatized, color.r, color.g, color.b)
+                        UpdateTextOverlay(button, unit, string.gsub(string.sub(tier, 1, 2), "%s+", ""), color.r, color.g, color.b)
                         itemFound = true
                         break
                     end
@@ -142,9 +142,9 @@ local function UpdateItemButton(button)
                 for tier, specList in pairs(entries) do
                     for specName, _ in pairs(specList) do
                         if specName == context.player.GetCurrentSpecName("player") then
-                            local sanatized = string.gsub(string.sub(tier, 1, 2), "%s+", "")
+                            local sanatized = string.sub(tier, 1, 1)
                             local color = ITEM_QUALITY_COLORS[context.data.trinketTierRarities[sanatized]]
-                            UpdateTextOverlay(button, "player", sanatized, color.r, color.g, color.b)
+                            UpdateTextOverlay(button, "player", string.gsub(string.sub(tier, 1, 2), "%s+", ""), color.r, color.g, color.b)
                             break
                         end
                     end
@@ -188,9 +188,9 @@ local function UpdateVaultButton(icon, itemLink)
             for tier, specList in pairs(entries) do
                 for specName, _ in pairs(specList) do
                     if specName == context.player.GetCurrentSpecName("player") then
-                        local sanatized = string.gsub(string.sub(tier, 1, 2), "%s+", "")
+                        local sanatized = string.sub(tier, 1, 1)
                         local color = ITEM_QUALITY_COLORS[context.data.trinketTierRarities[sanatized]]
-                        UpdateTextOverlay(icon, "player", sanatized, color.r, color.g, color.b)
+                        UpdateTextOverlay(icon, "player", string.gsub(string.sub(tier, 1, 2), "%s+", ""), color.r, color.g, color.b)
                         break
                     end
                 end
