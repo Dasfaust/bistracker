@@ -82,6 +82,8 @@
         "WeeklyRewardsMixin",
         "DEFAULT_CHAT_FRAME",
         "AccountBankPanel",
-        "LootFrame"
+        "LootFrame",
+        "GlobalFXDialogModelScene",
+        "HandleModifiedItemClick"
     ]
 }

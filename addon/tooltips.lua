@@ -37,6 +37,7 @@ local function AddItemTooltipText()
                     GameTooltip:AddLine(" ")
                     local currentSpecString = ""
                     local otherSpecStrings = {}
+                    local otherSpecBisTypes = {}
                     for tier, specList in pairs(entries) do
                         for specName, sources in pairs(specList) do
                             local specString = string.sub(specName, (unit == "player" and #context.player.localClassName or #context.player.unitClassName) + 2) .. " "
@@ -45,19 +46,22 @@ local function AddItemTooltipText()
                                 specString = specString .. (j > 1 and " " or "") .. "|TInterface\\AddOns\\bistracker\\media\\" .. sourceName .. ":16:16:0:0|t"
                                 j = j + 1
                             end
+                            local sanatized = string.sub(tier, 1, 1)
                             if specName == context.player.GetCurrentSpecName(unit) then
-                                if string.sub(tier, 1, 1) == "S" then
+                                if sanatized == "S" then
                                     isBis = true
                                 end
                                 currentSpecString = context.data.ApplyTrinketTierColor(tier) .. " for " .. specString
                             else
+                                table.insert(otherSpecBisTypes, sanatized)
                                 table.insert(otherSpecStrings, specString)
                             end
                         end
                     end
                     local specString = currentSpecString
                     for i = 1, #otherSpecStrings do
-                        specString = specString .. ", " .. otherSpecStrings[i]
+                        local seperator = specString == "" and context.data.ApplyTrinketTierColor(otherSpecBisTypes[i]) .. " for " or ", "
+                        specString = specString .. seperator .. otherSpecStrings[i]
                     end
                     currentLine = specString
                     GameTooltip:AddLine(currentLine, 1, 1, 1, true)
