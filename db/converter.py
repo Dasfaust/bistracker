@@ -67,9 +67,9 @@ def parse_list():
             entry["spec_id"] = spec_id
 
             item_source_id = "Other/Unknown"
-            if item_source == None:
-                if not item_location is None:
-                    if item_location.lower() == "crafted":
+            if item_source == None or item_source == "":
+                if item_location is not None:
+                    if "craft" in item_location.lower():
                         item_source_id = "Other/Crafting"
             else:
                 # Remove trailing text in angle brackets

@@ -2755,7 +2755,7 @@ context.database = {
 					tier = "B",
 				},
 				["222680"] = {
-					location = "Other//Crafted",
+					location = "Other/Crafting",
 					tier = "D",
 				},
 			},
@@ -2875,7 +2875,7 @@ context.database = {
 					tier = "D",
 				},
 				["222671"] = {
-					location = "Other//Crafted",
+					location = "Other/Crafting",
 					tier = "D",
 				},
 			},
@@ -3503,7 +3503,7 @@ context.database = {
 					tier = "A",
 				},
 				["210816"] = {
-					location = "Other//Crafted",
+					location = "Other/Crafting",
 					tier = "B",
 				},
 				["219318"] = {
@@ -3591,7 +3591,7 @@ context.database = {
 					tier = "C",
 				},
 				["210816"] = {
-					location = "Other//Crafted",
+					location = "Other/Crafting",
 					tier = "D",
 				},
 			},
@@ -4161,7 +4161,7 @@ context.database = {
 					tier = "B",
 				},
 				["210816"] = {
-					location = "Other//Crafted",
+					location = "Other/Crafting",
 					tier = "C",
 				},
 				["212450"] = {
@@ -4775,7 +4775,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Warlock/Demonology"] = {
@@ -5235,7 +5235,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Evoker/Devastation"] = {
@@ -5259,7 +5259,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Mage/Arcane"] = {
@@ -5411,7 +5411,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Warrior/Fury"] = {
@@ -5775,7 +5775,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Demon Hunter/Havoc"] = {
@@ -5815,7 +5815,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Druid/Balance"] = {
@@ -5831,7 +5831,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Evoker/Preservation"] = {
@@ -5871,7 +5871,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Mage/Arcane"] = {
@@ -5879,7 +5879,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Monk/Mistweaver"] = {
@@ -5927,7 +5927,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Mage/Fire"] = {
@@ -5951,7 +5951,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Priest/Discipline"] = {
@@ -5967,7 +5967,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Rogue/Subtlety"] = {
@@ -5975,7 +5975,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Priest/Holy"] = {
@@ -6023,7 +6023,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Warrior/Fury"] = {
@@ -6031,7 +6031,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Warrior/Protection"] = {
@@ -6089,7 +6089,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Druid/Restoration"] = {
@@ -6137,7 +6137,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Evoker/Preservation"] = {
@@ -6201,7 +6201,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Paladin/Holy"] = {
@@ -6379,7 +6379,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Death Knight/Blood"] = {
@@ -6387,7 +6387,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Demon Hunter/Havoc"] = {
@@ -6411,7 +6411,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Death Knight/Unholy"] = {
@@ -6507,7 +6507,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Paladin/Holy"] = {
@@ -6563,7 +6563,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Priest/Discipline"] = {
@@ -6885,7 +6885,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Rogue/Subtlety"] = {
@@ -7087,7 +7087,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Hunter/Marksmanship"] = {
@@ -7231,7 +7231,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Warlock/Affliction"] = {
@@ -7239,7 +7239,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Warrior/Arms"] = {
@@ -7271,7 +7271,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 			},
@@ -7371,7 +7371,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Death Knight/Unholy"] = {
@@ -7673,7 +7673,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 					["221141"] = {
 						listNames = {
@@ -7837,7 +7837,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Death Knight/Blood"] = {
@@ -7889,7 +7889,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Death Knight/Frost"] = {
@@ -7903,7 +7903,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Druid/Balance"] = {
@@ -7935,7 +7935,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Evoker/Devastation"] = {
@@ -7957,7 +7957,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 					["212394"] = {
 						listNames = {
@@ -7987,7 +7987,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Monk/Brewmaster"] = {
@@ -8051,7 +8051,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Mage/Fire"] = {
@@ -8223,7 +8223,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Druid/Restoration"] = {
@@ -8255,7 +8255,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Mage/Frost"] = {
@@ -8263,7 +8263,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Mage/Arcane"] = {
@@ -8271,7 +8271,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Paladin/Holy"] = {
@@ -8295,7 +8295,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Rogue/Assassination"] = {
@@ -8359,7 +8359,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Warlock/Affliction"] = {
@@ -8367,7 +8367,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Warrior/Fury"] = {
@@ -8375,7 +8375,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 				["Warrior/Protection"] = {
@@ -8391,7 +8391,7 @@ context.database = {
 						listNames = {
 							"overall",
 						},
-						location = "Other//Crafted",
+						location = "Other/Crafting",
 					},
 				},
 			},

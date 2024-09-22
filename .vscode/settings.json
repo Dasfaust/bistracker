@@ -79,6 +79,7 @@
         "WeeklyRewardsFrame",
         "WeeklyRewardConfirmSelectionMixin",
         "WeeklyRewardsActivityMixin",
-        "WeeklyRewardsMixin"
+        "WeeklyRewardsMixin",
+        "DEFAULT_CHAT_FRAME"
     ]
 }
