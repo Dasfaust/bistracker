@@ -33,6 +33,58 @@ local function UpdateTextOverlay(button, unit, text, r, g, b)
     button.iconOverlay:Show()
 end
 
+local function LabelFrame(frame, itemId, unit)
+    local itemIsBis = false
+
+    if context.data.IsItemIdGearPiece(itemId) then
+        if context.data.IsTrackedTrinket(itemId) then
+            local entries = context.data.GetPlayerSpecEntriesForTrinket(itemId, context.player.GetPlayerSpecsForUnit(unit))
+            if next(entries) then
+                for tier, specList in pairs(entries) do
+                    for specName, _ in pairs(specList) do
+                        if specName == context.player.GetCurrentSpecName(unit) then
+                            local sanatized = string.sub(tier, 1, 1)
+                            if sanatized == "S" or sanatized == "A" then
+                                itemIsBis = true
+                            end
+                            local color = ITEM_QUALITY_COLORS[context.data.trinketTierRarities[sanatized]]
+                            UpdateTextOverlay(frame, unit, string.gsub(string.sub(tier, 1, 2), "%s+", ""), color.r, color.g, color.b)
+                            break
+                        end
+                    end
+                end
+            end
+        elseif context.data.IsTrackedGear(itemId) then
+            local entries = context.data.GetPlayerSpecEntriesForGear(itemId, context.player.GetPlayerSpecsForUnit(unit))
+            if next(entries) then
+                for specName, entry in pairs(entries) do
+                    if specName == context.player.GetCurrentSpecName(unit) then
+                        local isBisOverall = false
+                        for sourceName, sourceInfo in pairs(entry) do
+                            if not isBisOverall then
+                                for _, listName in ipairs(sourceInfo) do
+                                    if listName == "overall" then
+                                        isBisOverall = true
+                                        break
+                                    end
+                                end
+                            else
+                                break
+                            end
+                        end
+                        local color = isBisOverall and ITEM_QUALITY_COLORS[5] or ITEM_QUALITY_COLORS[4]
+                        itemIsBis = true
+                        UpdateTextOverlay(frame, unit, "BiS", color.r, color.g, color.b)
+                        break
+                    end
+                end
+            end
+        end
+    end
+
+    return itemIsBis
+end
+
 local function UpdateChracterPanelItemButton(button, unit)
     HideOverlay(button)
 
@@ -56,71 +108,9 @@ local function UpdateChracterPanelItemButton(button, unit)
         return
     end
 
-    local itemId = tostring(item:GetItemID())
-    if not context.data.IsItemIdGearPiece(itemId) then
-        UpdateBisSlotCount(slotId, unit, 0)
-        return
-    end
-
-    local specNames
-    if unit == "player" then
-        specNames = context.player.localSpecNames
+    if LabelFrame(button, tostring(item:GetItemID()), unit) then
+        UpdateBisSlotCount(slotId, unit, 1)
     else
-        specNames = context.player.GetPlayerSpecsForUnit(unit)
-    end
-
-    local itemFound = false
-    if context.data.IsTrackedTrinket(itemId) then
-        local entries = context.data.GetPlayerSpecEntriesForTrinket(itemId, specNames)
-        if next(entries) then
-            for tier, specList in pairs(entries) do
-                for specName, _ in pairs(specList) do
-                    if specName == context.player.GetCurrentSpecName(unit) then
-                        local sanatized = string.sub(tier, 1, 1)
-
-                        if sanatized == "S" or sanatized == "A" then
-                            UpdateBisSlotCount(slotId, unit, 1)
-                        else
-                            UpdateBisSlotCount(slotId, unit, 0)
-                        end
-
-                        local color = ITEM_QUALITY_COLORS[context.data.trinketTierRarities[sanatized]]
-                        UpdateTextOverlay(button, unit, string.gsub(string.sub(tier, 1, 2), "%s+", ""), color.r, color.g, color.b)
-                        itemFound = true
-                        break
-                    end
-                end
-            end
-        end
-    elseif context.data.IsTrackedGear(itemId) then
-        local entries = context.data.GetPlayerSpecEntriesForGear(itemId, specNames)
-        if next(entries) then
-            for specName, entry in pairs(entries) do
-                if specName == context.player.GetCurrentSpecName(unit) then
-                    local isBisOverall = false
-                    for sourceName, sourceInfo in pairs(entry) do
-                        if not isBisOverall then
-                            for _, listName in ipairs(sourceInfo) do
-                                if listName == "overall" then
-                                    isBisOverall = true
-                                    break
-                                end
-                            end
-                        else
-                            break
-                        end
-                    end
-                    local color = isBisOverall and ITEM_QUALITY_COLORS[5] or ITEM_QUALITY_COLORS[4]
-                    UpdateTextOverlay(button, unit, "BiS", color.r, color.g, color.b)
-                    UpdateBisSlotCount(slotId, unit, 1)
-                    itemFound = true
-                    break
-                end
-            end
-        end
-    end
-
-    if not itemFound then
         UpdateBisSlotCount(slotId, unit, 0)
         UpdateTextOverlay(button, unit, "?", 1, 1, 1)
     end
@@ -134,93 +124,14 @@ local function UpdateItemButton(button)
         return
     end
 
-    local itemId = tostring(item:GetItemID())
-    if context.data.IsItemIdGearPiece(itemId) then
-        if context.data.IsTrackedTrinket(itemId) then
-            local entries = context.data.GetPlayerSpecEntriesForTrinket(itemId, context.player.localSpecNames)
-            if next(entries) then
-                for tier, specList in pairs(entries) do
-                    for specName, _ in pairs(specList) do
-                        if specName == context.player.GetCurrentSpecName("player") then
-                            local sanatized = string.sub(tier, 1, 1)
-                            local color = ITEM_QUALITY_COLORS[context.data.trinketTierRarities[sanatized]]
-                            UpdateTextOverlay(button, "player", string.gsub(string.sub(tier, 1, 2), "%s+", ""), color.r, color.g, color.b)
-                            break
-                        end
-                    end
-                end
-            end
-        elseif context.data.IsTrackedGear(itemId) then
-            local entries = context.data.GetPlayerSpecEntriesForGear(itemId, context.player.localSpecNames)
-            if next(entries) then
-                for specName, entry in pairs(entries) do
-                    if specName == context.player.GetCurrentSpecName("player") then
-                        local isBisOverall = false
-                        for sourceName, sourceInfo in pairs(entry) do
-                            if not isBisOverall then
-                                for _, listName in ipairs(sourceInfo) do
-                                    if listName == "overall" then
-                                        isBisOverall = true
-                                        break
-                                    end
-                                end
-                            else
-                                break
-                            end
-                        end
-                        local color = isBisOverall and ITEM_QUALITY_COLORS[5] or ITEM_QUALITY_COLORS[4]
-                        UpdateTextOverlay(button, "player", "BiS", color.r, color.g, color.b)
-                        break
-                    end
-                end
-            end
-        end
-    end
+    LabelFrame(button, tostring(item:GetItemID()), "player")
 end
 
-local function UpdateVaultButton(icon, itemLink)
-    HideOverlay(icon)
+local function UpdateVaultButton(button, itemLink)
+    HideOverlay(button)
 
     local itemId = context.data.GetItemIdFromLink(itemLink)
-    if context.data.IsTrackedTrinket(itemId) then
-        local entries = context.data.GetPlayerSpecEntriesForTrinket(itemId, context.player.localSpecNames)
-        if next(entries) then
-            for tier, specList in pairs(entries) do
-                for specName, _ in pairs(specList) do
-                    if specName == context.player.GetCurrentSpecName("player") then
-                        local sanatized = string.sub(tier, 1, 1)
-                        local color = ITEM_QUALITY_COLORS[context.data.trinketTierRarities[sanatized]]
-                        UpdateTextOverlay(icon, "player", string.gsub(string.sub(tier, 1, 2), "%s+", ""), color.r, color.g, color.b)
-                        break
-                    end
-                end
-            end
-        end
-    elseif context.data.IsTrackedGear(itemId) then
-        local entries = context.data.GetPlayerSpecEntriesForGear(itemId, context.player.localSpecNames)
-        if next(entries) then
-            for specName, entry in pairs(entries) do
-                if specName == context.player.GetCurrentSpecName("player") then
-                    local isBisOverall = false
-                    for sourceName, sourceInfo in pairs(entry) do
-                        if not isBisOverall then
-                            for _, listName in ipairs(sourceInfo) do
-                                if listName == "overall" then
-                                    isBisOverall = true
-                                    break
-                                end
-                            end
-                        else
-                            break
-                        end
-                    end
-                    local color = isBisOverall and ITEM_QUALITY_COLORS[5] or ITEM_QUALITY_COLORS[4]
-                    UpdateTextOverlay(icon, "player", "BiS", color.r, color.g, color.b)
-                    break
-                end
-            end
-        end
-    end
+    LabelFrame(button, itemId, "player")
 end
 
 -- Character frame
