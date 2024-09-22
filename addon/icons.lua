@@ -40,43 +40,63 @@ local function LabelFrame(frame, itemId, unit)
         if context.data.IsTrackedTrinket(itemId) then
             local entries = context.data.GetPlayerSpecEntriesForTrinket(itemId, context.player.GetPlayerSpecsForUnit(unit))
             if next(entries) then
+                local isOffspecBis = false
+                local highestOffspecTier = 0
+                local offspecTier = ""
                 for tier, specList in pairs(entries) do
                     for specName, _ in pairs(specList) do
+                        local sanatized = string.sub(tier, 1, 1)
                         if specName == context.player.GetCurrentSpecName(unit) then
-                            local sanatized = string.sub(tier, 1, 1)
                             if sanatized == "S" or sanatized == "A" then
                                 itemIsBis = true
                             end
                             local color = ITEM_QUALITY_COLORS[context.data.trinketTierRarities[sanatized]]
                             UpdateTextOverlay(frame, unit, string.gsub(string.sub(tier, 1, 2), "%s+", ""), color.r, color.g, color.b)
-                            break
+                        else
+                            local tierRarity = context.data.trinketTierRarities[sanatized]
+                            if tierRarity > highestOffspecTier then
+                                offspecTier = string.gsub(string.sub(tier, 1, 2), "%s+", "")
+                                highestOffspecTier = tierRarity
+                            end
                         end
                     end
+                end
+
+                if not itemIsBis and isOffspecBis then
+                    local color = ITEM_QUALITY_COLORS[0]
+                    UpdateTextOverlay(frame, unit, offspecTier, color.r, color.g, color.b)
                 end
             end
         elseif context.data.IsTrackedGear(itemId) then
             local entries = context.data.GetPlayerSpecEntriesForGear(itemId, context.player.GetPlayerSpecsForUnit(unit))
             if next(entries) then
+                local isOffspecBis = false
                 for specName, entry in pairs(entries) do
-                    if specName == context.player.GetCurrentSpecName(unit) then
-                        local isBisOverall = false
-                        for sourceName, sourceInfo in pairs(entry) do
-                            if not isBisOverall then
-                                for _, listName in ipairs(sourceInfo) do
-                                    if listName == "overall" then
-                                        isBisOverall = true
-                                        break
-                                    end
+                    local isBisOverall = false
+                    for sourceName, sourceInfo in pairs(entry) do
+                        if not isBisOverall then
+                            for _, listName in ipairs(sourceInfo) do
+                                if listName == "overall" then
+                                    isBisOverall = true
+                                    break
                                 end
-                            else
-                                break
                             end
+                        else
+                            break
                         end
+                    end
+                    if specName == context.player.GetCurrentSpecName(unit) then
                         local color = isBisOverall and ITEM_QUALITY_COLORS[5] or ITEM_QUALITY_COLORS[4]
                         itemIsBis = true
                         UpdateTextOverlay(frame, unit, "BiS", color.r, color.g, color.b)
-                        break
+                    else
+                        isOffspecBis = true
                     end
+                end
+
+                if not itemIsBis and isOffspecBis then
+                    local color = ITEM_QUALITY_COLORS[0]
+                    UpdateTextOverlay(frame, unit, "BiS", color.r, color.g, color.b)
                 end
             end
         end
