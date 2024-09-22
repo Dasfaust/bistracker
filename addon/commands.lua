@@ -85,7 +85,7 @@ local function PrintWeeklyTasks()
     local tasks = {}
     local i = 1
     for _, task in pairs(context.commands.bis.weeklyTasks) do
-        local reportHeader = "  " .. tostring(i) .. ". Catalyze, raid, or trade " .. curioItemLink .. " for:"
+        local reportHeader = "  " .. tostring(i) .. ". Catalyze, loot vault, raid, or trade " .. curioItemLink .. " for:"
         local reportItems = "    "
         for idx, itemId in ipairs(task.itemIds) do
             reportItems = reportItems .. (idx > 1 and ", " or "") .. context.commands.bis.itemLinks[itemId]
