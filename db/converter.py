@@ -111,9 +111,9 @@ def parse_list():
 
             if "bis" in bis_type.lower():
                 entry["bis_type"] = bis_type.replace("bis_", "")
-                if entry["bis_type"] == "mythic":
+                if entry["bis_type"] == "from_mythic":
                     entry["bis_type"] = "from M+"
-                elif entry["bis_type"] == "raid":
+                elif entry["bis_type"] == "from_raid":
                     entry["bis_type"] = "from raid"
                 bis_entries.append(entry)
             else:
