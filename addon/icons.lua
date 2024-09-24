@@ -221,8 +221,10 @@ local function UpdateLootFrameSlot(frame)
     local data = frame:GetElementData()
     if not (data and data.slotIndex) then return end
     local link = GetLootSlotLink(data.slotIndex)
-    local itemId = context.data.GetItemIdFromLink(link)
-    LabelFrame(frame, tostring(itemId), "player")
+    if link ~= nil then
+        local itemId = context.data.GetItemIdFromLink(link)
+        LabelFrame(frame, tostring(itemId), "player")
+    end
 end
 
 context.events.AddEventCallback(context.events.onAddonLoaded, function()
