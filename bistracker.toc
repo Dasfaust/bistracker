@@ -2,7 +2,7 @@
 ## Title: BiSTracker
 ## Notes: Easily track your best-in-slot items
 ## Author: Dasfaust
-## Version: 1.0.1-beta2-092324
+## Version: 1.0.2-beta3-092324
 
 db/database.lua
 addon/utils.lua
