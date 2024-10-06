@@ -3,18 +3,78 @@ local addonName, context = ...
 context.database = {
 	trinkets = {
 		wowhead = {
+			["215172"] = {
+				["Death Knight/Blood"] = "S",
+				["Demon Hunter/Vengeance"] = "B",
+				["Monk/Brewmaster"] = "B",
+			},
+			["219314"] = {
+				["Death Knight/Blood"] = "A",
+				["Demon Hunter/Vengeance"] = "A+",
+				["Druid/Feral"] = "A",
+				["Evoker/Augmentation"] = "A",
+				["Druid/Guardian"] = "S",
+				["Demon Hunter/Havoc"] = "S-",
+				["Druid/Restoration"] = "A",
+				["Druid/Balance"] = "S",
+				["Death Knight/Unholy"] = "A",
+				["Death Knight/Frost"] = "S",
+				["Evoker/Preservation"] = "A",
+				["Hunter/Beast Mastery"] = "S",
+				["Hunter/Survival"] = "A",
+				["Mage/Frost"] = "A",
+				["Evoker/Devastation"] = "A",
+				["Monk/Brewmaster"] = "A",
+				["Monk/Mistweaver"] = "A",
+				["Mage/Arcane"] = "A",
+				["Monk/Windwalker"] = "A",
+				["Mage/Fire"] = "A",
+				["Paladin/Protection"] = "S",
+				["Paladin/Retribution"] = "S",
+				["Priest/Discipline"] = "A",
+				["Priest/Holy"] = "A",
+				["Rogue/Assassination"] = "S",
+				["Rogue/Outlaw"] = "S",
+				["Priest/Shadow"] = "A",
+				["Shaman/Enhancement"] = "S",
+				["Shaman/Elemental"] = "S",
+				["Shaman/Restoration"] = "S",
+				["Warlock/Demonology"] = "S",
+				["Warlock/Destruction"] = "S",
+				["Warlock/Affliction"] = "S",
+				["Warrior/Protection"] = "S",
+			},
+			["212449"] = {
+				["Death Knight/Blood"] = "A",
+				["Demon Hunter/Vengeance"] = "A",
+				["Druid/Feral"] = "B",
+				["Druid/Guardian"] = "B",
+				["Death Knight/Unholy"] = "C",
+				["Hunter/Survival"] = "B",
+				["Monk/Brewmaster"] = "A",
+				["Hunter/Marksmanship"] = "A",
+				["Rogue/Assassination"] = "B",
+				["Rogue/Outlaw"] = "A",
+				["Warrior/Protection"] = "A",
+			},
+			["178751"] = {
+				["Death Knight/Blood"] = "A",
+				["Death Knight/Unholy"] = "B",
+				["Death Knight/Frost"] = "B",
+				["Paladin/Retribution"] = "B",
+			},
 			["212456"] = {
 				["Demon Hunter/Vengeance"] = "A+",
 				["Druid/Feral"] = "A",
-				["Demon Hunter/Havoc"] = "S-",
 				["Druid/Guardian"] = "S",
+				["Demon Hunter/Havoc"] = "S-",
 				["Hunter/Beast Mastery"] = "A",
 				["Hunter/Survival"] = "A",
 				["Monk/Brewmaster"] = "A",
 				["Monk/Windwalker"] = "S",
+				["Rogue/Subtlety"] = "A",
 				["Rogue/Assassination"] = "A",
 				["Rogue/Outlaw"] = "S",
-				["Rogue/Subtlety"] = "A",
 				["Shaman/Enhancement"] = "B+",
 			},
 			["212450"] = {
@@ -32,42 +92,6 @@ context.database = {
 				["Monk/Brewmaster"] = "A",
 				["Rogue/Outlaw"] = "S",
 			},
-			["219314"] = {
-				["Demon Hunter/Vengeance"] = "A+",
-				["Druid/Feral"] = "A",
-				["Death Knight/Blood"] = "A",
-				["Druid/Restoration"] = "A",
-				["Demon Hunter/Havoc"] = "S-",
-				["Druid/Guardian"] = "S",
-				["Druid/Balance"] = "S",
-				["Death Knight/Unholy"] = "A",
-				["Death Knight/Frost"] = "S",
-				["Evoker/Augmentation"] = "A",
-				["Hunter/Beast Mastery"] = "S",
-				["Evoker/Preservation"] = "A",
-				["Hunter/Survival"] = "A",
-				["Evoker/Devastation"] = "A",
-				["Mage/Arcane"] = "A",
-				["Mage/Frost"] = "A",
-				["Monk/Mistweaver"] = "A",
-				["Monk/Brewmaster"] = "A",
-				["Mage/Fire"] = "A",
-				["Monk/Windwalker"] = "A",
-				["Paladin/Protection"] = "S",
-				["Paladin/Retribution"] = "S",
-				["Rogue/Assassination"] = "S",
-				["Shaman/Elemental"] = "S",
-				["Rogue/Outlaw"] = "S",
-				["Priest/Shadow"] = "A",
-				["Priest/Holy"] = "A",
-				["Shaman/Enhancement"] = "S",
-				["Shaman/Restoration"] = "S",
-				["Priest/Discipline"] = "A",
-				["Warlock/Demonology"] = "S",
-				["Warlock/Affliction"] = "S",
-				["Warlock/Destruction"] = "S",
-				["Warrior/Protection"] = "S",
-			},
 			["219915"] = {
 				["Demon Hunter/Vengeance"] = "A+",
 				["Druid/Guardian"] = "S",
@@ -77,55 +101,42 @@ context.database = {
 			["219312"] = {
 				["Demon Hunter/Vengeance"] = "A",
 				["Druid/Feral"] = "A",
-				["Druid/Restoration"] = "A",
-				["Demon Hunter/Havoc"] = "A",
-				["Druid/Balance"] = "A",
 				["Evoker/Augmentation"] = "C",
-				["Hunter/Beast Mastery"] = "A+",
+				["Demon Hunter/Havoc"] = "A",
+				["Druid/Restoration"] = "A",
+				["Druid/Balance"] = "A",
 				["Evoker/Preservation"] = "A",
+				["Hunter/Beast Mastery"] = "A+",
 				["Hunter/Survival"] = "A",
-				["Evoker/Devastation"] = "A",
-				["Mage/Arcane"] = "A",
 				["Mage/Frost"] = "B",
-				["Monk/Mistweaver"] = "A",
+				["Evoker/Devastation"] = "A",
 				["Monk/Brewmaster"] = "B",
+				["Monk/Mistweaver"] = "A",
+				["Mage/Arcane"] = "A",
 				["Mage/Fire"] = "B",
-				["Rogue/Assassination"] = "A",
-				["Shaman/Elemental"] = "A",
-				["Priest/Shadow"] = "A",
-				["Priest/Holy"] = "S",
-				["Shaman/Enhancement"] = "S",
-				["Shaman/Restoration"] = "A",
 				["Priest/Discipline"] = "A",
+				["Priest/Holy"] = "S",
+				["Rogue/Assassination"] = "A",
+				["Priest/Shadow"] = "A",
+				["Shaman/Enhancement"] = "S",
+				["Shaman/Elemental"] = "A",
+				["Shaman/Restoration"] = "A",
 				["Warlock/Demonology"] = "A",
-				["Warlock/Affliction"] = "A",
 				["Warlock/Destruction"] = "A",
+				["Warlock/Affliction"] = "A",
 			},
 			["159623"] = {
 				["Demon Hunter/Vengeance"] = "A",
 				["Druid/Feral"] = "A",
-				["Demon Hunter/Havoc"] = "A",
 				["Druid/Guardian"] = "A",
+				["Demon Hunter/Havoc"] = "A",
 				["Hunter/Beast Mastery"] = "A",
 				["Hunter/Survival"] = "A",
 				["Hunter/Marksmanship"] = "A",
+				["Rogue/Subtlety"] = "A",
 				["Rogue/Assassination"] = "A",
 				["Rogue/Outlaw"] = "A",
-				["Rogue/Subtlety"] = "A",
 				["Shaman/Enhancement"] = "B+",
-			},
-			["212449"] = {
-				["Demon Hunter/Vengeance"] = "A",
-				["Druid/Feral"] = "B",
-				["Death Knight/Blood"] = "A",
-				["Druid/Guardian"] = "B",
-				["Death Knight/Unholy"] = "C",
-				["Hunter/Survival"] = "B",
-				["Hunter/Marksmanship"] = "A",
-				["Monk/Brewmaster"] = "A",
-				["Rogue/Assassination"] = "B",
-				["Rogue/Outlaw"] = "A",
-				["Warrior/Protection"] = "A",
 			},
 			["219319"] = {
 				["Demon Hunter/Vengeance"] = "B",
@@ -135,92 +146,87 @@ context.database = {
 			["212454"] = {
 				["Demon Hunter/Vengeance"] = "B",
 				["Druid/Feral"] = "A",
-				["Demon Hunter/Havoc"] = "S",
+				["Evoker/Augmentation"] = "S",
 				["Druid/Guardian"] = "S",
+				["Demon Hunter/Havoc"] = "S",
 				["Death Knight/Unholy"] = "B",
 				["Death Knight/Frost"] = "B",
-				["Evoker/Augmentation"] = "S",
 				["Hunter/Beast Mastery"] = "A+",
 				["Hunter/Survival"] = "A",
 				["Evoker/Devastation"] = "A",
-				["Hunter/Marksmanship"] = "S",
 				["Monk/Brewmaster"] = "S",
+				["Hunter/Marksmanship"] = "S",
 				["Monk/Windwalker"] = "A",
 				["Paladin/Retribution"] = "A",
+				["Rogue/Subtlety"] = "A",
 				["Rogue/Assassination"] = "S",
 				["Rogue/Outlaw"] = "S",
-				["Rogue/Subtlety"] = "A",
 				["Warlock/Demonology"] = "S",
-				["Warlock/Affliction"] = "S",
 				["Warlock/Destruction"] = "S",
+				["Warlock/Affliction"] = "S",
 				["Warrior/Protection"] = "S",
-			},
-			["215172"] = {
-				["Demon Hunter/Vengeance"] = "B",
-				["Death Knight/Blood"] = "S",
-				["Monk/Brewmaster"] = "B",
 			},
 			["133282"] = {
 				["Druid/Feral"] = "S",
-				["Demon Hunter/Havoc"] = "S",
 				["Druid/Guardian"] = "A",
+				["Demon Hunter/Havoc"] = "S",
 				["Hunter/Beast Mastery"] = "S",
 				["Hunter/Survival"] = "S",
 				["Hunter/Marksmanship"] = "S",
 				["Monk/Windwalker"] = "S",
-				["Rogue/Assassination"] = "S",
 				["Rogue/Subtlety"] = "B",
+				["Rogue/Assassination"] = "S",
 				["Shaman/Enhancement"] = "S",
 			},
 			["220305"] = {
 				["Druid/Feral"] = "A",
-				["Demon Hunter/Havoc"] = "A",
+				["Evoker/Augmentation"] = "B",
 				["Druid/Guardian"] = "B",
+				["Demon Hunter/Havoc"] = "A",
 				["Druid/Balance"] = "B",
 				["Death Knight/Unholy"] = "A",
 				["Death Knight/Frost"] = "A",
-				["Evoker/Augmentation"] = "B",
 				["Hunter/Survival"] = "A",
+				["Mage/Frost"] = "A",
 				["Evoker/Devastation"] = "A",
+				["Monk/Brewmaster"] = "B",
+				["Monk/Mistweaver"] = "B",
 				["Mage/Arcane"] = "B",
 				["Paladin/Holy"] = "A",
-				["Mage/Frost"] = "A",
-				["Monk/Mistweaver"] = "B",
-				["Monk/Brewmaster"] = "B",
 				["Mage/Fire"] = "A",
 				["Paladin/Retribution"] = "C",
-				["Rogue/Assassination"] = "B",
-				["Shaman/Elemental"] = "S",
-				["Priest/Shadow"] = "B",
 				["Rogue/Subtlety"] = "A",
+				["Rogue/Assassination"] = "B",
+				["Priest/Shadow"] = "B",
 				["Shaman/Enhancement"] = "B+",
+				["Shaman/Elemental"] = "S",
 				["Shaman/Restoration"] = "A",
 				["Warlock/Demonology"] = "A",
 				["Warlock/Affliction"] = "S",
 			},
 			["221023"] = {
 				["Druid/Feral"] = "A",
-				["Demon Hunter/Havoc"] = "B",
+				["Evoker/Augmentation"] = "C",
 				["Druid/Guardian"] = "B",
+				["Demon Hunter/Havoc"] = "B",
 				["Druid/Balance"] = "B",
 				["Death Knight/Unholy"] = "S",
 				["Death Knight/Frost"] = "S",
-				["Evoker/Augmentation"] = "C",
 				["Hunter/Survival"] = "B",
-				["Evoker/Devastation"] = "B",
-				["Mage/Arcane"] = "A",
-				["Hunter/Marksmanship"] = "S",
-				["Paladin/Holy"] = "C",
 				["Mage/Frost"] = "A",
-				["Mage/Fire"] = "A",
+				["Evoker/Devastation"] = "B",
+				["Hunter/Marksmanship"] = "S",
+				["Mage/Arcane"] = "A",
+				["Paladin/Holy"] = "C",
 				["Monk/Windwalker"] = "S",
+				["Mage/Fire"] = "A",
 				["Paladin/Protection"] = "C",
 				["Paladin/Retribution"] = "B",
-				["Rogue/Assassination"] = "C",
-				["Shaman/Elemental"] = "A",
-				["Priest/Shadow"] = "A",
 				["Rogue/Subtlety"] = "S",
+				["Rogue/Assassination"] = "C",
+				["Priest/Shadow"] = "A",
 				["Shaman/Enhancement"] = "A",
+				["Shaman/Elemental"] = "A",
 				["Warrior/Protection"] = "B",
 			},
 			["215174"] = {
@@ -234,14 +240,14 @@ context.database = {
 			["225649"] = {
 				["Druid/Feral"] = "B",
 				["Druid/Restoration"] = "B",
-				["Hunter/Beast Mastery"] = "B",
 				["Evoker/Preservation"] = "C",
+				["Hunter/Beast Mastery"] = "B",
 				["Hunter/Survival"] = "B",
-				["Evoker/Devastation"] = "C",
-				["Mage/Arcane"] = "B",
-				["Hunter/Marksmanship"] = "B",
-				["Paladin/Holy"] = "B",
 				["Mage/Frost"] = "B",
+				["Evoker/Devastation"] = "C",
+				["Hunter/Marksmanship"] = "B",
+				["Mage/Arcane"] = "B",
+				["Paladin/Holy"] = "B",
 				["Mage/Fire"] = "C",
 				["Paladin/Retribution"] = "C",
 				["Rogue/Subtlety"] = "C",
@@ -251,108 +257,134 @@ context.database = {
 			},
 			["215178"] = {
 				["Druid/Feral"] = "B",
-				["Death Knight/Unholy"] = "A",
 				["Evoker/Augmentation"] = "A",
+				["Death Knight/Unholy"] = "A",
 				["Hunter/Survival"] = "A",
 				["Mage/Arcane"] = "B",
 				["Paladin/Retribution"] = "A",
-				["Rogue/Assassination"] = "A",
 				["Rogue/Subtlety"] = "A",
+				["Rogue/Assassination"] = "A",
 				["Shaman/Enhancement"] = "A",
 			},
 			["218713"] = {
 				["Druid/Feral"] = "B",
 			},
-			["178751"] = {
-				["Death Knight/Blood"] = "A",
-				["Death Knight/Unholy"] = "B",
-				["Death Knight/Frost"] = "B",
-				["Paladin/Retribution"] = "B",
-			},
 			["220202"] = {
+				["Evoker/Augmentation"] = "S",
 				["Druid/Restoration"] = "S",
 				["Druid/Balance"] = "S",
-				["Evoker/Augmentation"] = "S",
 				["Evoker/Preservation"] = "S",
+				["Mage/Frost"] = "S",
 				["Evoker/Devastation"] = "S",
+				["Monk/Mistweaver"] = "A",
 				["Mage/Arcane"] = "S",
 				["Paladin/Holy"] = "A",
-				["Mage/Frost"] = "S",
-				["Monk/Mistweaver"] = "A",
 				["Mage/Fire"] = "S",
-				["Shaman/Elemental"] = "S",
-				["Priest/Shadow"] = "S",
-				["Shaman/Restoration"] = "S",
 				["Priest/Discipline"] = "S",
-				["Warlock/Demonology"] = "S+",
-				["Warlock/Affliction"] = "S",
-				["Warlock/Destruction"] = "S",
-			},
-			["133304"] = {
-				["Druid/Restoration"] = "S",
-				["Druid/Balance"] = "A",
-				["Evoker/Augmentation"] = "C",
-				["Evoker/Preservation"] = "S",
-				["Paladin/Holy"] = "S",
-				["Monk/Mistweaver"] = "S",
+				["Priest/Shadow"] = "S",
 				["Shaman/Elemental"] = "S",
-				["Warlock/Affliction"] = "B",
-				["Warlock/Destruction"] = "A",
+				["Shaman/Restoration"] = "S",
+				["Warlock/Demonology"] = "S+",
+				["Warlock/Destruction"] = "S",
+				["Warlock/Affliction"] = "S",
+			},
+			["219313"] = {
+				["Evoker/Augmentation"] = "A",
+				["Evoker/Devastation"] = "C",
+				["Mage/Arcane"] = "A",
+				["Paladin/Holy"] = "C",
+				["Mage/Fire"] = "C",
+			},
+			["212451"] = {
+				["Evoker/Augmentation"] = "B",
+				["Evoker/Devastation"] = "A",
+				["Mage/Arcane"] = "B",
+				["Mage/Fire"] = "C",
+				["Shaman/Elemental"] = "A",
+				["Warlock/Demonology"] = "B",
 			},
 			["178708"] = {
+				["Evoker/Augmentation"] = "B",
 				["Druid/Restoration"] = "S",
 				["Druid/Balance"] = "A",
-				["Evoker/Augmentation"] = "B",
 				["Evoker/Preservation"] = "S",
+				["Mage/Frost"] = "A",
 				["Evoker/Devastation"] = "A",
+				["Monk/Mistweaver"] = "A",
 				["Mage/Arcane"] = "A",
 				["Paladin/Holy"] = "A",
-				["Mage/Frost"] = "A",
-				["Monk/Mistweaver"] = "A",
 				["Mage/Fire"] = "B",
-				["Shaman/Elemental"] = "S",
+				["Priest/Discipline"] = "A",
+				["Priest/Holy"] = "S",
 				["Priest/Shadow"] = "A",
-				["Priest/Holy"] = "S",
+				["Shaman/Elemental"] = "S",
 				["Shaman/Restoration"] = "S",
-				["Priest/Discipline"] = "A",
 				["Warlock/Demonology"] = "A",
-				["Warlock/Affliction"] = "A",
 				["Warlock/Destruction"] = "B",
+				["Warlock/Affliction"] = "A",
 			},
-			["219917"] = {
-				["Druid/Restoration"] = "A",
-				["Evoker/Preservation"] = "A",
-				["Paladin/Holy"] = "B",
-				["Monk/Mistweaver"] = "A",
-				["Priest/Holy"] = "S",
-				["Shaman/Restoration"] = "B+",
-				["Priest/Discipline"] = "A",
+			["159622"] = {
+				["Evoker/Augmentation"] = "B",
+				["Mage/Frost"] = "B",
+				["Evoker/Devastation"] = "B",
+				["Mage/Arcane"] = "B",
+				["Mage/Fire"] = "C",
+				["Priest/Shadow"] = "B",
+				["Shaman/Elemental"] = "A-",
+				["Warlock/Demonology"] = "B",
+				["Warlock/Destruction"] = "B",
+				["Warlock/Affliction"] = "B",
 			},
-			["225668"] = {
-				["Druid/Restoration"] = "A",
-				["Evoker/Augmentation"] = "D",
-				["Evoker/Preservation"] = "A",
+			["225654"] = {
+				["Evoker/Augmentation"] = "B",
+				["Death Knight/Frost"] = "D",
+				["Hunter/Survival"] = "B",
+				["Evoker/Devastation"] = "C",
 				["Mage/Arcane"] = "C",
-				["Priest/Holy"] = "B",
-				["Shaman/Restoration"] = "B+",
-				["Priest/Discipline"] = "B",
+				["Mage/Fire"] = "C",
+				["Rogue/Subtlety"] = "D",
+				["Warrior/Protection"] = "D",
 			},
-			["225656"] = {
-				["Druid/Restoration"] = "B",
-				["Evoker/Preservation"] = "B",
-				["Paladin/Holy"] = "C",
+			["133304"] = {
+				["Evoker/Augmentation"] = "C",
+				["Druid/Restoration"] = "S",
+				["Druid/Balance"] = "A",
+				["Evoker/Preservation"] = "S",
+				["Monk/Mistweaver"] = "S",
+				["Paladin/Holy"] = "S",
+				["Shaman/Elemental"] = "S",
+				["Warlock/Destruction"] = "A",
+				["Warlock/Affliction"] = "B",
+			},
+			["219317"] = {
+				["Evoker/Augmentation"] = "C",
+				["Druid/Guardian"] = "B",
+				["Hunter/Survival"] = "B",
+				["Evoker/Devastation"] = "B",
+				["Mage/Arcane"] = "C",
+				["Mage/Fire"] = "C",
+				["Warlock/Destruction"] = "A",
+				["Warlock/Affliction"] = "A",
 			},
 			["219321"] = {
-				["Druid/Restoration"] = "B",
 				["Evoker/Augmentation"] = "C",
+				["Druid/Restoration"] = "B",
 				["Evoker/Preservation"] = "B",
 			},
-			["212452"] = {
-				["Druid/Restoration"] = "B",
+			["219303"] = {
+				["Evoker/Augmentation"] = "D",
+			},
+			["225668"] = {
+				["Evoker/Augmentation"] = "D",
+				["Druid/Restoration"] = "A",
 				["Evoker/Preservation"] = "A",
-				["Paladin/Holy"] = "C",
-				["Priest/Holy"] = "C",
-				["Priest/Discipline"] = "C",
+				["Mage/Arcane"] = "C",
+				["Priest/Discipline"] = "B",
+				["Priest/Holy"] = "B",
+				["Shaman/Restoration"] = "B+",
+			},
+			["222671"] = {
+				["Evoker/Augmentation"] = "D",
 			},
 			["178715"] = {
 				["Demon Hunter/Havoc"] = "B",
@@ -364,15 +396,26 @@ context.database = {
 			["222680"] = {
 				["Demon Hunter/Havoc"] = "D",
 			},
-			["219317"] = {
-				["Druid/Guardian"] = "B",
-				["Evoker/Augmentation"] = "C",
-				["Hunter/Survival"] = "B",
-				["Evoker/Devastation"] = "B",
-				["Mage/Arcane"] = "C",
-				["Mage/Fire"] = "C",
-				["Warlock/Affliction"] = "A",
-				["Warlock/Destruction"] = "A",
+			["219917"] = {
+				["Druid/Restoration"] = "A",
+				["Evoker/Preservation"] = "A",
+				["Monk/Mistweaver"] = "A",
+				["Paladin/Holy"] = "B",
+				["Priest/Discipline"] = "A",
+				["Priest/Holy"] = "S",
+				["Shaman/Restoration"] = "B+",
+			},
+			["225656"] = {
+				["Druid/Restoration"] = "B",
+				["Evoker/Preservation"] = "B",
+				["Paladin/Holy"] = "C",
+			},
+			["212452"] = {
+				["Druid/Restoration"] = "B",
+				["Evoker/Preservation"] = "A",
+				["Paladin/Holy"] = "C",
+				["Priest/Discipline"] = "C",
+				["Priest/Holy"] = "C",
 			},
 			["133300"] = {
 				["Death Knight/Unholy"] = "S",
@@ -408,48 +451,8 @@ context.database = {
 				["Death Knight/Unholy"] = "C",
 				["Paladin/Retribution"] = "C",
 			},
-			["225654"] = {
-				["Death Knight/Frost"] = "D",
-				["Evoker/Augmentation"] = "B",
-				["Hunter/Survival"] = "B",
-				["Evoker/Devastation"] = "C",
-				["Mage/Arcane"] = "C",
-				["Mage/Fire"] = "C",
-				["Rogue/Subtlety"] = "D",
-				["Warrior/Protection"] = "D",
-			},
-			["219313"] = {
-				["Evoker/Augmentation"] = "A",
-				["Evoker/Devastation"] = "C",
-				["Mage/Arcane"] = "A",
-				["Paladin/Holy"] = "C",
-				["Mage/Fire"] = "C",
-			},
-			["212451"] = {
-				["Evoker/Augmentation"] = "B",
-				["Evoker/Devastation"] = "A",
-				["Mage/Arcane"] = "B",
-				["Mage/Fire"] = "C",
-				["Shaman/Elemental"] = "A",
-				["Warlock/Demonology"] = "B",
-			},
-			["159622"] = {
-				["Evoker/Augmentation"] = "B",
-				["Evoker/Devastation"] = "B",
-				["Mage/Arcane"] = "B",
-				["Mage/Frost"] = "B",
-				["Mage/Fire"] = "C",
-				["Shaman/Elemental"] = "A-",
-				["Priest/Shadow"] = "B",
-				["Warlock/Demonology"] = "B",
-				["Warlock/Affliction"] = "B",
-				["Warlock/Destruction"] = "B",
-			},
-			["219303"] = {
-				["Evoker/Augmentation"] = "D",
-			},
-			["222671"] = {
-				["Evoker/Augmentation"] = "D",
+			["133305"] = {
+				["Evoker/Preservation"] = "F",
 			},
 			["225638"] = {
 				["Hunter/Beast Mastery"] = "B",
@@ -457,43 +460,40 @@ context.database = {
 				["Rogue/Outlaw"] = "B",
 				["Shaman/Enhancement"] = "B+",
 			},
-			["133305"] = {
-				["Evoker/Preservation"] = "F",
-			},
 			["219301"] = {
 				["Hunter/Survival"] = "D",
 				["Rogue/Outlaw"] = "A",
 			},
-			["56462"] = {
-				["Evoker/Devastation"] = "A",
+			["178772"] = {
 				["Mage/Frost"] = "A",
+				["Evoker/Devastation"] = "B",
+				["Mage/Arcane"] = "B",
+				["Mage/Fire"] = "C",
+				["Priest/Shadow"] = "B",
+				["Shaman/Elemental"] = "A-",
+				["Warlock/Demonology"] = "B",
+				["Warlock/Destruction"] = "B",
+				["Warlock/Affliction"] = "B",
+			},
+			["56462"] = {
+				["Mage/Frost"] = "A",
+				["Evoker/Devastation"] = "A",
 				["Mage/Fire"] = "A",
-				["Priest/Shadow"] = "A",
-				["Priest/Holy"] = "S",
-				["Shaman/Restoration"] = "S",
 				["Priest/Discipline"] = "A",
+				["Priest/Holy"] = "S",
+				["Priest/Shadow"] = "A",
+				["Shaman/Restoration"] = "S",
 			},
 			["225648"] = {
 				["Evoker/Devastation"] = "A",
 				["Mage/Arcane"] = "A",
 				["Mage/Fire"] = "A",
 			},
-			["178772"] = {
-				["Evoker/Devastation"] = "B",
-				["Mage/Arcane"] = "B",
-				["Mage/Frost"] = "A",
-				["Mage/Fire"] = "C",
-				["Shaman/Elemental"] = "A-",
-				["Priest/Shadow"] = "B",
-				["Warlock/Demonology"] = "B",
-				["Warlock/Affliction"] = "B",
-				["Warlock/Destruction"] = "B",
+			["56440"] = {
+				["Monk/Brewmaster"] = "B",
 			},
 			["215169"] = {
 				["Mage/Arcane"] = "C",
-			},
-			["56440"] = {
-				["Monk/Brewmaster"] = "B",
 			},
 			["133291"] = {
 				["Paladin/Protection"] = "A",
@@ -507,19 +507,19 @@ context.database = {
 				["Paladin/Protection"] = "F",
 			},
 			["226539"] = {
-				["Rogue/Assassination"] = "C",
 				["Rogue/Subtlety"] = "B",
+				["Rogue/Assassination"] = "C",
 			},
 			["219302"] = {
-				["Priest/Holy"] = "A",
 				["Priest/Discipline"] = "C",
+				["Priest/Holy"] = "A",
+			},
+			["219296"] = {
+				["Priest/Discipline"] = "C",
+				["Priest/Holy"] = "C",
 			},
 			["219305"] = {
 				["Priest/Holy"] = "B",
-			},
-			["219296"] = {
-				["Priest/Holy"] = "C",
-				["Priest/Discipline"] = "C",
 			},
 			["219320"] = {
 				["Shaman/Restoration"] = "B",
@@ -534,1244 +534,6 @@ context.database = {
 	},
 	gear = {
 		wowhead = {
-			["221081"] = {
-				["Demon Hunter/Vengeance"] = {
-					"overall",
-					"from M+",
-				},
-			},
-			["212448"] = {
-				["Demon Hunter/Vengeance"] = {
-					"overall",
-					"from raid",
-				},
-				["Demon Hunter/Havoc"] = {
-					"from raid",
-				},
-				["Death Knight/Frost"] = {
-					"from raid",
-				},
-				["Evoker/Augmentation"] = {
-					"from raid",
-				},
-				["Hunter/Survival"] = {
-					"from raid",
-				},
-				["Evoker/Devastation"] = {
-					"overall",
-					"from raid",
-				},
-				["Hunter/Marksmanship"] = {
-					"overall",
-					"from raid",
-				},
-				["Rogue/Outlaw"] = {
-					"from raid",
-				},
-				["Shaman/Restoration"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["212063"] = {
-				["Demon Hunter/Vengeance"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Demon Hunter/Havoc"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["225574"] = {
-				["Demon Hunter/Vengeance"] = {
-					"overall",
-					"from raid",
-				},
-				["Druid/Feral"] = {
-					"from raid",
-				},
-				["Death Knight/Blood"] = {
-					"overall",
-					"from raid",
-				},
-				["Druid/Restoration"] = {
-					"overall",
-					"from raid",
-				},
-				["Demon Hunter/Havoc"] = {
-					"overall",
-					"from raid",
-				},
-				["Druid/Guardian"] = {
-					"overall",
-					"from raid",
-				},
-				["Death Knight/Unholy"] = {
-					"from raid",
-				},
-				["Death Knight/Frost"] = {
-					"overall",
-					"from raid",
-				},
-				["Hunter/Beast Mastery"] = {
-					"overall",
-					"from raid",
-				},
-				["Evoker/Devastation"] = {
-					"overall",
-					"from raid",
-				},
-				["Hunter/Marksmanship"] = {
-					"from raid",
-				},
-				["Paladin/Holy"] = {
-					"overall",
-					"from raid",
-				},
-				["Monk/Mistweaver"] = {
-					"from raid",
-				},
-				["Monk/Brewmaster"] = {
-					"overall",
-					"from raid",
-				},
-				["Mage/Fire"] = {
-					"from raid",
-				},
-				["Monk/Windwalker"] = {
-					"overall",
-					"from raid",
-				},
-				["Paladin/Protection"] = {
-					"overall",
-					"from raid",
-				},
-				["Rogue/Assassination"] = {
-					"overall",
-					"from raid",
-				},
-				["Shaman/Elemental"] = {
-					"overall",
-					"from raid",
-				},
-				["Rogue/Outlaw"] = {
-					"overall",
-					"from raid",
-				},
-				["Priest/Shadow"] = {
-					"overall",
-					"from raid",
-				},
-				["Rogue/Subtlety"] = {
-					"from raid",
-				},
-				["Shaman/Restoration"] = {
-					"overall",
-					"from raid",
-				},
-				["Priest/Discipline"] = {
-					"overall",
-					"from raid",
-				},
-				["Warlock/Demonology"] = {
-					"overall",
-					"from raid",
-				},
-				["Warrior/Arms"] = {
-					"from raid",
-				},
-				["Warlock/Affliction"] = {
-					"overall",
-					"from raid",
-				},
-				["Warlock/Destruction"] = {
-					"overall",
-					"from raid",
-				},
-				["Warrior/Protection"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["212068"] = {
-				["Demon Hunter/Vengeance"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Demon Hunter/Havoc"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["221142"] = {
-				["Demon Hunter/Vengeance"] = {
-					"overall",
-					"from M+",
-				},
-				["Druid/Feral"] = {
-					"from M+",
-				},
-				["Monk/Mistweaver"] = {
-					"overall",
-					"from M+",
-				},
-				["Rogue/Outlaw"] = {
-					"from M+",
-				},
-			},
-			["212066"] = {
-				["Demon Hunter/Vengeance"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-			},
-			["219502"] = {
-				["Demon Hunter/Vengeance"] = {
-					"overall",
-				},
-				["Monk/Brewmaster"] = {
-					"overall",
-				},
-			},
-			["212064"] = {
-				["Demon Hunter/Vengeance"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Demon Hunter/Havoc"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["159320"] = {
-				["Demon Hunter/Vengeance"] = {
-					"overall",
-					"from M+",
-				},
-				["Monk/Mistweaver"] = {
-					"overall",
-				},
-				["Monk/Brewmaster"] = {
-					"from M+",
-				},
-				["Rogue/Subtlety"] = {
-					"from M+",
-				},
-			},
-			["225578"] = {
-				["Demon Hunter/Vengeance"] = {
-					"overall",
-					"from raid",
-				},
-				["Druid/Feral"] = {
-					"overall",
-					"from raid",
-				},
-				["Death Knight/Blood"] = {
-					"overall",
-					"from raid",
-				},
-				["Demon Hunter/Havoc"] = {
-					"overall",
-					"from raid",
-				},
-				["Druid/Guardian"] = {
-					"overall",
-					"from raid",
-				},
-				["Druid/Balance"] = {
-					"overall",
-					"from raid",
-				},
-				["Death Knight/Frost"] = {
-					"overall",
-					"from raid",
-				},
-				["Evoker/Augmentation"] = {
-					"overall",
-					"from raid",
-				},
-				["Hunter/Beast Mastery"] = {
-					"overall",
-					"from raid",
-				},
-				["Evoker/Preservation"] = {
-					"overall",
-					"from raid",
-				},
-				["Hunter/Survival"] = {
-					"overall",
-					"from raid",
-				},
-				["Evoker/Devastation"] = {
-					"overall",
-					"from raid",
-				},
-				["Mage/Arcane"] = {
-					"overall",
-					"from raid",
-				},
-				["Hunter/Marksmanship"] = {
-					"overall",
-					"from raid",
-				},
-				["Mage/Frost"] = {
-					"overall",
-					"from raid",
-				},
-				["Monk/Mistweaver"] = {
-					"from raid",
-				},
-				["Monk/Brewmaster"] = {
-					"overall",
-					"from raid",
-				},
-				["Mage/Fire"] = {
-					"overall",
-				},
-				["Monk/Windwalker"] = {
-					"from raid",
-				},
-				["Paladin/Protection"] = {
-					"overall",
-					"from raid",
-				},
-				["Paladin/Retribution"] = {
-					"overall",
-					"from raid",
-				},
-				["Rogue/Assassination"] = {
-					"overall",
-					"from raid",
-				},
-				["Shaman/Elemental"] = {
-					"overall",
-				},
-				["Rogue/Outlaw"] = {
-					"from raid",
-				},
-				["Priest/Shadow"] = {
-					"overall",
-					"from raid",
-				},
-				["Rogue/Subtlety"] = {
-					"from raid",
-				},
-				["Priest/Holy"] = {
-					"overall",
-					"from raid",
-				},
-				["Shaman/Restoration"] = {
-					"overall",
-					"from raid",
-				},
-				["Priest/Discipline"] = {
-					"from raid",
-				},
-				["Warlock/Demonology"] = {
-					"overall",
-					"from raid",
-				},
-				["Warrior/Arms"] = {
-					"overall",
-					"from raid",
-				},
-				["Warlock/Affliction"] = {
-					"overall",
-					"from raid",
-				},
-				["Warlock/Destruction"] = {
-					"overall",
-					"from raid",
-				},
-				["Warrior/Fury"] = {
-					"overall",
-					"from raid",
-				},
-				["Warrior/Protection"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["159461"] = {
-				["Demon Hunter/Vengeance"] = {
-					"overall",
-					"from M+",
-				},
-				["Evoker/Preservation"] = {
-					"from M+",
-				},
-				["Evoker/Devastation"] = {
-					"from M+",
-				},
-				["Paladin/Holy"] = {
-					"overall",
-				},
-				["Paladin/Protection"] = {
-					"from M+",
-				},
-				["Shaman/Elemental"] = {
-					"from M+",
-				},
-				["Shaman/Restoration"] = {
-					"from M+",
-				},
-				["Priest/Discipline"] = {
-					"overall",
-					"from M+",
-				},
-				["Warrior/Arms"] = {
-					"overall",
-					"from M+",
-				},
-				["Warrior/Protection"] = {
-					"from M+",
-				},
-			},
-			["219877"] = {
-				["Demon Hunter/Vengeance"] = {
-					"overall",
-					"from raid",
-				},
-				["Demon Hunter/Havoc"] = {
-					"overall",
-					"from raid",
-				},
-				["Monk/Brewmaster"] = {
-					"overall",
-					"from raid",
-				},
-				["Monk/Windwalker"] = {
-					"overall",
-					"from raid",
-				},
-				["Rogue/Outlaw"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["222440"] = {
-				["Demon Hunter/Vengeance"] = {
-					"overall",
-				},
-			},
-			["212417"] = {
-				["Demon Hunter/Vengeance"] = {
-					"from raid",
-				},
-				["Druid/Guardian"] = {
-					"overall",
-					"from raid",
-				},
-				["Druid/Balance"] = {
-					"from raid",
-				},
-				["Rogue/Subtlety"] = {
-					"from raid",
-				},
-			},
-			["225588"] = {
-				["Demon Hunter/Vengeance"] = {
-					"from raid",
-				},
-				["Druid/Guardian"] = {
-					"overall",
-					"from raid",
-				},
-				["Monk/Mistweaver"] = {
-					"from raid",
-				},
-				["Monk/Brewmaster"] = {
-					"overall",
-					"from raid",
-				},
-				["Rogue/Assassination"] = {
-					"from raid",
-				},
-				["Rogue/Outlaw"] = {
-					"from raid",
-				},
-				["Rogue/Subtlety"] = {
-					"from raid",
-				},
-			},
-			["225583"] = {
-				["Demon Hunter/Vengeance"] = {
-					"from raid",
-				},
-				["Druid/Feral"] = {
-					"from raid",
-				},
-				["Druid/Restoration"] = {
-					"overall",
-					"from raid",
-				},
-				["Demon Hunter/Havoc"] = {
-					"from raid",
-				},
-				["Monk/Mistweaver"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Monk/Windwalker"] = {
-					"from raid",
-				},
-				["Rogue/Assassination"] = {
-					"from raid",
-				},
-				["Rogue/Outlaw"] = {
-					"from raid",
-				},
-			},
-			["212445"] = {
-				["Demon Hunter/Vengeance"] = {
-					"from raid",
-				},
-				["Druid/Feral"] = {
-					"from raid",
-				},
-				["Druid/Restoration"] = {
-					"overall",
-					"from raid",
-				},
-				["Demon Hunter/Havoc"] = {
-					"from raid",
-				},
-				["Druid/Balance"] = {
-					"from raid",
-				},
-				["Monk/Mistweaver"] = {
-					"from raid",
-					"from M+",
-				},
-				["Monk/Windwalker"] = {
-					"overall",
-					"from raid",
-				},
-				["Rogue/Assassination"] = {
-					"overall",
-				},
-				["Rogue/Outlaw"] = {
-					"from raid",
-				},
-			},
-			["212447"] = {
-				["Demon Hunter/Vengeance"] = {
-					"from raid",
-				},
-				["Druid/Restoration"] = {
-					"overall",
-					"from raid",
-				},
-				["Demon Hunter/Havoc"] = {
-					"from raid",
-				},
-				["Druid/Guardian"] = {
-					"overall",
-					"from raid",
-				},
-				["Death Knight/Unholy"] = {
-					"from raid",
-				},
-				["Hunter/Beast Mastery"] = {
-					"overall",
-					"from raid",
-				},
-				["Evoker/Devastation"] = {
-					"from raid",
-				},
-				["Mage/Arcane"] = {
-					"from raid",
-				},
-				["Paladin/Holy"] = {
-					"from raid",
-				},
-				["Mage/Frost"] = {
-					"from raid",
-				},
-				["Monk/Mistweaver"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Mage/Fire"] = {
-					"overall",
-					"from raid",
-				},
-				["Monk/Windwalker"] = {
-					"from raid",
-				},
-				["Paladin/Protection"] = {
-					"overall",
-					"from raid",
-				},
-				["Shaman/Elemental"] = {
-					"from raid",
-				},
-				["Rogue/Outlaw"] = {
-					"from raid",
-				},
-				["Priest/Shadow"] = {
-					"overall",
-					"from raid",
-				},
-				["Priest/Discipline"] = {
-					"overall",
-					"from raid",
-				},
-				["Warlock/Demonology"] = {
-					"overall",
-					"from raid",
-				},
-				["Warrior/Arms"] = {
-					"from raid",
-				},
-				["Warlock/Affliction"] = {
-					"from raid",
-				},
-				["Warlock/Destruction"] = {
-					"from raid",
-				},
-				["Warrior/Protection"] = {
-					"from raid",
-				},
-			},
-			["212409"] = {
-				["Demon Hunter/Vengeance"] = {
-					"from raid",
-				},
-				["Monk/Windwalker"] = {
-					"from raid",
-				},
-			},
-			["221181"] = {
-				["Demon Hunter/Vengeance"] = {
-					"from M+",
-				},
-				["Druid/Guardian"] = {
-					"from M+",
-				},
-				["Evoker/Devastation"] = {
-					"from M+",
-				},
-				["Paladin/Holy"] = {
-					"from M+",
-				},
-				["Monk/Brewmaster"] = {
-					"from M+",
-				},
-				["Rogue/Outlaw"] = {
-					"overall",
-					"from M+",
-				},
-				["Shaman/Restoration"] = {
-					"from M+",
-				},
-			},
-			["133292"] = {
-				["Demon Hunter/Vengeance"] = {
-					"from M+",
-				},
-				["Monk/Mistweaver"] = {
-					"overall",
-				},
-				["Rogue/Subtlety"] = {
-					"overall",
-					"from M+",
-				},
-			},
-			["159309"] = {
-				["Demon Hunter/Vengeance"] = {
-					"from M+",
-				},
-			},
-			["221136"] = {
-				["Demon Hunter/Vengeance"] = {
-					"from M+",
-				},
-				["Demon Hunter/Havoc"] = {
-					"from M+",
-				},
-				["Death Knight/Frost"] = {
-					"from M+",
-				},
-				["Hunter/Beast Mastery"] = {
-					"from M+",
-				},
-				["Evoker/Preservation"] = {
-					"from M+",
-				},
-				["Evoker/Devastation"] = {
-					"overall",
-					"from M+",
-				},
-				["Mage/Arcane"] = {
-					"from M+",
-				},
-				["Hunter/Marksmanship"] = {
-					"from M+",
-				},
-				["Mage/Frost"] = {
-					"from M+",
-				},
-				["Priest/Shadow"] = {
-					"from M+",
-				},
-				["Shaman/Restoration"] = {
-					"overall",
-				},
-				["Warlock/Demonology"] = {
-					"from M+",
-				},
-				["Warlock/Affliction"] = {
-					"overall",
-					"from M+",
-				},
-				["Warlock/Destruction"] = {
-					"overall",
-					"from M+",
-				},
-				["Warrior/Protection"] = {
-					"overall",
-					"from M+",
-				},
-			},
-			["221090"] = {
-				["Demon Hunter/Vengeance"] = {
-					"from M+",
-				},
-				["Monk/Windwalker"] = {
-					"overall",
-					"from M+",
-				},
-			},
-			["221084"] = {
-				["Demon Hunter/Vengeance"] = {
-					"from M+",
-				},
-			},
-			["212056"] = {
-				["Druid/Feral"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Druid/Restoration"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-			},
-			["178707"] = {
-				["Druid/Feral"] = {
-					"overall",
-					"from M+",
-				},
-				["Death Knight/Blood"] = {
-					"from M+",
-				},
-				["Demon Hunter/Havoc"] = {
-					"overall",
-					"from M+",
-				},
-				["Death Knight/Frost"] = {
-					"overall",
-					"from M+",
-				},
-				["Evoker/Augmentation"] = {
-					"overall",
-					"from M+",
-				},
-				["Hunter/Beast Mastery"] = {
-					"from M+",
-				},
-				["Evoker/Preservation"] = {
-					"overall",
-				},
-				["Hunter/Survival"] = {
-					"overall",
-					"from M+",
-				},
-				["Hunter/Marksmanship"] = {
-					"from M+",
-				},
-				["Rogue/Subtlety"] = {
-					"from M+",
-				},
-				["Priest/Holy"] = {
-					"overall",
-					"from M+",
-				},
-				["Warrior/Arms"] = {
-					"from M+",
-				},
-			},
-			["212054"] = {
-				["Druid/Feral"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Druid/Restoration"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Druid/Guardian"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Druid/Balance"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-			},
-			["221088"] = {
-				["Druid/Feral"] = {
-					"overall",
-					"from M+",
-				},
-				["Druid/Restoration"] = {
-					"from M+",
-				},
-				["Druid/Balance"] = {
-					"from M+",
-				},
-				["Death Knight/Unholy"] = {
-					"from M+",
-				},
-				["Evoker/Preservation"] = {
-					"from M+",
-				},
-				["Hunter/Survival"] = {
-					"from M+",
-				},
-				["Mage/Arcane"] = {
-					"from M+",
-				},
-				["Mage/Fire"] = {
-					"overall",
-					"from M+",
-				},
-				["Monk/Windwalker"] = {
-					"from M+",
-				},
-				["Paladin/Protection"] = {
-					"from M+",
-				},
-				["Paladin/Retribution"] = {
-					"from M+",
-				},
-				["Shaman/Elemental"] = {
-					"from M+",
-				},
-				["Priest/Shadow"] = {
-					"from M+",
-				},
-				["Priest/Discipline"] = {
-					"from M+",
-				},
-				["Warlock/Demonology"] = {
-					"from M+",
-				},
-				["Warrior/Arms"] = {
-					"from M+",
-				},
-				["Warlock/Affliction"] = {
-					"from M+",
-				},
-				["Warlock/Destruction"] = {
-					"from M+",
-				},
-				["Warrior/Fury"] = {
-					"overall",
-					"from M+",
-				},
-				["Warrior/Protection"] = {
-					"from M+",
-				},
-			},
-			["212059"] = {
-				["Druid/Feral"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Druid/Restoration"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Druid/Guardian"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Druid/Balance"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-			},
-			["212438"] = {
-				["Druid/Feral"] = {
-					"overall",
-					"from raid",
-				},
-				["Druid/Restoration"] = {
-					"overall",
-					"from raid",
-				},
-				["Demon Hunter/Havoc"] = {
-					"overall",
-					"from raid",
-				},
-				["Druid/Balance"] = {
-					"overall",
-					"from raid",
-				},
-				["Monk/Windwalker"] = {
-					"from raid",
-				},
-			},
-			["221180"] = {
-				["Druid/Feral"] = {
-					"overall",
-					"from M+",
-				},
-				["Demon Hunter/Havoc"] = {
-					"from M+",
-				},
-				["Monk/Brewmaster"] = {
-					"from M+",
-				},
-			},
-			["221134"] = {
-				["Druid/Feral"] = {
-					"overall",
-					"from M+",
-				},
-				["Demon Hunter/Havoc"] = {
-					"overall",
-					"from M+",
-				},
-				["Druid/Balance"] = {
-					"from M+",
-				},
-				["Monk/Brewmaster"] = {
-					"from M+",
-				},
-			},
-			["212055"] = {
-				["Druid/Feral"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Druid/Restoration"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Druid/Guardian"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Druid/Balance"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-			},
-			["221169"] = {
-				["Druid/Feral"] = {
-					"overall",
-					"from M+",
-				},
-				["Demon Hunter/Havoc"] = {
-					"overall",
-					"from M+",
-				},
-				["Druid/Balance"] = {
-					"overall",
-					"from M+",
-				},
-				["Rogue/Assassination"] = {
-					"from M+",
-				},
-			},
-			["225576"] = {
-				["Druid/Feral"] = {
-					"overall",
-					"from raid",
-				},
-				["Death Knight/Blood"] = {
-					"from raid",
-				},
-				["Druid/Restoration"] = {
-					"overall",
-					"from raid",
-				},
-				["Druid/Balance"] = {
-					"overall",
-					"from raid",
-				},
-				["Death Knight/Unholy"] = {
-					"overall",
-					"from raid",
-				},
-				["Death Knight/Frost"] = {
-					"from raid",
-				},
-				["Evoker/Augmentation"] = {
-					"from raid",
-				},
-				["Evoker/Preservation"] = {
-					"overall",
-					"from raid",
-				},
-				["Hunter/Survival"] = {
-					"overall",
-					"from raid",
-				},
-				["Mage/Arcane"] = {
-					"overall",
-				},
-				["Hunter/Marksmanship"] = {
-					"from raid",
-				},
-				["Paladin/Holy"] = {
-					"from raid",
-				},
-				["Monk/Brewmaster"] = {
-					"from raid",
-				},
-				["Mage/Fire"] = {
-					"from raid",
-				},
-				["Paladin/Retribution"] = {
-					"overall",
-					"from raid",
-				},
-				["Rogue/Assassination"] = {
-					"from raid",
-				},
-				["Shaman/Elemental"] = {
-					"from raid",
-				},
-				["Rogue/Subtlety"] = {
-					"from raid",
-				},
-				["Priest/Holy"] = {
-					"from raid",
-				},
-				["Shaman/Restoration"] = {
-					"from raid",
-				},
-				["Warrior/Fury"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["221159"] = {
-				["Druid/Feral"] = {
-					"overall",
-					"from M+",
-				},
-				["Druid/Guardian"] = {
-					"overall",
-					"from M+",
-				},
-				["Hunter/Survival"] = {
-					"from M+",
-				},
-				["Monk/Brewmaster"] = {
-					"overall",
-					"from M+",
-				},
-			},
-			["225577"] = {
-				["Druid/Feral"] = {
-					"from raid",
-				},
-				["Druid/Restoration"] = {
-					"overall",
-					"from raid",
-				},
-				["Druid/Guardian"] = {
-					"overall",
-					"from raid",
-				},
-				["Druid/Balance"] = {
-					"overall",
-					"from raid",
-				},
-				["Death Knight/Unholy"] = {
-					"overall",
-					"from raid",
-				},
-				["Hunter/Beast Mastery"] = {
-					"overall",
-					"from raid",
-				},
-				["Evoker/Preservation"] = {
-					"from raid",
-				},
-				["Mage/Arcane"] = {
-					"overall",
-					"from raid",
-				},
-				["Paladin/Holy"] = {
-					"overall",
-					"from raid",
-				},
-				["Mage/Frost"] = {
-					"overall",
-					"from raid",
-				},
-				["Monk/Mistweaver"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Mage/Fire"] = {
-					"overall",
-					"from raid",
-				},
-				["Monk/Windwalker"] = {
-					"overall",
-					"from raid",
-				},
-				["Paladin/Protection"] = {
-					"overall",
-					"from raid",
-				},
-				["Paladin/Retribution"] = {
-					"overall",
-					"from raid",
-				},
-				["Rogue/Assassination"] = {
-					"overall",
-					"from raid",
-				},
-				["Shaman/Elemental"] = {
-					"overall",
-					"from raid",
-				},
-				["Priest/Shadow"] = {
-					"overall",
-					"from raid",
-				},
-				["Priest/Discipline"] = {
-					"overall",
-					"from raid",
-				},
-				["Warlock/Demonology"] = {
-					"overall",
-					"from raid",
-				},
-				["Warrior/Arms"] = {
-					"overall",
-					"from raid",
-				},
-				["Warlock/Affliction"] = {
-					"overall",
-					"from raid",
-				},
-				["Warlock/Destruction"] = {
-					"overall",
-					"from raid",
-				},
-				["Warrior/Fury"] = {
-					"from raid",
-				},
-				["Warrior/Protection"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["212432"] = {
-				["Druid/Feral"] = {
-					"from raid",
-				},
-				["Demon Hunter/Havoc"] = {
-					"from raid",
-				},
-				["Monk/Brewmaster"] = {
-					"from raid",
-				},
-			},
-			["212413"] = {
-				["Druid/Feral"] = {
-					"from raid",
-				},
-				["Monk/Windwalker"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["133299"] = {
-				["Druid/Feral"] = {
-					"from M+",
-				},
-				["Druid/Balance"] = {
-					"from M+",
-				},
-				["Death Knight/Unholy"] = {
-					"overall",
-					"from M+",
-				},
-				["Monk/Mistweaver"] = {
-					"from M+",
-				},
-				["Mage/Fire"] = {
-					"from M+",
-				},
-				["Paladin/Protection"] = {
-					"from M+",
-				},
-				["Priest/Shadow"] = {
-					"from M+",
-				},
-				["Warlock/Demonology"] = {
-					"from M+",
-				},
-				["Warrior/Arms"] = {
-					"from M+",
-				},
-				["Warlock/Affliction"] = {
-					"from M+",
-				},
-				["Warlock/Destruction"] = {
-					"from M+",
-				},
-			},
-			["133286"] = {
-				["Druid/Feral"] = {
-					"from M+",
-				},
-				["Druid/Balance"] = {
-					"from M+",
-				},
-				["Evoker/Augmentation"] = {
-					"from M+",
-				},
-				["Paladin/Retribution"] = {
-					"from M+",
-				},
-				["Warrior/Fury"] = {
-					"from M+",
-				},
-			},
 			["221146"] = {
 				["Death Knight/Blood"] = {
 					"overall",
@@ -1813,6 +575,117 @@ context.database = {
 					"from raid",
 				},
 			},
+			["225574"] = {
+				["Death Knight/Blood"] = {
+					"overall",
+					"from raid",
+				},
+				["Demon Hunter/Vengeance"] = {
+					"overall",
+					"from raid",
+				},
+				["Druid/Feral"] = {
+					"from raid",
+				},
+				["Druid/Guardian"] = {
+					"overall",
+					"from raid",
+				},
+				["Demon Hunter/Havoc"] = {
+					"overall",
+					"from raid",
+				},
+				["Druid/Restoration"] = {
+					"overall",
+					"from raid",
+				},
+				["Death Knight/Unholy"] = {
+					"from raid",
+				},
+				["Death Knight/Frost"] = {
+					"overall",
+					"from raid",
+				},
+				["Hunter/Beast Mastery"] = {
+					"overall",
+					"from raid",
+				},
+				["Evoker/Devastation"] = {
+					"overall",
+					"from raid",
+				},
+				["Monk/Brewmaster"] = {
+					"overall",
+					"from raid",
+				},
+				["Monk/Mistweaver"] = {
+					"from raid",
+				},
+				["Hunter/Marksmanship"] = {
+					"from raid",
+				},
+				["Paladin/Holy"] = {
+					"overall",
+					"from raid",
+				},
+				["Monk/Windwalker"] = {
+					"overall",
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"from raid",
+				},
+				["Paladin/Protection"] = {
+					"overall",
+					"from raid",
+				},
+				["Rogue/Subtlety"] = {
+					"from raid",
+				},
+				["Priest/Discipline"] = {
+					"overall",
+					"from raid",
+				},
+				["Rogue/Assassination"] = {
+					"overall",
+					"from raid",
+				},
+				["Rogue/Outlaw"] = {
+					"overall",
+					"from raid",
+				},
+				["Priest/Shadow"] = {
+					"overall",
+					"from raid",
+				},
+				["Shaman/Elemental"] = {
+					"overall",
+					"from raid",
+				},
+				["Shaman/Restoration"] = {
+					"overall",
+					"from raid",
+				},
+				["Warlock/Demonology"] = {
+					"overall",
+					"from raid",
+				},
+				["Warlock/Destruction"] = {
+					"overall",
+					"from raid",
+				},
+				["Warrior/Arms"] = {
+					"from raid",
+				},
+				["Warlock/Affliction"] = {
+					"overall",
+					"from raid",
+				},
+				["Warrior/Protection"] = {
+					"overall",
+					"from raid",
+				},
+			},
 			["212005"] = {
 				["Death Knight/Blood"] = {
 					"overall",
@@ -1836,10 +709,10 @@ context.database = {
 				["Paladin/Retribution"] = {
 					"overall",
 				},
-				["Warrior/Arms"] = {
+				["Warrior/Fury"] = {
 					"overall",
 				},
-				["Warrior/Fury"] = {
+				["Warrior/Arms"] = {
 					"overall",
 				},
 			},
@@ -1888,6 +761,141 @@ context.database = {
 					"from raid",
 				},
 			},
+			["225578"] = {
+				["Death Knight/Blood"] = {
+					"overall",
+					"from raid",
+				},
+				["Demon Hunter/Vengeance"] = {
+					"overall",
+					"from raid",
+				},
+				["Druid/Feral"] = {
+					"overall",
+					"from raid",
+				},
+				["Evoker/Augmentation"] = {
+					"overall",
+					"from raid",
+				},
+				["Druid/Guardian"] = {
+					"overall",
+					"from raid",
+				},
+				["Demon Hunter/Havoc"] = {
+					"overall",
+					"from raid",
+				},
+				["Druid/Balance"] = {
+					"overall",
+					"from raid",
+				},
+				["Death Knight/Frost"] = {
+					"overall",
+					"from raid",
+				},
+				["Evoker/Preservation"] = {
+					"overall",
+					"from raid",
+				},
+				["Hunter/Beast Mastery"] = {
+					"overall",
+					"from raid",
+				},
+				["Hunter/Survival"] = {
+					"overall",
+					"from raid",
+				},
+				["Mage/Frost"] = {
+					"overall",
+					"from raid",
+				},
+				["Evoker/Devastation"] = {
+					"overall",
+					"from raid",
+				},
+				["Monk/Brewmaster"] = {
+					"overall",
+					"from raid",
+				},
+				["Monk/Mistweaver"] = {
+					"from raid",
+				},
+				["Hunter/Marksmanship"] = {
+					"overall",
+					"from raid",
+				},
+				["Mage/Arcane"] = {
+					"overall",
+					"from raid",
+				},
+				["Monk/Windwalker"] = {
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"overall",
+				},
+				["Paladin/Protection"] = {
+					"overall",
+					"from raid",
+				},
+				["Paladin/Retribution"] = {
+					"overall",
+					"from raid",
+				},
+				["Rogue/Subtlety"] = {
+					"from raid",
+				},
+				["Priest/Discipline"] = {
+					"from raid",
+				},
+				["Priest/Holy"] = {
+					"overall",
+					"from raid",
+				},
+				["Rogue/Assassination"] = {
+					"overall",
+					"from raid",
+				},
+				["Rogue/Outlaw"] = {
+					"from raid",
+				},
+				["Priest/Shadow"] = {
+					"overall",
+					"from raid",
+				},
+				["Shaman/Elemental"] = {
+					"overall",
+				},
+				["Shaman/Restoration"] = {
+					"overall",
+					"from raid",
+				},
+				["Warlock/Demonology"] = {
+					"overall",
+					"from raid",
+				},
+				["Warlock/Destruction"] = {
+					"overall",
+					"from raid",
+				},
+				["Warrior/Fury"] = {
+					"overall",
+					"from raid",
+				},
+				["Warrior/Arms"] = {
+					"overall",
+					"from raid",
+				},
+				["Warlock/Affliction"] = {
+					"overall",
+					"from raid",
+				},
+				["Warrior/Protection"] = {
+					"overall",
+					"from raid",
+				},
+			},
 			["178781"] = {
 				["Death Knight/Blood"] = {
 					"overall",
@@ -1924,6 +932,123 @@ context.database = {
 					"from raid",
 				},
 			},
+			["225576"] = {
+				["Death Knight/Blood"] = {
+					"from raid",
+				},
+				["Druid/Feral"] = {
+					"overall",
+					"from raid",
+				},
+				["Evoker/Augmentation"] = {
+					"from raid",
+				},
+				["Druid/Restoration"] = {
+					"overall",
+					"from raid",
+				},
+				["Druid/Balance"] = {
+					"overall",
+					"from raid",
+				},
+				["Death Knight/Unholy"] = {
+					"overall",
+					"from raid",
+				},
+				["Death Knight/Frost"] = {
+					"from raid",
+				},
+				["Evoker/Preservation"] = {
+					"overall",
+					"from raid",
+				},
+				["Hunter/Survival"] = {
+					"overall",
+					"from raid",
+				},
+				["Monk/Brewmaster"] = {
+					"from raid",
+				},
+				["Hunter/Marksmanship"] = {
+					"from raid",
+				},
+				["Mage/Arcane"] = {
+					"overall",
+				},
+				["Paladin/Holy"] = {
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"from raid",
+				},
+				["Paladin/Retribution"] = {
+					"overall",
+					"from raid",
+				},
+				["Rogue/Subtlety"] = {
+					"from raid",
+				},
+				["Priest/Holy"] = {
+					"from raid",
+				},
+				["Rogue/Assassination"] = {
+					"from raid",
+				},
+				["Shaman/Elemental"] = {
+					"from raid",
+				},
+				["Shaman/Restoration"] = {
+					"from raid",
+				},
+				["Warrior/Fury"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["178707"] = {
+				["Death Knight/Blood"] = {
+					"from M+",
+				},
+				["Druid/Feral"] = {
+					"overall",
+					"from M+",
+				},
+				["Evoker/Augmentation"] = {
+					"overall",
+					"from M+",
+				},
+				["Demon Hunter/Havoc"] = {
+					"overall",
+					"from M+",
+				},
+				["Death Knight/Frost"] = {
+					"overall",
+					"from M+",
+				},
+				["Evoker/Preservation"] = {
+					"overall",
+				},
+				["Hunter/Beast Mastery"] = {
+					"from M+",
+				},
+				["Hunter/Survival"] = {
+					"overall",
+					"from M+",
+				},
+				["Hunter/Marksmanship"] = {
+					"from M+",
+				},
+				["Rogue/Subtlety"] = {
+					"from M+",
+				},
+				["Priest/Holy"] = {
+					"overall",
+					"from M+",
+				},
+				["Warrior/Arms"] = {
+					"from M+",
+				},
+			},
 			["133294"] = {
 				["Death Knight/Blood"] = {
 					"from M+",
@@ -1939,10 +1064,10 @@ context.database = {
 				["Druid/Guardian"] = {
 					"from M+",
 				},
-				["Paladin/Holy"] = {
+				["Mage/Frost"] = {
 					"from M+",
 				},
-				["Mage/Frost"] = {
+				["Paladin/Holy"] = {
 					"from M+",
 				},
 				["Rogue/Outlaw"] = {
@@ -2036,8 +1161,496 @@ context.database = {
 					"from M+",
 				},
 			},
-			["212057"] = {
+			["221081"] = {
+				["Demon Hunter/Vengeance"] = {
+					"overall",
+					"from M+",
+				},
+			},
+			["212448"] = {
+				["Demon Hunter/Vengeance"] = {
+					"overall",
+					"from raid",
+				},
+				["Evoker/Augmentation"] = {
+					"from raid",
+				},
+				["Demon Hunter/Havoc"] = {
+					"from raid",
+				},
+				["Death Knight/Frost"] = {
+					"from raid",
+				},
+				["Hunter/Survival"] = {
+					"from raid",
+				},
+				["Evoker/Devastation"] = {
+					"overall",
+					"from raid",
+				},
+				["Hunter/Marksmanship"] = {
+					"overall",
+					"from raid",
+				},
+				["Rogue/Outlaw"] = {
+					"from raid",
+				},
+				["Shaman/Restoration"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["212063"] = {
+				["Demon Hunter/Vengeance"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Demon Hunter/Havoc"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["212068"] = {
+				["Demon Hunter/Vengeance"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Demon Hunter/Havoc"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["221142"] = {
+				["Demon Hunter/Vengeance"] = {
+					"overall",
+					"from M+",
+				},
+				["Druid/Feral"] = {
+					"from M+",
+				},
+				["Monk/Mistweaver"] = {
+					"overall",
+					"from M+",
+				},
+				["Rogue/Outlaw"] = {
+					"from M+",
+				},
+			},
+			["212066"] = {
+				["Demon Hunter/Vengeance"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["219502"] = {
+				["Demon Hunter/Vengeance"] = {
+					"overall",
+				},
+				["Monk/Brewmaster"] = {
+					"overall",
+				},
+			},
+			["212064"] = {
+				["Demon Hunter/Vengeance"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Demon Hunter/Havoc"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["159320"] = {
+				["Demon Hunter/Vengeance"] = {
+					"overall",
+					"from M+",
+				},
+				["Monk/Brewmaster"] = {
+					"from M+",
+				},
+				["Monk/Mistweaver"] = {
+					"overall",
+				},
+				["Rogue/Subtlety"] = {
+					"from M+",
+				},
+			},
+			["159461"] = {
+				["Demon Hunter/Vengeance"] = {
+					"overall",
+					"from M+",
+				},
+				["Evoker/Preservation"] = {
+					"from M+",
+				},
+				["Evoker/Devastation"] = {
+					"from M+",
+				},
+				["Paladin/Holy"] = {
+					"overall",
+				},
+				["Paladin/Protection"] = {
+					"from M+",
+				},
+				["Priest/Discipline"] = {
+					"overall",
+					"from M+",
+				},
+				["Shaman/Elemental"] = {
+					"from M+",
+				},
+				["Shaman/Restoration"] = {
+					"from M+",
+				},
+				["Warrior/Arms"] = {
+					"overall",
+					"from M+",
+				},
+				["Warrior/Protection"] = {
+					"from M+",
+				},
+			},
+			["219877"] = {
+				["Demon Hunter/Vengeance"] = {
+					"overall",
+					"from raid",
+				},
+				["Demon Hunter/Havoc"] = {
+					"overall",
+					"from raid",
+				},
+				["Monk/Brewmaster"] = {
+					"overall",
+					"from raid",
+				},
+				["Monk/Windwalker"] = {
+					"overall",
+					"from raid",
+				},
+				["Rogue/Outlaw"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["222440"] = {
+				["Demon Hunter/Vengeance"] = {
+					"overall",
+				},
+			},
+			["212417"] = {
+				["Demon Hunter/Vengeance"] = {
+					"from raid",
+				},
+				["Druid/Guardian"] = {
+					"overall",
+					"from raid",
+				},
+				["Druid/Balance"] = {
+					"from raid",
+				},
+				["Rogue/Subtlety"] = {
+					"from raid",
+				},
+			},
+			["225588"] = {
+				["Demon Hunter/Vengeance"] = {
+					"from raid",
+				},
+				["Druid/Guardian"] = {
+					"overall",
+					"from raid",
+				},
+				["Monk/Brewmaster"] = {
+					"overall",
+					"from raid",
+				},
+				["Monk/Mistweaver"] = {
+					"from raid",
+				},
+				["Rogue/Subtlety"] = {
+					"from raid",
+				},
+				["Rogue/Assassination"] = {
+					"from raid",
+				},
+				["Rogue/Outlaw"] = {
+					"from raid",
+				},
+			},
+			["225583"] = {
+				["Demon Hunter/Vengeance"] = {
+					"from raid",
+				},
+				["Druid/Feral"] = {
+					"from raid",
+				},
+				["Demon Hunter/Havoc"] = {
+					"from raid",
+				},
 				["Druid/Restoration"] = {
+					"overall",
+					"from raid",
+				},
+				["Monk/Mistweaver"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Monk/Windwalker"] = {
+					"from raid",
+				},
+				["Rogue/Assassination"] = {
+					"from raid",
+				},
+				["Rogue/Outlaw"] = {
+					"from raid",
+				},
+			},
+			["212445"] = {
+				["Demon Hunter/Vengeance"] = {
+					"from raid",
+				},
+				["Druid/Feral"] = {
+					"from raid",
+				},
+				["Demon Hunter/Havoc"] = {
+					"from raid",
+				},
+				["Druid/Restoration"] = {
+					"overall",
+					"from raid",
+				},
+				["Druid/Balance"] = {
+					"from raid",
+				},
+				["Monk/Mistweaver"] = {
+					"from raid",
+					"from M+",
+				},
+				["Monk/Windwalker"] = {
+					"overall",
+					"from raid",
+				},
+				["Rogue/Assassination"] = {
+					"overall",
+				},
+				["Rogue/Outlaw"] = {
+					"from raid",
+				},
+			},
+			["212447"] = {
+				["Demon Hunter/Vengeance"] = {
+					"from raid",
+				},
+				["Druid/Guardian"] = {
+					"overall",
+					"from raid",
+				},
+				["Demon Hunter/Havoc"] = {
+					"from raid",
+				},
+				["Druid/Restoration"] = {
+					"overall",
+					"from raid",
+				},
+				["Death Knight/Unholy"] = {
+					"from raid",
+				},
+				["Hunter/Beast Mastery"] = {
+					"overall",
+					"from raid",
+				},
+				["Mage/Frost"] = {
+					"from raid",
+				},
+				["Evoker/Devastation"] = {
+					"from raid",
+				},
+				["Monk/Mistweaver"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Mage/Arcane"] = {
+					"from raid",
+				},
+				["Paladin/Holy"] = {
+					"from raid",
+				},
+				["Monk/Windwalker"] = {
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"overall",
+					"from raid",
+				},
+				["Paladin/Protection"] = {
+					"overall",
+					"from raid",
+				},
+				["Priest/Discipline"] = {
+					"overall",
+					"from raid",
+				},
+				["Rogue/Outlaw"] = {
+					"from raid",
+				},
+				["Priest/Shadow"] = {
+					"overall",
+					"from raid",
+				},
+				["Shaman/Elemental"] = {
+					"from raid",
+				},
+				["Warlock/Demonology"] = {
+					"overall",
+					"from raid",
+				},
+				["Warlock/Destruction"] = {
+					"from raid",
+				},
+				["Warrior/Arms"] = {
+					"from raid",
+				},
+				["Warlock/Affliction"] = {
+					"from raid",
+				},
+				["Warrior/Protection"] = {
+					"from raid",
+				},
+			},
+			["212409"] = {
+				["Demon Hunter/Vengeance"] = {
+					"from raid",
+				},
+				["Monk/Windwalker"] = {
+					"from raid",
+				},
+			},
+			["221181"] = {
+				["Demon Hunter/Vengeance"] = {
+					"from M+",
+				},
+				["Druid/Guardian"] = {
+					"from M+",
+				},
+				["Evoker/Devastation"] = {
+					"from M+",
+				},
+				["Monk/Brewmaster"] = {
+					"from M+",
+				},
+				["Paladin/Holy"] = {
+					"from M+",
+				},
+				["Rogue/Outlaw"] = {
+					"overall",
+					"from M+",
+				},
+				["Shaman/Restoration"] = {
+					"from M+",
+				},
+			},
+			["133292"] = {
+				["Demon Hunter/Vengeance"] = {
+					"from M+",
+				},
+				["Monk/Mistweaver"] = {
+					"overall",
+				},
+				["Rogue/Subtlety"] = {
+					"overall",
+					"from M+",
+				},
+			},
+			["159309"] = {
+				["Demon Hunter/Vengeance"] = {
+					"from M+",
+				},
+			},
+			["221136"] = {
+				["Demon Hunter/Vengeance"] = {
+					"from M+",
+				},
+				["Demon Hunter/Havoc"] = {
+					"from M+",
+				},
+				["Death Knight/Frost"] = {
+					"from M+",
+				},
+				["Evoker/Preservation"] = {
+					"from M+",
+				},
+				["Hunter/Beast Mastery"] = {
+					"from M+",
+				},
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Evoker/Devastation"] = {
+					"overall",
+					"from M+",
+				},
+				["Hunter/Marksmanship"] = {
+					"from M+",
+				},
+				["Mage/Arcane"] = {
+					"from M+",
+				},
+				["Priest/Shadow"] = {
+					"from M+",
+				},
+				["Shaman/Restoration"] = {
+					"overall",
+				},
+				["Warlock/Demonology"] = {
+					"from M+",
+				},
+				["Warlock/Destruction"] = {
+					"overall",
+					"from M+",
+				},
+				["Warlock/Affliction"] = {
+					"overall",
+					"from M+",
+				},
+				["Warrior/Protection"] = {
+					"overall",
+					"from M+",
+				},
+			},
+			["221090"] = {
+				["Demon Hunter/Vengeance"] = {
+					"from M+",
+				},
+				["Monk/Windwalker"] = {
+					"overall",
+					"from M+",
+				},
+			},
+			["221084"] = {
+				["Demon Hunter/Vengeance"] = {
+					"from M+",
+				},
+			},
+			["212056"] = {
+				["Druid/Feral"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Druid/Restoration"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212054"] = {
+				["Druid/Feral"] = {
 					"overall",
 					"from raid",
 					"from M+",
@@ -2047,127 +1660,22 @@ context.database = {
 					"from raid",
 					"from M+",
 				},
+				["Druid/Restoration"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
 				["Druid/Balance"] = {
 					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
-			["212397"] = {
-				["Druid/Restoration"] = {
-					"overall",
-					"from raid",
-				},
-				["Druid/Balance"] = {
-					"overall",
-					"from raid",
-				},
-				["Evoker/Augmentation"] = {
-					"from raid",
-				},
-				["Evoker/Preservation"] = {
-					"from raid",
-				},
-				["Evoker/Devastation"] = {
-					"overall",
-					"from raid",
-				},
-				["Mage/Arcane"] = {
-					"from raid",
-				},
-				["Mage/Frost"] = {
-					"from raid",
-				},
-				["Mage/Fire"] = {
-					"overall",
-					"from raid",
-				},
-				["Priest/Shadow"] = {
-					"overall",
-					"from raid",
-				},
-				["Priest/Holy"] = {
-					"from raid",
-				},
-				["Shaman/Restoration"] = {
-					"from raid",
-				},
-				["Priest/Discipline"] = {
-					"from raid",
-				},
-				["Warlock/Demonology"] = {
-					"overall",
-					"from raid",
-				},
-				["Warlock/Affliction"] = {
-					"overall",
-					"from raid",
-				},
-				["Warlock/Destruction"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["212404"] = {
-				["Druid/Restoration"] = {
-					"overall",
-					"from raid",
-				},
-				["Monk/Mistweaver"] = {
-					"from raid",
-					"from M+",
-				},
-			},
-			["221172"] = {
-				["Druid/Restoration"] = {
-					"overall",
-				},
-				["Evoker/Augmentation"] = {
+			["221088"] = {
+				["Druid/Feral"] = {
 					"overall",
 					"from M+",
 				},
-				["Mage/Frost"] = {
-					"from M+",
-				},
-				["Monk/Mistweaver"] = {
-					"from M+",
-				},
-				["Priest/Discipline"] = {
-					"overall",
-					"from M+",
-				},
-			},
-			["212387"] = {
-				["Druid/Restoration"] = {
-					"from raid",
-				},
-				["Evoker/Augmentation"] = {
-					"from raid",
-				},
-				["Evoker/Preservation"] = {
-					"overall",
-					"from raid",
-				},
-				["Evoker/Devastation"] = {
-					"from raid",
-				},
-				["Mage/Frost"] = {
-					"from raid",
-				},
-				["Monk/Mistweaver"] = {
-					"from raid",
-				},
-				["Mage/Fire"] = {
-					"from raid",
-				},
-				["Priest/Holy"] = {
-					"from raid",
-				},
-				["Priest/Discipline"] = {
-					"from raid",
-				},
-			},
-			["221077"] = {
 				["Druid/Restoration"] = {
 					"from M+",
 				},
@@ -2180,16 +1688,17 @@ context.database = {
 				["Evoker/Preservation"] = {
 					"from M+",
 				},
+				["Hunter/Survival"] = {
+					"from M+",
+				},
 				["Mage/Arcane"] = {
 					"from M+",
 				},
-				["Mage/Frost"] = {
+				["Monk/Windwalker"] = {
 					"from M+",
 				},
 				["Mage/Fire"] = {
-					"from M+",
-				},
-				["Monk/Windwalker"] = {
+					"overall",
 					"from M+",
 				},
 				["Paladin/Protection"] = {
@@ -2198,22 +1707,16 @@ context.database = {
 				["Paladin/Retribution"] = {
 					"from M+",
 				},
-				["Rogue/Assassination"] = {
-					"from M+",
-				},
-				["Shaman/Elemental"] = {
+				["Priest/Discipline"] = {
 					"from M+",
 				},
 				["Priest/Shadow"] = {
 					"from M+",
 				},
-				["Priest/Discipline"] = {
+				["Shaman/Elemental"] = {
 					"from M+",
 				},
 				["Warlock/Demonology"] = {
-					"from M+",
-				},
-				["Warlock/Affliction"] = {
 					"from M+",
 				},
 				["Warlock/Destruction"] = {
@@ -2223,14 +1726,764 @@ context.database = {
 					"overall",
 					"from M+",
 				},
+				["Warrior/Arms"] = {
+					"from M+",
+				},
+				["Warlock/Affliction"] = {
+					"from M+",
+				},
 				["Warrior/Protection"] = {
 					"from M+",
 				},
 			},
-			["178741"] = {
-				["Druid/Restoration"] = {
+			["212059"] = {
+				["Druid/Feral"] = {
+					"overall",
+					"from raid",
 					"from M+",
 				},
+				["Druid/Guardian"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Druid/Restoration"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Druid/Balance"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212438"] = {
+				["Druid/Feral"] = {
+					"overall",
+					"from raid",
+				},
+				["Demon Hunter/Havoc"] = {
+					"overall",
+					"from raid",
+				},
+				["Druid/Restoration"] = {
+					"overall",
+					"from raid",
+				},
+				["Druid/Balance"] = {
+					"overall",
+					"from raid",
+				},
+				["Monk/Windwalker"] = {
+					"from raid",
+				},
+			},
+			["221180"] = {
+				["Druid/Feral"] = {
+					"overall",
+					"from M+",
+				},
+				["Demon Hunter/Havoc"] = {
+					"from M+",
+				},
+				["Monk/Brewmaster"] = {
+					"from M+",
+				},
+			},
+			["221134"] = {
+				["Druid/Feral"] = {
+					"overall",
+					"from M+",
+				},
+				["Demon Hunter/Havoc"] = {
+					"overall",
+					"from M+",
+				},
+				["Druid/Balance"] = {
+					"from M+",
+				},
+				["Monk/Brewmaster"] = {
+					"from M+",
+				},
+			},
+			["212055"] = {
+				["Druid/Feral"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Druid/Guardian"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Druid/Restoration"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Druid/Balance"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["221169"] = {
+				["Druid/Feral"] = {
+					"overall",
+					"from M+",
+				},
+				["Demon Hunter/Havoc"] = {
+					"overall",
+					"from M+",
+				},
+				["Druid/Balance"] = {
+					"overall",
+					"from M+",
+				},
+				["Rogue/Assassination"] = {
+					"from M+",
+				},
+			},
+			["221159"] = {
+				["Druid/Feral"] = {
+					"overall",
+					"from M+",
+				},
+				["Druid/Guardian"] = {
+					"overall",
+					"from M+",
+				},
+				["Hunter/Survival"] = {
+					"from M+",
+				},
+				["Monk/Brewmaster"] = {
+					"overall",
+					"from M+",
+				},
+			},
+			["225577"] = {
+				["Druid/Feral"] = {
+					"from raid",
+				},
+				["Druid/Guardian"] = {
+					"overall",
+					"from raid",
+				},
+				["Druid/Restoration"] = {
+					"overall",
+					"from raid",
+				},
+				["Druid/Balance"] = {
+					"overall",
+					"from raid",
+				},
+				["Death Knight/Unholy"] = {
+					"overall",
+					"from raid",
+				},
+				["Evoker/Preservation"] = {
+					"from raid",
+				},
+				["Hunter/Beast Mastery"] = {
+					"overall",
+					"from raid",
+				},
+				["Mage/Frost"] = {
+					"overall",
+					"from raid",
+				},
+				["Monk/Mistweaver"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Mage/Arcane"] = {
+					"overall",
+					"from raid",
+				},
+				["Paladin/Holy"] = {
+					"overall",
+					"from raid",
+				},
+				["Monk/Windwalker"] = {
+					"overall",
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"overall",
+					"from raid",
+				},
+				["Paladin/Protection"] = {
+					"overall",
+					"from raid",
+				},
+				["Paladin/Retribution"] = {
+					"overall",
+					"from raid",
+				},
+				["Priest/Discipline"] = {
+					"overall",
+					"from raid",
+				},
+				["Rogue/Assassination"] = {
+					"overall",
+					"from raid",
+				},
+				["Priest/Shadow"] = {
+					"overall",
+					"from raid",
+				},
+				["Shaman/Elemental"] = {
+					"overall",
+					"from raid",
+				},
+				["Warlock/Demonology"] = {
+					"overall",
+					"from raid",
+				},
+				["Warlock/Destruction"] = {
+					"overall",
+					"from raid",
+				},
+				["Warrior/Fury"] = {
+					"from raid",
+				},
+				["Warrior/Arms"] = {
+					"overall",
+					"from raid",
+				},
+				["Warlock/Affliction"] = {
+					"overall",
+					"from raid",
+				},
+				["Warrior/Protection"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["212432"] = {
+				["Druid/Feral"] = {
+					"from raid",
+				},
+				["Demon Hunter/Havoc"] = {
+					"from raid",
+				},
+				["Monk/Brewmaster"] = {
+					"from raid",
+				},
+			},
+			["212413"] = {
+				["Druid/Feral"] = {
+					"from raid",
+				},
+				["Monk/Windwalker"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["133299"] = {
+				["Druid/Feral"] = {
+					"from M+",
+				},
+				["Druid/Balance"] = {
+					"from M+",
+				},
+				["Death Knight/Unholy"] = {
+					"overall",
+					"from M+",
+				},
+				["Monk/Mistweaver"] = {
+					"from M+",
+				},
+				["Mage/Fire"] = {
+					"from M+",
+				},
+				["Paladin/Protection"] = {
+					"from M+",
+				},
+				["Priest/Shadow"] = {
+					"from M+",
+				},
+				["Warlock/Demonology"] = {
+					"from M+",
+				},
+				["Warlock/Destruction"] = {
+					"from M+",
+				},
+				["Warrior/Arms"] = {
+					"from M+",
+				},
+				["Warlock/Affliction"] = {
+					"from M+",
+				},
+			},
+			["133286"] = {
+				["Druid/Feral"] = {
+					"from M+",
+				},
+				["Evoker/Augmentation"] = {
+					"from M+",
+				},
+				["Druid/Balance"] = {
+					"from M+",
+				},
+				["Paladin/Retribution"] = {
+					"from M+",
+				},
+				["Warrior/Fury"] = {
+					"from M+",
+				},
+			},
+			["178738"] = {
+				["Evoker/Augmentation"] = {
+					"overall",
+					"from M+",
+				},
+				["Hunter/Marksmanship"] = {
+					"overall",
+					"from M+",
+				},
+			},
+			["212027"] = {
+				["Evoker/Augmentation"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Evoker/Preservation"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Evoker/Devastation"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["212446"] = {
+				["Evoker/Augmentation"] = {
+					"overall",
+					"from raid",
+				},
+				["Druid/Balance"] = {
+					"overall",
+					"from raid",
+				},
+				["Evoker/Preservation"] = {
+					"overall",
+					"from raid",
+				},
+				["Hunter/Survival"] = {
+					"from raid",
+				},
+				["Mage/Frost"] = {
+					"overall",
+					"from raid",
+				},
+				["Monk/Mistweaver"] = {
+					"from M+",
+				},
+				["Mage/Arcane"] = {
+					"from raid",
+				},
+				["Paladin/Retribution"] = {
+					"overall",
+					"from raid",
+				},
+				["Priest/Holy"] = {
+					"overall",
+					"from raid",
+				},
+				["Warrior/Fury"] = {
+					"from raid",
+				},
+			},
+			["212032"] = {
+				["Evoker/Augmentation"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Evoker/Preservation"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Evoker/Devastation"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["221174"] = {
+				["Evoker/Augmentation"] = {
+					"overall",
+					"from M+",
+				},
+				["Evoker/Preservation"] = {
+					"from M+",
+				},
+				["Hunter/Beast Mastery"] = {
+					"from M+",
+				},
+				["Hunter/Survival"] = {
+					"from M+",
+				},
+				["Evoker/Devastation"] = {
+					"overall",
+					"from M+",
+				},
+				["Hunter/Marksmanship"] = {
+					"from M+",
+				},
+			},
+			["212030"] = {
+				["Evoker/Augmentation"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Evoker/Devastation"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["219339"] = {
+				["Evoker/Augmentation"] = {
+					"overall",
+				},
+			},
+			["212028"] = {
+				["Evoker/Augmentation"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Evoker/Preservation"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["159379"] = {
+				["Evoker/Augmentation"] = {
+					"overall",
+					"from M+",
+				},
+				["Evoker/Preservation"] = {
+					"from M+",
+				},
+				["Hunter/Beast Mastery"] = {
+					"from M+",
+				},
+			},
+			["215133"] = {
+				["Evoker/Augmentation"] = {
+					"overall",
+				},
+			},
+			["133303"] = {
+				["Evoker/Augmentation"] = {
+					"overall",
+					"from M+",
+				},
+			},
+			["212405"] = {
+				["Evoker/Augmentation"] = {
+					"overall",
+					"from raid",
+				},
+				["Evoker/Preservation"] = {
+					"overall",
+					"from raid",
+				},
+				["Paladin/Holy"] = {
+					"from raid",
+				},
+			},
+			["221172"] = {
+				["Evoker/Augmentation"] = {
+					"overall",
+					"from M+",
+				},
+				["Druid/Restoration"] = {
+					"overall",
+				},
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Monk/Mistweaver"] = {
+					"from M+",
+				},
+				["Priest/Discipline"] = {
+					"overall",
+					"from M+",
+				},
+			},
+			["212428"] = {
+				["Evoker/Augmentation"] = {
+					"from raid",
+				},
+				["Shaman/Elemental"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["212415"] = {
+				["Evoker/Augmentation"] = {
+					"from raid",
+				},
+				["Evoker/Preservation"] = {
+					"overall",
+					"from raid",
+				},
+				["Hunter/Survival"] = {
+					"from raid",
+				},
+			},
+			["212414"] = {
+				["Evoker/Augmentation"] = {
+					"from raid",
+				},
+				["Shaman/Elemental"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["225586"] = {
+				["Evoker/Augmentation"] = {
+					"from raid",
+				},
+				["Evoker/Preservation"] = {
+					"overall",
+					"from raid",
+				},
+				["Hunter/Survival"] = {
+					"from raid",
+				},
+				["Evoker/Devastation"] = {
+					"overall",
+					"from raid",
+				},
+				["Hunter/Marksmanship"] = {
+					"overall",
+					"from raid",
+				},
+				["Shaman/Elemental"] = {
+					"from raid",
+				},
+				["Shaman/Restoration"] = {
+					"from raid",
+				},
+			},
+			["212397"] = {
+				["Evoker/Augmentation"] = {
+					"from raid",
+				},
+				["Druid/Restoration"] = {
+					"overall",
+					"from raid",
+				},
+				["Druid/Balance"] = {
+					"overall",
+					"from raid",
+				},
+				["Evoker/Preservation"] = {
+					"from raid",
+				},
+				["Mage/Frost"] = {
+					"from raid",
+				},
+				["Evoker/Devastation"] = {
+					"overall",
+					"from raid",
+				},
+				["Mage/Arcane"] = {
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"overall",
+					"from raid",
+				},
+				["Priest/Discipline"] = {
+					"from raid",
+				},
+				["Priest/Holy"] = {
+					"from raid",
+				},
+				["Priest/Shadow"] = {
+					"overall",
+					"from raid",
+				},
+				["Shaman/Restoration"] = {
+					"from raid",
+				},
+				["Warlock/Demonology"] = {
+					"overall",
+					"from raid",
+				},
+				["Warlock/Destruction"] = {
+					"overall",
+					"from raid",
+				},
+				["Warlock/Affliction"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["212387"] = {
+				["Evoker/Augmentation"] = {
+					"from raid",
+				},
+				["Druid/Restoration"] = {
+					"from raid",
+				},
+				["Evoker/Preservation"] = {
+					"overall",
+					"from raid",
+				},
+				["Mage/Frost"] = {
+					"from raid",
+				},
+				["Evoker/Devastation"] = {
+					"from raid",
+				},
+				["Monk/Mistweaver"] = {
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"from raid",
+				},
+				["Priest/Discipline"] = {
+					"from raid",
+				},
+				["Priest/Holy"] = {
+					"from raid",
+				},
+			},
+			["133363"] = {
+				["Evoker/Augmentation"] = {
+					"from M+",
+				},
+				["Demon Hunter/Havoc"] = {
+					"from M+",
+				},
+				["Death Knight/Frost"] = {
+					"from M+",
+				},
+				["Evoker/Devastation"] = {
+					"from M+",
+				},
+				["Hunter/Marksmanship"] = {
+					"from M+",
+				},
+				["Rogue/Assassination"] = {
+					"from M+",
+				},
+			},
+			["221075"] = {
+				["Evoker/Augmentation"] = {
+					"from M+",
+				},
+				["Hunter/Beast Mastery"] = {
+					"from M+",
+				},
+				["Hunter/Survival"] = {
+					"from M+",
+				},
+			},
+			["162542"] = {
+				["Evoker/Augmentation"] = {
+					"from M+",
+				},
+				["Demon Hunter/Havoc"] = {
+					"overall",
+					"from M+",
+				},
+				["Hunter/Beast Mastery"] = {
+					"from M+",
+				},
+				["Hunter/Survival"] = {
+					"from M+",
+				},
+				["Hunter/Marksmanship"] = {
+					"overall",
+					"from M+",
+				},
+				["Rogue/Assassination"] = {
+					"overall",
+					"from M+",
+				},
+			},
+			["221150"] = {
+				["Evoker/Augmentation"] = {
+					"from M+",
+				},
+			},
+			["212057"] = {
+				["Druid/Guardian"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Druid/Restoration"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Druid/Balance"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212425"] = {
+				["Druid/Guardian"] = {
+					"overall",
+					"from raid",
+				},
+				["Druid/Balance"] = {
+					"overall",
+					"from raid",
+				},
+				["Monk/Brewmaster"] = {
+					"from raid",
+				},
+				["Rogue/Subtlety"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["225591"] = {
+				["Druid/Guardian"] = {
+					"overall",
+					"from raid",
+				},
+				["Monk/Brewmaster"] = {
+					"overall",
+					"from raid",
+				},
+				["Rogue/Subtlety"] = {
+					"overall",
+					"from raid",
+				},
+				["Rogue/Assassination"] = {
+					"from raid",
+				},
+			},
+			["212389"] = {
+				["Druid/Guardian"] = {
+					"from raid",
+				},
+				["Hunter/Survival"] = {
+					"from raid",
+				},
+				["Monk/Brewmaster"] = {
+					"from raid",
+				},
+			},
+			["178691"] = {
 				["Druid/Guardian"] = {
 					"from M+",
 				},
@@ -2239,11 +2492,23 @@ context.database = {
 					"from M+",
 				},
 			},
-			["178699"] = {
+			["178741"] = {
+				["Druid/Guardian"] = {
+					"from M+",
+				},
 				["Druid/Restoration"] = {
 					"from M+",
 				},
+				["Monk/Windwalker"] = {
+					"overall",
+					"from M+",
+				},
+			},
+			["178699"] = {
 				["Druid/Guardian"] = {
+					"from M+",
+				},
+				["Druid/Restoration"] = {
 					"from M+",
 				},
 				["Monk/Windwalker"] = {
@@ -2256,10 +2521,10 @@ context.database = {
 				},
 			},
 			["178731"] = {
-				["Druid/Restoration"] = {
+				["Druid/Guardian"] = {
 					"from M+",
 				},
-				["Druid/Guardian"] = {
+				["Druid/Restoration"] = {
 					"from M+",
 				},
 				["Monk/Windwalker"] = {
@@ -2271,17 +2536,13 @@ context.database = {
 				},
 			},
 			["178736"] = {
-				["Druid/Restoration"] = {
-					"from M+",
-				},
 				["Druid/Guardian"] = {
 					"from M+",
 				},
-				["Death Knight/Unholy"] = {
+				["Druid/Restoration"] = {
 					"from M+",
 				},
-				["Paladin/Holy"] = {
-					"overall",
+				["Death Knight/Unholy"] = {
 					"from M+",
 				},
 				["Mage/Frost"] = {
@@ -2290,7 +2551,18 @@ context.database = {
 				["Monk/Mistweaver"] = {
 					"overall",
 				},
+				["Paladin/Holy"] = {
+					"overall",
+					"from M+",
+				},
 				["Monk/Windwalker"] = {
+					"overall",
+					"from M+",
+				},
+				["Priest/Discipline"] = {
+					"from M+",
+				},
+				["Rogue/Outlaw"] = {
 					"overall",
 					"from M+",
 				},
@@ -2298,23 +2570,19 @@ context.database = {
 					"overall",
 					"from M+",
 				},
-				["Rogue/Outlaw"] = {
-					"overall",
-					"from M+",
-				},
 				["Shaman/Restoration"] = {
-					"from M+",
-				},
-				["Priest/Discipline"] = {
 					"from M+",
 				},
 			},
 			["221189"] = {
+				["Druid/Guardian"] = {
+					"from M+",
+				},
 				["Druid/Restoration"] = {
 					"from M+",
 				},
-				["Druid/Guardian"] = {
-					"from M+",
+				["Mage/Frost"] = {
+					"overall",
 				},
 				["Mage/Arcane"] = {
 					"from M+",
@@ -2322,32 +2590,14 @@ context.database = {
 				["Paladin/Holy"] = {
 					"from M+",
 				},
-				["Mage/Frost"] = {
-					"overall",
-				},
-				["Mage/Fire"] = {
-					"from M+",
-				},
 				["Monk/Windwalker"] = {
 					"overall",
 					"from M+",
 				},
-				["Rogue/Outlaw"] = {
-					"overall",
-					"from M+",
-				},
-			},
-			["221166"] = {
-				["Druid/Restoration"] = {
-					"from M+",
-				},
-				["Mage/Frost"] = {
-					"from M+",
-				},
 				["Mage/Fire"] = {
 					"from M+",
 				},
-				["Priest/Discipline"] = {
+				["Rogue/Outlaw"] = {
 					"overall",
 					"from M+",
 				},
@@ -2364,29 +2614,6 @@ context.database = {
 				},
 				["Monk/Brewmaster"] = {
 					"overall",
-				},
-			},
-			["162542"] = {
-				["Demon Hunter/Havoc"] = {
-					"overall",
-					"from M+",
-				},
-				["Evoker/Augmentation"] = {
-					"from M+",
-				},
-				["Hunter/Beast Mastery"] = {
-					"from M+",
-				},
-				["Hunter/Survival"] = {
-					"from M+",
-				},
-				["Hunter/Marksmanship"] = {
-					"overall",
-					"from M+",
-				},
-				["Rogue/Assassination"] = {
-					"overall",
-					"from M+",
 				},
 			},
 			["222441"] = {
@@ -2417,26 +2644,6 @@ context.database = {
 					"from M+",
 				},
 			},
-			["133363"] = {
-				["Demon Hunter/Havoc"] = {
-					"from M+",
-				},
-				["Death Knight/Frost"] = {
-					"from M+",
-				},
-				["Evoker/Augmentation"] = {
-					"from M+",
-				},
-				["Evoker/Devastation"] = {
-					"from M+",
-				},
-				["Hunter/Marksmanship"] = {
-					"from M+",
-				},
-				["Rogue/Assassination"] = {
-					"from M+",
-				},
-			},
 			["133297"] = {
 				["Demon Hunter/Havoc"] = {
 					"from M+",
@@ -2449,10 +2656,10 @@ context.database = {
 				["Druid/Balance"] = {
 					"from M+",
 				},
-				["Rogue/Assassination"] = {
+				["Rogue/Subtlety"] = {
 					"from M+",
 				},
-				["Rogue/Subtlety"] = {
+				["Rogue/Assassination"] = {
 					"from M+",
 				},
 			},
@@ -2474,96 +2681,89 @@ context.database = {
 					"from M+",
 				},
 			},
-			["212425"] = {
-				["Druid/Guardian"] = {
-					"overall",
-					"from raid",
-				},
-				["Druid/Balance"] = {
-					"overall",
-					"from raid",
-				},
-				["Monk/Brewmaster"] = {
-					"from raid",
-				},
-				["Rogue/Subtlety"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["225591"] = {
-				["Druid/Guardian"] = {
-					"overall",
-					"from raid",
-				},
-				["Monk/Brewmaster"] = {
-					"overall",
-					"from raid",
-				},
-				["Rogue/Assassination"] = {
-					"from raid",
-				},
-				["Rogue/Subtlety"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["212389"] = {
-				["Druid/Guardian"] = {
-					"from raid",
-				},
-				["Hunter/Survival"] = {
-					"from raid",
-				},
-				["Monk/Brewmaster"] = {
-					"from raid",
-				},
-			},
-			["178691"] = {
-				["Druid/Guardian"] = {
-					"from M+",
-				},
-				["Monk/Windwalker"] = {
-					"overall",
-					"from M+",
-				},
-			},
-			["212446"] = {
-				["Druid/Balance"] = {
-					"overall",
-					"from raid",
-				},
-				["Evoker/Augmentation"] = {
-					"overall",
-					"from raid",
-				},
-				["Evoker/Preservation"] = {
-					"overall",
-					"from raid",
-				},
-				["Hunter/Survival"] = {
-					"from raid",
-				},
-				["Mage/Arcane"] = {
-					"from raid",
-				},
-				["Mage/Frost"] = {
+			["212404"] = {
+				["Druid/Restoration"] = {
 					"overall",
 					"from raid",
 				},
 				["Monk/Mistweaver"] = {
+					"from raid",
+					"from M+",
+				},
+			},
+			["221077"] = {
+				["Druid/Restoration"] = {
+					"from M+",
+				},
+				["Druid/Balance"] = {
+					"from M+",
+				},
+				["Death Knight/Unholy"] = {
+					"from M+",
+				},
+				["Evoker/Preservation"] = {
+					"from M+",
+				},
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Mage/Arcane"] = {
+					"from M+",
+				},
+				["Monk/Windwalker"] = {
+					"from M+",
+				},
+				["Mage/Fire"] = {
+					"from M+",
+				},
+				["Paladin/Protection"] = {
 					"from M+",
 				},
 				["Paladin/Retribution"] = {
-					"overall",
-					"from raid",
+					"from M+",
 				},
-				["Priest/Holy"] = {
-					"overall",
-					"from raid",
+				["Priest/Discipline"] = {
+					"from M+",
+				},
+				["Rogue/Assassination"] = {
+					"from M+",
+				},
+				["Priest/Shadow"] = {
+					"from M+",
+				},
+				["Shaman/Elemental"] = {
+					"from M+",
+				},
+				["Warlock/Demonology"] = {
+					"from M+",
+				},
+				["Warlock/Destruction"] = {
+					"from M+",
 				},
 				["Warrior/Fury"] = {
-					"from raid",
+					"overall",
+					"from M+",
+				},
+				["Warlock/Affliction"] = {
+					"from M+",
+				},
+				["Warrior/Protection"] = {
+					"from M+",
+				},
+			},
+			["221166"] = {
+				["Druid/Restoration"] = {
+					"from M+",
+				},
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Mage/Fire"] = {
+					"from M+",
+				},
+				["Priest/Discipline"] = {
+					"overall",
+					"from M+",
 				},
 			},
 			["221085"] = {
@@ -2579,10 +2779,10 @@ context.database = {
 				["Warlock/Demonology"] = {
 					"from M+",
 				},
-				["Warlock/Affliction"] = {
+				["Warlock/Destruction"] = {
 					"from M+",
 				},
-				["Warlock/Destruction"] = {
+				["Warlock/Affliction"] = {
 					"from M+",
 				},
 			},
@@ -2647,11 +2847,11 @@ context.database = {
 					"overall",
 					"from raid",
 				},
-				["Warrior/Arms"] = {
+				["Warrior/Fury"] = {
 					"overall",
 					"from raid",
 				},
-				["Warrior/Fury"] = {
+				["Warrior/Arms"] = {
 					"overall",
 					"from raid",
 				},
@@ -2729,10 +2929,10 @@ context.database = {
 				["Paladin/Retribution"] = {
 					"from M+",
 				},
-				["Warrior/Arms"] = {
+				["Warrior/Fury"] = {
 					"from M+",
 				},
-				["Warrior/Fury"] = {
+				["Warrior/Arms"] = {
 					"from M+",
 				},
 			},
@@ -2801,22 +3001,7 @@ context.database = {
 					"from M+",
 				},
 			},
-			["178738"] = {
-				["Evoker/Augmentation"] = {
-					"overall",
-					"from M+",
-				},
-				["Hunter/Marksmanship"] = {
-					"overall",
-					"from M+",
-				},
-			},
-			["212027"] = {
-				["Evoker/Augmentation"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
+			["212029"] = {
 				["Evoker/Preservation"] = {
 					"overall",
 					"from raid",
@@ -2827,147 +3012,30 @@ context.database = {
 					"from raid",
 				},
 			},
-			["212032"] = {
-				["Evoker/Augmentation"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
+			["212436"] = {
 				["Evoker/Preservation"] = {
 					"overall",
 					"from raid",
-					"from M+",
-				},
-				["Evoker/Devastation"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["221174"] = {
-				["Evoker/Augmentation"] = {
-					"overall",
-					"from M+",
 				},
 				["Hunter/Beast Mastery"] = {
-					"from M+",
+					"from raid",
 				},
+			},
+			["221168"] = {
 				["Evoker/Preservation"] = {
-					"from M+",
-				},
-				["Hunter/Survival"] = {
+					"overall",
 					"from M+",
 				},
 				["Evoker/Devastation"] = {
-					"overall",
-					"from M+",
-				},
-				["Hunter/Marksmanship"] = {
 					"from M+",
 				},
 			},
-			["212030"] = {
-				["Evoker/Augmentation"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Evoker/Devastation"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["219339"] = {
-				["Evoker/Augmentation"] = {
-					"overall",
-				},
-			},
-			["212028"] = {
-				["Evoker/Augmentation"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
+			["225580"] = {
 				["Evoker/Preservation"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-			},
-			["159379"] = {
-				["Evoker/Augmentation"] = {
-					"overall",
-					"from M+",
-				},
-				["Hunter/Beast Mastery"] = {
-					"from M+",
-				},
-				["Evoker/Preservation"] = {
-					"from M+",
-				},
-			},
-			["215133"] = {
-				["Evoker/Augmentation"] = {
-					"overall",
-				},
-			},
-			["133303"] = {
-				["Evoker/Augmentation"] = {
-					"overall",
-					"from M+",
-				},
-			},
-			["212405"] = {
-				["Evoker/Augmentation"] = {
-					"overall",
-					"from raid",
-				},
-				["Evoker/Preservation"] = {
-					"overall",
-					"from raid",
-				},
-				["Paladin/Holy"] = {
-					"from raid",
-				},
-			},
-			["212428"] = {
-				["Evoker/Augmentation"] = {
-					"from raid",
-				},
-				["Shaman/Elemental"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["212415"] = {
-				["Evoker/Augmentation"] = {
-					"from raid",
-				},
-				["Evoker/Preservation"] = {
-					"overall",
 					"from raid",
 				},
 				["Hunter/Survival"] = {
-					"from raid",
-				},
-			},
-			["212414"] = {
-				["Evoker/Augmentation"] = {
-					"from raid",
-				},
-				["Shaman/Elemental"] = {
 					"overall",
-					"from raid",
-				},
-			},
-			["225586"] = {
-				["Evoker/Augmentation"] = {
-					"from raid",
-				},
-				["Evoker/Preservation"] = {
-					"overall",
-					"from raid",
-				},
-				["Hunter/Survival"] = {
 					"from raid",
 				},
 				["Evoker/Devastation"] = {
@@ -2976,28 +3044,33 @@ context.database = {
 				},
 				["Hunter/Marksmanship"] = {
 					"overall",
-					"from raid",
-				},
-				["Shaman/Elemental"] = {
 					"from raid",
 				},
 				["Shaman/Restoration"] = {
+					"overall",
 					"from raid",
 				},
 			},
-			["221075"] = {
-				["Evoker/Augmentation"] = {
+			["221162"] = {
+				["Evoker/Preservation"] = {
 					"from M+",
 				},
-				["Hunter/Beast Mastery"] = {
-					"from M+",
-				},
-				["Hunter/Survival"] = {
+				["Shaman/Elemental"] = {
 					"from M+",
 				},
 			},
-			["221150"] = {
-				["Evoker/Augmentation"] = {
+			["221083"] = {
+				["Evoker/Preservation"] = {
+					"from M+",
+				},
+				["Evoker/Devastation"] = {
+					"from M+",
+				},
+				["Shaman/Elemental"] = {
+					"from M+",
+				},
+				["Shaman/Restoration"] = {
+					"overall",
 					"from M+",
 				},
 			},
@@ -3114,15 +3187,6 @@ context.database = {
 					"from raid",
 				},
 			},
-			["212436"] = {
-				["Hunter/Beast Mastery"] = {
-					"from raid",
-				},
-				["Evoker/Preservation"] = {
-					"overall",
-					"from raid",
-				},
-			},
 			["212015"] = {
 				["Hunter/Beast Mastery"] = {
 					"from M+",
@@ -3138,70 +3202,6 @@ context.database = {
 			},
 			["221143"] = {
 				["Hunter/Beast Mastery"] = {
-					"from M+",
-				},
-			},
-			["212029"] = {
-				["Evoker/Preservation"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Evoker/Devastation"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["221168"] = {
-				["Evoker/Preservation"] = {
-					"overall",
-					"from M+",
-				},
-				["Evoker/Devastation"] = {
-					"from M+",
-				},
-			},
-			["225580"] = {
-				["Evoker/Preservation"] = {
-					"from raid",
-				},
-				["Hunter/Survival"] = {
-					"overall",
-					"from raid",
-				},
-				["Evoker/Devastation"] = {
-					"overall",
-					"from raid",
-				},
-				["Hunter/Marksmanship"] = {
-					"overall",
-					"from raid",
-				},
-				["Shaman/Restoration"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["221162"] = {
-				["Evoker/Preservation"] = {
-					"from M+",
-				},
-				["Shaman/Elemental"] = {
-					"from M+",
-				},
-			},
-			["221083"] = {
-				["Evoker/Preservation"] = {
-					"from M+",
-				},
-				["Evoker/Devastation"] = {
-					"from M+",
-				},
-				["Shaman/Elemental"] = {
-					"from M+",
-				},
-				["Shaman/Restoration"] = {
-					"overall",
 					"from M+",
 				},
 			},
@@ -3260,6 +3260,345 @@ context.database = {
 					"from M+",
 				},
 			},
+			["212092"] = {
+				["Mage/Frost"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["212090"] = {
+				["Mage/Frost"] = {
+					"overall",
+					"from raid",
+				},
+				["Mage/Arcane"] = {
+					"overall",
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["212095"] = {
+				["Mage/Frost"] = {
+					"overall",
+					"from raid",
+				},
+				["Mage/Arcane"] = {
+					"overall",
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["225584"] = {
+				["Mage/Frost"] = {
+					"overall",
+					"from raid",
+				},
+				["Mage/Arcane"] = {
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"overall",
+					"from raid",
+				},
+				["Priest/Discipline"] = {
+					"from raid",
+				},
+				["Priest/Shadow"] = {
+					"overall",
+					"from raid",
+				},
+				["Warlock/Demonology"] = {
+					"overall",
+					"from raid",
+				},
+				["Warlock/Destruction"] = {
+					"overall",
+					"from raid",
+				},
+				["Warlock/Affliction"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["212093"] = {
+				["Mage/Frost"] = {
+					"overall",
+					"from raid",
+				},
+				["Mage/Arcane"] = {
+					"overall",
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["225585"] = {
+				["Mage/Frost"] = {
+					"overall",
+					"from raid",
+				},
+				["Mage/Arcane"] = {
+					"overall",
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"from raid",
+				},
+				["Priest/Discipline"] = {
+					"from raid",
+				},
+				["Priest/Holy"] = {
+					"overall",
+					"from raid",
+				},
+				["Priest/Shadow"] = {
+					"overall",
+					"from raid",
+				},
+				["Warlock/Demonology"] = {
+					"overall",
+					"from raid",
+				},
+				["Warlock/Destruction"] = {
+					"overall",
+					"from raid",
+				},
+				["Warlock/Affliction"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["212434"] = {
+				["Mage/Frost"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["222814"] = {
+				["Mage/Frost"] = {
+					"overall",
+				},
+				["Warlock/Demonology"] = {
+					"overall",
+				},
+				["Warlock/Destruction"] = {
+					"overall",
+				},
+				["Warlock/Affliction"] = {
+					"overall",
+				},
+			},
+			["222568"] = {
+				["Mage/Frost"] = {
+					"overall",
+				},
+				["Monk/Mistweaver"] = {
+					"overall",
+				},
+			},
+			["212394"] = {
+				["Mage/Frost"] = {
+					"overall",
+					"from raid",
+				},
+				["Evoker/Devastation"] = {
+					"overall",
+					"from raid",
+				},
+				["Mage/Arcane"] = {
+					"overall",
+				},
+				["Mage/Fire"] = {
+					"overall",
+					"from raid",
+				},
+				["Priest/Discipline"] = {
+					"overall",
+					"from raid",
+				},
+				["Priest/Holy"] = {
+					"from raid",
+				},
+				["Shaman/Elemental"] = {
+					"from raid",
+				},
+				["Shaman/Restoration"] = {
+					"overall",
+					"from raid",
+				},
+				["Warlock/Demonology"] = {
+					"overall",
+				},
+				["Warlock/Destruction"] = {
+					"overall",
+				},
+				["Warlock/Affliction"] = {
+					"overall",
+				},
+			},
+			["222566"] = {
+				["Mage/Frost"] = {
+					"overall",
+				},
+				["Evoker/Devastation"] = {
+					"overall",
+				},
+				["Mage/Arcane"] = {
+					"overall",
+				},
+				["Mage/Fire"] = {
+					"overall",
+				},
+				["Warlock/Demonology"] = {
+					"overall",
+				},
+				["Warlock/Destruction"] = {
+					"overall",
+				},
+				["Warlock/Affliction"] = {
+					"overall",
+				},
+			},
+			["225582"] = {
+				["Mage/Frost"] = {
+					"from raid",
+				},
+				["Mage/Arcane"] = {
+					"from raid",
+				},
+				["Mage/Fire"] = {
+					"from raid",
+				},
+				["Priest/Discipline"] = {
+					"from raid",
+				},
+				["Priest/Shadow"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["221187"] = {
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Mage/Arcane"] = {
+					"from M+",
+				},
+				["Mage/Fire"] = {
+					"from M+",
+				},
+			},
+			["221135"] = {
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Mage/Arcane"] = {
+					"from M+",
+				},
+			},
+			["221095"] = {
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Mage/Arcane"] = {
+					"from M+",
+				},
+				["Mage/Fire"] = {
+					"from M+",
+				},
+			},
+			["221182"] = {
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Mage/Arcane"] = {
+					"from M+",
+				},
+				["Mage/Fire"] = {
+					"from M+",
+				},
+				["Priest/Discipline"] = {
+					"overall",
+					"from M+",
+				},
+			},
+			["178705"] = {
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Mage/Fire"] = {
+					"from M+",
+				},
+			},
+			["221158"] = {
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Mage/Arcane"] = {
+					"from M+",
+				},
+				["Mage/Fire"] = {
+					"from M+",
+				},
+				["Priest/Discipline"] = {
+					"overall",
+					"from M+",
+				},
+				["Priest/Shadow"] = {
+					"from M+",
+				},
+				["Warlock/Demonology"] = {
+					"from M+",
+				},
+				["Warlock/Destruction"] = {
+					"from M+",
+				},
+				["Warlock/Affliction"] = {
+					"from M+",
+				},
+			},
+			["221164"] = {
+				["Mage/Frost"] = {
+					"from M+",
+				},
+			},
+			["221149"] = {
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Priest/Holy"] = {
+					"overall",
+					"from M+",
+				},
+				["Priest/Shadow"] = {
+					"from M+",
+				},
+				["Warlock/Demonology"] = {
+					"from M+",
+				},
+				["Warlock/Destruction"] = {
+					"from M+",
+				},
+				["Warlock/Affliction"] = {
+					"from M+",
+				},
+			},
+			["133283"] = {
+				["Mage/Frost"] = {
+					"from M+",
+				},
+				["Shaman/Restoration"] = {
+					"from M+",
+				},
+			},
 			["212435"] = {
 				["Evoker/Devastation"] = {
 					"overall",
@@ -3271,69 +3610,6 @@ context.database = {
 				["Shaman/Restoration"] = {
 					"overall",
 					"from raid",
-				},
-			},
-			["212394"] = {
-				["Evoker/Devastation"] = {
-					"overall",
-					"from raid",
-				},
-				["Mage/Arcane"] = {
-					"overall",
-				},
-				["Mage/Frost"] = {
-					"overall",
-					"from raid",
-				},
-				["Mage/Fire"] = {
-					"overall",
-					"from raid",
-				},
-				["Shaman/Elemental"] = {
-					"from raid",
-				},
-				["Priest/Holy"] = {
-					"from raid",
-				},
-				["Shaman/Restoration"] = {
-					"overall",
-					"from raid",
-				},
-				["Priest/Discipline"] = {
-					"overall",
-					"from raid",
-				},
-				["Warlock/Demonology"] = {
-					"overall",
-				},
-				["Warlock/Affliction"] = {
-					"overall",
-				},
-				["Warlock/Destruction"] = {
-					"overall",
-				},
-			},
-			["222566"] = {
-				["Evoker/Devastation"] = {
-					"overall",
-				},
-				["Mage/Arcane"] = {
-					"overall",
-				},
-				["Mage/Frost"] = {
-					"overall",
-				},
-				["Mage/Fire"] = {
-					"overall",
-				},
-				["Warlock/Demonology"] = {
-					"overall",
-				},
-				["Warlock/Affliction"] = {
-					"overall",
-				},
-				["Warlock/Destruction"] = {
-					"overall",
 				},
 			},
 			["221156"] = {
@@ -3367,23 +3643,151 @@ context.database = {
 					"from M+",
 				},
 			},
+			["212047"] = {
+				["Monk/Brewmaster"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Monk/Mistweaver"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Monk/Windwalker"] = {
+					"from raid",
+				},
+			},
+			["212045"] = {
+				["Monk/Brewmaster"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Monk/Windwalker"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212050"] = {
+				["Monk/Brewmaster"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Monk/Mistweaver"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Monk/Windwalker"] = {
+					"overall",
+					"from M+",
+				},
+			},
+			["212046"] = {
+				["Monk/Brewmaster"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Monk/Mistweaver"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Monk/Windwalker"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["221144"] = {
+				["Monk/Brewmaster"] = {
+					"overall",
+					"from M+",
+				},
+				["Rogue/Outlaw"] = {
+					"from M+",
+				},
+			},
+			["212398"] = {
+				["Monk/Brewmaster"] = {
+					"from raid",
+				},
+			},
+			["56126"] = {
+				["Monk/Brewmaster"] = {
+					"from M+",
+				},
+				["Priest/Holy"] = {
+					"from M+",
+				},
+			},
+			["178702"] = {
+				["Monk/Brewmaster"] = {
+					"from M+",
+				},
+			},
+			["56445"] = {
+				["Monk/Brewmaster"] = {
+					"from M+",
+				},
+			},
+			["159648"] = {
+				["Monk/Brewmaster"] = {
+					"from M+",
+				},
+			},
+			["212444"] = {
+				["Monk/Mistweaver"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["212048"] = {
+				["Monk/Mistweaver"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Monk/Windwalker"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["221148"] = {
+				["Monk/Mistweaver"] = {
+					"from M+",
+				},
+			},
+			["212399"] = {
+				["Hunter/Marksmanship"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["159386"] = {
+				["Hunter/Marksmanship"] = {
+					"from M+",
+				},
+				["Shaman/Elemental"] = {
+					"from M+",
+				},
+				["Shaman/Restoration"] = {
+					"from M+",
+				},
+			},
+			["221074"] = {
+				["Hunter/Marksmanship"] = {
+					"from M+",
+				},
+			},
 			["178693"] = {
 				["Mage/Arcane"] = {
 					"overall",
-				},
-			},
-			["212090"] = {
-				["Mage/Arcane"] = {
-					"overall",
-					"from raid",
-				},
-				["Mage/Frost"] = {
-					"overall",
-					"from raid",
-				},
-				["Mage/Fire"] = {
-					"overall",
-					"from raid",
 				},
 			},
 			["212087"] = {
@@ -3391,73 +3795,9 @@ context.database = {
 					"overall",
 				},
 			},
-			["212095"] = {
-				["Mage/Arcane"] = {
-					"overall",
-					"from raid",
-				},
-				["Mage/Frost"] = {
-					"overall",
-					"from raid",
-				},
-				["Mage/Fire"] = {
-					"overall",
-					"from raid",
-				},
-			},
 			["222815"] = {
 				["Mage/Arcane"] = {
 					"overall",
-				},
-			},
-			["212093"] = {
-				["Mage/Arcane"] = {
-					"overall",
-					"from raid",
-				},
-				["Mage/Frost"] = {
-					"overall",
-					"from raid",
-				},
-				["Mage/Fire"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["225585"] = {
-				["Mage/Arcane"] = {
-					"overall",
-					"from raid",
-				},
-				["Mage/Frost"] = {
-					"overall",
-					"from raid",
-				},
-				["Mage/Fire"] = {
-					"from raid",
-				},
-				["Priest/Shadow"] = {
-					"overall",
-					"from raid",
-				},
-				["Priest/Holy"] = {
-					"overall",
-					"from raid",
-				},
-				["Priest/Discipline"] = {
-					"from raid",
-				},
-				["Warlock/Demonology"] = {
-					"overall",
-					"from raid",
-				},
-				["Warlock/Affliction"] = {
-					"overall",
-					"from raid",
-				},
-				["Warlock/Destruction"] = {
-					"overall",
-					"from raid",
 				},
 			},
 			["212091"] = {
@@ -3495,130 +3835,8 @@ context.database = {
 					"from raid",
 				},
 			},
-			["225584"] = {
-				["Mage/Arcane"] = {
-					"from raid",
-				},
-				["Mage/Frost"] = {
-					"overall",
-					"from raid",
-				},
-				["Mage/Fire"] = {
-					"overall",
-					"from raid",
-				},
-				["Priest/Shadow"] = {
-					"overall",
-					"from raid",
-				},
-				["Priest/Discipline"] = {
-					"from raid",
-				},
-				["Warlock/Demonology"] = {
-					"overall",
-					"from raid",
-				},
-				["Warlock/Affliction"] = {
-					"overall",
-					"from raid",
-				},
-				["Warlock/Destruction"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["225582"] = {
-				["Mage/Arcane"] = {
-					"from raid",
-				},
-				["Mage/Frost"] = {
-					"from raid",
-				},
-				["Mage/Fire"] = {
-					"from raid",
-				},
-				["Priest/Shadow"] = {
-					"overall",
-					"from raid",
-				},
-				["Priest/Discipline"] = {
-					"from raid",
-				},
-			},
-			["221187"] = {
-				["Mage/Arcane"] = {
-					"from M+",
-				},
-				["Mage/Frost"] = {
-					"from M+",
-				},
-				["Mage/Fire"] = {
-					"from M+",
-				},
-			},
-			["221135"] = {
-				["Mage/Arcane"] = {
-					"from M+",
-				},
-				["Mage/Frost"] = {
-					"from M+",
-				},
-			},
-			["221095"] = {
-				["Mage/Arcane"] = {
-					"from M+",
-				},
-				["Mage/Frost"] = {
-					"from M+",
-				},
-				["Mage/Fire"] = {
-					"from M+",
-				},
-			},
-			["221182"] = {
-				["Mage/Arcane"] = {
-					"from M+",
-				},
-				["Mage/Frost"] = {
-					"from M+",
-				},
-				["Mage/Fire"] = {
-					"from M+",
-				},
-				["Priest/Discipline"] = {
-					"overall",
-					"from M+",
-				},
-			},
 			["221170"] = {
 				["Mage/Arcane"] = {
-					"from M+",
-				},
-			},
-			["221158"] = {
-				["Mage/Arcane"] = {
-					"from M+",
-				},
-				["Mage/Frost"] = {
-					"from M+",
-				},
-				["Mage/Fire"] = {
-					"from M+",
-				},
-				["Priest/Shadow"] = {
-					"from M+",
-				},
-				["Priest/Discipline"] = {
-					"overall",
-					"from M+",
-				},
-				["Warlock/Demonology"] = {
-					"from M+",
-				},
-				["Warlock/Affliction"] = {
-					"from M+",
-				},
-				["Warlock/Destruction"] = {
 					"from M+",
 				},
 			},
@@ -3640,28 +3858,6 @@ context.database = {
 				},
 				["Priest/Discipline"] = {
 					"overall",
-					"from M+",
-				},
-			},
-			["212399"] = {
-				["Hunter/Marksmanship"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["159386"] = {
-				["Hunter/Marksmanship"] = {
-					"from M+",
-				},
-				["Shaman/Elemental"] = {
-					"from M+",
-				},
-				["Shaman/Restoration"] = {
-					"from M+",
-				},
-			},
-			["221074"] = {
-				["Hunter/Marksmanship"] = {
 					"from M+",
 				},
 			},
@@ -3699,10 +3895,10 @@ context.database = {
 					"overall",
 					"from M+",
 				},
-				["Warrior/Arms"] = {
+				["Warrior/Fury"] = {
 					"from M+",
 				},
-				["Warrior/Fury"] = {
+				["Warrior/Arms"] = {
 					"from M+",
 				},
 				["Warrior/Protection"] = {
@@ -3788,199 +3984,13 @@ context.database = {
 					"from M+",
 				},
 			},
-			["212092"] = {
-				["Mage/Frost"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["212434"] = {
-				["Mage/Frost"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["222814"] = {
-				["Mage/Frost"] = {
-					"overall",
-				},
-				["Warlock/Demonology"] = {
-					"overall",
-				},
-				["Warlock/Affliction"] = {
-					"overall",
-				},
-				["Warlock/Destruction"] = {
-					"overall",
-				},
-			},
-			["222568"] = {
-				["Mage/Frost"] = {
-					"overall",
-				},
-				["Monk/Mistweaver"] = {
-					"overall",
-				},
-			},
-			["178705"] = {
-				["Mage/Frost"] = {
-					"from M+",
-				},
-				["Mage/Fire"] = {
-					"from M+",
-				},
-			},
-			["221164"] = {
-				["Mage/Frost"] = {
-					"from M+",
-				},
-			},
-			["221149"] = {
-				["Mage/Frost"] = {
-					"from M+",
-				},
-				["Priest/Shadow"] = {
-					"from M+",
-				},
-				["Priest/Holy"] = {
-					"overall",
-					"from M+",
-				},
-				["Warlock/Demonology"] = {
-					"from M+",
-				},
-				["Warlock/Affliction"] = {
-					"from M+",
-				},
-				["Warlock/Destruction"] = {
-					"from M+",
-				},
-			},
-			["133283"] = {
-				["Mage/Frost"] = {
-					"from M+",
-				},
-				["Shaman/Restoration"] = {
-					"from M+",
-				},
-			},
-			["212047"] = {
-				["Monk/Mistweaver"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Monk/Brewmaster"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
+			["212433"] = {
 				["Monk/Windwalker"] = {
 					"from raid",
 				},
 			},
-			["212444"] = {
-				["Monk/Mistweaver"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["212050"] = {
-				["Monk/Mistweaver"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Monk/Brewmaster"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
+			["221137"] = {
 				["Monk/Windwalker"] = {
-					"overall",
-					"from M+",
-				},
-			},
-			["212048"] = {
-				["Monk/Mistweaver"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Monk/Windwalker"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-			},
-			["212046"] = {
-				["Monk/Mistweaver"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Monk/Brewmaster"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Monk/Windwalker"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-			},
-			["221148"] = {
-				["Monk/Mistweaver"] = {
-					"from M+",
-				},
-			},
-			["212045"] = {
-				["Monk/Brewmaster"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Monk/Windwalker"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-			},
-			["221144"] = {
-				["Monk/Brewmaster"] = {
-					"overall",
-					"from M+",
-				},
-				["Rogue/Outlaw"] = {
-					"from M+",
-				},
-			},
-			["212398"] = {
-				["Monk/Brewmaster"] = {
-					"from raid",
-				},
-			},
-			["56126"] = {
-				["Monk/Brewmaster"] = {
-					"from M+",
-				},
-				["Priest/Holy"] = {
-					"from M+",
-				},
-			},
-			["178702"] = {
-				["Monk/Brewmaster"] = {
-					"from M+",
-				},
-			},
-			["56445"] = {
-				["Monk/Brewmaster"] = {
-					"from M+",
-				},
-			},
-			["159648"] = {
-				["Monk/Brewmaster"] = {
 					"from M+",
 				},
 			},
@@ -3991,16 +4001,6 @@ context.database = {
 			},
 			["178740"] = {
 				["Mage/Fire"] = {
-					"from M+",
-				},
-			},
-			["212433"] = {
-				["Monk/Windwalker"] = {
-					"from raid",
-				},
-			},
-			["221137"] = {
-				["Monk/Windwalker"] = {
 					"from M+",
 				},
 			},
@@ -4035,10 +4035,10 @@ context.database = {
 				["Paladin/Protection"] = {
 					"from raid",
 				},
-				["Warrior/Arms"] = {
+				["Warrior/Fury"] = {
 					"from raid",
 				},
-				["Warrior/Fury"] = {
+				["Warrior/Arms"] = {
 					"from raid",
 				},
 				["Warrior/Protection"] = {
@@ -4077,6 +4077,294 @@ context.database = {
 					"from M+",
 				},
 			},
+			["212036"] = {
+				["Rogue/Subtlety"] = {
+					"overall",
+					"from raid",
+				},
+				["Rogue/Assassination"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Rogue/Outlaw"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212041"] = {
+				["Rogue/Subtlety"] = {
+					"overall",
+					"from raid",
+				},
+				["Rogue/Assassination"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Rogue/Outlaw"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["219334"] = {
+				["Rogue/Subtlety"] = {
+					"overall",
+				},
+				["Rogue/Assassination"] = {
+					"overall",
+				},
+				["Rogue/Outlaw"] = {
+					"overall",
+				},
+			},
+			["212039"] = {
+				["Rogue/Subtlety"] = {
+					"overall",
+					"from raid",
+				},
+				["Rogue/Assassination"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Rogue/Outlaw"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212037"] = {
+				["Rogue/Subtlety"] = {
+					"overall",
+					"from raid",
+				},
+				["Rogue/Assassination"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["215135"] = {
+				["Rogue/Subtlety"] = {
+					"overall",
+				},
+			},
+			["221141"] = {
+				["Rogue/Subtlety"] = {
+					"overall",
+					"from M+",
+				},
+				["Warrior/Fury"] = {
+					"from M+",
+				},
+			},
+			["212395"] = {
+				["Rogue/Subtlety"] = {
+					"overall",
+					"from raid",
+				},
+				["Rogue/Assassination"] = {
+					"overall",
+					"from raid",
+				},
+				["Rogue/Outlaw"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["178743"] = {
+				["Rogue/Subtlety"] = {
+					"overall",
+					"from M+",
+				},
+			},
+			["221175"] = {
+				["Rogue/Subtlety"] = {
+					"from M+",
+				},
+			},
+			["178744"] = {
+				["Rogue/Subtlety"] = {
+					"from M+",
+				},
+			},
+			["159328"] = {
+				["Rogue/Subtlety"] = {
+					"from M+",
+				},
+			},
+			["133353"] = {
+				["Rogue/Subtlety"] = {
+					"from M+",
+				},
+				["Rogue/Assassination"] = {
+					"from M+",
+				},
+			},
+			["133287"] = {
+				["Rogue/Subtlety"] = {
+					"from M+",
+				},
+			},
+			["212081"] = {
+				["Priest/Discipline"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Priest/Holy"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Priest/Shadow"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212086"] = {
+				["Priest/Discipline"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Priest/Shadow"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212084"] = {
+				["Priest/Discipline"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Priest/Holy"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212082"] = {
+				["Priest/Discipline"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Priest/Holy"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Priest/Shadow"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["133302"] = {
+				["Priest/Discipline"] = {
+					"from M+",
+				},
+				["Warlock/Demonology"] = {
+					"from M+",
+				},
+				["Warlock/Destruction"] = {
+					"from M+",
+				},
+			},
+			["221165"] = {
+				["Priest/Discipline"] = {
+					"from M+",
+				},
+				["Shaman/Elemental"] = {
+					"from M+",
+				},
+			},
+			["212083"] = {
+				["Priest/Holy"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+				["Priest/Shadow"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["212419"] = {
+				["Priest/Holy"] = {
+					"overall",
+					"from raid",
+				},
+			},
+			["178782"] = {
+				["Priest/Holy"] = {
+					"overall",
+					"from M+",
+				},
+			},
+			["56137"] = {
+				["Priest/Holy"] = {
+					"overall",
+					"from M+",
+				},
+			},
+			["178709"] = {
+				["Priest/Holy"] = {
+					"overall",
+					"from M+",
+				},
+			},
+			["221132"] = {
+				["Priest/Holy"] = {
+					"overall",
+					"from M+",
+				},
+			},
+			["212426"] = {
+				["Priest/Holy"] = {
+					"from raid",
+				},
+			},
+			["212416"] = {
+				["Priest/Holy"] = {
+					"from raid",
+				},
+				["Warlock/Demonology"] = {
+					"from raid",
+				},
+				["Warlock/Destruction"] = {
+					"from raid",
+				},
+				["Warlock/Affliction"] = {
+					"from raid",
+				},
+			},
+			["221176"] = {
+				["Priest/Holy"] = {
+					"from M+",
+				},
+			},
+			["221087"] = {
+				["Priest/Holy"] = {
+					"from M+",
+				},
+			},
+			["56444"] = {
+				["Priest/Holy"] = {
+					"from M+",
+				},
+				["Rogue/Assassination"] = {
+					"from M+",
+				},
+			},
 			["212038"] = {
 				["Rogue/Assassination"] = {
 					"overall",
@@ -4089,115 +4377,15 @@ context.database = {
 					"from M+",
 				},
 			},
-			["212036"] = {
-				["Rogue/Assassination"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Rogue/Outlaw"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Rogue/Subtlety"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["212041"] = {
-				["Rogue/Assassination"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Rogue/Outlaw"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Rogue/Subtlety"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["219334"] = {
-				["Rogue/Assassination"] = {
-					"overall",
-				},
-				["Rogue/Outlaw"] = {
-					"overall",
-				},
-				["Rogue/Subtlety"] = {
-					"overall",
-				},
-			},
-			["212039"] = {
-				["Rogue/Assassination"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Rogue/Outlaw"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Rogue/Subtlety"] = {
-					"overall",
-					"from raid",
-				},
-			},
 			["219331"] = {
 				["Rogue/Assassination"] = {
 					"overall",
-				},
-			},
-			["212037"] = {
-				["Rogue/Assassination"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Rogue/Subtlety"] = {
-					"overall",
-					"from raid",
 				},
 			},
 			["225636"] = {
 				["Rogue/Assassination"] = {
 					"overall",
 					"from raid",
-				},
-			},
-			["212395"] = {
-				["Rogue/Assassination"] = {
-					"overall",
-					"from raid",
-				},
-				["Rogue/Outlaw"] = {
-					"overall",
-					"from raid",
-				},
-				["Rogue/Subtlety"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["133353"] = {
-				["Rogue/Assassination"] = {
-					"from M+",
-				},
-				["Rogue/Subtlety"] = {
-					"from M+",
-				},
-			},
-			["56444"] = {
-				["Rogue/Assassination"] = {
-					"from M+",
-				},
-				["Priest/Holy"] = {
-					"from M+",
 				},
 			},
 			["221183"] = {
@@ -4210,6 +4398,46 @@ context.database = {
 			},
 			["221138"] = {
 				["Rogue/Assassination"] = {
+					"from M+",
+				},
+			},
+			["219332"] = {
+				["Rogue/Outlaw"] = {
+					"overall",
+				},
+			},
+			["212423"] = {
+				["Rogue/Outlaw"] = {
+					"from raid",
+				},
+			},
+			["133354"] = {
+				["Rogue/Outlaw"] = {
+					"from M+",
+				},
+			},
+			["178748"] = {
+				["Priest/Shadow"] = {
+					"overall",
+					"from M+",
+				},
+			},
+			["212441"] = {
+				["Priest/Shadow"] = {
+					"from raid",
+				},
+			},
+			["133295"] = {
+				["Priest/Shadow"] = {
+					"from M+",
+				},
+				["Warlock/Demonology"] = {
+					"from M+",
+				},
+				["Warlock/Destruction"] = {
+					"from M+",
+				},
+				["Warlock/Affliction"] = {
 					"from M+",
 				},
 			},
@@ -4280,225 +4508,8 @@ context.database = {
 					"from M+",
 				},
 			},
-			["221165"] = {
-				["Shaman/Elemental"] = {
-					"from M+",
-				},
-				["Priest/Discipline"] = {
-					"from M+",
-				},
-			},
 			["178750"] = {
 				["Shaman/Elemental"] = {
-					"from M+",
-				},
-			},
-			["219332"] = {
-				["Rogue/Outlaw"] = {
-					"overall",
-				},
-			},
-			["212423"] = {
-				["Rogue/Outlaw"] = {
-					"from raid",
-				},
-			},
-			["133354"] = {
-				["Rogue/Outlaw"] = {
-					"from M+",
-				},
-			},
-			["212083"] = {
-				["Priest/Shadow"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Priest/Holy"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-			},
-			["212081"] = {
-				["Priest/Shadow"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Priest/Holy"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Priest/Discipline"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-			},
-			["212086"] = {
-				["Priest/Shadow"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Priest/Discipline"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-			},
-			["178748"] = {
-				["Priest/Shadow"] = {
-					"overall",
-					"from M+",
-				},
-			},
-			["212082"] = {
-				["Priest/Shadow"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Priest/Holy"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Priest/Discipline"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-			},
-			["212441"] = {
-				["Priest/Shadow"] = {
-					"from raid",
-				},
-			},
-			["133295"] = {
-				["Priest/Shadow"] = {
-					"from M+",
-				},
-				["Warlock/Demonology"] = {
-					"from M+",
-				},
-				["Warlock/Affliction"] = {
-					"from M+",
-				},
-				["Warlock/Destruction"] = {
-					"from M+",
-				},
-			},
-			["215135"] = {
-				["Rogue/Subtlety"] = {
-					"overall",
-				},
-			},
-			["221141"] = {
-				["Rogue/Subtlety"] = {
-					"overall",
-					"from M+",
-				},
-				["Warrior/Fury"] = {
-					"from M+",
-				},
-			},
-			["178743"] = {
-				["Rogue/Subtlety"] = {
-					"overall",
-					"from M+",
-				},
-			},
-			["221175"] = {
-				["Rogue/Subtlety"] = {
-					"from M+",
-				},
-			},
-			["178744"] = {
-				["Rogue/Subtlety"] = {
-					"from M+",
-				},
-			},
-			["159328"] = {
-				["Rogue/Subtlety"] = {
-					"from M+",
-				},
-			},
-			["133287"] = {
-				["Rogue/Subtlety"] = {
-					"from M+",
-				},
-			},
-			["212419"] = {
-				["Priest/Holy"] = {
-					"overall",
-					"from raid",
-				},
-			},
-			["178782"] = {
-				["Priest/Holy"] = {
-					"overall",
-					"from M+",
-				},
-			},
-			["212084"] = {
-				["Priest/Holy"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Priest/Discipline"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-			},
-			["56137"] = {
-				["Priest/Holy"] = {
-					"overall",
-					"from M+",
-				},
-			},
-			["178709"] = {
-				["Priest/Holy"] = {
-					"overall",
-					"from M+",
-				},
-			},
-			["221132"] = {
-				["Priest/Holy"] = {
-					"overall",
-					"from M+",
-				},
-			},
-			["212426"] = {
-				["Priest/Holy"] = {
-					"from raid",
-				},
-			},
-			["212416"] = {
-				["Priest/Holy"] = {
-					"from raid",
-				},
-				["Warlock/Demonology"] = {
-					"from raid",
-				},
-				["Warlock/Affliction"] = {
-					"from raid",
-				},
-				["Warlock/Destruction"] = {
-					"from raid",
-				},
-			},
-			["221176"] = {
-				["Priest/Holy"] = {
-					"from M+",
-				},
-			},
-			["221087"] = {
-				["Priest/Holy"] = {
 					"from M+",
 				},
 			},
@@ -4520,29 +4531,18 @@ context.database = {
 					"from M+",
 				},
 			},
-			["133302"] = {
-				["Priest/Discipline"] = {
-					"from M+",
-				},
-				["Warlock/Demonology"] = {
-					"from M+",
-				},
-				["Warlock/Destruction"] = {
-					"from M+",
-				},
-			},
 			["212072"] = {
 				["Warlock/Demonology"] = {
 					"overall",
 					"from raid",
 					"from M+",
 				},
-				["Warlock/Affliction"] = {
+				["Warlock/Destruction"] = {
 					"overall",
 					"from raid",
 					"from M+",
 				},
-				["Warlock/Destruction"] = {
+				["Warlock/Affliction"] = {
 					"overall",
 					"from raid",
 					"from M+",
@@ -4554,12 +4554,12 @@ context.database = {
 					"from raid",
 					"from M+",
 				},
-				["Warlock/Affliction"] = {
+				["Warlock/Destruction"] = {
 					"overall",
 					"from raid",
 					"from M+",
 				},
-				["Warlock/Destruction"] = {
+				["Warlock/Affliction"] = {
 					"overall",
 					"from raid",
 					"from M+",
@@ -4571,12 +4571,12 @@ context.database = {
 					"from raid",
 					"from M+",
 				},
-				["Warlock/Affliction"] = {
+				["Warlock/Destruction"] = {
 					"overall",
 					"from raid",
 					"from M+",
 				},
-				["Warlock/Destruction"] = {
+				["Warlock/Affliction"] = {
 					"overall",
 					"from raid",
 					"from M+",
@@ -4588,37 +4588,39 @@ context.database = {
 					"from raid",
 					"from M+",
 				},
-				["Warlock/Affliction"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
 				["Warlock/Destruction"] = {
 					"overall",
 					"from raid",
 					"from M+",
 				},
-			},
-			["211984"] = {
-				["Warrior/Arms"] = {
-					"overall",
-					"from raid",
-				},
-				["Warrior/Fury"] = {
-					"from raid",
-				},
-				["Warrior/Protection"] = {
+				["Warlock/Affliction"] = {
 					"overall",
 					"from raid",
 					"from M+",
 				},
 			},
+			["212074"] = {
+				["Warlock/Destruction"] = {
+					"overall",
+				},
+				["Warlock/Affliction"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["178777"] = {
+				["Warrior/Fury"] = {
+					"overall",
+					"from M+",
+				},
+			},
 			["211982"] = {
-				["Warrior/Arms"] = {
+				["Warrior/Fury"] = {
 					"overall",
 					"from raid",
 				},
-				["Warrior/Fury"] = {
+				["Warrior/Arms"] = {
 					"overall",
 					"from raid",
 				},
@@ -4627,70 +4629,17 @@ context.database = {
 				},
 			},
 			["211987"] = {
-				["Warrior/Arms"] = {
+				["Warrior/Fury"] = {
 					"overall",
 					"from raid",
 				},
-				["Warrior/Fury"] = {
+				["Warrior/Arms"] = {
 					"overall",
 					"from raid",
 				},
 				["Warrior/Protection"] = {
 					"overall",
 					"from raid",
-					"from M+",
-				},
-			},
-			["211983"] = {
-				["Warrior/Arms"] = {
-					"overall",
-					"from raid",
-				},
-				["Warrior/Fury"] = {
-					"overall",
-					"from raid",
-				},
-				["Warrior/Protection"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-			},
-			["221184"] = {
-				["Warrior/Arms"] = {
-					"overall",
-					"from M+",
-				},
-			},
-			["221161"] = {
-				["Warrior/Arms"] = {
-					"from M+",
-				},
-				["Warrior/Fury"] = {
-					"from M+",
-				},
-			},
-			["178701"] = {
-				["Warrior/Arms"] = {
-					"from M+",
-				},
-				["Warrior/Fury"] = {
-					"from M+",
-				},
-			},
-			["212074"] = {
-				["Warlock/Affliction"] = {
-					"overall",
-					"from raid",
-					"from M+",
-				},
-				["Warlock/Destruction"] = {
-					"overall",
-				},
-			},
-			["178777"] = {
-				["Warrior/Fury"] = {
-					"overall",
 					"from M+",
 				},
 			},
@@ -4705,13 +4654,64 @@ context.database = {
 					"from M+",
 				},
 			},
+			["211983"] = {
+				["Warrior/Fury"] = {
+					"overall",
+					"from raid",
+				},
+				["Warrior/Arms"] = {
+					"overall",
+					"from raid",
+				},
+				["Warrior/Protection"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+			},
+			["211984"] = {
+				["Warrior/Fury"] = {
+					"from raid",
+				},
+				["Warrior/Arms"] = {
+					"overall",
+					"from raid",
+				},
+				["Warrior/Protection"] = {
+					"overall",
+					"from raid",
+					"from M+",
+				},
+			},
 			["212442"] = {
 				["Warrior/Fury"] = {
 					"from raid",
 				},
 			},
+			["221161"] = {
+				["Warrior/Fury"] = {
+					"from M+",
+				},
+				["Warrior/Arms"] = {
+					"from M+",
+				},
+			},
 			["159429"] = {
 				["Warrior/Fury"] = {
+					"from M+",
+				},
+			},
+			["178701"] = {
+				["Warrior/Fury"] = {
+					"from M+",
+				},
+				["Warrior/Arms"] = {
+					"from M+",
+				},
+			},
+			["221184"] = {
+				["Warrior/Arms"] = {
+					"overall",
 					"from M+",
 				},
 			},
@@ -4740,6 +4740,24 @@ context.database = {
 	},
 	trinketSources = {
 		wowhead = {
+			["Death Knight/Blood"] = {
+				["215172"] = {
+					location = "Delve/Bountiful Coffer",
+					tier = "S",
+				},
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					tier = "A",
+				},
+				["212449"] = {
+					location = "Raid/Sikran/Nerub-ar Palace",
+					tier = "A",
+				},
+				["178751"] = {
+					location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
+					tier = "A",
+				},
+			},
 			["Demon Hunter/Vengeance"] = {
 				["212456"] = {
 					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
@@ -4844,73 +4862,9 @@ context.database = {
 					tier = "B",
 				},
 			},
-			["Death Knight/Blood"] = {
-				["215172"] = {
-					location = "Delve/Bountiful Coffer",
-					tier = "S",
-				},
-				["219314"] = {
-					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
-					tier = "A",
-				},
-				["212449"] = {
-					location = "Raid/Sikran/Nerub-ar Palace",
-					tier = "A",
-				},
-				["178751"] = {
-					location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
-					tier = "A",
-				},
-			},
-			["Druid/Restoration"] = {
+			["Evoker/Augmentation"] = {
 				["220202"] = {
 					location = "Raid/Anub'arash/Nerub-ar Palace",
-					tier = "S",
-				},
-				["133304"] = {
-					location = "Dungeon/Forgemaster Throngus/Grim Batol",
-					tier = "S",
-				},
-				["178708"] = {
-					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
-					tier = "S",
-				},
-				["219314"] = {
-					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
-					tier = "A",
-				},
-				["219312"] = {
-					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
-					tier = "A",
-				},
-				["219917"] = {
-					location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
-					tier = "A",
-				},
-				["225668"] = {
-					location = "Other/Unknown",
-					tier = "A",
-				},
-				["225649"] = {
-					location = "Other/Unknown",
-					tier = "B",
-				},
-				["225656"] = {
-					location = "Other/Unknown",
-					tier = "B",
-				},
-				["219321"] = {
-					location = "Dungeon/Izo, the Grand Splicer/City of Threads",
-					tier = "B",
-				},
-				["212452"] = {
-					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					tier = "B",
-				},
-			},
-			["Demon Hunter/Havoc"] = {
-				["133282"] = {
-					location = "Dungeon/General Umbriss/Grim Batol",
 					tier = "S",
 				},
 				["212454"] = {
@@ -4919,33 +4873,65 @@ context.database = {
 				},
 				["219314"] = {
 					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
-					tier = "S-",
-				},
-				["212456"] = {
-					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
-					tier = "S-",
-				},
-				["219312"] = {
-					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
 					tier = "A",
 				},
-				["159623"] = {
-					location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
+				["219313"] = {
+					location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
 					tier = "A",
+				},
+				["215178"] = {
+					location = "Delve/Heavy Trunk",
+					tier = "A",
+				},
+				["212451"] = {
+					location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					tier = "B",
 				},
 				["220305"] = {
 					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					tier = "A",
-				},
-				["178715"] = {
-					location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
 					tier = "B",
+				},
+				["178708"] = {
+					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
+					tier = "B",
+				},
+				["159622"] = {
+					location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					tier = "B",
+				},
+				["225654"] = {
+					location = "Other/Unknown",
+					tier = "B",
+				},
+				["133304"] = {
+					location = "Dungeon/Forgemaster Throngus/Grim Batol",
+					tier = "C",
+				},
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					tier = "C",
+				},
+				["219317"] = {
+					location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
+					tier = "C",
+				},
+				["219321"] = {
+					location = "Dungeon/Izo, the Grand Splicer/City of Threads",
+					tier = "C",
 				},
 				["221023"] = {
 					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
-					tier = "B",
+					tier = "C",
 				},
-				["222680"] = {
+				["219303"] = {
+					location = "Dungeon/Void Speaker Eirich/The Stonevault",
+					tier = "D",
+				},
+				["225668"] = {
+					location = "Other/Unknown",
+					tier = "D",
+				},
+				["222671"] = {
 					location = "Other/Crafting",
 					tier = "D",
 				},
@@ -4997,6 +4983,94 @@ context.database = {
 				},
 				["221023"] = {
 					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					tier = "B",
+				},
+			},
+			["Demon Hunter/Havoc"] = {
+				["133282"] = {
+					location = "Dungeon/General Umbriss/Grim Batol",
+					tier = "S",
+				},
+				["212454"] = {
+					location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					tier = "S",
+				},
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					tier = "S-",
+				},
+				["212456"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					tier = "S-",
+				},
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					tier = "A",
+				},
+				["159623"] = {
+					location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
+					tier = "A",
+				},
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					tier = "A",
+				},
+				["178715"] = {
+					location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
+					tier = "B",
+				},
+				["221023"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					tier = "B",
+				},
+				["222680"] = {
+					location = "Other/Crafting",
+					tier = "D",
+				},
+			},
+			["Druid/Restoration"] = {
+				["220202"] = {
+					location = "Raid/Anub'arash/Nerub-ar Palace",
+					tier = "S",
+				},
+				["133304"] = {
+					location = "Dungeon/Forgemaster Throngus/Grim Batol",
+					tier = "S",
+				},
+				["178708"] = {
+					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
+					tier = "S",
+				},
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					tier = "A",
+				},
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					tier = "A",
+				},
+				["219917"] = {
+					location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					tier = "A",
+				},
+				["225668"] = {
+					location = "Other/Unknown",
+					tier = "A",
+				},
+				["225649"] = {
+					location = "Other/Unknown",
+					tier = "B",
+				},
+				["225656"] = {
+					location = "Other/Unknown",
+					tier = "B",
+				},
+				["219321"] = {
+					location = "Dungeon/Izo, the Grand Splicer/City of Threads",
+					tier = "B",
+				},
+				["212452"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					tier = "B",
 				},
 			},
@@ -5130,122 +5204,6 @@ context.database = {
 					tier = "D",
 				},
 			},
-			["Evoker/Augmentation"] = {
-				["220202"] = {
-					location = "Raid/Anub'arash/Nerub-ar Palace",
-					tier = "S",
-				},
-				["212454"] = {
-					location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					tier = "S",
-				},
-				["219314"] = {
-					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
-					tier = "A",
-				},
-				["219313"] = {
-					location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
-					tier = "A",
-				},
-				["215178"] = {
-					location = "Delve/Heavy Trunk",
-					tier = "A",
-				},
-				["212451"] = {
-					location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
-					tier = "B",
-				},
-				["220305"] = {
-					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					tier = "B",
-				},
-				["178708"] = {
-					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
-					tier = "B",
-				},
-				["159622"] = {
-					location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
-					tier = "B",
-				},
-				["225654"] = {
-					location = "Other/Unknown",
-					tier = "B",
-				},
-				["133304"] = {
-					location = "Dungeon/Forgemaster Throngus/Grim Batol",
-					tier = "C",
-				},
-				["219312"] = {
-					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
-					tier = "C",
-				},
-				["219317"] = {
-					location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
-					tier = "C",
-				},
-				["219321"] = {
-					location = "Dungeon/Izo, the Grand Splicer/City of Threads",
-					tier = "C",
-				},
-				["221023"] = {
-					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
-					tier = "C",
-				},
-				["219303"] = {
-					location = "Dungeon/Void Speaker Eirich/The Stonevault",
-					tier = "D",
-				},
-				["225668"] = {
-					location = "Other/Unknown",
-					tier = "D",
-				},
-				["222671"] = {
-					location = "Other/Crafting",
-					tier = "D",
-				},
-			},
-			["Hunter/Beast Mastery"] = {
-				["133282"] = {
-					location = "Dungeon/General Umbriss/Grim Batol",
-					tier = "S",
-				},
-				["219314"] = {
-					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
-					tier = "S",
-				},
-				["219312"] = {
-					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
-					tier = "A+",
-				},
-				["212454"] = {
-					location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					tier = "A+",
-				},
-				["178715"] = {
-					location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
-					tier = "A",
-				},
-				["159623"] = {
-					location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
-					tier = "A",
-				},
-				["212456"] = {
-					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
-					tier = "A",
-				},
-				["225649"] = {
-					location = "Other/Unknown",
-					tier = "B",
-				},
-				["225638"] = {
-					location = "Other/Unknown",
-					tier = "B",
-				},
-				["178742"] = {
-					location = "Dungeon/Amarth/The Necrotic Wake",
-					tier = "B",
-				},
-			},
 			["Evoker/Preservation"] = {
 				["178708"] = {
 					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
@@ -5294,6 +5252,48 @@ context.database = {
 				["133305"] = {
 					location = "Dungeon/Erudax/Grim Batol",
 					tier = "F",
+				},
+			},
+			["Hunter/Beast Mastery"] = {
+				["133282"] = {
+					location = "Dungeon/General Umbriss/Grim Batol",
+					tier = "S",
+				},
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					tier = "S",
+				},
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					tier = "A+",
+				},
+				["212454"] = {
+					location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					tier = "A+",
+				},
+				["178715"] = {
+					location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
+					tier = "A",
+				},
+				["159623"] = {
+					location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
+					tier = "A",
+				},
+				["212456"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					tier = "A",
+				},
+				["225649"] = {
+					location = "Other/Unknown",
+					tier = "B",
+				},
+				["225638"] = {
+					location = "Other/Unknown",
+					tier = "B",
+				},
+				["178742"] = {
+					location = "Dungeon/Amarth/The Necrotic Wake",
+					tier = "B",
 				},
 			},
 			["Hunter/Survival"] = {
@@ -5366,6 +5366,48 @@ context.database = {
 					tier = "D",
 				},
 			},
+			["Mage/Frost"] = {
+				["220202"] = {
+					location = "Raid/Anub'arash/Nerub-ar Palace",
+					tier = "S",
+				},
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					tier = "A",
+				},
+				["221023"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					tier = "A",
+				},
+				["178772"] = {
+					location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
+					tier = "A",
+				},
+				["56462"] = {
+					location = "Dungeon/Erudax/Grim Batol",
+					tier = "A",
+				},
+				["178708"] = {
+					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
+					tier = "A",
+				},
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					tier = "A",
+				},
+				["225649"] = {
+					location = "Other/Unknown",
+					tier = "B",
+				},
+				["159622"] = {
+					location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					tier = "B",
+				},
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					tier = "B",
+				},
+			},
 			["Evoker/Devastation"] = {
 				["220202"] = {
 					location = "Raid/Anub'arash/Nerub-ar Palace",
@@ -5430,6 +5472,108 @@ context.database = {
 				["219313"] = {
 					location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
 					tier = "C",
+				},
+			},
+			["Monk/Brewmaster"] = {
+				["212454"] = {
+					location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					tier = "S",
+				},
+				["212456"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					tier = "A",
+				},
+				["219915"] = {
+					location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					tier = "A",
+				},
+				["212449"] = {
+					location = "Raid/Sikran/Nerub-ar Palace",
+					tier = "A",
+				},
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					tier = "A",
+				},
+				["178742"] = {
+					location = "Dungeon/Amarth/The Necrotic Wake",
+					tier = "A",
+				},
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					tier = "B",
+				},
+				["215172"] = {
+					location = "Delve/Bountiful Coffer",
+					tier = "B",
+				},
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					tier = "B",
+				},
+				["56440"] = {
+					location = "Dungeon/General Umbriss/Grim Batol",
+					tier = "B",
+				},
+				["212450"] = {
+					location = "Raid/Anub'arash/Nerub-ar Palace",
+					tier = "B",
+				},
+			},
+			["Monk/Mistweaver"] = {
+				["133304"] = {
+					location = "Dungeon/Forgemaster Throngus/Grim Batol",
+					tier = "S",
+				},
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					tier = "A",
+				},
+				["178708"] = {
+					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
+					tier = "A",
+				},
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					tier = "A",
+				},
+				["220202"] = {
+					location = "Raid/Anub'arash/Nerub-ar Palace",
+					tier = "A",
+				},
+				["219917"] = {
+					location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					tier = "A",
+				},
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					tier = "B",
+				},
+			},
+			["Hunter/Marksmanship"] = {
+				["212454"] = {
+					location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					tier = "S",
+				},
+				["133282"] = {
+					location = "Dungeon/General Umbriss/Grim Batol",
+					tier = "S",
+				},
+				["221023"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					tier = "S",
+				},
+				["159623"] = {
+					location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
+					tier = "A",
+				},
+				["212449"] = {
+					location = "Raid/Sikran/Nerub-ar Palace",
+					tier = "A",
+				},
+				["225649"] = {
+					location = "Other/Unknown",
+					tier = "B",
 				},
 			},
 			["Mage/Arcane"] = {
@@ -5506,32 +5650,6 @@ context.database = {
 					tier = "C",
 				},
 			},
-			["Hunter/Marksmanship"] = {
-				["212454"] = {
-					location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					tier = "S",
-				},
-				["133282"] = {
-					location = "Dungeon/General Umbriss/Grim Batol",
-					tier = "S",
-				},
-				["221023"] = {
-					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
-					tier = "S",
-				},
-				["159623"] = {
-					location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
-					tier = "A",
-				},
-				["212449"] = {
-					location = "Raid/Sikran/Nerub-ar Palace",
-					tier = "A",
-				},
-				["225649"] = {
-					location = "Other/Unknown",
-					tier = "B",
-				},
-			},
 			["Paladin/Holy"] = {
 				["133304"] = {
 					location = "Dungeon/Forgemaster Throngus/Grim Batol",
@@ -5574,122 +5692,26 @@ context.database = {
 					tier = "C",
 				},
 			},
-			["Mage/Frost"] = {
-				["220202"] = {
-					location = "Raid/Anub'arash/Nerub-ar Palace",
+			["Monk/Windwalker"] = {
+				["133282"] = {
+					location = "Dungeon/General Umbriss/Grim Batol",
 					tier = "S",
-				},
-				["219314"] = {
-					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
-					tier = "A",
 				},
 				["221023"] = {
 					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
-					tier = "A",
-				},
-				["178772"] = {
-					location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
-					tier = "A",
-				},
-				["56462"] = {
-					location = "Dungeon/Erudax/Grim Batol",
-					tier = "A",
-				},
-				["178708"] = {
-					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
-					tier = "A",
-				},
-				["220305"] = {
-					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					tier = "A",
-				},
-				["225649"] = {
-					location = "Other/Unknown",
-					tier = "B",
-				},
-				["159622"] = {
-					location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
-					tier = "B",
-				},
-				["219312"] = {
-					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
-					tier = "B",
-				},
-			},
-			["Monk/Mistweaver"] = {
-				["133304"] = {
-					location = "Dungeon/Forgemaster Throngus/Grim Batol",
-					tier = "S",
-				},
-				["219314"] = {
-					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
-					tier = "A",
-				},
-				["178708"] = {
-					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
-					tier = "A",
-				},
-				["219312"] = {
-					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
-					tier = "A",
-				},
-				["220202"] = {
-					location = "Raid/Anub'arash/Nerub-ar Palace",
-					tier = "A",
-				},
-				["219917"] = {
-					location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
-					tier = "A",
-				},
-				["220305"] = {
-					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					tier = "B",
-				},
-			},
-			["Monk/Brewmaster"] = {
-				["212454"] = {
-					location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					tier = "S",
 				},
 				["212456"] = {
 					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
-					tier = "A",
-				},
-				["219915"] = {
-					location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
-					tier = "A",
-				},
-				["212449"] = {
-					location = "Raid/Sikran/Nerub-ar Palace",
-					tier = "A",
+					tier = "S",
 				},
 				["219314"] = {
 					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
 					tier = "A",
 				},
-				["178742"] = {
-					location = "Dungeon/Amarth/The Necrotic Wake",
+				["212454"] = {
+					location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					tier = "A",
-				},
-				["220305"] = {
-					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					tier = "B",
-				},
-				["215172"] = {
-					location = "Delve/Bountiful Coffer",
-					tier = "B",
-				},
-				["219312"] = {
-					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
-					tier = "B",
-				},
-				["56440"] = {
-					location = "Dungeon/General Umbriss/Grim Batol",
-					tier = "B",
-				},
-				["212450"] = {
-					location = "Raid/Anub'arash/Nerub-ar Palace",
-					tier = "B",
 				},
 			},
 			["Mage/Fire"] = {
@@ -5752,28 +5774,6 @@ context.database = {
 				["219313"] = {
 					location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
 					tier = "C",
-				},
-			},
-			["Monk/Windwalker"] = {
-				["133282"] = {
-					location = "Dungeon/General Umbriss/Grim Batol",
-					tier = "S",
-				},
-				["221023"] = {
-					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
-					tier = "S",
-				},
-				["212456"] = {
-					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
-					tier = "S",
-				},
-				["219314"] = {
-					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
-					tier = "A",
-				},
-				["212454"] = {
-					location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					tier = "A",
 				},
 			},
 			["Paladin/Protection"] = {
@@ -5868,6 +5868,140 @@ context.database = {
 					tier = "D",
 				},
 			},
+			["Rogue/Subtlety"] = {
+				["221023"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					tier = "S",
+				},
+				["212454"] = {
+					location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					tier = "A",
+				},
+				["212456"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					tier = "A",
+				},
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					tier = "A",
+				},
+				["159623"] = {
+					location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
+					tier = "A",
+				},
+				["215178"] = {
+					location = "Delve/Heavy Trunk",
+					tier = "A",
+				},
+				["219915"] = {
+					location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					tier = "B",
+				},
+				["133282"] = {
+					location = "Dungeon/General Umbriss/Grim Batol",
+					tier = "B",
+				},
+				["226539"] = {
+					location = "Other/Unknown",
+					tier = "B",
+				},
+				["225649"] = {
+					location = "Other/Unknown",
+					tier = "C",
+				},
+				["225654"] = {
+					location = "Other/Unknown",
+					tier = "D",
+				},
+			},
+			["Priest/Discipline"] = {
+				["220202"] = {
+					location = "Raid/Anub'arash/Nerub-ar Palace",
+					tier = "S",
+				},
+				["56462"] = {
+					location = "Dungeon/Erudax/Grim Batol",
+					tier = "A",
+				},
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					tier = "A",
+				},
+				["178708"] = {
+					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
+					tier = "A",
+				},
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					tier = "A",
+				},
+				["219917"] = {
+					location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					tier = "A",
+				},
+				["225668"] = {
+					location = "Other/Unknown",
+					tier = "B",
+				},
+				["212452"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					tier = "C",
+				},
+				["219302"] = {
+					location = "Dungeon/Speaker Brokk/The Stonevault",
+					tier = "C",
+				},
+				["219296"] = {
+					location = "Other/Voidstone Monstrosity/The Rookery",
+					tier = "C",
+				},
+			},
+			["Priest/Holy"] = {
+				["178708"] = {
+					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
+					tier = "S",
+				},
+				["219917"] = {
+					location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					tier = "S",
+				},
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					tier = "S",
+				},
+				["56462"] = {
+					location = "Dungeon/Erudax/Grim Batol",
+					tier = "S",
+				},
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					tier = "A",
+				},
+				["219302"] = {
+					location = "Dungeon/Speaker Brokk/The Stonevault",
+					tier = "A",
+				},
+				["225668"] = {
+					location = "Other/Unknown",
+					tier = "B",
+				},
+				["225649"] = {
+					location = "Other/Unknown",
+					tier = "B",
+				},
+				["219305"] = {
+					location = "Other/Blazikon/Darkflame Cleft",
+					tier = "B",
+				},
+				["212452"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					tier = "C",
+				},
+				["219296"] = {
+					location = "Other/Voidstone Monstrosity/The Rookery",
+					tier = "C",
+				},
+			},
 			["Rogue/Assassination"] = {
 				["133282"] = {
 					location = "Dungeon/General Umbriss/Grim Batol",
@@ -5916,48 +6050,6 @@ context.database = {
 				["226539"] = {
 					location = "Other/Unknown",
 					tier = "C",
-				},
-			},
-			["Shaman/Elemental"] = {
-				["219314"] = {
-					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
-					tier = "S",
-				},
-				["220305"] = {
-					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					tier = "S",
-				},
-				["220202"] = {
-					location = "Raid/Anub'arash/Nerub-ar Palace",
-					tier = "S",
-				},
-				["133304"] = {
-					location = "Dungeon/Forgemaster Throngus/Grim Batol",
-					tier = "S",
-				},
-				["178708"] = {
-					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
-					tier = "S",
-				},
-				["219312"] = {
-					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
-					tier = "A",
-				},
-				["212451"] = {
-					location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
-					tier = "A",
-				},
-				["221023"] = {
-					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
-					tier = "A",
-				},
-				["178772"] = {
-					location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
-					tier = "A-",
-				},
-				["159622"] = {
-					location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
-					tier = "A-",
 				},
 			},
 			["Rogue/Outlaw"] = {
@@ -6044,98 +6136,6 @@ context.database = {
 					tier = "B",
 				},
 			},
-			["Rogue/Subtlety"] = {
-				["221023"] = {
-					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
-					tier = "S",
-				},
-				["212454"] = {
-					location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					tier = "A",
-				},
-				["212456"] = {
-					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
-					tier = "A",
-				},
-				["220305"] = {
-					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					tier = "A",
-				},
-				["159623"] = {
-					location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
-					tier = "A",
-				},
-				["215178"] = {
-					location = "Delve/Heavy Trunk",
-					tier = "A",
-				},
-				["219915"] = {
-					location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
-					tier = "B",
-				},
-				["133282"] = {
-					location = "Dungeon/General Umbriss/Grim Batol",
-					tier = "B",
-				},
-				["226539"] = {
-					location = "Other/Unknown",
-					tier = "B",
-				},
-				["225649"] = {
-					location = "Other/Unknown",
-					tier = "C",
-				},
-				["225654"] = {
-					location = "Other/Unknown",
-					tier = "D",
-				},
-			},
-			["Priest/Holy"] = {
-				["178708"] = {
-					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
-					tier = "S",
-				},
-				["219917"] = {
-					location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
-					tier = "S",
-				},
-				["219312"] = {
-					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
-					tier = "S",
-				},
-				["56462"] = {
-					location = "Dungeon/Erudax/Grim Batol",
-					tier = "S",
-				},
-				["219314"] = {
-					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
-					tier = "A",
-				},
-				["219302"] = {
-					location = "Dungeon/Speaker Brokk/The Stonevault",
-					tier = "A",
-				},
-				["225668"] = {
-					location = "Other/Unknown",
-					tier = "B",
-				},
-				["225649"] = {
-					location = "Other/Unknown",
-					tier = "B",
-				},
-				["219305"] = {
-					location = "Other/Blazikon/Darkflame Cleft",
-					tier = "B",
-				},
-				["212452"] = {
-					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					tier = "C",
-				},
-				["219296"] = {
-					location = "Other/Voidstone Monstrosity/The Rookery",
-					tier = "C",
-				},
-			},
 			["Shaman/Enhancement"] = {
 				["219314"] = {
 					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
@@ -6182,6 +6182,48 @@ context.database = {
 					tier = "C",
 				},
 			},
+			["Shaman/Elemental"] = {
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					tier = "S",
+				},
+				["220305"] = {
+					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					tier = "S",
+				},
+				["220202"] = {
+					location = "Raid/Anub'arash/Nerub-ar Palace",
+					tier = "S",
+				},
+				["133304"] = {
+					location = "Dungeon/Forgemaster Throngus/Grim Batol",
+					tier = "S",
+				},
+				["178708"] = {
+					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
+					tier = "S",
+				},
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					tier = "A",
+				},
+				["212451"] = {
+					location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					tier = "A",
+				},
+				["221023"] = {
+					location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					tier = "A",
+				},
+				["178772"] = {
+					location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
+					tier = "A-",
+				},
+				["159622"] = {
+					location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					tier = "A-",
+				},
+			},
 			["Shaman/Restoration"] = {
 				["220202"] = {
 					location = "Raid/Anub'arash/Nerub-ar Palace",
@@ -6224,48 +6266,6 @@ context.database = {
 					tier = "B",
 				},
 			},
-			["Priest/Discipline"] = {
-				["220202"] = {
-					location = "Raid/Anub'arash/Nerub-ar Palace",
-					tier = "S",
-				},
-				["56462"] = {
-					location = "Dungeon/Erudax/Grim Batol",
-					tier = "A",
-				},
-				["219314"] = {
-					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
-					tier = "A",
-				},
-				["178708"] = {
-					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
-					tier = "A",
-				},
-				["219312"] = {
-					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
-					tier = "A",
-				},
-				["219917"] = {
-					location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
-					tier = "A",
-				},
-				["225668"] = {
-					location = "Other/Unknown",
-					tier = "B",
-				},
-				["212452"] = {
-					location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					tier = "C",
-				},
-				["219302"] = {
-					location = "Dungeon/Speaker Brokk/The Stonevault",
-					tier = "C",
-				},
-				["219296"] = {
-					location = "Other/Voidstone Monstrosity/The Rookery",
-					tier = "C",
-				},
-			},
 			["Warlock/Demonology"] = {
 				["220202"] = {
 					location = "Raid/Anub'arash/Nerub-ar Palace",
@@ -6297,6 +6297,44 @@ context.database = {
 				},
 				["212451"] = {
 					location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					tier = "B",
+				},
+				["178772"] = {
+					location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
+					tier = "B",
+				},
+			},
+			["Warlock/Destruction"] = {
+				["220202"] = {
+					location = "Raid/Anub'arash/Nerub-ar Palace",
+					tier = "S",
+				},
+				["212454"] = {
+					location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					tier = "S",
+				},
+				["219314"] = {
+					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					tier = "S",
+				},
+				["133304"] = {
+					location = "Dungeon/Forgemaster Throngus/Grim Batol",
+					tier = "A",
+				},
+				["219317"] = {
+					location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
+					tier = "A",
+				},
+				["219312"] = {
+					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					tier = "A",
+				},
+				["159622"] = {
+					location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					tier = "B",
+				},
+				["178708"] = {
+					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
 					tier = "B",
 				},
 				["178772"] = {
@@ -6343,44 +6381,6 @@ context.database = {
 				},
 				["133304"] = {
 					location = "Dungeon/Forgemaster Throngus/Grim Batol",
-					tier = "B",
-				},
-			},
-			["Warlock/Destruction"] = {
-				["220202"] = {
-					location = "Raid/Anub'arash/Nerub-ar Palace",
-					tier = "S",
-				},
-				["212454"] = {
-					location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					tier = "S",
-				},
-				["219314"] = {
-					location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
-					tier = "S",
-				},
-				["133304"] = {
-					location = "Dungeon/Forgemaster Throngus/Grim Batol",
-					tier = "A",
-				},
-				["219317"] = {
-					location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
-					tier = "A",
-				},
-				["219312"] = {
-					location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
-					tier = "A",
-				},
-				["159622"] = {
-					location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
-					tier = "B",
-				},
-				["178708"] = {
-					location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
-					tier = "B",
-				},
-				["178772"] = {
-					location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
 					tier = "B",
 				},
 			},
@@ -6431,6 +6431,21 @@ context.database = {
 	gearSources = {
 		wowhead = {
 			INVTYPE_HEAD = {
+				["Death Knight/Blood"] = {
+					["221146"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
+					},
+					["212427"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+				},
 				["Demon Hunter/Vengeance"] = {
 					["221081"] = {
 						listNames = {
@@ -6456,29 +6471,34 @@ context.database = {
 						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
-				["Death Knight/Blood"] = {
-					["221146"] = {
+				["Evoker/Augmentation"] = {
+					["178738"] = {
 						listNames = {
 							"overall",
 							"from M+",
 						},
-						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
+						location = "Dungeon/Amarth/The Necrotic Wake",
 					},
-					["212427"] = {
+					["212428"] = {
 						listNames = {
 							"from raid",
 						},
-						location = "Raid/Sikran/Nerub-ar Palace",
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
 					},
 				},
-				["Druid/Restoration"] = {
-					["212056"] = {
+				["Druid/Guardian"] = {
+					["212417"] = {
 						listNames = {
 							"overall",
 							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["178691"] = {
+						listNames = {
 							"from M+",
 						},
-						location = "Vendor/Kir'xal/City of Threads",
+						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
 					},
 				},
 				["Demon Hunter/Havoc"] = {
@@ -6496,19 +6516,14 @@ context.database = {
 						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
 					},
 				},
-				["Druid/Guardian"] = {
-					["212417"] = {
+				["Druid/Restoration"] = {
+					["212056"] = {
 						listNames = {
 							"overall",
 							"from raid",
-						},
-						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
-					},
-					["178691"] = {
-						listNames = {
 							"from M+",
 						},
-						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
+						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
 				["Druid/Balance"] = {
@@ -6561,19 +6576,14 @@ context.database = {
 						location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
 					},
 				},
-				["Evoker/Augmentation"] = {
-					["178738"] = {
+				["Evoker/Preservation"] = {
+					["212029"] = {
 						listNames = {
 							"overall",
+							"from raid",
 							"from M+",
 						},
-						location = "Dungeon/Amarth/The Necrotic Wake",
-					},
-					["212428"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
 				["Hunter/Beast Mastery"] = {
@@ -6586,78 +6596,8 @@ context.database = {
 						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
-				["Evoker/Preservation"] = {
-					["212029"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
 				["Hunter/Survival"] = {
 					["212020"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
-				["Evoker/Devastation"] = {
-					["212029"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-					["221156"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
-					},
-				},
-				["Mage/Arcane"] = {
-					["178693"] = {
-						listNames = {
-							"overall",
-						},
-						location = "Dungeon/Tred'ova/Mists of Tirna Scithe",
-					},
-					["212440"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Rasha'nan/Nerub-ar Palace",
-					},
-					["221187"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
-					},
-				},
-				["Hunter/Marksmanship"] = {
-					["178738"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Amarth/The Necrotic Wake",
-					},
-					["212020"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
-				["Paladin/Holy"] = {
-					["211993"] = {
 						listNames = {
 							"overall",
 							"from raid",
@@ -6681,6 +6621,31 @@ context.database = {
 						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
 					},
 				},
+				["Evoker/Devastation"] = {
+					["212029"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+					["221156"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
+					},
+				},
+				["Monk/Brewmaster"] = {
+					["212047"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
 				["Monk/Mistweaver"] = {
 					["212047"] = {
 						listNames = {
@@ -6691,12 +6656,62 @@ context.database = {
 						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
-				["Monk/Brewmaster"] = {
-					["212047"] = {
+				["Hunter/Marksmanship"] = {
+					["178738"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Amarth/The Necrotic Wake",
+					},
+					["212020"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
+				["Mage/Arcane"] = {
+					["178693"] = {
+						listNames = {
+							"overall",
+						},
+						location = "Dungeon/Tred'ova/Mists of Tirna Scithe",
+					},
+					["212440"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221187"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
+					},
+				},
+				["Paladin/Holy"] = {
+					["211993"] = {
 						listNames = {
 							"overall",
 							"from raid",
 							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
+				["Monk/Windwalker"] = {
+					["178691"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
+					},
+					["212047"] = {
+						listNames = {
+							"from raid",
 						},
 						location = "Vendor/Kir'xal/City of Threads",
 					},
@@ -6714,21 +6729,6 @@ context.database = {
 							"from M+",
 						},
 						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
-					},
-				},
-				["Monk/Windwalker"] = {
-					["178691"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
-					},
-					["212047"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
 				["Paladin/Protection"] = {
@@ -6756,8 +6756,68 @@ context.database = {
 						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
+				["Rogue/Subtlety"] = {
+					["221163"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
+					},
+					["212417"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+				},
+				["Priest/Discipline"] = {
+					["212440"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["133302"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
+					},
+				},
+				["Priest/Holy"] = {
+					["212083"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
 				["Rogue/Assassination"] = {
 					["212038"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
+				["Rogue/Outlaw"] = {
+					["212038"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
+				["Priest/Shadow"] = {
+					["212083"] = {
 						listNames = {
 							"overall",
 							"from raid",
@@ -6781,51 +6841,6 @@ context.database = {
 						location = "Dungeon/General Umbriss/Grim Batol",
 					},
 				},
-				["Rogue/Outlaw"] = {
-					["212038"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
-				["Priest/Shadow"] = {
-					["212083"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
-				["Rogue/Subtlety"] = {
-					["221163"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
-					},
-					["212417"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
-					},
-				},
-				["Priest/Holy"] = {
-					["212083"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
 				["Shaman/Restoration"] = {
 					["212011"] = {
 						listNames = {
@@ -6834,21 +6849,6 @@ context.database = {
 							"from M+",
 						},
 						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
-				["Priest/Discipline"] = {
-					["212440"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Rasha'nan/Nerub-ar Palace",
-					},
-					["133302"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Erudax/Grim Batol",
 					},
 				},
 				["Warlock/Demonology"] = {
@@ -6864,31 +6864,6 @@ context.database = {
 							"from M+",
 						},
 						location = "Dungeon/Erudax/Grim Batol",
-					},
-				},
-				["Warrior/Arms"] = {
-					["211984"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-					["178694"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
-					},
-				},
-				["Warlock/Affliction"] = {
-					["212074"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
 				["Warlock/Destruction"] = {
@@ -6926,6 +6901,31 @@ context.database = {
 						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
+				["Warrior/Arms"] = {
+					["211984"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+					["178694"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
+					},
+				},
+				["Warlock/Affliction"] = {
+					["212074"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
 				["Warrior/Protection"] = {
 					["211984"] = {
 						listNames = {
@@ -6938,6 +6938,21 @@ context.database = {
 				},
 			},
 			INVTYPE_NECK = {
+				["Death Knight/Blood"] = {
+					["225575"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["178707"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
+					},
+				},
 				["Demon Hunter/Vengeance"] = {
 					["212448"] = {
 						listNames = {
@@ -6968,37 +6983,7 @@ context.database = {
 						location = "Raid/Sikran/Nerub-ar Palace",
 					},
 				},
-				["Death Knight/Blood"] = {
-					["225575"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Anub'arash/Nerub-ar Palace",
-					},
-					["178707"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
-					},
-				},
-				["Druid/Restoration"] = {
-					["225577"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Sikran/Nerub-ar Palace",
-					},
-					["221077"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/E.D.N.A/The Stonevault",
-					},
-				},
-				["Demon Hunter/Havoc"] = {
+				["Evoker/Augmentation"] = {
 					["178707"] = {
 						listNames = {
 							"overall",
@@ -7026,6 +7011,36 @@ context.database = {
 							"from M+",
 						},
 						location = "Dungeon/The Coaglamation/City of Threads",
+					},
+				},
+				["Demon Hunter/Havoc"] = {
+					["178707"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
+					},
+					["212448"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+				},
+				["Druid/Restoration"] = {
+					["225577"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221077"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
 					},
 				},
 				["Druid/Balance"] = {
@@ -7073,36 +7088,6 @@ context.database = {
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
 					},
 				},
-				["Evoker/Augmentation"] = {
-					["178707"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
-					},
-					["212448"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Rasha'nan/Nerub-ar Palace",
-					},
-				},
-				["Hunter/Beast Mastery"] = {
-					["225577"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Sikran/Nerub-ar Palace",
-					},
-					["178707"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
-					},
-				},
 				["Evoker/Preservation"] = {
 					["178707"] = {
 						listNames = {
@@ -7129,6 +7114,21 @@ context.database = {
 						location = "Dungeon/E.D.N.A/The Stonevault",
 					},
 				},
+				["Hunter/Beast Mastery"] = {
+					["225577"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["178707"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
+					},
+				},
 				["Hunter/Survival"] = {
 					["178707"] = {
 						listNames = {
@@ -7142,66 +7142,6 @@ context.database = {
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
-					},
-				},
-				["Evoker/Devastation"] = {
-					["212448"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Rasha'nan/Nerub-ar Palace",
-					},
-					["221181"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/The Coaglamation/City of Threads",
-					},
-				},
-				["Mage/Arcane"] = {
-					["225577"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Sikran/Nerub-ar Palace",
-					},
-					["221077"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/E.D.N.A/The Stonevault",
-					},
-				},
-				["Hunter/Marksmanship"] = {
-					["212448"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Rasha'nan/Nerub-ar Palace",
-					},
-					["178707"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
-					},
-				},
-				["Paladin/Holy"] = {
-					["225577"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Sikran/Nerub-ar Palace",
-					},
-					["221181"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/The Coaglamation/City of Threads",
 					},
 				},
 				["Mage/Frost"] = {
@@ -7219,14 +7159,19 @@ context.database = {
 						location = "Dungeon/E.D.N.A/The Stonevault",
 					},
 				},
-				["Monk/Mistweaver"] = {
-					["225577"] = {
+				["Evoker/Devastation"] = {
+					["212448"] = {
 						listNames = {
 							"overall",
 							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221181"] = {
+						listNames = {
 							"from M+",
 						},
-						location = "Raid/Sikran/Nerub-ar Palace",
+						location = "Dungeon/The Coaglamation/City of Threads",
 					},
 				},
 				["Monk/Brewmaster"] = {
@@ -7244,7 +7189,32 @@ context.database = {
 						location = "Dungeon/The Coaglamation/City of Threads",
 					},
 				},
-				["Mage/Fire"] = {
+				["Monk/Mistweaver"] = {
+					["225577"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+				},
+				["Hunter/Marksmanship"] = {
+					["212448"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["178707"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
+					},
+				},
+				["Mage/Arcane"] = {
 					["225577"] = {
 						listNames = {
 							"overall",
@@ -7259,7 +7229,37 @@ context.database = {
 						location = "Dungeon/E.D.N.A/The Stonevault",
 					},
 				},
+				["Paladin/Holy"] = {
+					["225577"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221181"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/The Coaglamation/City of Threads",
+					},
+				},
 				["Monk/Windwalker"] = {
+					["225577"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221077"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
+					},
+				},
+				["Mage/Fire"] = {
 					["225577"] = {
 						listNames = {
 							"overall",
@@ -7304,7 +7304,22 @@ context.database = {
 						location = "Dungeon/E.D.N.A/The Stonevault",
 					},
 				},
-				["Rogue/Assassination"] = {
+				["Rogue/Subtlety"] = {
+					["225575"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["178707"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
+					},
+				},
+				["Priest/Discipline"] = {
 					["225577"] = {
 						listNames = {
 							"overall",
@@ -7319,7 +7334,22 @@ context.database = {
 						location = "Dungeon/E.D.N.A/The Stonevault",
 					},
 				},
-				["Shaman/Elemental"] = {
+				["Priest/Holy"] = {
+					["178707"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
+					},
+					["225575"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+				},
+				["Rogue/Assassination"] = {
 					["225577"] = {
 						listNames = {
 							"overall",
@@ -7364,34 +7394,19 @@ context.database = {
 						location = "Dungeon/E.D.N.A/The Stonevault",
 					},
 				},
-				["Rogue/Subtlety"] = {
-					["225575"] = {
+				["Shaman/Elemental"] = {
+					["225577"] = {
 						listNames = {
 							"overall",
 							"from raid",
 						},
-						location = "Raid/Anub'arash/Nerub-ar Palace",
+						location = "Raid/Sikran/Nerub-ar Palace",
 					},
-					["178707"] = {
+					["221077"] = {
 						listNames = {
 							"from M+",
 						},
-						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
-					},
-				},
-				["Priest/Holy"] = {
-					["178707"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
-					},
-					["225575"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Anub'arash/Nerub-ar Palace",
+						location = "Dungeon/E.D.N.A/The Stonevault",
 					},
 				},
 				["Shaman/Restoration"] = {
@@ -7409,52 +7424,7 @@ context.database = {
 						location = "Dungeon/The Coaglamation/City of Threads",
 					},
 				},
-				["Priest/Discipline"] = {
-					["225577"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Sikran/Nerub-ar Palace",
-					},
-					["221077"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/E.D.N.A/The Stonevault",
-					},
-				},
 				["Warlock/Demonology"] = {
-					["225577"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Sikran/Nerub-ar Palace",
-					},
-					["221077"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/E.D.N.A/The Stonevault",
-					},
-				},
-				["Warrior/Arms"] = {
-					["225577"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Sikran/Nerub-ar Palace",
-					},
-					["178707"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
-					},
-				},
-				["Warlock/Affliction"] = {
 					["225577"] = {
 						listNames = {
 							"overall",
@@ -7499,6 +7469,36 @@ context.database = {
 						location = "Raid/Sikran/Nerub-ar Palace",
 					},
 				},
+				["Warrior/Arms"] = {
+					["225577"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["178707"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
+					},
+				},
+				["Warlock/Affliction"] = {
+					["225577"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221077"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
+					},
+				},
 				["Warrior/Protection"] = {
 					["225577"] = {
 						listNames = {
@@ -7516,6 +7516,21 @@ context.database = {
 				},
 			},
 			INVTYPE_SHOULDER = {
+				["Death Knight/Blood"] = {
+					["212000"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+					["133294"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
+					},
+				},
 				["Demon Hunter/Vengeance"] = {
 					["212063"] = {
 						listNames = {
@@ -7536,22 +7551,17 @@ context.database = {
 						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
-				["Death Knight/Blood"] = {
-					["212000"] = {
+				["Evoker/Augmentation"] = {
+					["212027"] = {
 						listNames = {
 							"overall",
 							"from raid",
+							"from M+",
 						},
 						location = "Vendor/Kir'xal/City of Threads",
 					},
-					["133294"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Drahga Shadowburner/Grim Batol",
-					},
 				},
-				["Druid/Restoration"] = {
+				["Druid/Guardian"] = {
 					["212054"] = {
 						listNames = {
 							"overall",
@@ -7576,7 +7586,7 @@ context.database = {
 						location = "Dungeon/Void Speaker Eirich/The Stonevault",
 					},
 				},
-				["Druid/Guardian"] = {
+				["Druid/Restoration"] = {
 					["212054"] = {
 						listNames = {
 							"overall",
@@ -7621,7 +7631,7 @@ context.database = {
 						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
 					},
 				},
-				["Evoker/Augmentation"] = {
+				["Evoker/Preservation"] = {
 					["212027"] = {
 						listNames = {
 							"overall",
@@ -7641,16 +7651,6 @@ context.database = {
 						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
-				["Evoker/Preservation"] = {
-					["212027"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
 				["Hunter/Survival"] = {
 					["212018"] = {
 						listNames = {
@@ -7659,61 +7659,6 @@ context.database = {
 							"from M+",
 						},
 						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
-				["Evoker/Devastation"] = {
-					["212027"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-					["221140"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
-					},
-				},
-				["Mage/Arcane"] = {
-					["212090"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-					["221135"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
-					},
-				},
-				["Hunter/Marksmanship"] = {
-					["212018"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
-				["Paladin/Holy"] = {
-					["221185"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
-					},
-					["212424"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
 					},
 				},
 				["Mage/Frost"] = {
@@ -7731,6 +7676,31 @@ context.database = {
 						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
 					},
 				},
+				["Evoker/Devastation"] = {
+					["212027"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+					["221140"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					},
+				},
+				["Monk/Brewmaster"] = {
+					["212045"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
 				["Monk/Mistweaver"] = {
 					["212444"] = {
 						listNames = {
@@ -7746,7 +7716,47 @@ context.database = {
 						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
 					},
 				},
-				["Monk/Brewmaster"] = {
+				["Hunter/Marksmanship"] = {
+					["212018"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
+				["Mage/Arcane"] = {
+					["212090"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+					["221135"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
+					},
+				},
+				["Paladin/Holy"] = {
+					["221185"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
+					},
+					["212424"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					},
+				},
+				["Monk/Windwalker"] = {
 					["212045"] = {
 						listNames = {
 							"overall",
@@ -7771,16 +7781,6 @@ context.database = {
 						location = "Dungeon/Amarth/The Necrotic Wake",
 					},
 				},
-				["Monk/Windwalker"] = {
-					["212045"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
 				["Paladin/Protection"] = {
 					["211991"] = {
 						listNames = {
@@ -7793,51 +7793,6 @@ context.database = {
 				},
 				["Paladin/Retribution"] = {
 					["211991"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
-				["Rogue/Assassination"] = {
-					["212036"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
-				["Shaman/Elemental"] = {
-					["212009"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-					["178695"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
-					},
-				},
-				["Rogue/Outlaw"] = {
-					["212036"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
-				["Priest/Shadow"] = {
-					["212081"] = {
 						listNames = {
 							"overall",
 							"from raid",
@@ -7861,6 +7816,16 @@ context.database = {
 						location = "Dungeon/Nx/City of Threads",
 					},
 				},
+				["Priest/Discipline"] = {
+					["212081"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
 				["Priest/Holy"] = {
 					["212081"] = {
 						listNames = {
@@ -7869,6 +7834,51 @@ context.database = {
 							"from M+",
 						},
 						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
+				["Rogue/Assassination"] = {
+					["212036"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
+				["Rogue/Outlaw"] = {
+					["212036"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
+				["Priest/Shadow"] = {
+					["212081"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
+				["Shaman/Elemental"] = {
+					["212009"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+					["178695"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
 					},
 				},
 				["Shaman/Restoration"] = {
@@ -7881,42 +7891,7 @@ context.database = {
 						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
-				["Priest/Discipline"] = {
-					["212081"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
 				["Warlock/Demonology"] = {
-					["212072"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
-				["Warrior/Arms"] = {
-					["211982"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-					["221185"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
-					},
-				},
-				["Warlock/Affliction"] = {
 					["212072"] = {
 						listNames = {
 							"overall",
@@ -7951,6 +7926,31 @@ context.database = {
 						location = "Dungeon/Drahga Shadowburner/Grim Batol",
 					},
 				},
+				["Warrior/Arms"] = {
+					["211982"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+					["221185"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
+					},
+				},
+				["Warlock/Affliction"] = {
+					["212072"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
 				["Warrior/Protection"] = {
 					["178749"] = {
 						listNames = {
@@ -7968,6 +7968,21 @@ context.database = {
 				},
 			},
 			INVTYPE_CLOAK = {
+				["Death Knight/Blood"] = {
+					["225574"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221154"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
+					},
+				},
 				["Demon Hunter/Vengeance"] = {
 					["225574"] = {
 						listNames = {
@@ -7998,43 +8013,13 @@ context.database = {
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
 					},
 				},
-				["Death Knight/Blood"] = {
-					["225574"] = {
+				["Evoker/Augmentation"] = {
+					["212446"] = {
 						listNames = {
 							"overall",
 							"from raid",
 						},
-						location = "Raid/Rasha'nan/Nerub-ar Palace",
-					},
-					["221154"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
-					},
-				},
-				["Druid/Restoration"] = {
-					["225574"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Rasha'nan/Nerub-ar Palace",
-					},
-					["221088"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Speaker Brokk/The Stonevault",
-					},
-				},
-				["Demon Hunter/Havoc"] = {
-					["225574"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Rasha'nan/Nerub-ar Palace",
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
 					},
 					["133363"] = {
 						listNames = {
@@ -8056,6 +8041,36 @@ context.database = {
 							"from M+",
 						},
 						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
+					},
+				},
+				["Demon Hunter/Havoc"] = {
+					["225574"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["133363"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
+					},
+				},
+				["Druid/Restoration"] = {
+					["225574"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221088"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
 				["Druid/Balance"] = {
@@ -8108,7 +8123,7 @@ context.database = {
 						location = "Dungeon/Drahga Shadowburner/Grim Batol",
 					},
 				},
-				["Evoker/Augmentation"] = {
+				["Evoker/Preservation"] = {
 					["212446"] = {
 						listNames = {
 							"overall",
@@ -8116,11 +8131,11 @@ context.database = {
 						},
 						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
 					},
-					["133363"] = {
+					["221088"] = {
 						listNames = {
 							"from M+",
 						},
-						location = "Dungeon/Drahga Shadowburner/Grim Batol",
+						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
 				["Hunter/Beast Mastery"] = {
@@ -8136,21 +8151,6 @@ context.database = {
 							"from M+",
 						},
 						location = "Other/Unknown",
-					},
-				},
-				["Evoker/Preservation"] = {
-					["212446"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
-					},
-					["221088"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
 				["Hunter/Survival"] = {
@@ -8173,10 +8173,80 @@ context.database = {
 						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
+				["Mage/Frost"] = {
+					["212446"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					},
+					["221154"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
+					},
+				},
 				["Evoker/Devastation"] = {
 					["225574"] = {
 						listNames = {
 							"overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["133363"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
+					},
+				},
+				["Monk/Brewmaster"] = {
+					["225574"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["56126"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
+					},
+				},
+				["Monk/Mistweaver"] = {
+					["133292"] = {
+						listNames = {
+							"overall",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
+					},
+					["225574"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["212446"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					},
+				},
+				["Hunter/Marksmanship"] = {
+					["222817"] = {
+						listNames = {
+							"overall",
+						},
+						location = "Other/Crafting",
+					},
+					["225574"] = {
+						listNames = {
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
@@ -8208,26 +8278,6 @@ context.database = {
 						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
-				["Hunter/Marksmanship"] = {
-					["222817"] = {
-						listNames = {
-							"overall",
-						},
-						location = "Other/Crafting",
-					},
-					["225574"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Rasha'nan/Nerub-ar Palace",
-					},
-					["133363"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Drahga Shadowburner/Grim Batol",
-					},
-				},
 				["Paladin/Holy"] = {
 					["225574"] = {
 						listNames = {
@@ -8243,42 +8293,7 @@ context.database = {
 						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
 					},
 				},
-				["Mage/Frost"] = {
-					["212446"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
-					},
-					["221154"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
-					},
-				},
-				["Monk/Mistweaver"] = {
-					["133292"] = {
-						listNames = {
-							"overall",
-						},
-						location = "Dungeon/Drahga Shadowburner/Grim Batol",
-					},
-					["225574"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Rasha'nan/Nerub-ar Palace",
-					},
-					["212446"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
-					},
-				},
-				["Monk/Brewmaster"] = {
+				["Monk/Windwalker"] = {
 					["225574"] = {
 						listNames = {
 							"overall",
@@ -8286,11 +8301,11 @@ context.database = {
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
 					},
-					["56126"] = {
+					["221088"] = {
 						listNames = {
 							"from M+",
 						},
-						location = "Dungeon/Drahga Shadowburner/Grim Batol",
+						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
 				["Mage/Fire"] = {
@@ -8306,21 +8321,6 @@ context.database = {
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
-					},
-				},
-				["Monk/Windwalker"] = {
-					["225574"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Rasha'nan/Nerub-ar Palace",
-					},
-					["221088"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
 				["Paladin/Protection"] = {
@@ -8353,6 +8353,51 @@ context.database = {
 						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
+				["Rogue/Subtlety"] = {
+					["133292"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
+					},
+					["225574"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+				},
+				["Priest/Discipline"] = {
+					["225574"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221088"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
+					},
+				},
+				["Priest/Holy"] = {
+					["212446"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					},
+					["56126"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
+					},
+				},
 				["Rogue/Assassination"] = {
 					["225574"] = {
 						listNames = {
@@ -8366,21 +8411,6 @@ context.database = {
 							"from M+",
 						},
 						location = "Dungeon/Drahga Shadowburner/Grim Batol",
-					},
-				},
-				["Shaman/Elemental"] = {
-					["225574"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Rasha'nan/Nerub-ar Palace",
-					},
-					["221088"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
 				["Rogue/Outlaw"] = {
@@ -8413,34 +8443,19 @@ context.database = {
 						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
-				["Rogue/Subtlety"] = {
-					["133292"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Drahga Shadowburner/Grim Batol",
-					},
+				["Shaman/Elemental"] = {
 					["225574"] = {
 						listNames = {
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
 					},
-				},
-				["Priest/Holy"] = {
-					["212446"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
-					},
-					["56126"] = {
+					["221088"] = {
 						listNames = {
 							"from M+",
 						},
-						location = "Dungeon/Drahga Shadowburner/Grim Batol",
+						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
 				["Shaman/Restoration"] = {
@@ -8458,57 +8473,7 @@ context.database = {
 						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
 					},
 				},
-				["Priest/Discipline"] = {
-					["225574"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Rasha'nan/Nerub-ar Palace",
-					},
-					["221088"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Speaker Brokk/The Stonevault",
-					},
-				},
 				["Warlock/Demonology"] = {
-					["225574"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Rasha'nan/Nerub-ar Palace",
-					},
-					["221088"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Speaker Brokk/The Stonevault",
-					},
-				},
-				["Warrior/Arms"] = {
-					["222817"] = {
-						listNames = {
-							"overall",
-						},
-						location = "Other/Crafting",
-					},
-					["225574"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Rasha'nan/Nerub-ar Palace",
-					},
-					["221088"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Speaker Brokk/The Stonevault",
-					},
-				},
-				["Warlock/Affliction"] = {
 					["225574"] = {
 						listNames = {
 							"overall",
@@ -8553,6 +8518,41 @@ context.database = {
 						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
 					},
 				},
+				["Warrior/Arms"] = {
+					["222817"] = {
+						listNames = {
+							"overall",
+						},
+						location = "Other/Crafting",
+					},
+					["225574"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221088"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
+					},
+				},
+				["Warlock/Affliction"] = {
+					["225574"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221088"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
+					},
+				},
 				["Warrior/Protection"] = {
 					["225574"] = {
 						listNames = {
@@ -8570,6 +8570,21 @@ context.database = {
 				},
 			},
 			INVTYPE_CHEST = {
+				["Death Knight/Blood"] = {
+					["212005"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+					["221139"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					},
+				},
 				["Demon Hunter/Vengeance"] = {
 					["212068"] = {
 						listNames = {
@@ -8590,22 +8605,17 @@ context.database = {
 						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
-				["Death Knight/Blood"] = {
-					["212005"] = {
+				["Evoker/Augmentation"] = {
+					["212032"] = {
 						listNames = {
 							"overall",
 							"from raid",
+							"from M+",
 						},
 						location = "Vendor/Kir'xal/City of Threads",
 					},
-					["221139"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
-					},
 				},
-				["Druid/Restoration"] = {
+				["Druid/Guardian"] = {
 					["212059"] = {
 						listNames = {
 							"overall",
@@ -8630,7 +8640,7 @@ context.database = {
 						location = "Dungeon/Erudax/Grim Batol",
 					},
 				},
-				["Druid/Guardian"] = {
+				["Druid/Restoration"] = {
 					["212059"] = {
 						listNames = {
 							"overall",
@@ -8675,7 +8685,7 @@ context.database = {
 						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
 					},
 				},
-				["Evoker/Augmentation"] = {
+				["Evoker/Preservation"] = {
 					["212032"] = {
 						listNames = {
 							"overall",
@@ -8687,16 +8697,6 @@ context.database = {
 				},
 				["Hunter/Beast Mastery"] = {
 					["212023"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
-				["Evoker/Preservation"] = {
-					["212032"] = {
 						listNames = {
 							"overall",
 							"from raid",
@@ -8720,6 +8720,21 @@ context.database = {
 						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
+				["Mage/Frost"] = {
+					["212095"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+					["221095"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Void Speaker Eirich/The Stonevault",
+					},
+				},
 				["Evoker/Devastation"] = {
 					["212032"] = {
 						listNames = {
@@ -8733,6 +8748,36 @@ context.database = {
 							"from M+",
 						},
 						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
+					},
+				},
+				["Monk/Brewmaster"] = {
+					["212050"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
+				["Monk/Mistweaver"] = {
+					["212050"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
+				["Hunter/Marksmanship"] = {
+					["212023"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
 				["Mage/Arcane"] = {
@@ -8750,16 +8795,6 @@ context.database = {
 						location = "Dungeon/Void Speaker Eirich/The Stonevault",
 					},
 				},
-				["Hunter/Marksmanship"] = {
-					["212023"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
 				["Paladin/Holy"] = {
 					["211996"] = {
 						listNames = {
@@ -8768,56 +8803,6 @@ context.database = {
 							"from M+",
 						},
 						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
-				["Mage/Frost"] = {
-					["212095"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-					["221095"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Void Speaker Eirich/The Stonevault",
-					},
-				},
-				["Monk/Mistweaver"] = {
-					["212050"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
-				["Monk/Brewmaster"] = {
-					["212050"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
-				["Mage/Fire"] = {
-					["212095"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-					["221095"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Void Speaker Eirich/The Stonevault",
 					},
 				},
 				["Monk/Windwalker"] = {
@@ -8835,6 +8820,21 @@ context.database = {
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 				},
+				["Mage/Fire"] = {
+					["212095"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+					["221095"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Void Speaker Eirich/The Stonevault",
+					},
+				},
 				["Paladin/Protection"] = {
 					["211996"] = {
 						listNames = {
@@ -8847,51 +8847,6 @@ context.database = {
 				},
 				["Paladin/Retribution"] = {
 					["211996"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
-				["Rogue/Assassination"] = {
-					["212041"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
-				["Shaman/Elemental"] = {
-					["212014"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-					["221147"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
-					},
-				},
-				["Rogue/Outlaw"] = {
-					["212041"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
-				["Priest/Shadow"] = {
-					["212086"] = {
 						listNames = {
 							"overall",
 							"from raid",
@@ -8915,6 +8870,16 @@ context.database = {
 						location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
 					},
 				},
+				["Priest/Discipline"] = {
+					["212086"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
 				["Priest/Holy"] = {
 					["212419"] = {
 						listNames = {
@@ -8930,6 +8895,51 @@ context.database = {
 						location = "Dungeon/Nx/City of Threads",
 					},
 				},
+				["Rogue/Assassination"] = {
+					["212041"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
+				["Rogue/Outlaw"] = {
+					["212041"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
+				["Priest/Shadow"] = {
+					["212086"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
+				["Shaman/Elemental"] = {
+					["212014"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+					["221147"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
+					},
+				},
 				["Shaman/Restoration"] = {
 					["212014"] = {
 						listNames = {
@@ -8940,42 +8950,7 @@ context.database = {
 						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
-				["Priest/Discipline"] = {
-					["212086"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
 				["Warlock/Demonology"] = {
-					["212077"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
-				["Warrior/Arms"] = {
-					["211987"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-					["221161"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
-					},
-				},
-				["Warlock/Affliction"] = {
 					["212077"] = {
 						listNames = {
 							"overall",
@@ -9010,6 +8985,31 @@ context.database = {
 						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
 					},
 				},
+				["Warrior/Arms"] = {
+					["211987"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+					["221161"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
+					},
+				},
+				["Warlock/Affliction"] = {
+					["212077"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
 				["Warrior/Protection"] = {
 					["211987"] = {
 						listNames = {
@@ -9022,6 +9022,21 @@ context.database = {
 				},
 			},
 			INVTYPE_WRIST = {
+				["Death Knight/Blood"] = {
+					["222435"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Other/Crafting",
+					},
+					["133306"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/General Umbriss/Grim Batol",
+					},
+				},
 				["Demon Hunter/Vengeance"] = {
 					["221142"] = {
 						listNames = {
@@ -9052,28 +9067,28 @@ context.database = {
 						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
 					},
 				},
-				["Death Knight/Blood"] = {
-					["222435"] = {
+				["Evoker/Augmentation"] = {
+					["221174"] = {
 						listNames = {
 							"overall",
-							"from raid",
-						},
-						location = "Other/Crafting",
-					},
-					["133306"] = {
-						listNames = {
 							"from M+",
 						},
-						location = "Dungeon/General Umbriss/Grim Batol",
+						location = "Dungeon/Nx/City of Threads",
+					},
+					["212415"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
 					},
 				},
-				["Druid/Restoration"] = {
-					["212438"] = {
+				["Druid/Guardian"] = {
+					["225588"] = {
 						listNames = {
 							"overall",
 							"from raid",
 						},
-						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
 					["178741"] = {
 						listNames = {
@@ -9097,13 +9112,13 @@ context.database = {
 						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
 					},
 				},
-				["Druid/Guardian"] = {
-					["225588"] = {
+				["Druid/Restoration"] = {
+					["212438"] = {
 						listNames = {
 							"overall",
 							"from raid",
 						},
-						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					},
 					["178741"] = {
 						listNames = {
@@ -9157,19 +9172,19 @@ context.database = {
 						location = "Dungeon/General Umbriss/Grim Batol",
 					},
 				},
-				["Evoker/Augmentation"] = {
-					["221174"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Nx/City of Threads",
-					},
+				["Evoker/Preservation"] = {
 					["212415"] = {
 						listNames = {
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221174"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Nx/City of Threads",
 					},
 				},
 				["Hunter/Beast Mastery"] = {
@@ -9184,21 +9199,6 @@ context.database = {
 							"from raid",
 						},
 						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
-					},
-					["221174"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Nx/City of Threads",
-					},
-				},
-				["Evoker/Preservation"] = {
-					["212415"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Sikran/Nerub-ar Palace",
 					},
 					["221174"] = {
 						listNames = {
@@ -9227,6 +9227,21 @@ context.database = {
 						location = "Dungeon/Nx/City of Threads",
 					},
 				},
+				["Mage/Frost"] = {
+					["225584"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["221182"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/The Coaglamation/City of Threads",
+					},
+				},
 				["Evoker/Devastation"] = {
 					["221174"] = {
 						listNames = {
@@ -9242,24 +9257,34 @@ context.database = {
 						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					},
 				},
-				["Mage/Arcane"] = {
-					["222815"] = {
+				["Monk/Brewmaster"] = {
+					["225588"] = {
 						listNames = {
 							"overall",
-						},
-						location = "Other/Crafting",
-					},
-					["225584"] = {
-						listNames = {
 							"from raid",
 						},
-						location = "Raid/Anub'arash/Nerub-ar Palace",
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
-					["221182"] = {
+					["178702"] = {
 						listNames = {
 							"from M+",
 						},
-						location = "Dungeon/The Coaglamation/City of Threads",
+						location = "Dungeon/Tred'ova/Mists of Tirna Scithe",
+					},
+				},
+				["Monk/Mistweaver"] = {
+					["221142"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					},
+					["225588"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
 				},
 				["Hunter/Marksmanship"] = {
@@ -9282,6 +9307,26 @@ context.database = {
 						location = "Dungeon/Nx/City of Threads",
 					},
 				},
+				["Mage/Arcane"] = {
+					["222815"] = {
+						listNames = {
+							"overall",
+						},
+						location = "Other/Crafting",
+					},
+					["225584"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["221182"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/The Coaglamation/City of Threads",
+					},
+				},
 				["Paladin/Holy"] = {
 					["221167"] = {
 						listNames = {
@@ -9297,49 +9342,19 @@ context.database = {
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 				},
-				["Mage/Frost"] = {
-					["225584"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Anub'arash/Nerub-ar Palace",
-					},
-					["221182"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/The Coaglamation/City of Threads",
-					},
-				},
-				["Monk/Mistweaver"] = {
-					["221142"] = {
+				["Monk/Windwalker"] = {
+					["178741"] = {
 						listNames = {
 							"overall",
 							"from M+",
 						},
-						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+						location = "Dungeon/Amarth/The Necrotic Wake",
 					},
-					["225588"] = {
+					["212438"] = {
 						listNames = {
 							"from raid",
 						},
-						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					},
-				},
-				["Monk/Brewmaster"] = {
-					["225588"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					},
-					["178702"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Tred'ova/Mists of Tirna Scithe",
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					},
 				},
 				["Mage/Fire"] = {
@@ -9355,21 +9370,6 @@ context.database = {
 							"from M+",
 						},
 						location = "Dungeon/The Coaglamation/City of Threads",
-					},
-				},
-				["Monk/Windwalker"] = {
-					["178741"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Amarth/The Necrotic Wake",
-					},
-					["212438"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					},
 				},
 				["Paladin/Protection"] = {
@@ -9407,7 +9407,7 @@ context.database = {
 						location = "Dungeon/General Umbriss/Grim Batol",
 					},
 				},
-				["Rogue/Assassination"] = {
+				["Rogue/Subtlety"] = {
 					["219334"] = {
 						listNames = {
 							"overall",
@@ -9427,19 +9427,54 @@ context.database = {
 						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
 					},
 				},
-				["Shaman/Elemental"] = {
-					["225581"] = {
+				["Priest/Discipline"] = {
+					["221182"] = {
 						listNames = {
 							"overall",
+							"from M+",
+						},
+						location = "Dungeon/The Coaglamation/City of Threads",
+					},
+					["225584"] = {
+						listNames = {
 							"from raid",
 						},
-						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+						location = "Raid/Anub'arash/Nerub-ar Palace",
 					},
-					["159372"] = {
+				},
+				["Priest/Holy"] = {
+					["178782"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Nalthor the Rimebinder/The Necrotic Wake",
+					},
+					["212426"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					},
+				},
+				["Rogue/Assassination"] = {
+					["219334"] = {
+						listNames = {
+							"overall",
+						},
+						location = "Other/Crafting",
+					},
+					["225588"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["221157"] = {
 						listNames = {
 							"from M+",
 						},
-						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
+						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
 					},
 				},
 				["Rogue/Outlaw"] = {
@@ -9477,39 +9512,19 @@ context.database = {
 						location = "Dungeon/Drahga Shadowburner/Grim Batol",
 					},
 				},
-				["Rogue/Subtlety"] = {
-					["219334"] = {
+				["Shaman/Elemental"] = {
+					["225581"] = {
 						listNames = {
 							"overall",
-						},
-						location = "Other/Crafting",
-					},
-					["225588"] = {
-						listNames = {
 							"from raid",
 						},
-						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					},
-					["221157"] = {
+					["159372"] = {
 						listNames = {
 							"from M+",
 						},
-						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
-					},
-				},
-				["Priest/Holy"] = {
-					["178782"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Nalthor the Rimebinder/The Necrotic Wake",
-					},
-					["212426"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
 					},
 				},
 				["Shaman/Restoration"] = {
@@ -9527,57 +9542,7 @@ context.database = {
 						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
 					},
 				},
-				["Priest/Discipline"] = {
-					["221182"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/The Coaglamation/City of Threads",
-					},
-					["225584"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Anub'arash/Nerub-ar Palace",
-					},
-				},
 				["Warlock/Demonology"] = {
-					["225584"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Anub'arash/Nerub-ar Palace",
-					},
-					["133295"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Drahga Shadowburner/Grim Batol",
-					},
-				},
-				["Warrior/Arms"] = {
-					["222435"] = {
-						listNames = {
-							"overall",
-						},
-						location = "Other/Crafting",
-					},
-					["212437"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Rasha'nan/Nerub-ar Palace",
-					},
-					["221167"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Orator Krix'vizk/City of Threads",
-					},
-				},
-				["Warlock/Affliction"] = {
 					["225584"] = {
 						listNames = {
 							"overall",
@@ -9627,6 +9592,41 @@ context.database = {
 						location = "Dungeon/Orator Krix'vizk/City of Threads",
 					},
 				},
+				["Warrior/Arms"] = {
+					["222435"] = {
+						listNames = {
+							"overall",
+						},
+						location = "Other/Crafting",
+					},
+					["212437"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["221167"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Orator Krix'vizk/City of Threads",
+					},
+				},
+				["Warlock/Affliction"] = {
+					["225584"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["133295"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
+					},
+				},
 				["Warrior/Protection"] = {
 					["217848"] = {
 						listNames = {
@@ -9649,6 +9649,21 @@ context.database = {
 				},
 			},
 			INVTYPE_HAND = {
+				["Death Knight/Blood"] = {
+					["212003"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+					["221086"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
+					},
+				},
 				["Demon Hunter/Vengeance"] = {
 					["212066"] = {
 						listNames = {
@@ -9674,22 +9689,17 @@ context.database = {
 						location = "Raid/Anub'arash/Nerub-ar Palace",
 					},
 				},
-				["Death Knight/Blood"] = {
-					["212003"] = {
+				["Evoker/Augmentation"] = {
+					["212030"] = {
 						listNames = {
 							"overall",
 							"from raid",
+							"from M+",
 						},
 						location = "Vendor/Kir'xal/City of Threads",
 					},
-					["221086"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Speaker Brokk/The Stonevault",
-					},
 				},
-				["Druid/Restoration"] = {
+				["Druid/Guardian"] = {
 					["212057"] = {
 						listNames = {
 							"overall",
@@ -9719,7 +9729,7 @@ context.database = {
 						location = "Dungeon/The Coaglamation/City of Threads",
 					},
 				},
-				["Druid/Guardian"] = {
+				["Druid/Restoration"] = {
 					["212057"] = {
 						listNames = {
 							"overall",
@@ -9764,14 +9774,19 @@ context.database = {
 						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
 					},
 				},
-				["Evoker/Augmentation"] = {
-					["212030"] = {
+				["Evoker/Preservation"] = {
+					["212436"] = {
 						listNames = {
 							"overall",
 							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221162"] = {
+						listNames = {
 							"from M+",
 						},
-						location = "Vendor/Kir'xal/City of Threads",
+						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
 					},
 				},
 				["Hunter/Beast Mastery"] = {
@@ -9794,73 +9809,8 @@ context.database = {
 						location = "Dungeon/Skarmorak/The Stonevault",
 					},
 				},
-				["Evoker/Preservation"] = {
-					["212436"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					},
-					["221162"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
-					},
-				},
 				["Hunter/Survival"] = {
 					["212021"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
-				["Evoker/Devastation"] = {
-					["212030"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-					["221080"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Skarmorak/The Stonevault",
-					},
-				},
-				["Mage/Arcane"] = {
-					["212093"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-					["221170"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Orator Krix'vizk/City of Threads",
-					},
-				},
-				["Hunter/Marksmanship"] = {
-					["212021"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
-				["Paladin/Holy"] = {
-					["211994"] = {
 						listNames = {
 							"overall",
 							"from raid",
@@ -9884,14 +9834,19 @@ context.database = {
 						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
 					},
 				},
-				["Monk/Mistweaver"] = {
-					["212048"] = {
+				["Evoker/Devastation"] = {
+					["212030"] = {
 						listNames = {
 							"overall",
 							"from raid",
-							"from M+",
 						},
 						location = "Vendor/Kir'xal/City of Threads",
+					},
+					["221080"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Skarmorak/The Stonevault",
 					},
 				},
 				["Monk/Brewmaster"] = {
@@ -9914,6 +9869,61 @@ context.database = {
 						location = "Dungeon/The Coaglamation/City of Threads",
 					},
 				},
+				["Monk/Mistweaver"] = {
+					["212048"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
+				["Hunter/Marksmanship"] = {
+					["212021"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
+				["Mage/Arcane"] = {
+					["212093"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+					["221170"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Orator Krix'vizk/City of Threads",
+					},
+				},
+				["Paladin/Holy"] = {
+					["211994"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
+				["Monk/Windwalker"] = {
+					["212048"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
 				["Mage/Fire"] = {
 					["212093"] = {
 						listNames = {
@@ -9927,16 +9937,6 @@ context.database = {
 							"from M+",
 						},
 						location = "Dungeon/Mistcaller/Mists of Tirna Scithe",
-					},
-				},
-				["Monk/Windwalker"] = {
-					["212048"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
 				["Paladin/Protection"] = {
@@ -9964,8 +9964,23 @@ context.database = {
 						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
 				},
-				["Rogue/Assassination"] = {
+				["Rogue/Subtlety"] = {
 					["212039"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+					["159328"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Sergeant Bainbridge/Siege of Boralus",
+					},
+				},
+				["Priest/Discipline"] = {
+					["212084"] = {
 						listNames = {
 							"overall",
 							"from raid",
@@ -9974,19 +9989,24 @@ context.database = {
 						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
-				["Shaman/Elemental"] = {
-					["212012"] = {
+				["Priest/Holy"] = {
+					["212084"] = {
 						listNames = {
 							"overall",
 							"from raid",
+							"from M+",
 						},
 						location = "Vendor/Kir'xal/City of Threads",
 					},
-					["221162"] = {
+				},
+				["Rogue/Assassination"] = {
+					["212039"] = {
 						listNames = {
+							"overall",
+							"from raid",
 							"from M+",
 						},
-						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
+						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
 				["Rogue/Outlaw"] = {
@@ -10014,29 +10034,19 @@ context.database = {
 						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					},
 				},
-				["Rogue/Subtlety"] = {
-					["212039"] = {
+				["Shaman/Elemental"] = {
+					["212012"] = {
 						listNames = {
 							"overall",
 							"from raid",
 						},
 						location = "Vendor/Kir'xal/City of Threads",
 					},
-					["159328"] = {
+					["221162"] = {
 						listNames = {
 							"from M+",
 						},
-						location = "Dungeon/Sergeant Bainbridge/Siege of Boralus",
-					},
-				},
-				["Priest/Holy"] = {
-					["212084"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
+						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
 					},
 				},
 				["Shaman/Restoration"] = {
@@ -10049,42 +10059,7 @@ context.database = {
 						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
-				["Priest/Discipline"] = {
-					["212084"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
 				["Warlock/Demonology"] = {
-					["212075"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
-				["Warrior/Arms"] = {
-					["212418"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					},
-					["221086"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Speaker Brokk/The Stonevault",
-					},
-				},
-				["Warlock/Affliction"] = {
 					["212075"] = {
 						listNames = {
 							"overall",
@@ -10119,6 +10094,31 @@ context.database = {
 						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
 					},
 				},
+				["Warrior/Arms"] = {
+					["212418"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["221086"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
+					},
+				},
+				["Warlock/Affliction"] = {
+					["212075"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
 				["Warrior/Protection"] = {
 					["211985"] = {
 						listNames = {
@@ -10131,6 +10131,21 @@ context.database = {
 				},
 			},
 			INVTYPE_WAIST = {
+				["Death Knight/Blood"] = {
+					["222431"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Other/Crafting",
+					},
+					["159434"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
+					},
+				},
 				["Demon Hunter/Vengeance"] = {
 					["219502"] = {
 						listNames = {
@@ -10166,28 +10181,33 @@ context.database = {
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
 					},
 				},
-				["Death Knight/Blood"] = {
-					["222431"] = {
+				["Evoker/Augmentation"] = {
+					["219339"] = {
 						listNames = {
 							"overall",
-							"from raid",
 						},
 						location = "Other/Crafting",
 					},
-					["159434"] = {
+					["212414"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["221075"] = {
 						listNames = {
 							"from M+",
 						},
-						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
+						location = "Dungeon/E.D.N.A/The Stonevault",
 					},
 				},
-				["Druid/Restoration"] = {
-					["225583"] = {
+				["Druid/Guardian"] = {
+					["212425"] = {
 						listNames = {
 							"overall",
 							"from raid",
 						},
-						location = "Raid/Rasha'nan/Nerub-ar Palace",
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
 					},
 					["178699"] = {
 						listNames = {
@@ -10211,13 +10231,13 @@ context.database = {
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
 					},
 				},
-				["Druid/Guardian"] = {
-					["212425"] = {
+				["Druid/Restoration"] = {
+					["225583"] = {
 						listNames = {
 							"overall",
 							"from raid",
 						},
-						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
 					},
 					["178699"] = {
 						listNames = {
@@ -10271,24 +10291,19 @@ context.database = {
 						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					},
 				},
-				["Evoker/Augmentation"] = {
-					["219339"] = {
+				["Evoker/Preservation"] = {
+					["221168"] = {
 						listNames = {
 							"overall",
+							"from M+",
 						},
-						location = "Other/Crafting",
+						location = "Dungeon/Orator Krix'vizk/City of Threads",
 					},
-					["212414"] = {
+					["225580"] = {
 						listNames = {
 							"from raid",
 						},
-						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
-					},
-					["221075"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/E.D.N.A/The Stonevault",
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
 				},
 				["Hunter/Beast Mastery"] = {
@@ -10306,21 +10321,6 @@ context.database = {
 						location = "Dungeon/E.D.N.A/The Stonevault",
 					},
 				},
-				["Evoker/Preservation"] = {
-					["221168"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Orator Krix'vizk/City of Threads",
-					},
-					["225580"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					},
-				},
 				["Hunter/Survival"] = {
 					["225580"] = {
 						listNames = {
@@ -10334,66 +10334,6 @@ context.database = {
 							"from M+",
 						},
 						location = "Dungeon/E.D.N.A/The Stonevault",
-					},
-				},
-				["Evoker/Devastation"] = {
-					["225580"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					},
-					["221168"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Orator Krix'vizk/City of Threads",
-					},
-				},
-				["Mage/Arcane"] = {
-					["225585"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					},
-					["221158"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
-					},
-				},
-				["Hunter/Marksmanship"] = {
-					["225580"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					},
-					["159386"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
-					},
-				},
-				["Paladin/Holy"] = {
-					["225589"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
-					},
-					["133289"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Forgemaster Throngus/Grim Batol",
 					},
 				},
 				["Mage/Frost"] = {
@@ -10411,14 +10351,19 @@ context.database = {
 						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
 					},
 				},
-				["Monk/Mistweaver"] = {
-					["225583"] = {
+				["Evoker/Devastation"] = {
+					["225580"] = {
 						listNames = {
 							"overall",
 							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["221168"] = {
+						listNames = {
 							"from M+",
 						},
-						location = "Raid/Rasha'nan/Nerub-ar Palace",
+						location = "Dungeon/Orator Krix'vizk/City of Threads",
 					},
 				},
 				["Monk/Brewmaster"] = {
@@ -10441,6 +10386,76 @@ context.database = {
 						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
 					},
 				},
+				["Monk/Mistweaver"] = {
+					["225583"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+				},
+				["Hunter/Marksmanship"] = {
+					["225580"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["159386"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					},
+				},
+				["Mage/Arcane"] = {
+					["225585"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221158"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
+					},
+				},
+				["Paladin/Holy"] = {
+					["225589"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					},
+					["133289"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Forgemaster Throngus/Grim Batol",
+					},
+				},
+				["Monk/Windwalker"] = {
+					["178699"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Tred'ova/Mists of Tirna Scithe",
+					},
+					["225583"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+				},
 				["Mage/Fire"] = {
 					["221666"] = {
 						listNames = {
@@ -10459,21 +10474,6 @@ context.database = {
 							"from M+",
 						},
 						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
-					},
-				},
-				["Monk/Windwalker"] = {
-					["178699"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Tred'ova/Mists of Tirna Scithe",
-					},
-					["225583"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Rasha'nan/Nerub-ar Palace",
 					},
 				},
 				["Paladin/Protection"] = {
@@ -10506,6 +10506,51 @@ context.database = {
 						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					},
 				},
+				["Rogue/Subtlety"] = {
+					["212425"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+					},
+					["133353"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Forgemaster Throngus/Grim Batol",
+					},
+				},
+				["Priest/Discipline"] = {
+					["221158"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
+					},
+					["225585"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+				},
+				["Priest/Holy"] = {
+					["225585"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221087"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
+					},
+				},
 				["Rogue/Assassination"] = {
 					["219331"] = {
 						listNames = {
@@ -10524,21 +10569,6 @@ context.database = {
 							"from M+",
 						},
 						location = "Dungeon/Forgemaster Throngus/Grim Batol",
-					},
-				},
-				["Shaman/Elemental"] = {
-					["212414"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
-					},
-					["159386"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					},
 				},
 				["Rogue/Outlaw"] = {
@@ -10571,34 +10601,19 @@ context.database = {
 						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
 					},
 				},
-				["Rogue/Subtlety"] = {
-					["212425"] = {
+				["Shaman/Elemental"] = {
+					["212414"] = {
 						listNames = {
 							"overall",
 							"from raid",
 						},
-						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					},
-					["133353"] = {
+					["159386"] = {
 						listNames = {
 							"from M+",
 						},
-						location = "Dungeon/Forgemaster Throngus/Grim Batol",
-					},
-				},
-				["Priest/Holy"] = {
-					["225585"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					},
-					["221087"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Speaker Brokk/The Stonevault",
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					},
 				},
 				["Shaman/Restoration"] = {
@@ -10616,57 +10631,7 @@ context.database = {
 						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					},
 				},
-				["Priest/Discipline"] = {
-					["221158"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
-					},
-					["225585"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					},
-				},
 				["Warlock/Demonology"] = {
-					["225585"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					},
-					["221158"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
-					},
-				},
-				["Warrior/Arms"] = {
-					["221079"] = {
-						listNames = {
-							"overall",
-						},
-						location = "Dungeon/Skarmorak/The Stonevault",
-					},
-					["225589"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
-					},
-					["133289"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Forgemaster Throngus/Grim Batol",
-					},
-				},
-				["Warlock/Affliction"] = {
 					["225585"] = {
 						listNames = {
 							"overall",
@@ -10711,6 +10676,41 @@ context.database = {
 						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
 					},
 				},
+				["Warrior/Arms"] = {
+					["221079"] = {
+						listNames = {
+							"overall",
+						},
+						location = "Dungeon/Skarmorak/The Stonevault",
+					},
+					["225589"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					},
+					["133289"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Forgemaster Throngus/Grim Batol",
+					},
+				},
+				["Warlock/Affliction"] = {
+					["225585"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221158"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'zekt/Ara-Kara, City of Echoes",
+					},
+				},
 				["Warrior/Protection"] = {
 					["217849"] = {
 						listNames = {
@@ -10733,6 +10733,21 @@ context.database = {
 				},
 			},
 			INVTYPE_LEGS = {
+				["Death Knight/Blood"] = {
+					["212001"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+					["221092"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Void Speaker Eirich/The Stonevault",
+					},
+				},
 				["Demon Hunter/Vengeance"] = {
 					["212064"] = {
 						listNames = {
@@ -10753,22 +10768,17 @@ context.database = {
 						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
-				["Death Knight/Blood"] = {
-					["212001"] = {
+				["Evoker/Augmentation"] = {
+					["212028"] = {
 						listNames = {
 							"overall",
 							"from raid",
+							"from M+",
 						},
 						location = "Vendor/Kir'xal/City of Threads",
 					},
-					["221092"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Void Speaker Eirich/The Stonevault",
-					},
 				},
-				["Druid/Restoration"] = {
+				["Druid/Guardian"] = {
 					["212055"] = {
 						listNames = {
 							"overall",
@@ -10793,7 +10803,7 @@ context.database = {
 						location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
 					},
 				},
-				["Druid/Guardian"] = {
+				["Druid/Restoration"] = {
 					["212055"] = {
 						listNames = {
 							"overall",
@@ -10838,7 +10848,7 @@ context.database = {
 						location = "Dungeon/Amarth/The Necrotic Wake",
 					},
 				},
-				["Evoker/Augmentation"] = {
+				["Evoker/Preservation"] = {
 					["212028"] = {
 						listNames = {
 							"overall",
@@ -10858,73 +10868,8 @@ context.database = {
 						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
-				["Evoker/Preservation"] = {
-					["212028"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
 				["Hunter/Survival"] = {
 					["212019"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
-				["Evoker/Devastation"] = {
-					["212435"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					},
-					["221186"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
-					},
-				},
-				["Mage/Arcane"] = {
-					["212091"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-					["221076"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/E.D.N.A/The Stonevault",
-					},
-				},
-				["Hunter/Marksmanship"] = {
-					["212019"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-					["212435"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					},
-				},
-				["Paladin/Holy"] = {
-					["211992"] = {
 						listNames = {
 							"overall",
 							"from raid",
@@ -10948,6 +10893,31 @@ context.database = {
 						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
 					},
 				},
+				["Evoker/Devastation"] = {
+					["212435"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221186"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
+					},
+				},
+				["Monk/Brewmaster"] = {
+					["212046"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
 				["Monk/Mistweaver"] = {
 					["212046"] = {
 						listNames = {
@@ -10958,7 +10928,47 @@ context.database = {
 						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
-				["Monk/Brewmaster"] = {
+				["Hunter/Marksmanship"] = {
+					["212019"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+					["212435"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+				},
+				["Mage/Arcane"] = {
+					["212091"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+					["221076"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
+					},
+				},
+				["Paladin/Holy"] = {
+					["211992"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
+				["Monk/Windwalker"] = {
 					["212046"] = {
 						listNames = {
 							"overall",
@@ -10981,16 +10991,6 @@ context.database = {
 							"from M+",
 						},
 						location = "Dungeon/E.D.N.A/The Stonevault",
-					},
-				},
-				["Monk/Windwalker"] = {
-					["212046"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
 				["Paladin/Protection"] = {
@@ -11018,8 +11018,23 @@ context.database = {
 						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
-				["Rogue/Assassination"] = {
+				["Rogue/Subtlety"] = {
 					["212037"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+					["221153"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					},
+				},
+				["Priest/Discipline"] = {
+					["212082"] = {
 						listNames = {
 							"overall",
 							"from raid",
@@ -11028,19 +11043,24 @@ context.database = {
 						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
-				["Shaman/Elemental"] = {
-					["212010"] = {
+				["Priest/Holy"] = {
+					["212082"] = {
 						listNames = {
 							"overall",
 							"from raid",
+							"from M+",
 						},
 						location = "Vendor/Kir'xal/City of Threads",
 					},
-					["221186"] = {
+				},
+				["Rogue/Assassination"] = {
+					["212037"] = {
 						listNames = {
+							"overall",
+							"from raid",
 							"from M+",
 						},
-						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
+						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
 				["Rogue/Outlaw"] = {
@@ -11073,29 +11093,19 @@ context.database = {
 						location = "Vendor/Kir'xal/City of Threads",
 					},
 				},
-				["Rogue/Subtlety"] = {
-					["212037"] = {
+				["Shaman/Elemental"] = {
+					["212010"] = {
 						listNames = {
 							"overall",
 							"from raid",
 						},
 						location = "Vendor/Kir'xal/City of Threads",
 					},
-					["221153"] = {
+					["221186"] = {
 						listNames = {
 							"from M+",
 						},
-						location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
-					},
-				},
-				["Priest/Holy"] = {
-					["212082"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
+						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
 					},
 				},
 				["Shaman/Restoration"] = {
@@ -11113,42 +11123,7 @@ context.database = {
 						location = "Dungeon/Nalthor the Rimebinder/The Necrotic Wake",
 					},
 				},
-				["Priest/Discipline"] = {
-					["212082"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
 				["Warlock/Demonology"] = {
-					["212073"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-				},
-				["Warrior/Arms"] = {
-					["211983"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Vendor/Kir'xal/City of Threads",
-					},
-					["178701"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Tred'ova/Mists of Tirna Scithe",
-					},
-				},
-				["Warlock/Affliction"] = {
 					["212073"] = {
 						listNames = {
 							"overall",
@@ -11183,6 +11158,31 @@ context.database = {
 						location = "Dungeon/Tred'ova/Mists of Tirna Scithe",
 					},
 				},
+				["Warrior/Arms"] = {
+					["211983"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+					["178701"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Tred'ova/Mists of Tirna Scithe",
+					},
+				},
+				["Warlock/Affliction"] = {
+					["212073"] = {
+						listNames = {
+							"overall",
+							"from raid",
+							"from M+",
+						},
+						location = "Vendor/Kir'xal/City of Threads",
+					},
+				},
 				["Warrior/Protection"] = {
 					["211983"] = {
 						listNames = {
@@ -11195,6 +11195,21 @@ context.database = {
 				},
 			},
 			INVTYPE_FEET = {
+				["Death Knight/Blood"] = {
+					["212443"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["221178"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/The Coaglamation/City of Threads",
+					},
+				},
 				["Demon Hunter/Vengeance"] = {
 					["159320"] = {
 						listNames = {
@@ -11225,28 +11240,28 @@ context.database = {
 						location = "Raid/Sikran/Nerub-ar Palace",
 					},
 				},
-				["Death Knight/Blood"] = {
-					["212443"] = {
+				["Evoker/Augmentation"] = {
+					["159379"] = {
 						listNames = {
 							"overall",
-							"from raid",
-						},
-						location = "Raid/Anub'arash/Nerub-ar Palace",
-					},
-					["221178"] = {
-						listNames = {
 							"from M+",
 						},
-						location = "Dungeon/The Coaglamation/City of Threads",
+						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
+					},
+					["225586"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
 					},
 				},
-				["Druid/Restoration"] = {
-					["212445"] = {
+				["Druid/Guardian"] = {
+					["225591"] = {
 						listNames = {
 							"overall",
 							"from raid",
 						},
-						location = "Raid/Sikran/Nerub-ar Palace",
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
 					},
 					["178731"] = {
 						listNames = {
@@ -11270,13 +11285,13 @@ context.database = {
 						location = "Raid/Sikran/Nerub-ar Palace",
 					},
 				},
-				["Druid/Guardian"] = {
-					["225591"] = {
+				["Druid/Restoration"] = {
+					["212445"] = {
 						listNames = {
 							"overall",
 							"from raid",
 						},
-						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+						location = "Raid/Sikran/Nerub-ar Palace",
 					},
 					["178731"] = {
 						listNames = {
@@ -11335,19 +11350,19 @@ context.database = {
 						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					},
 				},
-				["Evoker/Augmentation"] = {
-					["159379"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
-					},
+				["Evoker/Preservation"] = {
 					["225586"] = {
 						listNames = {
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["159379"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
 					},
 				},
 				["Hunter/Beast Mastery"] = {
@@ -11357,21 +11372,6 @@ context.database = {
 							"from raid",
 						},
 						location = "Other/Unknown",
-					},
-					["159379"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
-					},
-				},
-				["Evoker/Preservation"] = {
-					["225586"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Rasha'nan/Nerub-ar Palace",
 					},
 					["159379"] = {
 						listNames = {
@@ -11400,6 +11400,26 @@ context.database = {
 						location = "Dungeon/Drahga Shadowburner/Grim Batol",
 					},
 				},
+				["Mage/Frost"] = {
+					["222814"] = {
+						listNames = {
+							"overall",
+						},
+						location = "Other/Crafting",
+					},
+					["225582"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["221149"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
+					},
+				},
 				["Evoker/Devastation"] = {
 					["225586"] = {
 						listNames = {
@@ -11413,6 +11433,51 @@ context.database = {
 							"from M+",
 						},
 						location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					},
+				},
+				["Monk/Brewmaster"] = {
+					["225591"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					},
+					["159320"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
+					},
+				},
+				["Monk/Mistweaver"] = {
+					["159320"] = {
+						listNames = {
+							"overall",
+						},
+						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
+					},
+					["212445"] = {
+						listNames = {
+							"from raid",
+							"from M+",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+				},
+				["Hunter/Marksmanship"] = {
+					["225586"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["133293"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
 					},
 				},
 				["Mage/Arcane"] = {
@@ -11435,21 +11500,6 @@ context.database = {
 						location = "Dungeon/Skarmorak/The Stonevault",
 					},
 				},
-				["Hunter/Marksmanship"] = {
-					["225586"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Rasha'nan/Nerub-ar Palace",
-					},
-					["133293"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Drahga Shadowburner/Grim Batol",
-					},
-				},
 				["Paladin/Holy"] = {
 					["159428"] = {
 						listNames = {
@@ -11470,54 +11520,19 @@ context.database = {
 						location = "Dungeon/The Coaglamation/City of Threads",
 					},
 				},
-				["Mage/Frost"] = {
-					["222814"] = {
-						listNames = {
-							"overall",
-						},
-						location = "Other/Crafting",
-					},
-					["225582"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					},
-					["221149"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
-					},
-				},
-				["Monk/Mistweaver"] = {
-					["159320"] = {
-						listNames = {
-							"overall",
-						},
-						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
-					},
+				["Monk/Windwalker"] = {
 					["212445"] = {
 						listNames = {
+							"overall",
 							"from raid",
-							"from M+",
 						},
 						location = "Raid/Sikran/Nerub-ar Palace",
 					},
-				},
-				["Monk/Brewmaster"] = {
-					["225591"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
-					},
-					["159320"] = {
+					["178731"] = {
 						listNames = {
 							"from M+",
 						},
-						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
+						location = "Dungeon/Blightbone/The Necrotic Wake",
 					},
 				},
 				["Mage/Fire"] = {
@@ -11533,21 +11548,6 @@ context.database = {
 							"from raid",
 						},
 						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					},
-				},
-				["Monk/Windwalker"] = {
-					["212445"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Sikran/Nerub-ar Palace",
-					},
-					["178731"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Blightbone/The Necrotic Wake",
 					},
 				},
 				["Paladin/Protection"] = {
@@ -11580,6 +11580,51 @@ context.database = {
 						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					},
 				},
+				["Rogue/Subtlety"] = {
+					["225591"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					},
+					["159320"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
+					},
+				},
+				["Priest/Discipline"] = {
+					["221082"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Skarmorak/The Stonevault",
+					},
+					["225582"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+				},
+				["Priest/Holy"] = {
+					["221149"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
+					},
+					["212416"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+				},
 				["Rogue/Assassination"] = {
 					["212445"] = {
 						listNames = {
@@ -11598,26 +11643,6 @@ context.database = {
 							"from M+",
 						},
 						location = "Dungeon/Orator Krix'vizk/City of Threads",
-					},
-				},
-				["Shaman/Elemental"] = {
-					["219335"] = {
-						listNames = {
-							"overall",
-						},
-						location = "Other/Crafting",
-					},
-					["225586"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Rasha'nan/Nerub-ar Palace",
-					},
-					["133293"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Drahga Shadowburner/Grim Batol",
 					},
 				},
 				["Rogue/Outlaw"] = {
@@ -11650,34 +11675,24 @@ context.database = {
 						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
 					},
 				},
-				["Rogue/Subtlety"] = {
-					["225591"] = {
+				["Shaman/Elemental"] = {
+					["219335"] = {
 						listNames = {
 							"overall",
-							"from raid",
 						},
-						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+						location = "Other/Crafting",
 					},
-					["159320"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Dread Captain Lockwood/Siege of Boralus",
-					},
-				},
-				["Priest/Holy"] = {
-					["221149"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
-					},
-					["212416"] = {
+					["225586"] = {
 						listNames = {
 							"from raid",
 						},
-						location = "Raid/Sikran/Nerub-ar Palace",
+						location = "Raid/Rasha'nan/Nerub-ar Palace",
+					},
+					["133293"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Drahga Shadowburner/Grim Batol",
 					},
 				},
 				["Shaman/Restoration"] = {
@@ -11695,57 +11710,7 @@ context.database = {
 						location = "Raid/Rasha'nan/Nerub-ar Palace",
 					},
 				},
-				["Priest/Discipline"] = {
-					["221082"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Skarmorak/The Stonevault",
-					},
-					["225582"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					},
-				},
 				["Warlock/Demonology"] = {
-					["222814"] = {
-						listNames = {
-							"overall",
-						},
-						location = "Other/Crafting",
-					},
-					["212416"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Sikran/Nerub-ar Palace",
-					},
-					["221149"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
-					},
-				},
-				["Warrior/Arms"] = {
-					["225590"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
-					},
-					["159428"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
-					},
-				},
-				["Warlock/Affliction"] = {
 					["222814"] = {
 						listNames = {
 							"overall",
@@ -11800,6 +11765,41 @@ context.database = {
 						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					},
 				},
+				["Warrior/Arms"] = {
+					["225590"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["159428"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					},
+				},
+				["Warlock/Affliction"] = {
+					["222814"] = {
+						listNames = {
+							"overall",
+						},
+						location = "Other/Crafting",
+					},
+					["212416"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221149"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
+					},
+				},
 				["Warrior/Protection"] = {
 					["211986"] = {
 						listNames = {
@@ -11822,6 +11822,34 @@ context.database = {
 				},
 			},
 			INVTYPE_FINGER = {
+				["Death Knight/Blood"] = {
+					["225578"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["178781"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Nalthor the Rimebinder/The Necrotic Wake",
+					},
+					["225576"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["162541"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Chopper Redhook/Siege of Boralus",
+					},
+				},
 				["Demon Hunter/Vengeance"] = {
 					["225578"] = {
 						listNames = {
@@ -11878,7 +11906,7 @@ context.database = {
 						location = "Dungeon/General Umbriss/Grim Batol",
 					},
 				},
-				["Death Knight/Blood"] = {
+				["Evoker/Augmentation"] = {
 					["225578"] = {
 						listNames = {
 							"overall",
@@ -11886,12 +11914,11 @@ context.database = {
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
-					["178781"] = {
+					["215133"] = {
 						listNames = {
 							"overall",
-							"from M+",
 						},
-						location = "Dungeon/Nalthor the Rimebinder/The Necrotic Wake",
+						location = "Other/Crafting",
 					},
 					["225576"] = {
 						listNames = {
@@ -11899,14 +11926,20 @@ context.database = {
 						},
 						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
-					["162541"] = {
+					["162542"] = {
 						listNames = {
 							"from M+",
 						},
-						location = "Dungeon/Chopper Redhook/Siege of Boralus",
+						location = "Dungeon/Sergeant Bainbridge/Siege of Boralus",
+					},
+					["133286"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/General Umbriss/Grim Batol",
 					},
 				},
-				["Druid/Restoration"] = {
+				["Druid/Guardian"] = {
 					["212447"] = {
 						listNames = {
 							"overall",
@@ -11914,12 +11947,12 @@ context.database = {
 						},
 						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					},
-					["225576"] = {
+					["225578"] = {
 						listNames = {
 							"overall",
 							"from raid",
 						},
-						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 					["178736"] = {
 						listNames = {
@@ -11962,7 +11995,7 @@ context.database = {
 						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
 					},
 				},
-				["Druid/Guardian"] = {
+				["Druid/Restoration"] = {
 					["212447"] = {
 						listNames = {
 							"overall",
@@ -11970,12 +12003,12 @@ context.database = {
 						},
 						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					},
-					["225578"] = {
+					["225576"] = {
 						listNames = {
 							"overall",
 							"from raid",
 						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
 					["178736"] = {
 						listNames = {
@@ -12074,7 +12107,7 @@ context.database = {
 						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
 					},
 				},
-				["Evoker/Augmentation"] = {
+				["Evoker/Preservation"] = {
 					["225578"] = {
 						listNames = {
 							"overall",
@@ -12082,29 +12115,24 @@ context.database = {
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
-					["215133"] = {
-						listNames = {
-							"overall",
-						},
-						location = "Other/Crafting",
-					},
 					["225576"] = {
 						listNames = {
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
-					["162542"] = {
+					["159461"] = {
 						listNames = {
 							"from M+",
 						},
-						location = "Dungeon/Sergeant Bainbridge/Siege of Boralus",
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					},
-					["133286"] = {
+					["221136"] = {
 						listNames = {
 							"from M+",
 						},
-						location = "Dungeon/General Umbriss/Grim Batol",
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
 					},
 				},
 				["Hunter/Beast Mastery"] = {
@@ -12135,34 +12163,6 @@ context.database = {
 						location = "Dungeon/Sergeant Bainbridge/Siege of Boralus",
 					},
 				},
-				["Evoker/Preservation"] = {
-					["225578"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					},
-					["225576"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					},
-					["159461"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
-					},
-					["221136"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
-					},
-				},
 				["Hunter/Survival"] = {
 					["225578"] = {
 						listNames = {
@@ -12189,128 +12189,6 @@ context.database = {
 							"from M+",
 						},
 						location = "Dungeon/Nalthor the Rimebinder/The Necrotic Wake",
-					},
-				},
-				["Evoker/Devastation"] = {
-					["225578"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					},
-					["221136"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
-					},
-					["212447"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
-					},
-					["159461"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
-					},
-				},
-				["Mage/Arcane"] = {
-					["225578"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					},
-					["225576"] = {
-						listNames = {
-							"overall",
-						},
-						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					},
-					["212447"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
-					},
-					["221136"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
-					},
-					["221189"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
-					},
-				},
-				["Hunter/Marksmanship"] = {
-					["225578"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					},
-					["162542"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Sergeant Bainbridge/Siege of Boralus",
-					},
-					["225576"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					},
-					["221136"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
-					},
-				},
-				["Paladin/Holy"] = {
-					["178736"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Blightbone/The Necrotic Wake",
-					},
-					["159461"] = {
-						listNames = {
-							"overall",
-						},
-						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
-					},
-					["225576"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					},
-					["212447"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
-					},
-					["221189"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
 					},
 				},
 				["Mage/Frost"] = {
@@ -12346,32 +12224,32 @@ context.database = {
 						location = "Dungeon/Blightbone/The Necrotic Wake",
 					},
 				},
-				["Monk/Mistweaver"] = {
-					["212447"] = {
-						listNames = {
-							"overall",
-							"from raid",
-							"from M+",
-						},
-						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
-					},
-					["178736"] = {
-						listNames = {
-							"overall",
-						},
-						location = "Dungeon/Blightbone/The Necrotic Wake",
-					},
+				["Evoker/Devastation"] = {
 					["225578"] = {
 						listNames = {
+							"overall",
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
-					["133299"] = {
+					["221136"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
+					},
+					["212447"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["159461"] = {
 						listNames = {
 							"from M+",
 						},
-						location = "Dungeon/Erudax/Grim Batol",
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					},
 				},
 				["Monk/Brewmaster"] = {
@@ -12402,19 +12280,48 @@ context.database = {
 						location = "Dungeon/Forgemaster Throngus/Grim Batol",
 					},
 				},
-				["Mage/Fire"] = {
-					["225578"] = {
-						listNames = {
-							"overall",
-						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					},
+				["Monk/Mistweaver"] = {
 					["212447"] = {
 						listNames = {
 							"overall",
 							"from raid",
+							"from M+",
 						},
 						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["178736"] = {
+						listNames = {
+							"overall",
+						},
+						location = "Dungeon/Blightbone/The Necrotic Wake",
+					},
+					["225578"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["133299"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
+					},
+				},
+				["Hunter/Marksmanship"] = {
+					["225578"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["162542"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Sergeant Bainbridge/Siege of Boralus",
 					},
 					["225576"] = {
 						listNames = {
@@ -12422,11 +12329,71 @@ context.database = {
 						},
 						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
-					["133299"] = {
+					["221136"] = {
 						listNames = {
 							"from M+",
 						},
-						location = "Dungeon/Erudax/Grim Batol",
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
+					},
+				},
+				["Mage/Arcane"] = {
+					["225578"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["225576"] = {
+						listNames = {
+							"overall",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["212447"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["221136"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
+					},
+					["221189"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
+					},
+				},
+				["Paladin/Holy"] = {
+					["178736"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Blightbone/The Necrotic Wake",
+					},
+					["159461"] = {
+						listNames = {
+							"overall",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					},
+					["225576"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["212447"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					},
 					["221189"] = {
 						listNames = {
@@ -12461,6 +12428,39 @@ context.database = {
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+				},
+				["Mage/Fire"] = {
+					["225578"] = {
+						listNames = {
+							"overall",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["212447"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["225576"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["133299"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
+					},
+					["221189"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
 					},
 				},
 				["Paladin/Protection"] = {
@@ -12519,6 +12519,95 @@ context.database = {
 						location = "Dungeon/Chopper Redhook/Siege of Boralus",
 					},
 				},
+				["Rogue/Subtlety"] = {
+					["215135"] = {
+						listNames = {
+							"overall",
+						},
+						location = "Other/Crafting",
+					},
+					["221141"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					},
+					["225578"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["225576"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["133287"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Forgemaster Throngus/Grim Batol",
+					},
+				},
+				["Priest/Discipline"] = {
+					["212447"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["159461"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					},
+					["225578"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["178736"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Blightbone/The Necrotic Wake",
+					},
+				},
+				["Priest/Holy"] = {
+					["225578"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["162541"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Chopper Redhook/Siege of Boralus",
+					},
+					["225576"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["56444"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/General Umbriss/Grim Batol",
+					},
+				},
 				["Rogue/Assassination"] = {
 					["225578"] = {
 						listNames = {
@@ -12545,39 +12634,6 @@ context.database = {
 							"from M+",
 						},
 						location = "Dungeon/General Umbriss/Grim Batol",
-					},
-				},
-				["Shaman/Elemental"] = {
-					["225578"] = {
-						listNames = {
-							"overall",
-						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					},
-					["178736"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Blightbone/The Necrotic Wake",
-					},
-					["212447"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
-					},
-					["225576"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					},
-					["159461"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					},
 				},
 				["Rogue/Outlaw"] = {
@@ -12636,25 +12692,25 @@ context.database = {
 						location = "Dungeon/Erudax/Grim Batol",
 					},
 				},
-				["Rogue/Subtlety"] = {
-					["215135"] = {
+				["Shaman/Elemental"] = {
+					["225578"] = {
 						listNames = {
 							"overall",
 						},
-						location = "Other/Crafting",
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
-					["221141"] = {
+					["178736"] = {
 						listNames = {
 							"overall",
 							"from M+",
 						},
-						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+						location = "Dungeon/Blightbone/The Necrotic Wake",
 					},
-					["225578"] = {
+					["212447"] = {
 						listNames = {
 							"from raid",
 						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					},
 					["225576"] = {
 						listNames = {
@@ -12662,39 +12718,11 @@ context.database = {
 						},
 						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
-					["133287"] = {
+					["159461"] = {
 						listNames = {
 							"from M+",
 						},
-						location = "Dungeon/Forgemaster Throngus/Grim Batol",
-					},
-				},
-				["Priest/Holy"] = {
-					["225578"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					},
-					["162541"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Chopper Redhook/Siege of Boralus",
-					},
-					["225576"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					},
-					["56444"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/General Umbriss/Grim Batol",
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					},
 				},
 				["Shaman/Restoration"] = {
@@ -12730,34 +12758,6 @@ context.database = {
 						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
 					},
 				},
-				["Priest/Discipline"] = {
-					["212447"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
-					},
-					["159461"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
-					},
-					["225578"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					},
-					["178736"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Blightbone/The Necrotic Wake",
-					},
-				},
 				["Warlock/Demonology"] = {
 					["212447"] = {
 						listNames = {
@@ -12778,62 +12778,6 @@ context.database = {
 							"from M+",
 						},
 						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
-					},
-					["133299"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Erudax/Grim Batol",
-					},
-				},
-				["Warrior/Arms"] = {
-					["225578"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					},
-					["159461"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
-					},
-					["212447"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
-					},
-					["133299"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Erudax/Grim Batol",
-					},
-				},
-				["Warlock/Affliction"] = {
-					["221136"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
-					},
-					["225578"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					},
-					["212447"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
 					},
 					["133299"] = {
 						listNames = {
@@ -12898,6 +12842,62 @@ context.database = {
 						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
 					},
 				},
+				["Warrior/Arms"] = {
+					["225578"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["159461"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					},
+					["212447"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["133299"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
+					},
+				},
+				["Warlock/Affliction"] = {
+					["221136"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
+					},
+					["225578"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["212447"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["133299"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
+					},
+				},
 				["Warrior/Protection"] = {
 					["221136"] = {
 						listNames = {
@@ -12928,6 +12928,21 @@ context.database = {
 				},
 			},
 			INVTYPE_WEAPON = {
+				["Death Knight/Blood"] = {
+					["212407"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["159650"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+					},
+				},
 				["Demon Hunter/Vengeance"] = {
 					["219877"] = {
 						listNames = {
@@ -12976,19 +12991,62 @@ context.database = {
 						location = "Raid/Sikran/Nerub-ar Palace",
 					},
 				},
-				["Death Knight/Blood"] = {
-					["212407"] = {
+				["Evoker/Augmentation"] = {
+					["133303"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
+					},
+					["212405"] = {
 						listNames = {
 							"overall",
 							"from raid",
 						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["212397"] = {
+						listNames = {
+							"from raid",
+						},
 						location = "Raid/Anub'arash/Nerub-ar Palace",
 					},
-					["159650"] = {
+					["221150"] = {
 						listNames = {
 							"from M+",
 						},
-						location = "Dungeon/Hadal Darkfathom/Siege of Boralus",
+						location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
+					},
+				},
+				["Druid/Guardian"] = {
+					["221159"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
+					},
+					["212389"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+				},
+				["Demon Hunter/Havoc"] = {
+					["219877"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					},
+					["159651"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Viq'Goth/Siege of Boralus",
 					},
 				},
 				["Druid/Restoration"] = {
@@ -13011,36 +13069,6 @@ context.database = {
 							"from M+",
 						},
 						location = "Dungeon/Orator Krix'vizk/City of Threads",
-					},
-				},
-				["Demon Hunter/Havoc"] = {
-					["219877"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
-					},
-					["159651"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Viq'Goth/Siege of Boralus",
-					},
-				},
-				["Druid/Guardian"] = {
-					["221159"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
-					},
-					["212389"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
 				},
 				["Druid/Balance"] = {
@@ -13099,49 +13127,6 @@ context.database = {
 						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
 					},
 				},
-				["Evoker/Augmentation"] = {
-					["133303"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Erudax/Grim Batol",
-					},
-					["212405"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Sikran/Nerub-ar Palace",
-					},
-					["212397"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Anub'arash/Nerub-ar Palace",
-					},
-					["221150"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Avanoxx/Ara-Kara, City of Echoes",
-					},
-				},
-				["Hunter/Beast Mastery"] = {
-					["212400"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
-					},
-					["221143"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
-					},
-				},
 				["Evoker/Preservation"] = {
 					["212405"] = {
 						listNames = {
@@ -13163,6 +13148,21 @@ context.database = {
 						location = "Dungeon/Skarmorak/The Stonevault",
 					},
 				},
+				["Hunter/Beast Mastery"] = {
+					["212400"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Nexus-Princess Ky'veza/Nerub-ar Palace",
+					},
+					["221143"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Other/Rasha'nan/Nerub-ar Palace, The Dawnbreaker",
+					},
+				},
 				["Hunter/Survival"] = {
 					["222448"] = {
 						listNames = {
@@ -13181,78 +13181,6 @@ context.database = {
 							"from M+",
 						},
 						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
-					},
-				},
-				["Evoker/Devastation"] = {
-					["212397"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Anub'arash/Nerub-ar Palace",
-					},
-					["212394"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					},
-					["221083"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Skarmorak/The Stonevault",
-					},
-				},
-				["Mage/Arcane"] = {
-					["212394"] = {
-						listNames = {
-							"overall",
-						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					},
-					["212397"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Anub'arash/Nerub-ar Palace",
-					},
-					["221085"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Speaker Brokk/The Stonevault",
-					},
-				},
-				["Hunter/Marksmanship"] = {
-					["212399"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Sikran/Nerub-ar Palace",
-					},
-					["221074"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/E.D.N.A/The Stonevault",
-					},
-				},
-				["Paladin/Holy"] = {
-					["178737"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Amarth/The Necrotic Wake",
-					},
-					["212405"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Sikran/Nerub-ar Palace",
 					},
 				},
 				["Mage/Frost"] = {
@@ -13288,19 +13216,26 @@ context.database = {
 						location = "Dungeon/General Umbriss/Grim Batol",
 					},
 				},
-				["Monk/Mistweaver"] = {
-					["222568"] = {
+				["Evoker/Devastation"] = {
+					["212397"] = {
 						listNames = {
 							"overall",
-						},
-						location = "Other/Crafting",
-					},
-					["212404"] = {
-						listNames = {
 							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["212394"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221083"] = {
+						listNames = {
 							"from M+",
 						},
-						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+						location = "Dungeon/Skarmorak/The Stonevault",
 					},
 				},
 				["Monk/Brewmaster"] = {
@@ -13344,26 +13279,69 @@ context.database = {
 						location = "Dungeon/Sergeant Bainbridge/Siege of Boralus",
 					},
 				},
-				["Mage/Fire"] = {
-					["212397"] = {
+				["Monk/Mistweaver"] = {
+					["222568"] = {
 						listNames = {
 							"overall",
+						},
+						location = "Other/Crafting",
+					},
+					["212404"] = {
+						listNames = {
+							"from raid",
+							"from M+",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+				},
+				["Hunter/Marksmanship"] = {
+					["212399"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
+					},
+					["221074"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/E.D.N.A/The Stonevault",
+					},
+				},
+				["Mage/Arcane"] = {
+					["212394"] = {
+						listNames = {
+							"overall",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["212397"] = {
+						listNames = {
 							"from raid",
 						},
 						location = "Raid/Anub'arash/Nerub-ar Palace",
 					},
-					["212394"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					},
-					["221166"] = {
+					["221085"] = {
 						listNames = {
 							"from M+",
 						},
-						location = "Dungeon/Orator Krix'vizk/City of Threads",
+						location = "Dungeon/Speaker Brokk/The Stonevault",
+					},
+				},
+				["Paladin/Holy"] = {
+					["178737"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Amarth/The Necrotic Wake",
+					},
+					["212405"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Sikran/Nerub-ar Palace",
 					},
 				},
 				["Monk/Windwalker"] = {
@@ -13401,6 +13379,28 @@ context.database = {
 						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
 					},
 				},
+				["Mage/Fire"] = {
+					["212397"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["212394"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221166"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Orator Krix'vizk/City of Threads",
+					},
+				},
 				["Paladin/Protection"] = {
 					["178730"] = {
 						listNames = {
@@ -13436,6 +13436,77 @@ context.database = {
 						location = "Dungeon/Erudax/Grim Batol",
 					},
 				},
+				["Rogue/Subtlety"] = {
+					["212395"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["178743"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
+					},
+				},
+				["Priest/Discipline"] = {
+					["221166"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Orator Krix'vizk/City of Threads",
+					},
+					["212394"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["212397"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["221165"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
+					},
+				},
+				["Priest/Holy"] = {
+					["56137"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
+					},
+					["178709"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
+					},
+					["212397"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["212394"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+				},
 				["Rogue/Assassination"] = {
 					["225636"] = {
 						listNames = {
@@ -13449,32 +13520,6 @@ context.database = {
 							"from M+",
 						},
 						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
-					},
-				},
-				["Shaman/Elemental"] = {
-					["222439"] = {
-						listNames = {
-							"overall",
-						},
-						location = "Other/Crafting",
-					},
-					["212394"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					},
-					["221083"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Skarmorak/The Stonevault",
-					},
-					["221165"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
 					},
 				},
 				["Rogue/Outlaw"] = {
@@ -13507,47 +13552,30 @@ context.database = {
 						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
-				["Rogue/Subtlety"] = {
-					["212395"] = {
+				["Shaman/Elemental"] = {
+					["222439"] = {
 						listNames = {
 							"overall",
-							"from raid",
 						},
-						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
-					},
-					["178743"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
-					},
-				},
-				["Priest/Holy"] = {
-					["56137"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Erudax/Grim Batol",
-					},
-					["178709"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Ingra Maloch/Mists of Tirna Scithe",
-					},
-					["212397"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Anub'arash/Nerub-ar Palace",
+						location = "Other/Crafting",
 					},
 					["212394"] = {
 						listNames = {
 							"from raid",
 						},
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221083"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Skarmorak/The Stonevault",
+					},
+					["221165"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
 					},
 				},
 				["Shaman/Restoration"] = {
@@ -13578,34 +13606,6 @@ context.database = {
 						location = "Dungeon/General Umbriss/Grim Batol",
 					},
 				},
-				["Priest/Discipline"] = {
-					["221166"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Orator Krix'vizk/City of Threads",
-					},
-					["212394"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					},
-					["212397"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Anub'arash/Nerub-ar Palace",
-					},
-					["221165"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
-					},
-				},
 				["Warlock/Demonology"] = {
 					["212394"] = {
 						listNames = {
@@ -13625,6 +13625,42 @@ context.database = {
 							"from M+",
 						},
 						location = "Dungeon/Speaker Brokk/The Stonevault",
+					},
+				},
+				["Warlock/Destruction"] = {
+					["212394"] = {
+						listNames = {
+							"overall",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["212397"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Anub'arash/Nerub-ar Palace",
+					},
+					["221085"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Speaker Brokk/The Stonevault",
+					},
+				},
+				["Warrior/Fury"] = {
+					["133298"] = {
+						listNames = {
+							"overall",
+							"from M+",
+						},
+						location = "Dungeon/Erudax/Grim Batol",
+					},
+					["212388"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
 					},
 				},
 				["Warrior/Arms"] = {
@@ -13663,42 +13699,6 @@ context.database = {
 						location = "Dungeon/Speaker Brokk/The Stonevault",
 					},
 				},
-				["Warlock/Destruction"] = {
-					["212394"] = {
-						listNames = {
-							"overall",
-						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					},
-					["212397"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Anub'arash/Nerub-ar Palace",
-					},
-					["221085"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Speaker Brokk/The Stonevault",
-					},
-				},
-				["Warrior/Fury"] = {
-					["133298"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Erudax/Grim Batol",
-					},
-					["212388"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Ulgrax the Devourer/Nerub-ar Palace",
-					},
-				},
 				["Warrior/Protection"] = {
 					["212392"] = {
 						listNames = {
@@ -13716,10 +13716,11 @@ context.database = {
 				},
 			},
 			INVTYPE_SHIELD = {
-				["Druid/Restoration"] = {
+				["Evoker/Augmentation"] = {
 					["221172"] = {
 						listNames = {
 							"overall",
+							"from M+",
 						},
 						location = "Dungeon/Nx/City of Threads",
 					},
@@ -13750,11 +13751,10 @@ context.database = {
 						location = "Dungeon/Ki'katal the Harvester/Ara-Kara, City of Echoes",
 					},
 				},
-				["Evoker/Augmentation"] = {
+				["Druid/Restoration"] = {
 					["221172"] = {
 						listNames = {
 							"overall",
-							"from M+",
 						},
 						location = "Dungeon/Nx/City of Threads",
 					},
@@ -13774,6 +13774,26 @@ context.database = {
 						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
 				},
+				["Mage/Frost"] = {
+					["222566"] = {
+						listNames = {
+							"overall",
+						},
+						location = "Other/Crafting",
+					},
+					["212387"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["221172"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Nx/City of Threads",
+					},
+				},
 				["Evoker/Devastation"] = {
 					["222566"] = {
 						listNames = {
@@ -13786,6 +13806,20 @@ context.database = {
 							"from raid",
 						},
 						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+				},
+				["Monk/Mistweaver"] = {
+					["212387"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
+					},
+					["221172"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Nx/City of Threads",
 					},
 				},
 				["Mage/Arcane"] = {
@@ -13809,40 +13843,6 @@ context.database = {
 							"from M+",
 						},
 						location = "Dungeon/The Coaglamation/City of Threads",
-					},
-				},
-				["Mage/Frost"] = {
-					["222566"] = {
-						listNames = {
-							"overall",
-						},
-						location = "Other/Crafting",
-					},
-					["212387"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					},
-					["221172"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Nx/City of Threads",
-					},
-				},
-				["Monk/Mistweaver"] = {
-					["212387"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					},
-					["221172"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Nx/City of Threads",
 					},
 				},
 				["Mage/Fire"] = {
@@ -13874,51 +13874,6 @@ context.database = {
 						location = "Raid/Queen Ansurek/Nerub-ar Palace",
 					},
 				},
-				["Rogue/Assassination"] = {
-					["212395"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
-					},
-					["221138"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
-					},
-				},
-				["Shaman/Elemental"] = {
-					["225579"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					},
-					["178750"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
-					},
-				},
-				["Rogue/Outlaw"] = {
-					["212395"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
-					},
-					["221183"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
-					},
-				},
 				["Rogue/Subtlety"] = {
 					["178743"] = {
 						listNames = {
@@ -13932,36 +13887,6 @@ context.database = {
 							"from raid",
 						},
 						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
-					},
-				},
-				["Priest/Holy"] = {
-					["221132"] = {
-						listNames = {
-							"overall",
-							"from M+",
-						},
-						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
-					},
-					["212387"] = {
-						listNames = {
-							"from raid",
-						},
-						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
-					},
-				},
-				["Shaman/Restoration"] = {
-					["225579"] = {
-						listNames = {
-							"overall",
-							"from raid",
-						},
-						location = "Raid/Queen Ansurek/Nerub-ar Palace",
-					},
-					["221177"] = {
-						listNames = {
-							"from M+",
-						},
-						location = "Dungeon/The Coaglamation/City of Threads",
 					},
 				},
 				["Priest/Discipline"] = {
@@ -13979,15 +13904,82 @@ context.database = {
 						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
 				},
-				["Warlock/Demonology"] = {
-					["222566"] = {
+				["Priest/Holy"] = {
+					["221132"] = {
 						listNames = {
 							"overall",
+							"from M+",
 						},
-						location = "Other/Crafting",
+						location = "Dungeon/Speaker Shadowcrown/The Dawnbreaker",
+					},
+					["212387"] = {
+						listNames = {
+							"from raid",
+						},
+						location = "Raid/Broodtwister Ovi'nax/Nerub-ar Palace",
 					},
 				},
-				["Warlock/Affliction"] = {
+				["Rogue/Assassination"] = {
+					["212395"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["221138"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Anub'ikkaj/The Dawnbreaker",
+					},
+				},
+				["Rogue/Outlaw"] = {
+					["212395"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/The Bloodbound Horror/Nerub-ar Palace",
+					},
+					["221183"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Izo, the Grand Splicer/City of Threads",
+					},
+				},
+				["Shaman/Elemental"] = {
+					["225579"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["178750"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/Surgeon Stitchflesh/The Necrotic Wake",
+					},
+				},
+				["Shaman/Restoration"] = {
+					["225579"] = {
+						listNames = {
+							"overall",
+							"from raid",
+						},
+						location = "Raid/Queen Ansurek/Nerub-ar Palace",
+					},
+					["221177"] = {
+						listNames = {
+							"from M+",
+						},
+						location = "Dungeon/The Coaglamation/City of Threads",
+					},
+				},
+				["Warlock/Demonology"] = {
 					["222566"] = {
 						listNames = {
 							"overall",
@@ -14021,6 +14013,14 @@ context.database = {
 							"from M+",
 						},
 						location = "Dungeon/Erudax/Grim Batol",
+					},
+				},
+				["Warlock/Affliction"] = {
+					["222566"] = {
+						listNames = {
+							"overall",
+						},
+						location = "Other/Crafting",
 					},
 				},
 				["Warrior/Protection"] = {
