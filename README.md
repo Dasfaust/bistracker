@@ -1,5 +1,5 @@
 # BiSTracker
-BiSTracker is an addon for World of Warcraft: The War Within season 1. It is a front-end that displays per-class and per-spec "best in slot" information from any datasource such as WoWHead in a highly functional and astetically pleasing manner. It also includes optional integration with RCLootCouncil.
+BiSTracker is an addon for World of Warcraft: The War Within season 1. It is a front-end that displays per-class and per-spec "best in slot" information from any datasource such as WoWHead in a highly functional and aesthetically pleasing manner. It also includes optional integration with RCLootCouncil.
 
 I created this addon as a deep dive learning experience into Lua scripting and WoW addon development; I never had the goal of maintaning this addon beyond its current state. To solidify that stance, this repository will be archived. If you are interested in using this project as a learning resource or maintaning it beyond its current state, you can check the documentation below.
 
@@ -64,7 +64,7 @@ context.database = {
 
 #### Creating or updating the dataset
 
-A conversion script was written in Python to pull item data from a closed-source WoWHead scraper called [bislist](https://bislist.app/). It uses the [luadata](https://pypi.org/project/luadata/) package to output the scraped data as a Lua module. See `db/converter.py` for more details.
+A conversion script was written in Python to pull item data from a closed-source WoWHead scraper named [bislist](https://bislist.app/). It uses the [luadata](https://pypi.org/project/luadata/) package to output the scraped data as a Lua module. See `db/converter.py` for more details.
 
 ### Data Module
 
